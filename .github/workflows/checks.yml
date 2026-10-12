@@ -58,3 +58,6 @@ jobs:
       - name: Audit the Stage 8 software check
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
         run: python experiments/stage8/analyze_stage8.py --input results/stage8_smoke
+      - name: Report Stage 8 path overheads
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python experiments/stage8/report_details.py --input results/stage8_smoke

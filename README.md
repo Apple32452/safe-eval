@@ -17,9 +17,10 @@ From this repository's root, using your existing activated environment:
 python -m pip install -r requirements.txt
 python scripts/check_release.py
 python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
 ```
 
-Expect **28 passing tests**. The code uses NumPy and Matplotlib; no GPU is
+Expect **35 passing tests in total** (28 preserved and seven new). The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
 Python 3.9 and 3.12 on Ubuntu and Python 3.12 on macOS.
@@ -57,8 +58,11 @@ The one-repeat run is a software check. It does not reproduce the fixed
   It does not guarantee lower cost than the ordinary 95% raw control.
 - All Stage 7 queries are uniform without replacement. Prediction changes
   inference, not acquisition. ICML novelty remains unresolved.
-- The next important ablation is a matched zero-trust count-grid control.
-  It is a proposed next step, not implemented in this snapshot.
+- Stage 8's matched zero-trust ablation is complete: enabling aligned history
+  reduces reserve query cost by 6.815% versus the otherwise matched control.
+  The reversed-history primary instead adds 0.075% on average. See the
+  [Stage 8 findings](experiments/stage8/FINDINGS.md) and fixed
+  [protocol](experiments/stage8/PROTOCOL.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
@@ -92,3 +96,17 @@ directory and record their own protocol and evidence before comparing results.
 The default working branch is `main`; future changes can use branches and pull
 requests. The working repository is [Apple32452/safe-eval](https://github.com/Apple32452/safe-eval).
 The submitted Mac reproduction is documented in [MAC_VERIFICATION.md](docs/MAC_VERIFICATION.md).
+
+## Reproduce Stage 8
+
+From the repository root:
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage8/run_stage8.py --repeats 100 --workers 2 --output results/stage8_local
+python experiments/stage8/analyze_stage8.py --input results/stage8_local
+python experiments/stage8/report_details.py --input results/stage8_local
+```
+
+Use a new output directory for each run. Stage 8 imports the frozen Stage 7
+modules and public data. Its reference tables and figure are included, while
+large per-trial files and full curves are generated locally.
