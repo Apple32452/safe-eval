@@ -1,0 +1,25 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local runs; the released results_reference folder remains tracked
+/results/
+**/results_local/
+**/results_smoke/
+
+# Local editor and operating-system files
+.DS_Store
+.vscode/
+.idea/
+
+# Credentials and temporary downloads
+.env
+.env.*
+*.pem
+*.key
+*.zip

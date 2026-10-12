@@ -1,0 +1,50 @@
+{
+  "prepared_date": "2026-10-12",
+  "github_account": "Apple32452",
+  "proposed_repository_name": "safe-eval",
+  "remote_repository_selected": true,
+  "base_release": "SAFE_EVAL_Stage7_Code.zip",
+  "base_release_sha256": "d9ebedabfffd6d830337eac5f330bd57d585ea60803796ca2ede26316b7c96e6",
+  "base_release_files_preserved_byte_for_byte": 49,
+  "invariant_tests_passed": 28,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "matplotlib": "3.10.8",
+  "python39_grammar_checked": true,
+  "ci_configured_environments": [
+    "ubuntu-latest / Python 3.9",
+    "ubuntu-latest / Python 3.12",
+    "macos-latest / Python 3.12"
+  ],
+  "ci_executed_on_github": false,
+  "software_check_repeats": 1,
+  "software_check_completed_cases": 117,
+  "software_check_method_trajectories": 1170,
+  "software_check_analysis": {
+    "saved_decisions_checked": 1170,
+    "reserved_stopping_bounds_checked": 351,
+    "distinct_raw_target_streams_replayed": 39,
+    "full_saved_case_curves_audited": 117,
+    "stage6_paired_raw_stops_checked": 0,
+    "largest_observed_primary_extra_vs_ordinary_raw95": 24,
+    "empty_raw_representation_events": 147,
+    "empty_raw_representation_scope": "Both intervals empty, with identical nonempty flags; all nonempty endpoints must match exactly; coverage failures remain counted",
+    "original_raw_count_grid_used": true,
+    "all_checks_passed": true
+  },
+  "scope": "Repository setup around the unchanged released experiment; no new scientific method or full reference rerun.",
+  "repository_url": "https://github.com/Apple32452/safe-eval",
+  "visibility_at_import": "public",
+  "record_scope": "Preparation checks before the initial GitHub import; see repository history for upload status.",
+  "mac_reproduction": {
+    "verification_record": "docs/MAC_VERIFICATION.md",
+    "tests_passed": 28,
+    "completed_cases": 117,
+    "method_trajectories": 117000,
+    "runtime_seconds": 244.0,
+    "printed_means_matched": 585,
+    "reported_saved_decisions_checked": 117000,
+    "reported_reserved_stopping_bounds_checked": 35100,
+    "reported_stage6_paired_raw_stops_checked": 11700
+  }
+}

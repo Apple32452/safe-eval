@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-10-12T17:11:50.246202+00:00",
+  "original_hashes": {
+    "analyze_stage7.py": "f1947930ada16dff9c2285fce8841ec6e5d075599018384839e76e292af3848f",
+    "test_stage7.py": "ed4b55b1ecde67348cb1468b3a11d2bef6f564b19e5eb761a2ac69b8ef4d2340"
+  },
+  "release_hashes": {
+    "analyze_stage7.py": "3bb0f79d461664408f042a1a0432aeabb06df4e74e5a0638ed01fd375d7214af",
+    "test_stage7.py": "eaa068625fd1feb69fab461924ed43edc0afab4020791b43545654c21294161e"
+  },
+  "reason": "Compare equivalent empty confidence sets semantically rather than comparing arbitrary inverted numeric endpoints; exact matching remains required for all nonempty endpoints; preserve coverage failures and record representation counts",
+  "scope": "Analyzer and one added audit regression test only; no change to frozen statistical engine, settings, query paths, data or results"
+}

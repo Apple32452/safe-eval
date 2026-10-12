@@ -1,0 +1,111 @@
+{
+  "stage5_code_sha256": {
+    "safe_eval_v1.py": "127218f17d2e8e6542e2a7b34da4359f8373daa5b1e83165018584ea3cadb2e3",
+    "safe_eval_v2.py": "0e98f6e0eaa02978d553bbdf5c4ba38aaae5bcf81bd46ec6c319ffc5492a2b7c",
+    "safe_eval_v3.py": "32d885644823077c188d06f5edb6d0f8fba1b07682197ca0fd90dc0f6ef7f003",
+    "reserve_fallback.py": "9eae1546da4788a2c19217398046a51147b984fa000eefe1de35c7452fd5df53",
+    "binary_control.py": "5ce3e2b66aaf422d415d189b7210009fa220590a149eba08f62d951d40fd5b6d",
+    "prepare_wmt24.py": "1f97b34f456eb132d72f6457d9b7e3c357fe781ffa29c6c29f11117acac2d272",
+    "wmt_experiment.py": "aab87f29a6fc8e21dc7a89fd5e246f1a0a1e223ffaeafd6555b37575864d6c44",
+    "test_stage3.py": "0583dcb7bd7bd39d7a902c7bd4f6f3e49d37285e7c2b830bbf3d94b455e2896b",
+    "test_binary_control.py": "1091b20393cd24b49abad85f017b03f88636c1551f10a607f48c8026c89cb652",
+    "test_stage5.py": "8549209d6cf8553f55c67d693bf257acff3765a080e98255f66772d7bd08e417"
+  },
+  "stage5_protocol_lock": {
+    "stage": "5: exploratory strong-raw reserve revision",
+    "locked_at_utc": "2026-10-12T02:27:55.980713+00:00",
+    "order": "Thirty-five invariants passed before any Stage 5 public comparative run. WMT24 target outcomes were previously examined in Stage 4; this is an exploratory revision, not untouched external validation.",
+    "source_hashes": {
+      "binary_control.py": "5ce3e2b66aaf422d415d189b7210009fa220590a149eba08f62d951d40fd5b6d",
+      "prepare_wmt24.py": "1f97b34f456eb132d72f6457d9b7e3c357fe781ffa29c6c29f11117acac2d272",
+      "published_baselines.py": "c9d1e271eef3246f4919d33cc28e92059f0e13220f3a9316793bb13f8fc8dd97",
+      "reserve_fallback.py": "9eae1546da4788a2c19217398046a51147b984fa000eefe1de35c7452fd5df53",
+      "run_stage5.py": "800d59b766d1b22b462fe63003418391c50a74078bc9aadfae73b503cd1705f6",
+      "safe_eval_v1.py": "127218f17d2e8e6542e2a7b34da4359f8373daa5b1e83165018584ea3cadb2e3",
+      "safe_eval_v2.py": "0e98f6e0eaa02978d553bbdf5c4ba38aaae5bcf81bd46ec6c319ffc5492a2b7c",
+      "safe_eval_v3.py": "32d885644823077c188d06f5edb6d0f8fba1b07682197ca0fd90dc0f6ef7f003",
+      "test_binary_control.py": "1091b20393cd24b49abad85f017b03f88636c1551f10a607f48c8026c89cb652",
+      "test_stage3.py": "0583dcb7bd7bd39d7a902c7bd4f6f3e49d37285e7c2b830bbf3d94b455e2896b",
+      "test_stage4.py": "02722d7ef0a43f02e1efa8bd5ca14b6961c5ac7450ffb1801185b7c898724157",
+      "test_stage5.py": "8549209d6cf8553f55c67d693bf257acff3765a080e98255f66772d7bd08e417",
+      "wmt_experiment.py": "aab87f29a6fc8e21dc7a89fd5e246f1a0a1e223ffaeafd6555b37575864d6c44"
+    },
+    "primary_method": "reserve_mix75",
+    "weights": [
+      0.5,
+      0.75,
+      0.9
+    ],
+    "raw_component": "Published binary PPR, BetaBinomial(N,1,1) working prior",
+    "prediction_component": "Average of Stage 2 directional capital processes on exact count grid 0,...,N",
+    "empty_handling": "Use reserved-raw interval when the mixture accepted set is empty; do not intersect returned outputs after a repair",
+    "guarantee": "Nominal 95% anytime coverage; for each fixed w, tau_output(w) <= tau_PPR(delta*w) pathwise on the same uniform stream. No query noninferiority against raw 95%.",
+    "primary_reserve_error_level": 0.0375,
+    "primary_extra_log_threshold": 0.2876820724517809,
+    "methods": [
+      "published_ppr95",
+      "legacy_trust201",
+      "legacy_gate201",
+      "prediction_count_grid",
+      "reserve_mix50",
+      "reserve_mix75",
+      "reserve_mix90",
+      "ppr_reserve50",
+      "ppr_reserve75",
+      "ppr_reserve90"
+    ],
+    "settings": {
+      "delta": 0.05,
+      "epsilon": 0.05,
+      "anchors": 12,
+      "gate_threshold": 0.5,
+      "legacy_grid": 201
+    },
+    "repeats": 100,
+    "master_sampling_seed": 20261015,
+    "history_permutation_seed": 20261016,
+    "scenarios": [
+      "aligned",
+      "permuted_history",
+      "reversed_history"
+    ],
+    "scope": "Aligned history: both leave-one-out and named-group holdout (65 folds). Artificial stresses: leave-one-out only (45 folds each). 155 case folds; 45 unique system/language targets.",
+    "paired_design": "Identical uniform query sequence for the same target across all methods, scenarios and holdout protocols. Repetitions across those comparisons are correlated.",
+    "public_data": "Same pinned WMT24 derived error-free binary scores as Stage 4. No new data, severity-weighted MQM or human annotation time claim.",
+    "comparison": "Primary: equally nominal 95% published PPR. Stricter reserved controls only verify the reserve guarantee. Other weights are prespecified diagnostic tradeoffs; no winner selection after results.",
+    "novelty": "Standard e-process mixture and confidence-set inclusion. Unresolved; prediction-powered anytime inference already exists.",
+    "private_data": "No private collaborative matrix, code or unpublished findings."
+  },
+  "stage6_protocol_lock": {
+    "stage": 6,
+    "frozen_at_utc": "2026-10-12T03:33:30.304715+00:00",
+    "performance_results_seen_at_freeze": false,
+    "code_sha256": {
+      "binary_control.py": "5ce3e2b66aaf422d415d189b7210009fa220590a149eba08f62d951d40fd5b6d",
+      "guarded_queries.py": "5a11dc3701ad2489a3431d011508c811a05744708ad4cd60ce0b771653988382",
+      "prepare_wmt23.py": "1c166462044ab64f96b06b9c1215462503496c90d9cc1ad6a74bafd616591273",
+      "run_stage6.py": "4f5519c17ea5e76fa44364d0933c972d575c52159f0acccc43e0396bb4c32983",
+      "analyze_stage6.py": "0fed5a79fc640767a2e4c108da9eaf409cd7c2f4f6e853659e9052d5d25055e4",
+      "test_stage6.py": "9af88d888d0431363996cac50c5df7b43ce1683a60a63a4e2af948d902a72afc",
+      "PROTOCOL_SPEC.json": "f030a2459ea88e25678526bcdbfa7979c149f8e11ad338a826a3a10c99716307"
+    },
+    "matrix_sha256": [
+      "4c55d22dffb91fc9cfee0d524af1deff3ff9766dc390a1f025f0d039a6aac075",
+      "fdc364eb50ba39d9abe66b63abb044633bbfc58e0367f33eb54782ee18755c6c",
+      "e4766e2db132d36fb9763a8e7d778028928d8e253ac7ed25118d88499d68e211"
+    ],
+    "cases": 117,
+    "target_system_language_pairs": 39,
+    "test_count": 18,
+    "note": "Initial test-helper forwarding error corrected before freeze; all 18 invariants passed. Structural source checks preceded performance; no query-cost pilot was used to select the policy or allowance.",
+    "analysis_presentation_revision": {
+      "at_utc": "2026-10-12T03:39:51.401021+00:00",
+      "original_analyzer_sha256": "676257d94a940bcdd8dd4672ddc3fa355c44a39dd583f20bab94324e6c09029e",
+      "release_analyzer_sha256": "0fed5a79fc640767a2e4c108da9eaf409cd7c2f4f6e853659e9052d5d25055e4",
+      "change": "Increase plot y-axis headroom and lower margin to avoid bar-label/spine overlap discovered in visual QA",
+      "impact": "Plot limits only; no evaluator, policy, allowance, seed, dataset, saved decision, or numerical analysis changed"
+    }
+  },
+  "stage6_verified_by_user": "User supplied successful completion: 70200 decisions, 46800 active stopping bounds, 117 replayed ledgers.",
+  "data_status": "WMT23 was evaluated in Stage 6; this is a follow-up diagnostic, not untouched held-out validation"
+}

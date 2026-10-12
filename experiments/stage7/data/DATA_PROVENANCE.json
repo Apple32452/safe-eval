@@ -1,0 +1,226 @@
+{
+  "repository": "https://github.com/google/wmt-mqm-human-evaluation",
+  "pinned_commit": "29acd6999aaea3586378c9dcb58d8cc4820cede3",
+  "outcome": "One iff all retained ordinary raters report no minor/major/critical translation error for that segment",
+  "estimand": "Unweighted finite mean of derived exact binary consensus scores on the fixed common annotated pool",
+  "scope": "Recorded annotation consensus, not severity-weighted MQM or latent true human quality",
+  "parser": "Literal tab splitting; exact known header/comment; reject unknown severities or malformed rows",
+  "exclusions": "References/human outputs and segments with any HOTW-test/canary annotation; source issues and neutral opinions are not errors",
+  "source_license": "Upstream Apache-2.0; copied LICENSE supplied",
+  "datasets": [
+    {
+      "language_pair": "en-de",
+      "source_url": "https://raw.githubusercontent.com/google/wmt-mqm-human-evaluation/29acd6999aaea3586378c9dcb58d8cc4820cede3/generalMT2023/ende/mqm_generalMT2023_ende.tsv",
+      "source_bytes": 58272212,
+      "source_sha256": "462f7d001fdf9b2a45904ae050899c52dcf41099476565139b218d588e421d5a",
+      "matrix_sha256": "4c55d22dffb91fc9cfee0d524af1deff3ff9766dc390a1f025f0d039a6aac075",
+      "annotation_rows": 21861,
+      "severity_counts": {
+        "hotw-test": 753,
+        "major": 6644,
+        "minor": 12925,
+        "no-error": 1539
+      },
+      "excluded_control_segments": 306,
+      "excluded_ordinary_ratings_on_control_segments": 3978,
+      "ignored_source_issue_rows": 381,
+      "ignored_neutral_rows": 0,
+      "raters_per_system_item": {
+        "1": 2002
+      },
+      "translation_systems": 12,
+      "system_names": [
+        "AIRC",
+        "GPT4-5shot",
+        "Lan-BridgeMT",
+        "NLLB_Greedy",
+        "NLLB_MBR_BLEU",
+        "ONLINE-A",
+        "ONLINE-B",
+        "ONLINE-G",
+        "ONLINE-M",
+        "ONLINE-W",
+        "ONLINE-Y",
+        "ZengHuiMT"
+      ],
+      "excluded_references": [
+        "refA"
+      ],
+      "common_items": 154,
+      "observed_items_per_system": {
+        "AIRC": 154,
+        "GPT4-5shot": 154,
+        "Lan-BridgeMT": 154,
+        "NLLB_Greedy": 154,
+        "NLLB_MBR_BLEU": 154,
+        "ONLINE-A": 154,
+        "ONLINE-B": 154,
+        "ONLINE-G": 154,
+        "ONLINE-M": 154,
+        "ONLINE-W": 154,
+        "ONLINE-Y": 154,
+        "ZengHuiMT": 154
+      },
+      "removed_noncommon_items_per_system": {
+        "AIRC": 0,
+        "GPT4-5shot": 0,
+        "Lan-BridgeMT": 0,
+        "NLLB_Greedy": 0,
+        "NLLB_MBR_BLEU": 0,
+        "ONLINE-A": 0,
+        "ONLINE-B": 0,
+        "ONLINE-G": 0,
+        "ONLINE-M": 0,
+        "ONLINE-W": 0,
+        "ONLINE-Y": 0,
+        "ZengHuiMT": 0
+      }
+    },
+    {
+      "language_pair": "he-en",
+      "source_url": "https://raw.githubusercontent.com/google/wmt-mqm-human-evaluation/29acd6999aaea3586378c9dcb58d8cc4820cede3/generalMT2023/heen/mqm_generalMT2023_heen.tsv",
+      "source_bytes": 4850970,
+      "source_sha256": "73a8e66b0de1d0582e09bdcecf6c7324070d50b71789c63f19ad9fc81d3195fb",
+      "matrix_sha256": "fdc364eb50ba39d9abe66b63abb044633bbfc58e0367f33eb54782ee18755c6c",
+      "annotation_rows": 13665,
+      "severity_counts": {
+        "critical": 491,
+        "major": 3896,
+        "minor": 3672,
+        "neutral": 43,
+        "no-error": 5563
+      },
+      "excluded_control_segments": 0,
+      "excluded_ordinary_ratings_on_control_segments": 0,
+      "ignored_source_issue_rows": 43,
+      "ignored_neutral_rows": 43,
+      "raters_per_system_item": {
+        "1": 10660
+      },
+      "translation_systems": 12,
+      "system_names": [
+        "GPT4-5shot",
+        "GTCOM_Peter",
+        "Lan-BridgeMT",
+        "NLLB_Greedy",
+        "NLLB_MBR_BLEU",
+        "ONLINE-A",
+        "ONLINE-B",
+        "ONLINE-G",
+        "ONLINE-Y",
+        "Samsung_Research_Philippines",
+        "UvA-LTL",
+        "ZengHuiMT"
+      ],
+      "excluded_references": [
+        "refA"
+      ],
+      "common_items": 820,
+      "observed_items_per_system": {
+        "GPT4-5shot": 820,
+        "GTCOM_Peter": 820,
+        "Lan-BridgeMT": 820,
+        "NLLB_Greedy": 820,
+        "NLLB_MBR_BLEU": 820,
+        "ONLINE-A": 820,
+        "ONLINE-B": 820,
+        "ONLINE-G": 820,
+        "ONLINE-Y": 820,
+        "Samsung_Research_Philippines": 820,
+        "UvA-LTL": 820,
+        "ZengHuiMT": 820
+      },
+      "removed_noncommon_items_per_system": {
+        "GPT4-5shot": 0,
+        "GTCOM_Peter": 0,
+        "Lan-BridgeMT": 0,
+        "NLLB_Greedy": 0,
+        "NLLB_MBR_BLEU": 0,
+        "ONLINE-A": 0,
+        "ONLINE-B": 0,
+        "ONLINE-G": 0,
+        "ONLINE-Y": 0,
+        "Samsung_Research_Philippines": 0,
+        "UvA-LTL": 0,
+        "ZengHuiMT": 0
+      }
+    },
+    {
+      "language_pair": "zh-en",
+      "source_url": "https://raw.githubusercontent.com/google/wmt-mqm-human-evaluation/29acd6999aaea3586378c9dcb58d8cc4820cede3/generalMT2023/zhen/mqm_generalMT2023_zhen.tsv",
+      "source_bytes": 80510442,
+      "source_sha256": "d368e6bd77e00c469ecf92a6f56bf07320ed2fd951661e61580bd8d49708603f",
+      "matrix_sha256": "e4766e2db132d36fb9763a8e7d778028928d8e253ac7ed25118d88499d68e211",
+      "annotation_rows": 49633,
+      "severity_counts": {
+        "hotw-test": 833,
+        "major": 9812,
+        "minor": 35511,
+        "no-error": 3477
+      },
+      "excluded_control_segments": 588,
+      "excluded_ordinary_ratings_on_control_segments": 9408,
+      "ignored_source_issue_rows": 1386,
+      "ignored_neutral_rows": 0,
+      "raters_per_system_item": {
+        "1": 9424
+      },
+      "translation_systems": 15,
+      "system_names": [
+        "ANVITA",
+        "GPT4-5shot",
+        "HW-TSC",
+        "IOL_Research",
+        "Lan-BridgeMT",
+        "NLLB_Greedy",
+        "NLLB_MBR_BLEU",
+        "ONLINE-A",
+        "ONLINE-B",
+        "ONLINE-G",
+        "ONLINE-M",
+        "ONLINE-W",
+        "ONLINE-Y",
+        "Yishu",
+        "ZengHuiMT"
+      ],
+      "excluded_references": [
+        "refA"
+      ],
+      "common_items": 589,
+      "observed_items_per_system": {
+        "ANVITA": 589,
+        "GPT4-5shot": 589,
+        "HW-TSC": 589,
+        "IOL_Research": 589,
+        "Lan-BridgeMT": 589,
+        "NLLB_Greedy": 589,
+        "NLLB_MBR_BLEU": 589,
+        "ONLINE-A": 589,
+        "ONLINE-B": 589,
+        "ONLINE-G": 589,
+        "ONLINE-M": 589,
+        "ONLINE-W": 589,
+        "ONLINE-Y": 589,
+        "Yishu": 589,
+        "ZengHuiMT": 589
+      },
+      "removed_noncommon_items_per_system": {
+        "ANVITA": 0,
+        "GPT4-5shot": 0,
+        "HW-TSC": 0,
+        "IOL_Research": 0,
+        "Lan-BridgeMT": 0,
+        "NLLB_Greedy": 0,
+        "NLLB_MBR_BLEU": 0,
+        "ONLINE-A": 0,
+        "ONLINE-B": 0,
+        "ONLINE-G": 0,
+        "ONLINE-M": 0,
+        "ONLINE-W": 0,
+        "ONLINE-Y": 0,
+        "Yishu": 0,
+        "ZengHuiMT": 0
+      }
+    }
+  ]
+}

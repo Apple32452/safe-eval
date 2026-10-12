@@ -1,0 +1,59 @@
+{
+  "stage": 7,
+  "frozen_at_utc": "2026-10-12T16:59:58.605712+00:00",
+  "stage7_prediction_cost_summaries_inspected_before_freeze": false,
+  "compatibility_test_scope": "One WMT23 case used only to assert raw Stage 6 path/stopping equivalence and lossless curve encoding; no prediction-cost selection or tuning.",
+  "data_status": "Already inspected in Stage 6; follow-up diagnostic",
+  "code_sha256": {
+    "safe_eval_v1.py": "127218f17d2e8e6542e2a7b34da4359f8373daa5b1e83165018584ea3cadb2e3",
+    "safe_eval_v2.py": "0e98f6e0eaa02978d553bbdf5c4ba38aaae5bcf81bd46ec6c319ffc5492a2b7c",
+    "safe_eval_v3.py": "32d885644823077c188d06f5edb6d0f8fba1b07682197ca0fd90dc0f6ef7f003",
+    "reserve_fallback.py": "9eae1546da4788a2c19217398046a51147b984fa000eefe1de35c7452fd5df53",
+    "binary_control.py": "5ce3e2b66aaf422d415d189b7210009fa220590a149eba08f62d951d40fd5b6d",
+    "prepare_wmt24.py": "1f97b34f456eb132d72f6457d9b7e3c357fe781ffa29c6c29f11117acac2d272",
+    "wmt_experiment.py": "aab87f29a6fc8e21dc7a89fd5e246f1a0a1e223ffaeafd6555b37575864d6c44",
+    "prepare_wmt23.py": "1c166462044ab64f96b06b9c1215462503496c90d9cc1ad6a74bafd616591273",
+    "stage7_experiment.py": "b2d64eff9f56e0ae382455ab2eda69782f579734d9b9881f17770fa8db169efb",
+    "run_stage7.py": "0ce6a19778c3223ad7583b2cf39f31b65dc373980a1d27dae54d35b65c535e88",
+    "analyze_stage7.py": "3bb0f79d461664408f042a1a0432aeabb06df4e74e5a0638ed01fd375d7214af",
+    "plot_stage7.py": "3c67ba4d95df53ad161106999e523100f254819074fc4ec92f691ab2cfd5aca4",
+    "test_stage3.py": "0583dcb7bd7bd39d7a902c7bd4f6f3e49d37285e7c2b830bbf3d94b455e2896b",
+    "test_binary_control.py": "1091b20393cd24b49abad85f017b03f88636c1551f10a607f48c8026c89cb652",
+    "test_stage5.py": "8549209d6cf8553f55c67d693bf257acff3765a080e98255f66772d7bd08e417",
+    "test_stage7.py": "eaa068625fd1feb69fab461924ed43edc0afab4020791b43545654c21294161e",
+    "PROTOCOL_SPEC.json": "b3b5c519f0b54c4eef1760c3581129b503a2fdd95c18848ac800546fca585633",
+    "PARENT_RECORDS.json": "a6b999cf4a6c15f38874bd1eeb40341c6278049c0ba0c45210213abf6896c9bc",
+    "STAGE6_REFERENCE.json": "dbcf884f646889c08b9e7bfbbf5588fd8c2b6d342e800875d9de0d35472d2216",
+    "stage6_comparison.csv": "87d4156e3843e1a4ce2b1fd009fe2f99de299334aa9aa547e95580c7d4f7d68f"
+  },
+  "matrix_sha256": [
+    "4c55d22dffb91fc9cfee0d524af1deff3ff9766dc390a1f025f0d039a6aac075",
+    "fdc364eb50ba39d9abe66b63abb044633bbfc58e0367f33eb54782ee18755c6c",
+    "e4766e2db132d36fb9763a8e7d778028928d8e253ac7ed25118d88499d68e211"
+  ],
+  "cases": 117,
+  "distinct_targets": 39,
+  "repeats": 100,
+  "test_count": 28,
+  "analysis_validation_revision": {
+    "at_utc": "2026-10-12T17:11:50.246202+00:00",
+    "original_hashes": {
+      "analyze_stage7.py": "f1947930ada16dff9c2285fce8841ec6e5d075599018384839e76e292af3848f",
+      "test_stage7.py": "ed4b55b1ecde67348cb1468b3a11d2bef6f564b19e5eb761a2ac69b8ef4d2340"
+    },
+    "release_hashes": {
+      "analyze_stage7.py": "3bb0f79d461664408f042a1a0432aeabb06df4e74e5a0638ed01fd375d7214af",
+      "test_stage7.py": "eaa068625fd1feb69fab461924ed43edc0afab4020791b43545654c21294161e"
+    },
+    "reason": "Compare equivalent empty confidence sets semantically rather than comparing arbitrary inverted numeric endpoints; exact matching remains required for all nonempty endpoints; preserve coverage failures and record representation counts",
+    "scope": "Analyzer and one added audit regression test only; no change to frozen statistical engine, settings, query paths, data or results"
+  },
+  "pre_run_test_count": 27,
+  "plot_presentation_revision": {
+    "at_utc": "2026-10-12T17:17:32.639648+00:00",
+    "original_sha256": "d80f50579a05036fb28e80440802203a6824f0f45b05b407be0650cd752bb520",
+    "release_sha256": "3c67ba4d95df53ad161106999e523100f254819074fc4ec92f691ab2cfd5aca4",
+    "reason": "Shorten repeated y-axis labels to avoid inter-panel overlap; retain raw95 comparison in figure subtitle",
+    "impact": "Presentation only; no statistical engine, design choice, table, saved interval or decision changed"
+  }
+}

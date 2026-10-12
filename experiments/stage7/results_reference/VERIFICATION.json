@@ -1,0 +1,12 @@
+{
+  "saved_decisions_checked": 117000,
+  "reserved_stopping_bounds_checked": 35100,
+  "distinct_raw_target_streams_replayed": 39,
+  "full_saved_case_curves_audited": 117,
+  "stage6_paired_raw_stops_checked": 11700,
+  "largest_observed_primary_extra_vs_ordinary_raw95": 225,
+  "empty_raw_representation_events": 110829,
+  "empty_raw_representation_scope": "Both intervals empty, with identical nonempty flags; all nonempty endpoints must match exactly; coverage failures remain counted",
+  "original_raw_count_grid_used": true,
+  "all_checks_passed": true
+}

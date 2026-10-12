@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/d1bd9623dbc7/safe_eval_stage7/analyze_stage7.py", line 195, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/workspace/scratch/d1bd9623dbc7/safe_eval_stage7/analyze_stage7.py", line 93, in main
+    if not np.array_equal(curves[name],curve):raise ValueError(f'Raw PPR full curve differs from original-grid replay: {name}')
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Raw PPR full curve differs from original-grid replay: published_ppr95

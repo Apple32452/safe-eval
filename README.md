@@ -81,8 +81,8 @@ included.
 
 ## Working on GitHub
 
-Follow [the setup instructions](docs/GITHUB_SETUP.md) to create the working
-repository and push this package. The workflow runs the release integrity check
+Follow [the setup instructions](docs/GITHUB_SETUP.md) to clone the working
+repository and continue development. The workflow runs the release integrity check
 and invariant tests on pushes and pull requests, plus one small end-to-end run
 on Ubuntu/Python 3.12. Its configuration follows
 [GitHub's Python workflow documentation](https://docs.github.com/en/actions/tutorials/build-and-test-code/python).
@@ -90,4 +90,5 @@ on Ubuntu/Python 3.12. Its configuration follows
 Keep the released experiment intact. Put new research stages in a new
 directory and record their own protocol and evidence before comparing results.
 The default working branch is `main`; future changes can use branches and pull
-requests. A proposed repository name is `safe-eval`.
+requests. The working repository is [Apple32452/safe-eval](https://github.com/Apple32452/safe-eval).
+The submitted Mac reproduction is documented in [MAC_VERIFICATION.md](docs/MAC_VERIFICATION.md).
