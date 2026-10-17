@@ -18,9 +18,10 @@ python -m pip install -r requirements.txt
 python scripts/check_release.py
 python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 ```
 
-Expect **35 passing tests in total** (28 preserved and seven new). The code uses NumPy and Matplotlib; no GPU is
+Expect **43 passing tests in total** (28 Stage 7, seven Stage 8 and eight Stage 9). The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
 Python 3.9 and 3.12 on Ubuntu and Python 3.12 on macOS.
@@ -110,3 +111,20 @@ python experiments/stage8/report_details.py --input results/stage8_local
 Use a new output directory for each run. Stage 8 imports the frozen Stage 7
 modules and public data. Its reference tables and figure are included, while
 large per-trial files and full curves are generated locally.
+
+## Stage 9 ordinary raw95 safeguard
+
+Stage 9 uses exact finite-state calibration to allocate spare raw error
+probability to a prediction confidence sequence. The returned interval is
+contained in unchanged raw95, with fallback equality when needed. This
+supplies an ordinary-raw95 stopping bound under the stated uniform-sampling
+and arithmetic assumptions. Savings and novelty remain empirical/research
+questions; the comparison includes matched zero-trust and calibrated raw
+controls.
+
+See experiments/stage9/README.md, PROTOCOL.md and THEORY.md. Generate fresh
+certificates for the runtime before reproducing the fixed comparison:
+
+    python experiments/stage9/certify_stage9.py --output results/stage9_certificates
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage9/run_stage9.py --certificates results/stage9_certificates --repeats 100 --workers 2 --output results/stage9_local
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage9/analyze_stage9.py --certificates results/stage9_certificates --input results/stage9_local

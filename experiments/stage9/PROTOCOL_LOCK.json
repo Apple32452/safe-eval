@@ -1,0 +1,27 @@
+{
+  "stage": "9",
+  "status": "frozen implementation and protocol before the 100-repeat reference run",
+  "parent_commit": "05fb1dd95e55a46dbf4b24524976421b73a9159e",
+  "repeats": 100,
+  "delta": "1/20",
+  "epsilon": "1/20",
+  "methods": [
+    "raw95",
+    "calibrated_raw95",
+    "budget_zero95",
+    "budget_prediction95"
+  ],
+  "sha256": {
+    "PROTOCOL.md": "70a8e465703cf2bf947c0915121c96e85c3665ac53730f3718e32b589ebf5468",
+    "README.md": "d456bd22f8a3859c54750445cc1b576de3004fe0e7ad6d527ee9381bed17acde",
+    "THEORY.md": "393c487f02778e2a496347e769c1e92428aea551178ddf4b54d8a21b00d20322",
+    "analyze_stage9.py": "469fbfd1cf245ec5e2e7a0b9bca5b844e2691a23e2519eec3a1a9c85c07d13cb",
+    "certify_stage9.py": "8ae51c61044e4e3c6234bc002999e0f090812235c4cf8ddb5632557e1ca42669",
+    "replay_stage9.py": "0a74a7ba30dddf708ff4d46a10b5efe05a779f4f7b000f733ffe129a096926a8",
+    "rounded_betting.py": "668415bfbd6143892961d2163c9e0cbe453625095c84814e2138cfebc7a51964",
+    "run_stage9.py": "8c41e5ba99cde2d0e6dec0d21f0549fe65c91c11d0bc7307a39e79006602fe13",
+    "stage9_common.py": "9ab488a4bfa89bc7b4889e5909bec673b49deb6c35b1147471591e65773118d2",
+    "stage9_engine.py": "e0df0f710269320ba12db2fb16b3e87f8a8b5afc0ad5e7604752738345355956",
+    "test_stage9.py": "8fd180220532b61fb19fe2b2ea1e2ebf104b55214050ff90bf14620856ddcffb"
+  }
+}
