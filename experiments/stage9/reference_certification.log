@@ -1,0 +1,18 @@
+N=154 threshold=20 exact worst risk=0.037902262 K=[59, 95] seconds=0.1
+N=154 threshold=11 exact worst risk=0.071610237 K=[57, 97] seconds=0.1
+N=154 threshold=16 exact worst risk=0.048068169 K=[62, 92] seconds=0.1
+N=154 threshold=14 exact worst risk=0.054737938 K=[64, 90] seconds=0.1
+N=154 threshold=15 exact worst risk=0.051090939 K=[53, 101] seconds=0.1
+N=154: certified prediction error allowance=0.012097; calibrated raw threshold=16
+N=589 threshold=20 exact worst risk=0.042459502 K=[281, 308] seconds=3.0
+N=589 threshold=11 exact worst risk=0.078450829 K=[217, 372] seconds=2.0
+N=589 threshold=16 exact worst risk=0.054164437 K=[294, 295] seconds=2.3
+N=589 threshold=18 exact worst risk=0.046920263 K=[232, 357] seconds=2.3
+N=589 threshold=17 exact worst risk=0.049389775 K=[230, 359] seconds=2.4
+N=589: certified prediction error allowance=0.007540; calibrated raw threshold=17
+N=820 threshold=20 exact worst risk=0.042943077 K=[391, 429] seconds=7.3
+N=820 threshold=11 exact worst risk=0.078901949 K=[302, 518] seconds=5.4
+N=820 threshold=16 exact worst risk=0.055321878 K=[410] seconds=5.7
+N=820 threshold=18 exact worst risk=0.047311342 K=[316, 504] seconds=5.9
+N=820 threshold=17 exact worst risk=0.050084709 K=[371, 449] seconds=5.9
+N=820: certified prediction error allowance=0.007056; calibrated raw threshold=18
