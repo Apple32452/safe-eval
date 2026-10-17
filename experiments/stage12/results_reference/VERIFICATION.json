@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "arithmetic": "fractions.Fraction; no tolerances",
+  "pool_sizes": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "prediction_grid": [
+    "1/10",
+    "1/2",
+    "9/10"
+  ],
+  "remaining_totals": "all 0 through r",
+  "stakes": [
+    "-1/2",
+    "0",
+    "1/2"
+  ],
+  "caps": [
+    "3/2",
+    "2"
+  ],
+  "multipliers_for_identity": [
+    "1",
+    "4/3",
+    "3"
+  ],
+  "top_k_probes": 9828,
+  "enumerated_assignment_expectations": 27972,
+  "boost_states": 3276,
+  "boost_assignment_expectations": 9324,
+  "unbounded_boost_states": 0,
+  "counterexample": {
+    "working_mean": "1",
+    "true_mean": "185/181",
+    "naive_multiplier": "185/181",
+    "robust_multiplier": "1"
+  },
+  "scope": "one-step algebra and conditional validity only; no full-CS coverage or benchmark claim",
+  "source_sha256": {
+    "assignment_boost.py": "120d167068f50372b1c498a5e6f5b7211bd38e5b970bf11871a54ba5c0eb362a",
+    "audit_stage12.py": "f6bd0e643f8c49a1e9b5d3dd7f45569e135682e553d72876f0246533af78d4da",
+    "test_stage12.py": "0fd2ed181efa68fc8dc0c4ad0ca5ae9b1883c61820b17c5ea314af01c35c2005"
+  }
+}
