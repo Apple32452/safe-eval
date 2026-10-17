@@ -1,0 +1,6 @@
+{
+  "all_checks_passed": true,
+  "per_trial_rows_read": 93600,
+  "independent_contrasts_checked": 120,
+  "scope": "post-freeze reporting check from per-trial costs; inference and frozen analysis unchanged"
+}

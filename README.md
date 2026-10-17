@@ -77,8 +77,12 @@ The one-repeat run is a software check. It does not reproduce the fixed
 - Stage 10's finer calibrated control reduces the aligned prediction advantage
   to 0.666%, or 1.813 labels per benchmark. Prediction improves 18 target means
   and worsens 21; both adverse histories favor calibration. Larger-pool exact
-  repair calibration remains unfinished, and the published sequential-boosting
-  baseline still needs comparison. See the [Stage 10 findings](experiments/stage10/FINDINGS.md).
+  repair calibration remains unfinished. Stage 11 checks the remaining gain
+  against published sequential boosting. See the [Stage 10 findings](experiments/stage10/FINDINGS.md).
+- Stage 11 completes that published boosting comparison on the same PPR
+  process. The aligned prediction gain shrinks to 0.341% (0.925 labels), with
+  15 target mean wins and 24 losses. Both adverse histories favor boosting;
+  the worst extra cost is 260 labels. See the [audited Stage 11 findings](experiments/stage11/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
@@ -176,3 +180,6 @@ See the [instructions](experiments/stage11/README.md),
 [fixed protocol](experiments/stage11/PROTOCOL.md) and
 [numerical argument](experiments/stage11/THEORY.md). This is a baseline study,
 not a new method or an established novelty claim.
+The [findings](experiments/stage11/FINDINGS.md) and
+[reference results](experiments/stage11/results_reference) include the completed
+audit, all paired comparisons, diagnostics and a figure.
