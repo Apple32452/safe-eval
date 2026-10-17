@@ -19,9 +19,10 @@ python scripts/check_release.py
 python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 ```
 
-Expect **43 passing tests in total** (28 Stage 7, seven Stage 8 and eight Stage 9). The code uses NumPy and Matplotlib; no GPU is
+Expect **49 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9 and six Stage 10). The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
 Python 3.9 and 3.12 on Ubuntu and Python 3.12 on macOS.
@@ -144,3 +145,13 @@ capital and raw PPR intervals from every query. It prints an `Audited ...`
 line for each completed case. The committed compact reference package omits
 the full curves required by the analyzer; see
 [reference file details](experiments/stage9/REFERENCE_FILES.md).
+
+## Stage 10 stronger-calibration and novelty study
+
+Stage 10 preserves all Stage 9 prediction paths and adds a finer calibrated
+PPR control, with an exact repaired-control investigation and a focused
+primary-source novelty review. It reuses a complete audited 100-repeat Stage 9
+run. Read the [Stage 10 instructions](experiments/stage10/README.md),
+[protocol](experiments/stage10/PROTOCOL.md), [theory](experiments/stage10/THEORY.md)
+and [novelty review](experiments/stage10/NOVELTY_REVIEW.md). Full source curves
+are required; the compact archived summaries cannot replace them.
