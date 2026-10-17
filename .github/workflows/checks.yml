@@ -41,10 +41,35 @@ jobs:
       - name: Verify the released snapshot
         run: python scripts/check_release.py
       - name: Run invariant tests
-        run: python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
+        run: |
+          python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
+      - name: Verify the Stage 8 protocol
+        run: python -c "import sys; sys.path.insert(0, 'experiments/stage8'); from stage8_common import verify_protocol; verify_protocol()"
       - name: Run one-repeat software check
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
         run: python experiments/stage7/run_stage7.py --repeats 1 --workers 2 --output results/stage7_smoke
       - name: Audit the software check
         if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
         run: python experiments/stage7/analyze_stage7.py --input results/stage7_smoke
+      - name: Run the Stage 8 software check
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python experiments/stage8/run_stage8.py --repeats 1 --workers 2 --output results/stage8_smoke
+      - name: Audit the Stage 8 software check
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python experiments/stage8/analyze_stage8.py --input results/stage8_smoke
+      - name: Report Stage 8 path overheads
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python experiments/stage8/report_details.py --input results/stage8_smoke
+      - name: Verify the Stage 9 protocol
+        run: python -c "import sys; sys.path.insert(0, 'experiments/stage9'); from stage9_common import verify_protocol; verify_protocol()"
+      - name: Certify the Stage 9 raw intervals
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python experiments/stage9/certify_stage9.py --output results/stage9_certificates
+      - name: Run the Stage 9 software check
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python experiments/stage9/run_stage9.py --certificates results/stage9_certificates --repeats 1 --workers 2 --output results/stage9_smoke
+      - name: Audit the Stage 9 software check
+        if: matrix.os == 'ubuntu-latest' && matrix.python == '3.12'
+        run: python experiments/stage9/analyze_stage9.py --certificates results/stage9_certificates --input results/stage9_smoke

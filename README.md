@@ -17,9 +17,11 @@ From this repository's root, using your existing activated environment:
 python -m pip install -r requirements.txt
 python scripts/check_release.py
 python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 ```
 
-Expect **28 passing tests**. The code uses NumPy and Matplotlib; no GPU is
+Expect **43 passing tests in total** (28 Stage 7, seven Stage 8 and eight Stage 9). The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
 Python 3.9 and 3.12 on Ubuntu and Python 3.12 on macOS.
@@ -53,12 +55,21 @@ The one-repeat run is a software check. It does not reproduce the fixed
 - Stage 7's unchanged 75% raw-capital reserve reduced aligned-history mean
   query cost by 7.428% with equal weighting of the three languages. German
   cost increased by 0.871%; Hebrew and Chinese costs fell by 9.121% and 8.577%.
-- The formal stopping bound is against the stricter **96.25% raw control**.
-  It does not guarantee lower cost than the ordinary 95% raw control.
+- Stage 7/8's reserve stopping bound is against the stricter **96.25% raw
+  control**. That reserve construction does not guarantee lower cost than
+  the ordinary 95% raw control.
 - All Stage 7 queries are uniform without replacement. Prediction changes
   inference, not acquisition. ICML novelty remains unresolved.
-- The next important ablation is a matched zero-trust count-grid control.
-  It is a proposed next step, not implemented in this snapshot.
+- Stage 8's matched zero-trust ablation is complete: enabling aligned history
+  reduces reserve query cost by 6.815% versus the otherwise matched control.
+  The reversed-history primary instead adds 0.075% on average. See the
+  [Stage 8 findings](experiments/stage8/FINDINGS.md) and fixed
+  [protocol](experiments/stage8/PROTOCOL.md).
+- Stage 9 supplies a separate ordinary-raw95 stopping safeguard using exact
+  finite-state calibration and error allocation. Its fixed aligned comparison
+  saves 2.801% versus raw95, 2.798% versus matched zero, and 1.141% versus
+  integer-grid calibrated raw95. German and both adverse-history conditions
+  lose to calibration. See the [Stage 9 findings](experiments/stage9/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
@@ -91,4 +102,45 @@ Keep the released experiment intact. Put new research stages in a new
 directory and record their own protocol and evidence before comparing results.
 The default working branch is `main`; future changes can use branches and pull
 requests. The working repository is [Apple32452/safe-eval](https://github.com/Apple32452/safe-eval).
-The submitted Mac reproduction is documented in [MAC_VERIFICATION.md](docs/MAC_VERIFICATION.md).
+The submitted Mac reproductions are documented for
+[Stage 7](docs/MAC_VERIFICATION.md) and
+[Stage 8](docs/STAGE8_MAC_VERIFICATION.md).
+
+## Reproduce Stage 8
+
+From the repository root:
+
+```bash
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage8/run_stage8.py --repeats 100 --workers 2 --output results/stage8_local
+python experiments/stage8/analyze_stage8.py --input results/stage8_local
+python experiments/stage8/report_details.py --input results/stage8_local
+```
+
+Use a new output directory for each run. Stage 8 imports the frozen Stage 7
+modules and public data. Its reference tables and figure are included, while
+large per-trial files and full curves are generated locally.
+
+## Stage 9 ordinary raw95 safeguard
+
+Stage 9 uses exact finite-state calibration to allocate spare raw error
+probability to a prediction confidence sequence. The returned interval is
+contained in unchanged raw95, with fallback equality when needed. This
+supplies an ordinary-raw95 stopping bound under the stated uniform-sampling
+and arithmetic assumptions. The fixed development comparison includes matched
+zero-trust and calibrated raw controls. The aligned mean gain versus calibrated
+raw is modest and uneven; no ICML novelty is established.
+
+See the [instructions](experiments/stage9/README.md),
+[protocol](experiments/stage9/PROTOCOL.md), [theory](experiments/stage9/THEORY.md)
+and [findings](experiments/stage9/FINDINGS.md). Generate fresh certificates for
+the runtime before reproducing the fixed comparison:
+
+    python experiments/stage9/certify_stage9.py --output results/stage9_certificates
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage9/run_stage9.py --certificates results/stage9_certificates --repeats 100 --workers 2 --output results/stage9_local
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage9/analyze_stage9.py --certificates results/stage9_certificates --input results/stage9_local
+
+The audit can take substantially longer than the run because it rebuilds
+capital and raw PPR intervals from every query. It prints an `Audited ...`
+line for each completed case. The committed compact reference package omits
+the full curves required by the analyzer; see
+[reference file details](experiments/stage9/REFERENCE_FILES.md).

@@ -1,0 +1,12 @@
+{
+  "all_checks_passed": true,
+  "saved_decisions_checked": 70200,
+  "reserved_stopping_bounds_checked": 23400,
+  "model_free_target_streams_replayed": 39,
+  "full_case_curves_audited": 117,
+  "stage6_paired_raw_stops_checked": 11700,
+  "stage7_target_metric_values_checked": 2340,
+  "largest_primary_extra_vs_raw95": 225,
+  "largest_primary_extra_vs_matched_zero": 70,
+  "scope": "Fixed WMT23 development pools and query randomizations; no new method or untouched validation"
+}

@@ -1,0 +1,34 @@
+{
+  "parent_commit": "a4cd0b0f19c99be23cbbe47cf3aa71788aad7ef9",
+  "repeats": 100,
+  "delta": 0.05,
+  "epsilon": 0.05,
+  "weight": 0.75,
+  "methods": [
+    "published_ppr95",
+    "raw_count_grid",
+    "prediction_count_grid",
+    "raw_reserve75",
+    "reserve_mix75",
+    "ppr_reserve75"
+  ],
+  "primary": [
+    "reserve_mix75",
+    "raw_reserve75"
+  ],
+  "primary_scenario": "aligned",
+  "primary_weighting": "Equal languages, then targets; paired repeats",
+  "data_scope": "Previously inspected WMT23 development extracts",
+  "query_policy": "Unchanged uniform without replacement",
+  "raw_master_seed": 20261017,
+  "history_permutation_master": 20261019,
+  "reporting": [
+    "query_cost",
+    "anytime_coverage",
+    "empty_sets",
+    "repairs",
+    "stopped_error",
+    "worst_path_overhead"
+  ],
+  "retuning": false
+}
