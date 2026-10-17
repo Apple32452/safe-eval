@@ -1,0 +1,41 @@
+{
+  "all_checks_passed": true,
+  "saved_decisions_checked": 93600,
+  "source_saved_decisions_reconstructed": 70200,
+  "source_metric_values_preserved": 3510,
+  "target_metric_values_checked": 4680,
+  "matched_stopping_bounds_checked": 11700,
+  "new_control_query_steps_checked": 12313800,
+  "distinct_query_replay_steps": 4104600,
+  "distinct_candidate_wealth_updates": 377007310,
+  "distinct_model_free_ledgers": 39,
+  "grid_interval_entries_different_from_raw95": 0,
+  "canonical_source": true,
+  "reused_stage10_audit": {
+    "all_checks_passed": true,
+    "saved_decisions_checked": 70200,
+    "source_saved_decisions_reconstructed": 46800,
+    "stage9_metric_values_preserved": 2340,
+    "target_metric_values_checked": 3510,
+    "backward_fine_risk_counts_checked": 1568,
+    "repaired_risk_certificates_independently_checked": 4,
+    "raw95_stopping_bounds_checked": 23400,
+    "new_control_query_replay_steps": 12313800,
+    "canonical_stage9_source": true,
+    "reused_stage9_capital_audit": {
+      "all_checks_passed": true,
+      "saved_decisions_checked": 46800,
+      "raw95_stopping_bounds_checked": 35100,
+      "query_and_capital_replay_steps": 6156900,
+      "exact_backward_risk_counts_checked": 1571,
+      "stage8_raw_metric_values_checked": 585,
+      "largest_extra_vs_raw95": 0,
+      "runtime_seconds": 940.6574016469986
+    },
+    "prediction_capital_replayed_again": false,
+    "runtime_seconds": 243.29447250799967
+  },
+  "prediction_capital_replayed_again": false,
+  "calibration_audits_repeated": false,
+  "runtime_seconds": 20.337488156999825
+}
