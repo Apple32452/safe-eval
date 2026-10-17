@@ -71,6 +71,11 @@ The one-repeat run is a software check. It does not reproduce the fixed
   saves 2.801% versus raw95, 2.798% versus matched zero, and 1.141% versus
   integer-grid calibrated raw95. German and both adverse-history conditions
   lose to calibration. See the [Stage 9 findings](experiments/stage9/FINDINGS.md).
+- Stage 10's finer calibrated control reduces the aligned prediction advantage
+  to 0.666%, or 1.813 labels per benchmark. Prediction improves 18 target means
+  and worsens 21; both adverse histories favor calibration. Larger-pool exact
+  repair calibration remains unfinished, and the published sequential-boosting
+  baseline still needs comparison. See the [Stage 10 findings](experiments/stage10/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
@@ -155,3 +160,6 @@ run. Read the [Stage 10 instructions](experiments/stage10/README.md),
 [protocol](experiments/stage10/PROTOCOL.md), [theory](experiments/stage10/THEORY.md)
 and [novelty review](experiments/stage10/NOVELTY_REVIEW.md). Full source curves
 are required; the compact archived summaries cannot replace them.
+The [audited findings](experiments/stage10/FINDINGS.md) and
+[reference package](experiments/stage10/results_reference) report the completed
+comparison and its limits.
