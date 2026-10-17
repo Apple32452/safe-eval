@@ -1,0 +1,22 @@
+{
+  "stage": "11",
+  "status": "frozen before the paired benchmark comparison",
+  "parent_commit": "faa189d8888a7ad46afd8a007ab3cbc525a47026",
+  "repeats": 100,
+  "wealth_grid": 549755813888,
+  "rejection_wealth": 10995116277760,
+  "primary_method": "budget_prediction95",
+  "primary_control": "boosted_ppr95",
+  "sha256": {
+    "PROTOCOL.md": "f257f3cd40780328cd214a6232d2c552f3183c258b1dc5b1bc87b7104f2e668a",
+    "THEORY.md": "4a1e6e45a7a6f4401c45188464e0d54ec29a3b215e41b3f146029fb5b8bb9ab0",
+    "README.md": "07a3f0f6f028dfb45223474a033ba6f3e7f00d4565680daacffba6e706733008",
+    "STAGE10_TRACE_MANIFEST.json": "9dd6fc7bc4b3c8c4a7715354df44cd227afa755efa9f34d2b4677b4ad014f7d5",
+    "boosting.py": "53b82259657ad4f4a53c6f146d7eecde4a1011f7818fc7013bc8beeb631c1918",
+    "boost_reference.py": "6e3d0a1b19eaebf63e328d1cc2914bd141d8c6cc812e83d79b253839871f1430",
+    "stage11_common.py": "7750f60979a8a128269b950d86d251a6476673a8e985db64951716841ef8adad",
+    "run_stage11.py": "26fcebff0525d188f406f7eb2bc7f4d558da67e911b5ef78a78922d6b7e45e9b",
+    "analyze_stage11.py": "8a522a17c58cd5d796fd507162027bd039cf1657d40cade4e5d808b272d0bc6a",
+    "test_stage11.py": "a9fadda68e64760ce19bf05e93e05983a91eede4459410a4c23d973bb351a971"
+  }
+}

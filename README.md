@@ -22,7 +22,10 @@ python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 ```
 
-Expect **49 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9 and six Stage 10). The code uses NumPy and Matplotlib; no GPU is
+Expect **55 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+six Stage 10 and six Stage 11). Also run
+`python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v`.
+The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
 Python 3.9 and 3.12 on Ubuntu and Python 3.12 on macOS.
@@ -163,3 +166,13 @@ are required; the compact archived summaries cannot replace them.
 The [audited findings](experiments/stage10/FINDINGS.md) and
 [reference package](experiments/stage10/results_reference) report the completed
 comparison and its limits.
+
+## Stage 11 published sequential-boosting baseline
+
+Stage 11 applies Fischer and Ramdas's published sequential-boosting algorithm
+to the same PPR process, with conservative integer updates and inversion of
+every candidate total. It preserves the complete audited Stage 9/10 outputs.
+See the [instructions](experiments/stage11/README.md),
+[fixed protocol](experiments/stage11/PROTOCOL.md) and
+[numerical argument](experiments/stage11/THEORY.md). This is a baseline study,
+not a new method or an established novelty claim.
