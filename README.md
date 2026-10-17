@@ -19,9 +19,10 @@ python scripts/check_release.py
 python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 ```
 
-Expect **43 passing tests in total** (28 Stage 7, seven Stage 8 and eight Stage 9). The code uses NumPy and Matplotlib; no GPU is
+Expect **49 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9 and six Stage 10). The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
 Python 3.9 and 3.12 on Ubuntu and Python 3.12 on macOS.
@@ -70,6 +71,11 @@ The one-repeat run is a software check. It does not reproduce the fixed
   saves 2.801% versus raw95, 2.798% versus matched zero, and 1.141% versus
   integer-grid calibrated raw95. German and both adverse-history conditions
   lose to calibration. See the [Stage 9 findings](experiments/stage9/FINDINGS.md).
+- Stage 10's finer calibrated control reduces the aligned prediction advantage
+  to 0.666%, or 1.813 labels per benchmark. Prediction improves 18 target means
+  and worsens 21; both adverse histories favor calibration. Larger-pool exact
+  repair calibration remains unfinished, and the published sequential-boosting
+  baseline still needs comparison. See the [Stage 10 findings](experiments/stage10/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
@@ -144,3 +150,16 @@ capital and raw PPR intervals from every query. It prints an `Audited ...`
 line for each completed case. The committed compact reference package omits
 the full curves required by the analyzer; see
 [reference file details](experiments/stage9/REFERENCE_FILES.md).
+
+## Stage 10 stronger-calibration and novelty study
+
+Stage 10 preserves all Stage 9 prediction paths and adds a finer calibrated
+PPR control, with an exact repaired-control investigation and a focused
+primary-source novelty review. It reuses a complete audited 100-repeat Stage 9
+run. Read the [Stage 10 instructions](experiments/stage10/README.md),
+[protocol](experiments/stage10/PROTOCOL.md), [theory](experiments/stage10/THEORY.md)
+and [novelty review](experiments/stage10/NOVELTY_REVIEW.md). Full source curves
+are required; the compact archived summaries cannot replace them.
+The [audited findings](experiments/stage10/FINDINGS.md) and
+[reference package](experiments/stage10/results_reference) report the completed
+comparison and its limits.

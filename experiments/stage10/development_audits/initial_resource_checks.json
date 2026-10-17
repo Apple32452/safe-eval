@@ -1,0 +1,125 @@
+[
+  {
+    "n": 154,
+    "safe_fraction": "63039/4096",
+    "unsafe_fraction": "31519/2048",
+    "repair_probes": [
+      {
+        "status": "capped",
+        "reason": "transition_limit",
+        "completed_layers": 102,
+        "transitions": 5000000,
+        "peak_states": 41283,
+        "n": 154,
+        "threshold": 15.390380859375,
+        "state_sha256": "3533f180a7d7483cc28a10549157f170ce88057922ace32ee7d46af5ba17e80c"
+      },
+      {
+        "n": 154,
+        "threshold": 14.890380859375,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      },
+      {
+        "n": 154,
+        "threshold": 15.265380859375,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      },
+      {
+        "n": 154,
+        "threshold": 15.374755859375,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      }
+    ],
+    "max_states": 100000,
+    "max_transitions": 5000000,
+    "source_sha256": {
+      "calibrate_stage10.py": "ded2c560e81fc67266db9b895e4f4067edcd318e5a9b7cf3ac89fd4445fd58d2",
+      "repair_reference.py": "0378a71b80508e2785d71e232333ee1fa0eea85ceb9ed02da6af7ee949f04f03"
+    }
+  },
+  {
+    "n": 589,
+    "safe_fraction": "1077/64",
+    "unsafe_fraction": "68927/4096",
+    "repair_probes": [
+      {
+        "status": "capped",
+        "reason": "state_limit",
+        "completed_layers": 42,
+        "transitions": 1611640,
+        "peak_states": 100001,
+        "n": 589,
+        "threshold": 16.828125,
+        "state_sha256": "7f5bc39a0f9fb309c0021041e3e8fd1f2c121a39485b3b4bc5e6e753e5f3ae77"
+      },
+      {
+        "n": 589,
+        "threshold": 16.328125,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      },
+      {
+        "n": 589,
+        "threshold": 16.703125,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      },
+      {
+        "n": 589,
+        "threshold": 16.8125,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      }
+    ],
+    "max_states": 100000,
+    "max_transitions": 5000000,
+    "source_sha256": {
+      "calibrate_stage10.py": "ded2c560e81fc67266db9b895e4f4067edcd318e5a9b7cf3ac89fd4445fd58d2",
+      "repair_reference.py": "0378a71b80508e2785d71e232333ee1fa0eea85ceb9ed02da6af7ee949f04f03"
+    }
+  },
+  {
+    "n": 820,
+    "safe_fraction": "69681/4096",
+    "unsafe_fraction": "4355/256",
+    "repair_probes": [
+      {
+        "status": "capped",
+        "reason": "state_limit",
+        "completed_layers": 41,
+        "transitions": 1550500,
+        "peak_states": 100001,
+        "n": 820,
+        "threshold": 17.011962890625,
+        "state_sha256": "87ee9d72b9c604b55ae4f7b69b4fd654a3124e18450ce3297e42b5d54a7a95c9"
+      },
+      {
+        "n": 820,
+        "threshold": 16.511962890625,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      },
+      {
+        "n": 820,
+        "threshold": 16.886962890625,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      },
+      {
+        "n": 820,
+        "threshold": 16.996337890625,
+        "status": "skipped",
+        "reason": "initial_repair_count_capped"
+      }
+    ],
+    "max_states": 100000,
+    "max_transitions": 5000000,
+    "source_sha256": {
+      "calibrate_stage10.py": "ded2c560e81fc67266db9b895e4f4067edcd318e5a9b7cf3ac89fd4445fd58d2",
+      "repair_reference.py": "0378a71b80508e2785d71e232333ee1fa0eea85ceb9ed02da6af7ee949f04f03"
+    }
+  }
+]

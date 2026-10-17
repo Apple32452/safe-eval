@@ -1,0 +1,25 @@
+{
+  "stage": "10",
+  "status": "frozen before the paired benchmark comparison",
+  "parent_commit": "90b44f3175568704f37a3703d086f27b26437a19",
+  "repeats": 100,
+  "fine_bisection_rounds": 12,
+  "max_repair_states": 1000000,
+  "max_repair_transitions": 20000000,
+  "primary_method": "budget_prediction95",
+  "primary_control": "repair_raw95",
+  "sha256": {
+    "PROTOCOL.md": "e19e31298cae8dbe46cfb675a320ed7afecb00d3092df3bbb384c4992cc9b451",
+    "README.md": "1426b485665826072e9d50873ae916e3b4ec125f106c2ac1da1e6dde00593879",
+    "THEORY.md": "b565c751c8dedbe01348100c14b739d6a7f45acaf525ee09c8b0bc70e8ed8831",
+    "NOVELTY_REVIEW.md": "3dbe753ee482a50cb1ad8b9a416a87ff0a9535c4919df9417722d6ff1914fe82",
+    "STAGE9_TRACE_MANIFEST.json": "20fa87d9ad7a53ba26f729c6dab4db6851c8f959c16af8b8c25e2bde428be56c",
+    "calibrate_stage10.py": "906e74d808e5583e61821fb7fdbab586e88001b6622b6ecaf3d1c35671c6db41",
+    "calibration_control.py": "d7628802386dada4ad426d4bc8494114ab7ee49dcf4cc9cee875508a592c44e9",
+    "repair_reference.py": "0378a71b80508e2785d71e232333ee1fa0eea85ceb9ed02da6af7ee949f04f03",
+    "stage10_common.py": "7d245ac79827d917a9405515c3c79a40b3b63ddb343a65d617a984954217c946",
+    "run_stage10.py": "d1ce367cb5ba403172acbaa24bc574c9c2a572a7703a646e2411e0c73c758524",
+    "analyze_stage10.py": "4f2566a585217e65373bee3cf748de15efea30207650b9171799ff246713c1bc",
+    "test_stage10.py": "500fd5d738360f5775f406e23f56fe6ca804b50b6cd0b32f19605823cb55e84f"
+  }
+}
