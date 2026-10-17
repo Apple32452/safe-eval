@@ -1,0 +1,80 @@
+{
+  "article_id": 34040517,
+  "file_id": 69525117,
+  "archive_bytes": 198410574,
+  "scope": "selected author-code members via HTTP ranges; member CRCs verified, full ZIP MD5 not independently computed",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3382,
+      "sha256": "bcf3c8f938bac128051009d3f529fef7ae4fd23bcc66dfa44f3d9cc2ff1e5407",
+      "crc32": 2362154296
+    },
+    {
+      "path": "protocol_selected_revision.json",
+      "bytes": 1331,
+      "sha256": "c4a77d97327e6d78e0b798fcb404d312e3ff56cd90e79314c65e973864d5d4e7",
+      "crc32": 2108410598
+    },
+    {
+      "path": "src/mpos_bounded.py",
+      "bytes": 2364,
+      "sha256": "2ce057c53fcb8027d0f98b9f2db885f9334944d0127d13aa77d2bc8a65f25c76",
+      "crc32": 410940740
+    },
+    {
+      "path": "src/opc.py",
+      "bytes": 917,
+      "sha256": "5ef6115d0046d35a5b5a38a49e5031f0bbcd9f37f179d85d8e2efffa65c9a34e",
+      "crc32": 631093753
+    },
+    {
+      "path": "src/residual_variance.py",
+      "bytes": 2705,
+      "sha256": "6c51c16b3075b24b9e0336df91fb9ebb275f67b6a8ee68e3aa01e7ba67d885b3",
+      "crc32": 3491789477
+    },
+    {
+      "path": "src/spike_mpos.py",
+      "bytes": 2664,
+      "sha256": "5778ac460acbebac14cdf552e898f29d4db5eaaa8767ef095b0d1b58f6966358",
+      "crc32": 1395124152
+    },
+    {
+      "path": "vendor/historical/binary_profile.py",
+      "bytes": 5322,
+      "sha256": "197087e39513e73357b2cbddbb08276afaf2ff635df40398724d1edccf6d3f39",
+      "crc32": 4149019640
+    },
+    {
+      "path": "vendor/historical/binary_sequential.py",
+      "bytes": 7862,
+      "sha256": "d347418dafdbae92c7c22a81db1ced3fdc686e6589a0731af25d98ea4c40276b",
+      "crc32": 1419596765
+    },
+    {
+      "path": "vendor/historical/calibrated_binary.py",
+      "bytes": 2922,
+      "sha256": "b6e55da8633a00ee61d96bda6a7ea111ee2e26a4b8ee415868d5d5164aa4fa2c",
+      "crc32": 586399873
+    },
+    {
+      "path": "vendor/historical/mean_preserving.py",
+      "bytes": 2589,
+      "sha256": "718632e57abdb66881355ee2d5cd460c7b10da9bee532d1eacb1e0f6ac44b814",
+      "crc32": 520296343
+    },
+    {
+      "path": "vendor/historical/revision_core.py",
+      "bytes": 12518,
+      "sha256": "48a4894552863eb083dc5a1159051ada92f062217a303265d39f2d55de92e8f0",
+      "crc32": 4212554573
+    }
+  ],
+  "retrieved_on": "2026-10-17",
+  "primary_page": "https://figshare.com/articles/software/Mean-preserving_online_shrinkage_for_prediction-assisted_finite-population_auditing_replication_package/34040517",
+  "api_url": "https://api.figshare.com/v2/articles/34040517",
+  "download_url": "https://ndownloader.figshare.com/files/69525117",
+  "execution": "No downloaded author code was executed.",
+  "manuscript_status": "Not included in the inspected archive inventory; no theorem-equivalence claim."
+}

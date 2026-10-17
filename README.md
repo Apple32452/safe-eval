@@ -22,9 +22,10 @@ python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 ```
 
-Expect **55 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
-six Stage 10 and six Stage 11). Also run
-`python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v`.
+Expect **61 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+six each for Stages 10, 11 and 12). Also run
+`python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
+`python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -83,6 +84,11 @@ The one-repeat run is a software check. It does not reproduce the fixed
   process. The aligned prediction gain shrinks to 0.341% (0.925 labels), with
   15 target mean wins and 24 losses. Both adverse histories favor boosting;
   the worst extra cost is 260 labels. See the [audited Stage 11 findings](experiments/stage11/FINDINGS.md).
+- Stage 12 reviews the closest prior work and checks a finite-assignment
+  boosting calculation with exact arithmetic. Substantial overlap blocks the
+  broad novelty claims; the checked extension is not an established new
+  method. A finite-pool label-cost guarantee remains an unresolved research
+  target. See the [contribution audit](experiments/stage12/NOVELTY_AUDIT.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
