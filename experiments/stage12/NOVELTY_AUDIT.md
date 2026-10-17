@@ -9,6 +9,7 @@ No new WMT benchmark comparison, tuning search, or confirmatory study was run.
 
 | Source reviewed | Relevant result or released material | Consequence for our claim |
 | --- | --- | --- |
+| [Gao, Sicilia and Shi, Which Metrics Save the Most Human Annotation?, arXiv v2, 30 August 2026](https://arxiv.org/html/2608.26638) | Sections 4--6 study prediction-powered MT system comparison, paired/unpaired designs and annotation savings on six WMT datasets. Their experiments vary fixed labeled budgets. | Applying PPI to MT or measuring annotation savings is already explored. Our sequential precision-stopping target requires its own claim; their fixed-budget procedures are not interchangeable anytime-valid controls. |
 | [Hoxha and Panxhi, MPOS replication package, posted 1 October 2026](https://doi.org/10.6084/m9.figshare.34040517) | Fixed binary populations, uniform sampling without replacement, online shrinkage of item predictions, binary-design evidence factors and integer-total confidence sequences. Selected author code also implements centered residual-variance betting and a bounded-outcome companion. | Neither this setup nor online trust adaptation can be claimed new on its own. The inspected archive has no manuscript; equivalence of every theorem has not been assessed. |
 | [Mondal et al., When Can Old Evaluations Certify a New Model?, 26 September 2026](https://arxiv.org/html/2609.32267v1) | Sections 3--5 distinguish assumed historical transport from untrusted advice and give a history/current-label expert mixture valid for arbitrary advice in a finite pool. Corollary 8 gives an inflated-threshold stopping envelope; Corollary 9 analyzes expected label cost in a canonical model. | History-guided betting, drift-safe validity and a fixed raw reserve are not sufficient novelty claims. A generic mixture stopping bound is also insufficient. |
 | [Fischer and Ramdas, Improving Wald's (approximate) sequential probability ratio test by avoiding overshoot](https://arxiv.org/html/2410.16076v4) | Section 2 chooses a cap and predictable boost from the conditional null expectation; Theorem 1 gives validity and earlier rejection relative to the input process. | Stage 11 applies published boosting. Adding a cap or rescaling by a valid null budget is not by itself a new framework. |
@@ -49,6 +50,14 @@ both adverse histories favor the raw control on every target. This is a
 small heterogeneous development effect, not evidence for a generally better
 new method. The audit infrastructure and baseline diagnosis are real outputs.
 They do not establish the desired novel core contribution.
+
+A possible empirical paper angle is that apparent history-assisted savings
+can shrink substantially when the raw baseline's conservatism is addressed.
+That is a candidate interpretation of our development results, not a verified
+new general finding. It would require independent tasks, credible competing
+methods and an explanation of when the effect occurs. A new theorem is not
+the only possible contribution, but a single repeatedly used benchmark cannot
+establish that broader empirical claim.
 
 ## A precise unresolved research target
 
