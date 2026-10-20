@@ -1,0 +1,11 @@
+test_feature_removal_keeps_means_and_intercept (test_ablation.AblationTests.test_feature_removal_keeps_means_and_intercept) ... ok
+test_first_prediction_precedes_target_labels (test_ablation.AblationTests.test_first_prediction_precedes_target_labels) ... ok
+test_isolated_engine_and_canonical_equivalence (test_ablation.AblationTests.test_isolated_engine_and_canonical_equivalence) ... ok
+test_pairing_metrics_and_valid_stops (test_ablation.AblationTests.test_pairing_metrics_and_valid_stops) ... ok
+test_pruning_exactly_matches_canonical_curves_and_metrics (test_ablation.AblationTests.test_pruning_exactly_matches_canonical_curves_and_metrics) ... ok
+test_pruning_exactly_matches_real_pool_paths (test_ablation.AblationTests.test_pruning_exactly_matches_real_pool_paths) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 11.913s
+
+OK

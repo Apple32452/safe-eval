@@ -1,0 +1,2 @@
+# Keep experiment artifacts and recorded hashes byte-identical across checkouts.
+* -text

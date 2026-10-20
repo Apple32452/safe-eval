@@ -1,0 +1,62 @@
+{
+  "status": "saved_metrics_checks_passed_with_source_provenance_limit",
+  "original_metadata_status": "running",
+  "original_metadata_sha256": "0e1e3780cfcd1677c8d6dd933e6a1e466430a77b17e6c1831436cbf62d183439",
+  "current_protocol_matches_start_hash": false,
+  "cases": 117,
+  "arms": 2,
+  "repeats_per_case_arm": 100,
+  "trial_records": 23400,
+  "target_records": 234,
+  "summary_records": 24,
+  "reference_target_costs_and_coverage_matched": 117,
+  "existing_manifest_files_unchanged": 172,
+  "unchanged_recorded_source_files": 50,
+  "changed_recorded_source_files": [
+    "svd_ablation\\ablation.py",
+    "svd_ablation\\report.py",
+    "svd_ablation\\run_ablation.py",
+    "svd_ablation\\test_ablation.py"
+  ],
+  "comparisons": [
+    {
+      "scenario": "aligned",
+      "labels_difference": -1.5280555555555555,
+      "label_percent_change": -0.5623094245349125,
+      "mcse": 0.10989869880599941,
+      "wins": 14,
+      "ties": 10,
+      "losses": 15
+    },
+    {
+      "scenario": "permuted_history",
+      "labels_difference": -0.0007222222222222223,
+      "label_percent_change": -0.0002598003694065376,
+      "mcse": 0.002380260040433042,
+      "wins": 5,
+      "ties": 31,
+      "losses": 3
+    },
+    {
+      "scenario": "reversed_history",
+      "labels_difference": 0.00022222222222222223,
+      "label_percent_change": 7.993630675162677e-05,
+      "mcse": 0.00022222222222222231,
+      "wins": 0,
+      "ties": 38,
+      "losses": 1
+    }
+  ],
+  "artifact_sha256": {
+    "per_trial.csv": "c1f3878f3d4b1877b8c82c42f23c546c8e696e2c10b37675a71d067c82517e6e",
+    "by_target.csv": "84ca9f8f9d94297d4cdf078a48670c5b9246acb5851ddb1c44dfb215f1543adf",
+    "summary.csv": "e5c201751e99680210a2a3929b1514c974b5ce446fce1e7d747030b95385e10f",
+    "comparison.csv": "9be30007e1bb5b5eaa06ea07b22058a0e41b3e177b78a52d7b878396b28e4987"
+  },
+  "confirmed_failure": "Process exited 1 after all 117 cases and CSV writes: AssertionError: Source changed during run",
+  "not_reverified": [
+    "Full confidence curves and raw prediction residuals were not saved.",
+    "Per-case ledger equality passed inside the original runner before CSV writes, but actual run ledger hashes were not saved after failure.",
+    "This audit does not certify unchanged source or a successful pruned-engine full run."
+  ]
+}

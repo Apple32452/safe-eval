@@ -1,0 +1,16 @@
+{
+  "stage_test_counts": [
+    28,
+    7,
+    8,
+    6,
+    6,
+    6
+  ],
+  "ablation_tests": 6,
+  "existing_manifest_files_verified": 172,
+  "existing_manifest_mismatches": 0,
+  "main_commit": "50a64e42e580ef548bfe92e3596298a2d255605b",
+  "note": "All test processes exited zero; PowerShell stderr wrapper annotations removed from captured unittest output.",
+  "ablation_test_exit_code": 0
+}
