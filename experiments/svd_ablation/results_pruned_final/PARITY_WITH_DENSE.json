@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "records_compared": 23400,
+  "maximum_absolute_difference": {
+    "mean_queries": 0.0,
+    "mse": 0.0,
+    "mae": 0.0,
+    "residual_mean": 0.0,
+    "residual_variance": 0.0,
+    "simultaneous_coverage": 0.0,
+    "stopped_absolute_error": 0.0
+  },
+  "frozen_sources_verified": true,
+  "protocol_verified": true
+}
