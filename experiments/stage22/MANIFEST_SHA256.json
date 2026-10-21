@@ -1,0 +1,25 @@
+{
+  "experiments/stage22/AMENDMENT_1.md": "df82cf6fda48e363533ce85389ce64ba72d09352d413a1f0235582de98531d40",
+  "experiments/stage22/FINDINGS.md": "eba43eb4a567dcd8cd7f72490c267619dd3e73dad52887a38eb628b897f0b779",
+  "experiments/stage22/IMPLEMENTATION_LOCK.json": "f67588d4329bd1f58eac130b9636816fc952874203557dff3fa7c212f21617b3",
+  "experiments/stage22/PROTOCOL.md": "7fac4960c437fef02f0a015384ea38c95a7141241ce3c07fe2b1923771af7c41",
+  "experiments/stage22/README.md": "b068c0501816ee6f2c5be0d04aa5c7d96ba69774d11ea68e39efcd12522000ac",
+  "experiments/stage22/RELATED_WORK.md": "25762b92407041c893c540bfa3800ba13c6358d0f4963a8fdf8809c81c77ee90",
+  "experiments/stage22/THEORY.md": "2b4a3a5c46510e6782426aabc90f8dbf860e96c66c3c7efaab8445867337e143",
+  "experiments/stage22/audit_stage22.py": "5e4e5e070b835403e4560816c1fed37581e042b61965d0c9316bfe1cdafc24b5",
+  "experiments/stage22/merge_stage22.py": "639e1cedd3aa3acab7ed508ec368585eb2999bbf1859106031dcb9202aef2031",
+  "experiments/stage22/report_stage22.py": "8fc5d2c9a5d47ff30ae6dc7e7eb150df6acbbf6455d61fef14b77185603b1a5d",
+  "experiments/stage22/results_reference/SUMMARY.json": "38912abddf2e43ea1098c5e48165bf7ffd772dfbcbfd4ea1bdac0d5960cc5320",
+  "experiments/stage22/results_reference/VERIFICATION.json": "6661f0e00efa95dc71760f9a9008f3e928e5934f7d428b1e592db88c7d9611b1",
+  "experiments/stage22/results_reference/checkpoint_summary.csv": "44d66e0c96342c0aa6930169dc53878351832d6fcb38922a88ce4bd0612e63cf",
+  "experiments/stage22/results_reference/diagnostics.csv": "d5aeb74eb2e72dc877d030e25e78b0d9f0c01a672d07721d1a9845f0e1ef8a31",
+  "experiments/stage22/results_reference/metadata.json": "ab40fafdd6c5a7ec14abecf4ad252506c6b40faa0342c826db7e98738e6d717a",
+  "experiments/stage22/results_reference/primary_by_language.csv": "fa908d7fad12eb4a93b45e4d9fecf735110247600e329ee1281b6e436fe1ad7a",
+  "experiments/stage22/results_reference/primary_by_reference.csv": "03afb65d5998af3d48a37288c721631f76efbf20dd19864aa5159be2a3dc1138",
+  "experiments/stage22/results_reference/primary_repeat_blocks.csv": "5b4027e25f732207f8357111abbedc1ad450a1630c15401ae4a0acf248cd31d0",
+  "experiments/stage22/run_stage22.py": "0814f1e61495080e6ae67e328634a33074850baee6decd470d5b3495f444e748",
+  "experiments/stage22/summarize_stage22.py": "2ff94016c09f099c840c82fb23a35516595c295d9c6a0be0c19927adfd13133c",
+  "experiments/stage22/test_merge_stage22.py": "a35e7b0e52bfaa78dcdd38555d830ab8dbf41bb326f2b0112666fe58e2f2e7cc",
+  "experiments/stage22/test_stage22.py": "cbf500c0ad05511a2dd73d9669c5065ff3ad4ec10845f5428c2b8fa1d118be35"
+}
+
