@@ -22,18 +22,20 @@ python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v
 ```
 
-Expect **87 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+Expect **91 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
 six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
-tests, plus six Stage 16 and five Stage 17 tests). Also run
+tests, plus six Stage 16, five Stage 17, and four Stage 18 tests). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v`, then
 `python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v` and
+`python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -134,6 +136,12 @@ The one-repeat run is a software check. It does not reproduce the fixed
   structurally weak, so a common random test-set baseline is required before
   claiming an ICML contribution. See the
   [Stage 17 findings](experiments/stage17/FINDINGS.md).
+- Stage 18 adds the missing common random test-set baseline. At 75% labels,
+  the frontier scheduler certifies 1,122.80 correct pairs versus 1,275.70 for
+  the common test set: a deficit of 152.90 (MCSE 2.07), with losses in all 50
+  repeat blocks and zero observed wrong declarations for both methods. The
+  frozen gate fails, rejecting the current scheduler as the ICML candidate.
+  See the [Stage 18 findings](experiments/stage18/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
