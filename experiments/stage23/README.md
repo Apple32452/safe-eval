@@ -22,6 +22,8 @@ fixed-prefix certificate. The independent check is:
 python experiments/stage23/audit_async_prefix.py
 ```
 
-This strengthens the accounting scope, not the paper novelty claim. No
-external validation is authorized until the contribution audit passes.
+This strengthens the accounting scope, not the paper novelty claim. The
+[next method gate](NEXT_METHOD_GATE.md) specifies the proof and synthetic
+falsification tests for a possible joint finite-pool certificate. No external
+validation is authorized until the contribution audit passes.
 
