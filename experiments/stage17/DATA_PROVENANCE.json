@@ -1,0 +1,137 @@
+{
+  "source_url": "https://github.com/wmt-conference/wmt25-general-mt/raw/2fc0874d85278d8c7e0807951e54d8422e7957e4/data/wmt25-genmt-humeval.jsonl",
+  "upstream_commit": "2fc0874d85278d8c7e0807951e54d8422e7957e4",
+  "source_sha256": "a36ebce10c9ea26f71449933721de3a87e27f6a5b09d96b5daa026eaf1d197ab",
+  "source_bytes": 128674273,
+  "jsonl_lines": 2840,
+  "outcome": "Arithmetic mean of retained recorded 0--100 scores, divided by 100",
+  "scope": "Recorded WMT25 human score on the fixed common pool",
+  "reports": [
+    {
+      "language": "cs-de_DE",
+      "included": true,
+      "maximum_coverage": 231,
+      "systems": 20,
+      "common_items": 231,
+      "pairs": 190,
+      "matrix_sha256": "84bd2d19a617328bd5372a0a6b83b682d6b24f91e6aa3cb098cb4aa9a38a538b"
+    },
+    {
+      "language": "cs-uk_UA",
+      "included": true,
+      "maximum_coverage": 225,
+      "systems": 18,
+      "common_items": 225,
+      "pairs": 153,
+      "matrix_sha256": "2535aa870011a0655e36b738755100094adfdc3ce11c711cb71468fcded44d5e"
+    },
+    {
+      "language": "en-ar_EG",
+      "included": true,
+      "maximum_coverage": 199,
+      "systems": 18,
+      "common_items": 199,
+      "pairs": 153,
+      "matrix_sha256": "f7d636bb1ae405f72c87061348b6f344d6e9cd260cda0edd1e93ed149c67367a"
+    },
+    {
+      "language": "en-bho_IN",
+      "included": true,
+      "maximum_coverage": 189,
+      "systems": 18,
+      "common_items": 189,
+      "pairs": 153,
+      "matrix_sha256": "8733248870ffd0d052bba07ad18c58cd1b6c9280eebc0976e5dd34ed7cda5b34"
+    },
+    {
+      "language": "en-cs_CZ",
+      "included": true,
+      "maximum_coverage": 212,
+      "systems": 19,
+      "common_items": 212,
+      "pairs": 171,
+      "matrix_sha256": "ca42c02c7d56ec459444aa9b76536463e6482b44af1369b76a72d09cf8ad898c"
+    },
+    {
+      "language": "en-et_EE",
+      "included": true,
+      "maximum_coverage": 190,
+      "systems": 18,
+      "common_items": 190,
+      "pairs": 153,
+      "matrix_sha256": "6c8f5a81977e14d8019db29412038569fb0e4657719f024d95da6f4bef956e64"
+    },
+    {
+      "language": "en-is_IS",
+      "included": true,
+      "maximum_coverage": 202,
+      "systems": 18,
+      "common_items": 202,
+      "pairs": 153,
+      "matrix_sha256": "3b9a90f928f7fd2d0dcc154170e7dd131af3a05b6c139f9cfe4ebd016e5fb418"
+    },
+    {
+      "language": "en-it_IT",
+      "included": true,
+      "maximum_coverage": 215,
+      "systems": 18,
+      "common_items": 215,
+      "pairs": 153,
+      "matrix_sha256": "9855024da69873de447515ab21980abdb4e691e6dfa8538fd8bb02743d812cbe"
+    },
+    {
+      "language": "en-ja_JP",
+      "included": true,
+      "maximum_coverage": 189,
+      "systems": 18,
+      "common_items": 189,
+      "pairs": 153,
+      "matrix_sha256": "348b0bfb30016c158904b3af9e38ecd957b6a95cbb15fbaf923781547fcbcc13"
+    },
+    {
+      "language": "en-mas_KE",
+      "included": true,
+      "maximum_coverage": 185,
+      "systems": 18,
+      "common_items": 185,
+      "pairs": 153,
+      "matrix_sha256": "5575eeb809bf24e6b4257aa2740ebbfd87f7c566f9d4d837bbc25101479ae90a"
+    },
+    {
+      "language": "en-ru_RU",
+      "included": true,
+      "maximum_coverage": 200,
+      "systems": 18,
+      "common_items": 200,
+      "pairs": 153,
+      "matrix_sha256": "f9852b186d5175cc0ed596cdcbd1d8b1355d4bc3fdd6c942f3afceff3a6fff65"
+    },
+    {
+      "language": "en-sr_Cyrl_RS",
+      "included": true,
+      "maximum_coverage": 206,
+      "systems": 18,
+      "common_items": 206,
+      "pairs": 153,
+      "matrix_sha256": "4962eeeeae9fa3aa0f31f6e60ce1c306e0f7c26d6d71160e155b487c6a200690"
+    },
+    {
+      "language": "en-uk_UA",
+      "included": true,
+      "maximum_coverage": 199,
+      "systems": 18,
+      "common_items": 199,
+      "pairs": 153,
+      "matrix_sha256": "67bbb3de76828418cce18f7ce6fe29cbb35baf75d8351f0e270d5338d143d91a"
+    },
+    {
+      "language": "en-zh_CN",
+      "included": true,
+      "maximum_coverage": 198,
+      "systems": 18,
+      "common_items": 198,
+      "pairs": 153,
+      "matrix_sha256": "c965d528b70b42062655249abc63e5bf3ee484aa7d2e9b8bc5952fb5c0163799"
+    }
+  ]
+}

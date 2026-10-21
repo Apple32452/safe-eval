@@ -1,0 +1,19 @@
+{
+  "DATA_PROVENANCE.json": "aa8cc8b0fdbb6b9aee16a7d691938e78d433991da41cb249490eb28aa53f4231",
+  "FINDINGS.md": "04acab7f99107d8cce710b02dc7d694a2b3cd02796fa76f973b4d3c159e6e403",
+  "IMPLEMENTATION_LOCK.json": "8e6cadd281e0d06d41c24b4cccfe020c801759af5c105ffc669e6fa5a7f4c9fc",
+  "PROTOCOL.md": "f8f3e3c7e3749fe47d22eb86aa142b4ee55d0b8244bfdfa8b3562c94e906f610",
+  "README.md": "5b02a4edce5ab411372b0f39a5622688c45accd7153b74355a172a766db878aa",
+  "RELATED_WORK.md": "4f88b26142e24fb3b21969058481e272b144faaefc14ede0ade3c00cb1f9321d",
+  "THEORY.md": "bc3ed5263d0e6424e682a5097e978c494d2edb2ec5b5bd40cbee904cc61a6b4d",
+  "audit_stage17.py": "93a471e8346b6e2cc3e55aacb6c6500342bb0481bc9dec1fcdad20f33ebad4f3",
+  "continuous_engine.py": "d088366c705fa03d7f6f1764cf7adfe67750773682a81e53ef2b278824403ddb",
+  "prepare_scores.py": "20e467ee02f96a196721cdb98763a55f876f7cd806fdfac4a6194c860e1ea235",
+  "results_reference/SUMMARY.json": "9a3d88b048d004acadbfbb3af76323a99bbed53c04c3c17db8f8ea1a02a82844",
+  "results_reference/VERIFICATION.json": "d02b93397e2d0232d683c40b161e630972c86eb6050b0e46c2a97b73db7d45f8",
+  "results_reference/metadata.json": "5d1792c81c003e4c9b6499c0005daf52fde7fd5a4cc72610079f08d01430077f",
+  "results_reference/replicates.csv": "f379dce07edb39e7ca3ff1cdf5677e789e24ecdcb2a9fd927918806f10d556be",
+  "run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
+  "summarize_stage17.py": "76bbfb91a2ddd28fe79c95aa3d1b81543c4f2f084d8fafa4ec2dbefd7edce0f3",
+  "test_stage17.py": "ce7d8a80d482d7bf2b57a53a2045d00f14d3531d8422d7948ceff3368eadf51b"
+}

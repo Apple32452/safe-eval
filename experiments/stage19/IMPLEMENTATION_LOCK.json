@@ -1,0 +1,26 @@
+{
+  "protocol_commit": "88642bdf187264867b8f54d1a3a6f083f77ca2cb",
+  "source_access_state": "WMT25 was used for Stages 16--18, but the common-core adaptive-tail candidate had not been run before this lock. WMT24 outcomes remain untouched.",
+  "sha256": {
+    "experiments/stage19/PROTOCOL.md": "eaa9c9374514105e060ba68105af3fef07686a7c0cb7fb4c45ba8b99b8718038",
+    "experiments/stage19/THEORY.md": "caa06026276a4d4e1db5374abff7393e46e44f3cd2398b41b8fec9a17ae60c80",
+    "experiments/stage19/README.md": "5896fe742896f7010044fde2151146b6910c465c867e3f15ebc9401b485bbc43",
+    "experiments/stage19/run_stage19.py": "d380bbf4936242934b4d9794872747d6a3fa3813709a8291f0d81280e0dd613c",
+    "experiments/stage19/summarize_stage19.py": "c40a68b5089574ce5d5a4b3468c382ec18ced753706956b6e36b8885f588be75",
+    "experiments/stage19/audit_stage19.py": "e5d218e4af8316c8d9d34deddbf6719381d9321f6facf15f3a2ec7676df7bfaa",
+    "experiments/stage19/test_stage19.py": "738f6ce57e8a30224c87dd57b97c0a3bfb3159c95ab4b6caac85c8ef61108225",
+    "experiments/stage18/IMPLEMENTATION_LOCK.json": "68316fc4c2a5f819bf2941c34d24248f2baac1bbcbe2e9d34507bec161b83d7a",
+    "experiments/stage18/run_stage18.py": "086259db7c9cb53391635b47f75e8f5a597cddc3bd8ecf18f8bc7cdff904c96a",
+    "experiments/stage18/results_reference/replicates.csv": "74d70a4f2a5a88d18c45f866a0edf1200b2f310bf3c212b7a818dd72614b4a25",
+    "experiments/stage18/results_reference/metadata.json": "8d29f95fa0b30e89f955c7db8ea5c572a5b5ce66ffb97895029d97e1fc2cc718",
+    "experiments/stage18/results_reference/SUMMARY.json": "8389e0d787583e9d70f26f24d948844906fe496242e93de95a81c3d9f39161ed",
+    "experiments/stage18/results_reference/VERIFICATION.json": "cff5ad0c4834e7067fbab75f8bc78b664f6c83af2e7c1c77179973c3c8187026",
+    "experiments/stage17/IMPLEMENTATION_LOCK.json": "8e6cadd281e0d06d41c24b4cccfe020c801759af5c105ffc669e6fa5a7f4c9fc",
+    "experiments/stage17/continuous_engine.py": "d088366c705fa03d7f6f1764cf7adfe67750773682a81e53ef2b278824403ddb",
+    "experiments/stage17/prepare_scores.py": "20e467ee02f96a196721cdb98763a55f876f7cd806fdfac4a6194c860e1ea235",
+    "experiments/stage17/run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
+    "experiments/stage16/prepare_wmt25.py": "8f5e08b8c7e963221bc8b1cc5506b7d90cbfc1029c6010fb2651535c2bf59a46",
+    "experiments/stage15/frontier_experiment.py": "6d464cbc190a38f1a95fe12d01c96f40dbe1ff0fd4d4aeaeaa87164e7974f9e2",
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da"
+  }
+}

@@ -20,14 +20,29 @@ python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v
 ```
 
-Expect **71 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
-six each for Stages 10, 11, 12 and 13, and four Stage 14 tests). Also run
+Expect **105 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
+tests, plus six Stage 16, five Stage 17, four each for Stages 18 and 19, and
+five each for Stages 20 and 21). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v` and
+`python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v` and
+`python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v` and
+`python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -107,6 +122,52 @@ The one-repeat run is a software check. It does not reproduce the fixed
   fixed pair focus and 16.33 for random pair focus. Most pairs remain
   unresolved; the two concentration controls were added after the initial
   pilot. See the [Stage 14 findings and reproduction](experiments/stage14/README.md).
+- Stage 15 tests a locked annotation-level frontier utility over 50 matched
+  WMT23 order blocks. Its primary 50% gain over evidence-first is only 0.82
+  certified pairs (conditional MC SE 0.664); at 75% the gain is 10.80 pairs.
+  This is a development candidate, not an ICML contribution. See the
+  [Stage 15 findings](experiments/stage15/FINDINGS.md).
+- Stage 16 externally validates that unchanged scheduler on 14 WMT25 language
+  directions and 2,197 system pairs. At the frozen 75% label budget it gains
+  76.76 correctly certified pairs over evidence-first (conditional MCSE 5.44),
+  wins 49/50 matched blocks, has positive means in all 14 languages, and has
+  zero observed wrong declarations. The external gate passes. This supports
+  the scheduling effect but does not yet supply the needed theorem, practical
+  score margin, or matched active-ranking baselines. See the
+  [Stage 16 findings](experiments/stage16/FINDINGS.md).
+- Stage 17 tests a continuous WMT25 mean-score target and supplies the
+  scheduler-independent validity and allocation formulation. At 75% labels,
+  frontier evidence gains 12.82 correctly certified pairs over evidence first
+  (MCSE 1.68), with zero observed wrong declarations and positive mean gains in
+  11 of 14 languages. The frozen gate passes. The random-label control is
+  structurally weak, so a common random test-set baseline is required before
+  claiming an ICML contribution. See the
+  [Stage 17 findings](experiments/stage17/FINDINGS.md).
+- Stage 18 adds the missing common random test-set baseline. At 75% labels,
+  the frontier scheduler certifies 1,122.80 correct pairs versus 1,275.70 for
+  the common test set: a deficit of 152.90 (MCSE 2.07), with losses in all 50
+  repeat blocks and zero observed wrong declarations for both methods. The
+  frozen gate fails, rejecting the current scheduler as the ICML candidate.
+  See the [Stage 18 findings](experiments/stage18/FINDINGS.md).
+- Stage 19 retains a 50% common core before adaptively scheduling separate pair
+  tails. It gains 7.92 conclusions at the 50% checkpoint but loses 104.76 at
+  75% (MCSE 1.57), with losses in all 50 repeats and zero observed wrong
+  declarations for both methods. The gate fails, ruling out further WMT25
+  tuning of common/pair-specific mixtures. See the
+  [Stage 19 findings](experiments/stage19/FINDINGS.md).
+- Stage 20 stays on the common stream and removes systems only after all their
+  incident comparisons resolve. It pathwise weakly dominates the unpruned
+  control and gains 8.48 correct conclusions at 75% labels (MCSE 0.32), winning
+  all 50 repeats with zero observed wrong declarations. Only six of 14 language
+  means improve, so the frozen breadth gate fails and the 0.665% effect is not
+  an ICML empirical contribution. See the
+  [Stage 20 findings](experiments/stage20/FINDINGS.md).
+- Stage 21 uses a disjoint 25% pilot to select an adjacent comparison chain,
+  tests it with a conditionally valid finite-pool e-process, and applies
+  transitive closure. At 75% labels it produces only 37.04 correct conclusions
+  versus 1,275.70 for the all-pair common baseline, losing all 50 repeats and
+  every language mean. The gate fails and closes this WMT25 candidate. See the
+  [Stage 21 findings](experiments/stage21/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),

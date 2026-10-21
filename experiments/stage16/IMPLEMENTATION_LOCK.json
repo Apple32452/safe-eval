@@ -1,0 +1,19 @@
+{
+  "protocol_commit": "7ed7362ddb006edd240cc52c5767cfaef9b8e7eb",
+  "initial_implementation_commit": "4c6dc7dfdff6e042e659ed2229712767fafe52b8",
+  "source_access_state": "Source accessed only for failed parse and schema-only diagnostic; no derived matrix or method result produced before amendment lock",
+  "sha256": {
+    "experiments/stage16/PROTOCOL.md": "c30414e56a8cd12b46be856f53f83ba44b0e0a5ca0fb0d7b920ed15fb3106d33",
+    "experiments/stage16/AMENDMENT_1.md": "a902ebed0b1fe2a4b1020e87b9b0864988fa4ad544df717addf5d698743f2053",
+    "experiments/stage16/SCHEMA_DIAGNOSTIC.json": "966a063e710d85fd0ceed911afb166aa904d7f321ad2c1190ed28eaf4f99d87c",
+    "experiments/stage16/prepare_wmt25.py": "8f5e08b8c7e963221bc8b1cc5506b7d90cbfc1029c6010fb2651535c2bf59a46",
+    "experiments/stage16/external_engine.py": "b074f578f55008d32faef63435282c7c75e87951de7a60c315e8958e83b8d8df",
+    "experiments/stage16/run_stage16.py": "fd255a4b285022de8db31fdf8ebc5b72c75d20c3e35ed319c573676f7a28e8f3",
+    "experiments/stage16/summarize_stage16.py": "b919c33ccfd9dad27158c8619d44cf3a6c382fed58a1a220395d320e90194fc9",
+    "experiments/stage16/test_stage16.py": "0d04ce54436161d55f4f8f32b86f93a441fdbea7c492761636334a380c0061c0",
+    "experiments/stage15/frontier_experiment.py": "6d464cbc190a38f1a95fe12d01c96f40dbe1ff0fd4d4aeaeaa87164e7974f9e2",
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da",
+    "experiments/stage13/paired_engine.py": "ee4f3c2c851c7df80880c17fc3c133c32bf8635eaf1fa569e2c4e17a8d0b171b",
+    "experiments/stage7/prepare_wmt23.py": "1c166462044ab64f96b06b9c1215462503496c90d9cc1ad6a74bafd616591273"
+  }
+}

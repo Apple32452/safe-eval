@@ -1,0 +1,30 @@
+{
+  "master": 20261022,
+  "repeats": 50,
+  "languages": [
+    "en-de",
+    "he-en",
+    "zh-en"
+  ],
+  "methods": [
+    "focus_random",
+    "focus_first",
+    "evidence_first",
+    "frontier_count",
+    "frontier_evidence"
+  ],
+  "fractions": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "threshold_units": 9480,
+  "alpha_family": 0.05,
+  "protocol_sha256": "c7870edeb75ee3c0fcee6d06ffceb8688a2104b56e55768a45d8d1655f26f2ab",
+  "source_provenance_commit": "29acd6999aaea3586378c9dcb58d8cc4820cede3",
+  "matrix_hashes": {
+    "en-de": "4c55d22dffb91fc9cfee0d524af1deff3ff9766dc390a1f025f0d039a6aac075",
+    "he-en": "fdc364eb50ba39d9abe66b63abb044633bbfc58e0367f33eb54782ee18755c6c",
+    "zh-en": "e4766e2db132d36fb9763a8e7d778028928d8e253ac7ed25118d88499d68e211"
+  }
+}
