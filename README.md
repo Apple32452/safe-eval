@@ -24,12 +24,13 @@ python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v
 ```
 
-Expect **95 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+Expect **100 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
 six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
-tests, plus six Stage 16, five Stage 17, and four each for Stages 18 and 19).
-Also run
+tests, plus six Stage 16, five Stage 17, four each for Stages 18 and 19, and
+five Stage 20 tests). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
@@ -38,7 +39,8 @@ Also run
 `python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v`, then
 `python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v` and
+`python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -151,6 +153,13 @@ The one-repeat run is a software check. It does not reproduce the fixed
   declarations for both methods. The gate fails, ruling out further WMT25
   tuning of common/pair-specific mixtures. See the
   [Stage 19 findings](experiments/stage19/FINDINGS.md).
+- Stage 20 stays on the common stream and removes systems only after all their
+  incident comparisons resolve. It pathwise weakly dominates the unpruned
+  control and gains 8.48 correct conclusions at 75% labels (MCSE 0.32), winning
+  all 50 repeats with zero observed wrong declarations. Only six of 14 language
+  means improve, so the frozen breadth gate fails and the 0.665% effect is not
+  an ICML empirical contribution. See the
+  [Stage 20 findings](experiments/stage20/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
