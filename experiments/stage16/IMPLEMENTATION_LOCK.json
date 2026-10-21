@@ -1,0 +1,16 @@
+{
+  "protocol_commit": "7ed7362ddb006edd240cc52c5767cfaef9b8e7eb",
+  "source_access_state": "Complete WMT25 JSONL not downloaded or parsed before this lock",
+  "sha256": {
+    "experiments/stage16/PROTOCOL.md": "c30414e56a8cd12b46be856f53f83ba44b0e0a5ca0fb0d7b920ed15fb3106d33",
+    "experiments/stage16/prepare_wmt25.py": "b01782ba8cf9749ed2c4ce6e7dc35fb631487ad6365ce0ba2c4c3db45f83aa13",
+    "experiments/stage16/external_engine.py": "b074f578f55008d32faef63435282c7c75e87951de7a60c315e8958e83b8d8df",
+    "experiments/stage16/run_stage16.py": "fd255a4b285022de8db31fdf8ebc5b72c75d20c3e35ed319c573676f7a28e8f3",
+    "experiments/stage16/summarize_stage16.py": "b919c33ccfd9dad27158c8619d44cf3a6c382fed58a1a220395d320e90194fc9",
+    "experiments/stage16/test_stage16.py": "f54c51eee0d6366736fb706c673caadcd211068f01a6c005e5015041196f43ca",
+    "experiments/stage15/frontier_experiment.py": "6d464cbc190a38f1a95fe12d01c96f40dbe1ff0fd4d4aeaeaa87164e7974f9e2",
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da",
+    "experiments/stage13/paired_engine.py": "ee4f3c2c851c7df80880c17fc3c133c32bf8635eaf1fa569e2c4e17a8d0b171b",
+    "experiments/stage7/prepare_wmt23.py": "1c166462044ab64f96b06b9c1215462503496c90d9cc1ad6a74bafd616591273"
+  }
+}

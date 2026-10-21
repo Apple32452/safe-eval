@@ -51,6 +51,7 @@ jobs:
           python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
       - name: Audit the saved Stage 14 exploratory results
         run: |
           python experiments/stage14/summarize_pilot.py --input experiments/stage14/results_reference
