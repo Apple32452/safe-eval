@@ -19,4 +19,13 @@ OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
   --output results/stage17_development
 python experiments/stage17/summarize_stage17.py \
   --input results/stage17_development
+python experiments/stage17/audit_stage17.py \
+  --data results/stage17_data \
+  --input results/stage17_development \
+  --repeat-zero-replay results/stage17_smoke
 ```
+
+The frozen development result, audit, and interpretation are stored in
+`results_reference` and [FINDINGS.md](FINDINGS.md). The gate passed, but a
+common random test-set baseline remains necessary before making an efficiency
+or ICML contribution claim.
