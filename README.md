@@ -42,8 +42,10 @@ done
 python experiments/stage23/audit_stage23.py
 ```
 
-The test loop covers 119 invariant tests across Stages 7–23; the final command
-runs the independent Stage 23 exhaustive audit. No GPU is required. GitHub
+The test loop covers 122 invariant tests across Stages 7–23; the final command
+runs the independent Stage 23 exhaustive audit. See the
+[asynchronous boundary](experiments/stage23/ASYNC_PREFIX_BOUNDARY.md) for the
+fixed-certificate cost formula and its separate exhaustive check. No GPU is required. GitHub
 Actions runs the full test suite on Ubuntu (Python 3.9 and 3.12) and macOS
 (Python 3.12), with additional saved-result audits and smoke checks. See the
 [workflow](.github/workflows/checks.yml) for the exact automated checks.
