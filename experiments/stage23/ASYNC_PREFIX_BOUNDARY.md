@@ -102,6 +102,14 @@ evaluation, and [Active Testing](https://proceedings.mlr.press/v139/kossen21a.ht
 which selects test labels for efficient model evaluation. The finite-pool
 confidence-sequence ingredient is covered by
 [Waudby-Smith and Ramdas (2020)](https://proceedings.neurips.cc/paper/2020/hash/e96c7de8f6390b1e6c71556e4e0a4959-Abstract.html).
+Further, [Wu, Nair, and Candès (2026)](https://arxiv.org/abs/2601.20251)
+already give adaptive question selection with frequentist coverage for
+finite-bank model accuracy, and
+[Zouhar et al. (2026)](https://arxiv.org/abs/2608.03437) study dynamic
+model-evaluation allocation on WMT. The joint target of anytime-valid,
+multi-system fixed-pool signs with shared system-item label costs is a
+candidate distinction that still needs a definition-level comparison; the
+individual ingredients are not new.
 The max-prefix identity must be checked against closer source-level
 formulations before it is called novel; it may be an elementary corollary of
 existing sample-reuse results. No ICML-level claim follows from this note.
