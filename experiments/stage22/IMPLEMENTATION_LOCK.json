@@ -17,6 +17,9 @@
     "experiments/stage17/prepare_scores.py": "20e467ee02f96a196721cdb98763a55f876f7cd806fdfac4a6194c860e1ea235",
     "experiments/stage17/run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
     "experiments/stage16/prepare_wmt25.py": "8f5e08b8c7e963221bc8b1cc5506b7d90cbfc1029c6010fb2651535c2bf59a46",
-    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da"
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da",
+    "experiments/stage22/merge_stage22.py": "639e1cedd3aa3acab7ed508ec368585eb2999bbf1859106031dcb9202aef2031",
+    "experiments/stage22/test_merge_stage22.py": "a35e7b0e52bfaa78dcdd38555d830ab8dbf41bb326f2b0112666fe58e2f2e7cc",
+    "experiments/stage22/AMENDMENT_1.md": "df82cf6fda48e363533ce85389ce64ba72d09352d413a1f0235582de98531d40"
   }
 }
