@@ -1,0 +1,48 @@
+{
+  "master": 20261023,
+  "repeats": 50,
+  "languages": [
+    "cs-de_DE",
+    "cs-uk_UA",
+    "en-ar_EG",
+    "en-bho_IN",
+    "en-cs_CZ",
+    "en-et_EE",
+    "en-is_IS",
+    "en-it_IT",
+    "en-ja_JP",
+    "en-mas_KE",
+    "en-ru_RU",
+    "en-sr_Cyrl_RS",
+    "en-uk_UA",
+    "en-zh_CN"
+  ],
+  "methods": [
+    "focus_random",
+    "evidence_first",
+    "frontier_evidence"
+  ],
+  "fractions": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "protocol_sha256": "c30414e56a8cd12b46be856f53f83ba44b0e0a5ca0fb0d7b920ed15fb3106d33",
+  "source_sha256": "a36ebce10c9ea26f71449933721de3a87e27f6a5b09d96b5daa026eaf1d197ab",
+  "matrix_hashes": {
+    "cs-de_DE": "e29fed3c7cbc5e2835f8986088c3d486aa4a6c3ca2f10603a5ace40af8c4397f",
+    "cs-uk_UA": "fa06f873754826d6f7673c21c20aa3b84bd009849013fd51b75f707b8f252a36",
+    "en-ar_EG": "82b3d14c6d661c14a07a066167524dea31d2593405198ac77de8871a166a1bd7",
+    "en-bho_IN": "1eb7aab8ad633764ee15d7c28308c29ab53f1a669d8e0a946567e5942d68be6f",
+    "en-cs_CZ": "b2ffef1b4b4527d87219301960699a7c24d79a97bc699d5f7960f7d572ab6808",
+    "en-et_EE": "56286b70bbcb40644a6c4848b2ec87fd7c33ea4d90375ec867aad8c818bfd4aa",
+    "en-is_IS": "0be65276f82a6e9975ee4e68cb84886c34b6b81d3760c8b3eeffafc11a13959a",
+    "en-it_IT": "13d71b0c902a20014b5cee4f98855d3328c2dc91182b354c83c4e256302f2ee5",
+    "en-ja_JP": "e49794f915268bf9af500ab5ded03d073a1e982ba1580efde3e71adf976f8d83",
+    "en-mas_KE": "0f80f242a30e1e8358e2c583cf072c5a2aaca0f45018923235e20b09792f927f",
+    "en-ru_RU": "f6fbc476609213a8c499d96b9f832404ddcbab9207228911148bc2a4c3e15552",
+    "en-sr_Cyrl_RS": "abcb18e4a79980052b15cbc9e6ed93a71c815cfe3df4e9b167b3b3d5094b1f78",
+    "en-uk_UA": "6afbea01178dbf2a8fe003c437ab6c96d72542238b5f4e230e573d654b6aa25e",
+    "en-zh_CN": "6432cd43e0acf41903ce6c8539d4f23254d307a118a2047391af9be4c770c589"
+  }
+}

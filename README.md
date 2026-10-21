@@ -20,16 +20,18 @@ python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
 ```
 
-Expect **76 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+Expect **82 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
 six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
-tests). Also run
+tests, plus six Stage 16 tests). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v` and
+`python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -114,6 +116,14 @@ The one-repeat run is a software check. It does not reproduce the fixed
   certified pairs (conditional MC SE 0.664); at 75% the gain is 10.80 pairs.
   This is a development candidate, not an ICML contribution. See the
   [Stage 15 findings](experiments/stage15/FINDINGS.md).
+- Stage 16 externally validates that unchanged scheduler on 14 WMT25 language
+  directions and 2,197 system pairs. At the frozen 75% label budget it gains
+  76.76 correctly certified pairs over evidence-first (conditional MCSE 5.44),
+  wins 49/50 matched blocks, has positive means in all 14 languages, and has
+  zero observed wrong declarations. The external gate passes. This supports
+  the scheduling effect but does not yet supply the needed theorem, practical
+  score margin, or matched active-ranking baselines. See the
+  [Stage 16 findings](experiments/stage16/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),

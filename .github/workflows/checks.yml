@@ -68,6 +68,10 @@ jobs:
         run: |
           python experiments/stage15/frontier_experiment.py --languages en-de --repeats 1 --output results/stage15_smoke
           python experiments/stage15/summarize_stage15.py --input results/stage15_smoke
+      - name: Audit the saved Stage 16 external result
+        run: |
+          python experiments/stage16/summarize_stage16.py --input experiments/stage16/results_reference
+          git diff --exit-code -- experiments/stage16/results_reference/SUMMARY.json
       - name: Run the Stage 13 paired software check
         run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 3 --output results/stage13_smoke
       - name: Independently audit the Stage 13 paired software check
