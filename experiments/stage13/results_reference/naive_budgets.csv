@@ -1,0 +1,13 @@
+language_pair,budget_fraction,correct_direction_rate,wrong_direction_rate,sample_tie_rate,note
+en-de,0.25,0.8263636363636364,0.10848484848484849,0.06515151515151515,Uncertified diagnostic; sample tie is not an equivalence conclusion
+en-de,0.5,0.9103030303030303,0.055757575757575756,0.03393939393939394,Uncertified diagnostic; sample tie is not an equivalence conclusion
+en-de,0.75,0.9584848484848485,0.023636363636363632,0.017878787878787876,Uncertified diagnostic; sample tie is not an equivalence conclusion
+he-en,0.25,0.9012121212121214,0.08484848484848484,0.01393939393939394,Uncertified diagnostic; sample tie is not an equivalence conclusion
+he-en,0.5,0.943030303030303,0.0503030303030303,0.006666666666666667,Uncertified diagnostic; sample tie is not an equivalence conclusion
+he-en,0.75,0.9690909090909091,0.026060606060606055,0.0048484848484848485,Uncertified diagnostic; sample tie is not an equivalence conclusion
+zh-en,0.25,0.8832380952380952,0.09047619047619047,0.02628571428571428,Uncertified diagnostic; sample tie is not an equivalence conclusion
+zh-en,0.5,0.943047619047619,0.04323809523809524,0.013714285714285717,Uncertified diagnostic; sample tie is not an equivalence conclusion
+zh-en,0.75,0.972,0.023047619047619046,0.004952380952380952,Uncertified diagnostic; sample tie is not an equivalence conclusion
+overall,0.25,0.8702712842712843,0.0946031746031746,0.035125541125541136,Uncertified diagnostic; sample tie is not an equivalence conclusion
+overall,0.5,0.9321269841269841,0.04976623376623377,0.018106782106782106,Uncertified diagnostic; sample tie is not an equivalence conclusion
+overall,0.75,0.9665252525252527,0.024248196248196248,0.009226551226551227,Uncertified diagnostic; sample tie is not an equivalence conclusion

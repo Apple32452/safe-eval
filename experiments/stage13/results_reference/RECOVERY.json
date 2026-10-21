@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "recovered": [
+    {
+      "case_id": "59f2c7b944eb4fbd",
+      "damaged_sha256": "e4eff61a045ee7a346f87890f4db677c56e508e1518e0c3b974b02bd6e1d0c96",
+      "original_and_recovered_sha256": "793b01b08fcbcecf5aa89c33daf689633fbfe1e6c930c2832088a92dcfbc671b"
+    },
+    {
+      "case_id": "0642bebeb760cd43",
+      "damaged_sha256": "a59881298c1351c498e3a30f66ea8b1a327016ff6b3576074cdd436cd84b2662",
+      "original_and_recovered_sha256": "42d84badb4ac1dce7a749d0ba104623afeb2dd3b85558808bc40fd4d025012c7"
+    },
+    {
+      "case_id": "3d17efde8d2cdfdd",
+      "damaged_sha256": "dd81421b71282b3a7dd1501d7fce746ed4b6242f7644d28f750500eb5c4db158",
+      "original_and_recovered_sha256": "37256c8e264fd48e6716bda09723ec0bc8cb2a9d88b07b0e432eb82eccaf4784"
+    },
+    {
+      "case_id": "976e390dda650d59",
+      "damaged_sha256": "9ae82e079a53952399c43b7b2f59ae3ab51c0131cd024a1b51ea373041bcd19c",
+      "original_and_recovered_sha256": "39a70e2c210f4a8379a84399cbe01d6d99f3014755cd85d54979909f35ea9d2f"
+    },
+    {
+      "case_id": "58e990295e1e4386",
+      "damaged_sha256": "f405c26c4134dec438b950ba4422a3cc66e8980fe23b4e7c71a6510533eb8b9d",
+      "original_and_recovered_sha256": "789a78701b6a3610c39e7cdc771172934f512cc91c740dce0793a6ec91067bf4"
+    },
+    {
+      "case_id": "ee33230f2a439209",
+      "damaged_sha256": "2d1c0da549f797550484654136e58d5f569ff2c205890aa571f59ac68af12eeb",
+      "original_and_recovered_sha256": "528cb3915eed28eda90c63313df0acb3d6e3c4d0a80971bbe34dbc3f2d27a4ad"
+    }
+  ],
+  "source_data_rules_and_seeds_unchanged": true,
+  "original_run_metadata_unchanged": true,
+  "elapsed_seconds": 29.000536680221558
+}

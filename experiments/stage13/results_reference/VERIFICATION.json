@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "pairs": 237,
+  "saved_decisions": 142200,
+  "raw_states": 9888736,
+  "integer_expert_updates": 403612800,
+  "fraction_factor_checks": 60672,
+  "paired_query_steps": 6306450,
+  "complete_reference": true,
+  "checks": [
+    "all trace hashes and deterministic ledgers",
+    "both-target exclusion and history hashes",
+    "all raw evidence via independent scalar exact optimization",
+    "all historical pre-query states via separate ridge replay",
+    "all expert updates via Python big integers",
+    "all first stopping decisions",
+    "fixed-budget sample-winner diagnostics",
+    "full-budget exact conclusions"
+  ],
+  "decisions_sha256": "96b7fecc96aa3d0416824e1d6297f692604f154735bc2556122399cb1b2e370e",
+  "execution": "Unchanged frozen auditor, batched with exact disjoint case coverage"
+}

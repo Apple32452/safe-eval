@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "pairs": 237,
+  "repeats": 50,
+  "pair_rows": 2844,
+  "summary_rows": 192,
+  "budget_rows": 144,
+  "weighting": "equal languages, then equal pairs, then equal query orders; repeat-block MCSE only",
+  "source_decisions_sha256": "96b7fecc96aa3d0416824e1d6297f692604f154735bc2556122399cb1b2e370e",
+  "tables_sha256": {
+    "by_pair.csv": "6f2fc72cebd3a7a5098e00ceb856fb6ee9b5b4e7bd4f0bf020ceba3bf42b4469",
+    "summary.csv": "a087d4d41e066f922c9edeba3b692be2a7cdced4ab6c3534c063cbcca3faeb4b",
+    "budgets.csv": "08715b796d5bdd4f74ac982a9c103aae1925d964485c2ef7b4a37ac1ec8dbc0f",
+    "comparison.csv": "53d11e0640527398b486bc27dc4bbee1539b3a72f29ba2d3a22d21891fa3a18b",
+    "naive_budgets.csv": "24153656e1b05042bfcfed3ec156cafe71cf6615a709369e065b6f1874cae160",
+    "family_errors.csv": "3a5936f2ccdcd1eeb7f18c6050b1f9347b3211e28c8beb7fcdf78e5e9a27df2e"
+  }
+}

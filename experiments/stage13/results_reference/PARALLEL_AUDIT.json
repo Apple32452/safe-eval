@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "workers": 4,
+  "all_original_case_records_and_traces_unchanged": true,
+  "exact_math_comb_cache_entries": 400000,
+  "frozen_auditor_sha256": "b3c2b7f6e247d436b0cf61000e19fae581c08879bb810634cee731f613af0543",
+  "batches": [
+    {
+      "batch": "0",
+      "verification": {
+        "status": "passed",
+        "pairs": 58,
+        "saved_decisions": 34800,
+        "raw_states": 2476306,
+        "integer_expert_updates": 101004800,
+        "fraction_factor_checks": 14848,
+        "paired_query_steps": 1578200,
+        "complete_reference": false,
+        "checks": [
+          "all trace hashes and deterministic ledgers",
+          "both-target exclusion and history hashes",
+          "all raw evidence via independent scalar exact optimization",
+          "all historical pre-query states via separate ridge replay",
+          "all expert updates via Python big integers",
+          "all first stopping decisions",
+          "fixed-budget sample-winner diagnostics",
+          "full-budget exact conclusions"
+        ],
+        "decisions_sha256": "62b93050d039ccdc833bc7e0706e45725d0632ab76c46f003c43db504735d60d"
+      },
+      "verification_sha256": "07bd3315d11a061bab8ca867af631dec92a0122865942b4aa406a7fb7b7b89a8"
+    },
+    {
+      "batch": "1",
+      "verification": {
+        "status": "passed",
+        "pairs": 61,
+        "saved_decisions": 36600,
+        "raw_states": 2463982,
+        "integer_expert_updates": 101091200,
+        "fraction_factor_checks": 15616,
+        "paired_query_steps": 1579550,
+        "complete_reference": false,
+        "checks": [
+          "all trace hashes and deterministic ledgers",
+          "both-target exclusion and history hashes",
+          "all raw evidence via independent scalar exact optimization",
+          "all historical pre-query states via separate ridge replay",
+          "all expert updates via Python big integers",
+          "all first stopping decisions",
+          "fixed-budget sample-winner diagnostics",
+          "full-budget exact conclusions"
+        ],
+        "decisions_sha256": "213ba3568ba9f554f95009a5feece827c6833de3e47b4c334fdc6c6276f689ff"
+      },
+      "verification_sha256": "da233e946d135331208ed1796d7c27d3c21284d9fe7d798ffafa71f61f56089e"
+    },
+    {
+      "batch": "2",
+      "verification": {
+        "status": "passed",
+        "pairs": 59,
+        "saved_decisions": 35400,
+        "raw_states": 2465246,
+        "integer_expert_updates": 100758400,
+        "fraction_factor_checks": 15104,
+        "paired_query_steps": 1574350,
+        "complete_reference": false,
+        "checks": [
+          "all trace hashes and deterministic ledgers",
+          "both-target exclusion and history hashes",
+          "all raw evidence via independent scalar exact optimization",
+          "all historical pre-query states via separate ridge replay",
+          "all expert updates via Python big integers",
+          "all first stopping decisions",
+          "fixed-budget sample-winner diagnostics",
+          "full-budget exact conclusions"
+        ],
+        "decisions_sha256": "8cd8fc33cd186d3606cea77e13a66fc093639798b9545862d57a859f738dc624"
+      },
+      "verification_sha256": "5888a30c4adc709b3b9f09685dec5bc4dda2e2602c211c3f5367b5752ea73132"
+    },
+    {
+      "batch": "3",
+      "verification": {
+        "status": "passed",
+        "pairs": 59,
+        "saved_decisions": 35400,
+        "raw_states": 2483202,
+        "integer_expert_updates": 100758400,
+        "fraction_factor_checks": 15104,
+        "paired_query_steps": 1574350,
+        "complete_reference": false,
+        "checks": [
+          "all trace hashes and deterministic ledgers",
+          "both-target exclusion and history hashes",
+          "all raw evidence via independent scalar exact optimization",
+          "all historical pre-query states via separate ridge replay",
+          "all expert updates via Python big integers",
+          "all first stopping decisions",
+          "fixed-budget sample-winner diagnostics",
+          "full-budget exact conclusions"
+        ],
+        "decisions_sha256": "b43b945e54f04d0e03647fe145d411640d8e0858502a72116197e40f954b78bd"
+      },
+      "verification_sha256": "a26f3ad053894db6e2a396a54ba402b5c138476844b1980f35ef621c130ff589"
+    }
+  ]
+}
