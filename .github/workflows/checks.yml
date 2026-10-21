@@ -50,11 +50,18 @@ jobs:
           python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v
       - name: Run the Stage 13 paired software check
-        run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 1 --output results/stage13_smoke
+        run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 3 --output results/stage13_smoke
       - name: Independently audit the Stage 13 paired software check
         run: python experiments/stage13/audit_stage13.py --input results/stage13_smoke
+      - name: Check batched and serial Stage 13 audit agreement
+        run: |
+          cp results/stage13_smoke/decisions.npz results/stage13_smoke/serial_decisions.npz
+          python experiments/stage13/audit_parallel_stage13.py --input results/stage13_smoke --workers 2
+          python -c "from pathlib import Path; p=Path('results/stage13_smoke'); assert (p/'decisions.npz').read_bytes()==(p/'serial_decisions.npz').read_bytes()"
       - name: Summarize the Stage 13 paired software check
         run: python experiments/stage13/report_stage13.py --input results/stage13_smoke
+      - name: Check Stage 13 exhaustive item-order randomization
+        run: python experiments/stage13/audit_item_orders_stage13.py --output results/stage13_item_orders/VERIFICATION.json
       - name: Check the Stage 12 exact assignment audit
         run: python experiments/stage12/audit_stage12.py --output results/stage12_checks/VERIFICATION.json --check-reference experiments/stage12/results_reference/VERIFICATION.json
       - name: Verify the Stage 8 protocol

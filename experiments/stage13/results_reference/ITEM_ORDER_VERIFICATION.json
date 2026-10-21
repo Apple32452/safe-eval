@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "fixed_pools": 80,
+  "fully_enumerated_item_orders": 23112,
+  "checked_method_error_setting_decisions": 277344,
+  "total_wrong_decisions": 0,
+  "largest_observed_pool_error": "0",
+  "risk_checks": [
+    "two-sided 0.2",
+    "two-sided 0.05"
+  ],
+  "max_pool_size": 6,
+  "distinction": "All item permutations for these 80 fixed pools; not all possible historical matrices or target assignments"
+}

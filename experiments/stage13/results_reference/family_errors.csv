@@ -1,0 +1,13 @@
+method,error_setting,repeats,repeats_with_any_wrong,any_wrong_rate
+deterministic,pairwise_95,50,0,0.0
+deterministic,family_95,50,0,0.0
+paired_ppr,pairwise_95,50,0,0.0
+paired_ppr,family_95,50,0,0.0
+reserve_zero,pairwise_95,50,3,0.06
+reserve_zero,family_95,50,0,0.0
+reserve_aligned,pairwise_95,50,2,0.04
+reserve_aligned,family_95,50,0,0.0
+reserve_permuted,pairwise_95,50,3,0.06
+reserve_permuted,family_95,50,0,0.0
+reserve_reversed,pairwise_95,50,2,0.04
+reserve_reversed,family_95,50,0,0.0

@@ -95,6 +95,11 @@ The one-repeat run is a software check. It does not reproduce the fixed
   system pairs are included, with both targets excluded from history and
   separate per-pair and family-wide error settings. See the
   [locked protocol and reproduction commands](experiments/stage13/README.md).
+  Its audited paired-PPR baseline uses 68.8614% of each pair's full budget on
+  average under the family-wide setting, with no observed wrong decisions in
+  11,850 query-order trials. Historical added value remains unestablished, and
+  the reserve's family-wide component cap needs correction before efficiency
+  conclusions. See the [Stage 13 findings](experiments/stage13/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
