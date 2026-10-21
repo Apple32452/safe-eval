@@ -1,0 +1,15 @@
+{
+  "new_tests_passed": 8,
+  "exact_scalar_null_states": 450,
+  "exhaustive_populations": 16,
+  "exhaustive_joint_modes": 4,
+  "exhaustive_stream_paths_per_population": 4,
+  "exhaustive_runs": 256,
+  "reproduced_full_comparison_traces": 120,
+  "range_only_candidate_paths_checked": 480,
+  "frozen_sources_verified": true,
+  "previous_source_files_verified": 201,
+  "local_main_expected": "50a64e42e580ef548bfe92e3596298a2d255605b",
+  "WMT24_accessed": false,
+  "WMT_experiments_run": false
+}

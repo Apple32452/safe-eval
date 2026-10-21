@@ -1,0 +1,5 @@
+{
+  "candidate_paths_checked": 480,
+  "differing_edge_resolution_timelines": 0,
+  "interpretation": "All candidate declarations in this tiny study coincide with deterministic remaining-range certificates; no statistical-efficiency improvement established."
+}
