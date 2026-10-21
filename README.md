@@ -1,56 +1,52 @@
 # SAFE-EVAL
 
-Research prototype for prediction-assisted evaluation of a fixed benchmark
-with anytime-valid confidence sequences. The goal is to reduce target-label
-queries while measuring the cost of unreliable historical predictions.
+SAFE-EVAL studies how to reach reliable conclusions about machine translation
+systems while paying for fewer system-item judgments on a fixed test set. It
+combines sequential confidence sequences with shared labels: one judged system
+output can support several requested pairwise comparisons.
 
-This repository starts from the **released Stage 7 snapshot**. Its statistical
-code, data, protocol locks, audit records and reference results are preserved
-byte for byte under [`experiments/stage7`](experiments/stage7/README.md).
-Repository setup and automated checks are additions around that snapshot.
+The [released Stage 7 snapshot](experiments/stage7/README.md) remains intact.
+Subsequent experiments and audits are recorded in separate stage directories.
+
+## Latest result and research boundary
+
+[Stage 22](experiments/stage22/FINDINGS.md) evaluates a sparse reference-star
+task on WMT25: compare each system with a designated reference, over all 255
+possible references and 14 language directions. Pruning systems whose requested
+comparisons have resolved reduced the equal-language mean completion cost from
+3,557.61 to 2,250.62 unique labels (**37.083% fewer**; conditional Monte Carlo
+standard error 0.032 percentage points). All 12,750 reference tasks improved,
+and the final pairwise decisions matched the common-test-set control.
+
+[Stage 23](experiments/stage23/README.md) audits the contribution. Its checked
+claim is limited to synchronous common-prefix policies that advance every
+unresolved requested comparison on the next item: acquiring exactly the vertices
+incident to unresolved edges is itemwise label-minimal in that class. The
+[independent audit](experiments/stage23/PRELIMINARY_AUDIT.md) enumerates 98,664
+small resolution schedules and 443,238 per-edge dominance cases. Broad claims
+about graph-aware ranking or global sample optimality are unsupported by this
+result. The closest-work comparison and contribution gate remain open; WMT24
+external confirmation has not been run. The 37.083% saving is development
+evidence for the specified sparse task, not a universal ranking result.
 
 ## Set up on your Mac
 
-From this repository's root, using your existing activated environment:
+From the repository root with Python 3.9 or 3.12 and an activated environment:
 
 ```bash
 python -m pip install -r requirements.txt
 python scripts/check_release.py
-python -m unittest discover -s experiments/stage7 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage8 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v
-python -m unittest discover -s experiments/stage23 -p 'test_*.py' -v
+for stage in {7..23}; do
+  python -m unittest discover -s "experiments/stage${stage}" -p 'test_*.py' -v
+done
+python experiments/stage23/audit_stage23.py
 ```
 
-Expect **119 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
-six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
-tests, plus six Stage 16, five Stage 17, four each for Stages 18 and 19, and
-five each for Stages 20 and 21, nine Stage 22 tests, and five Stage 23 tests). Also run
-`python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
-`python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v`, then
-`python -m unittest discover -s experiments/stage23 -p 'test_*.py' -v`.
-The code uses NumPy and Matplotlib; no GPU is
-required. Python 3.9 syntax is supported. This repository preparation was
-tested locally with Python 3.12; the GitHub workflow is configured to check
-Python 3.9 and 3.12 on Ubuntu and Python 3.12 on macOS.
+The test loop covers 119 invariant tests across Stages 7–23; the final command
+runs the independent Stage 23 exhaustive audit. No GPU is required. GitHub
+Actions runs the full test suite on Ubuntu (Python 3.9 and 3.12) and macOS
+(Python 3.12), with additional saved-result audits and smoke checks. See the
+[workflow](.github/workflows/checks.yml) for the exact automated checks.
 
 ## Reproduce the fixed Stage 7 comparison
 
@@ -215,9 +211,9 @@ included.
 ## Working on GitHub
 
 Follow [the setup instructions](docs/GITHUB_SETUP.md) to clone the working
-repository and continue development. The workflow runs the release integrity check
-and invariant tests on pushes and pull requests, plus one small end-to-end run
-on Ubuntu/Python 3.12. Its configuration follows
+repository and continue development. The workflow runs on pull requests and
+pushes to `main`; it checks release integrity, invariant tests, saved-result
+audits and smoke runs. Its configuration follows
 [GitHub's Python workflow documentation](https://docs.github.com/en/actions/tutorials/build-and-test-code/python).
 
 Keep the released experiment intact. Put new research stages in a new
