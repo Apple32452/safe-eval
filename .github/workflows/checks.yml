@@ -54,6 +54,7 @@ jobs:
           python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
       - name: Audit the saved Stage 14 exploratory results
         run: |
           python experiments/stage14/summarize_pilot.py --input experiments/stage14/results_reference
@@ -82,6 +83,10 @@ jobs:
         run: |
           python experiments/stage18/summarize_stage18.py --input experiments/stage18/results_reference
           git diff --exit-code -- experiments/stage18/results_reference/SUMMARY.json
+      - name: Audit the saved Stage 19 common-core comparison
+        run: |
+          python experiments/stage19/summarize_stage19.py --input experiments/stage19/results_reference
+          git diff --exit-code -- experiments/stage19/results_reference/SUMMARY.json
       - name: Run the Stage 13 paired software check
         run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 3 --output results/stage13_smoke
       - name: Independently audit the Stage 13 paired software check
