@@ -10,5 +10,15 @@ edges have resolved.
 The protocol and related-work boundary were committed before implementation or
 Stage 22 outcome computation. WMT24 remains untouched.
 
-Implementation and reproduction commands will be added only after the
-implementation is frozen.
+After the implementation lock is committed, reproduce from the repository
+root with:
+
+```bash
+python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage22/run_stage22.py \
+  --data results/stage17_data --repeats 50 --output results/stage22_development
+python experiments/stage22/summarize_stage22.py --input results/stage22_development
+python experiments/stage22/audit_stage22.py --input results/stage22_development \
+  --data results/stage17_data
+```
+
