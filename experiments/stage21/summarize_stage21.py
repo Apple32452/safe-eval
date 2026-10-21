@@ -55,7 +55,23 @@ def summarize(directory,stage18_directory):
         for m in METHODS:
             totals=[sum(indexed[l,r,f,m]["correct"] for l in metadata["languages"]) for r in range(metadata["repeats"])]
             mean=sum(totals)/len(totals);differences=[a-b for a,b in zip(totals,base_totals)]
-            cell[m]=dict(mean_correct_total=mean,mean_direct_edges=sum(indexed[l,r,f,m]["direct_edges"] for l in metadata["languages"] for r in range(metadata["repeats"])/(len(metadata["languages"])*metadata["repeats"]),mean_closure_added=sum(indexed[l,r,f,m]["closure_added"] for l in metadata["languages"] for r in range(metadata["repeats"])/(len(metadata["languages"])*metadata["repeats"]),complete_ranking_count=sum(indexed[l,r,f,m]["complete_ranking"] for l in metadata["languages"] for r in range(metadata["repeats"])),wrong_count=sum(indexed[l,r,f,m]["wrong"] for l in metadata["languages"] for r in range(metadata["repeats"])))
+            denominator=len(metadata["languages"])*metadata["repeats"]
+            cell[m]=dict(
+                mean_correct_total=mean,
+                mean_direct_edges=sum(
+                    indexed[l,r,f,m]["direct_edges"]
+                    for l in metadata["languages"] for r in range(metadata["repeats"])
+                )/denominator,
+                mean_closure_added=sum(
+                    indexed[l,r,f,m]["closure_added"]
+                    for l in metadata["languages"] for r in range(metadata["repeats"])
+                )/denominator,
+                complete_ranking_count=sum(
+                    indexed[l,r,f,m]["complete_ranking"]
+                    for l in metadata["languages"] for r in range(metadata["repeats"])),
+                wrong_count=sum(
+                    indexed[l,r,f,m]["wrong"]
+                    for l in metadata["languages"] for r in range(metadata["repeats"])))
             cell[m+"_minus_common"]=stats(differences);cell[m+"_relative_gain_percent"]=(100*(mean-base_mean)/base_mean if base_mean else math.inf)
     for l in metadata["languages"]:
         result["by_language"][l]={}
