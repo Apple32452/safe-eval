@@ -16,6 +16,7 @@ LFS_SHA256='a36ebce10c9ea26f71449933721de3a87e27f6a5b09d96b5daa026eaf1d197ab'
 LFS_BYTES=128674273
 SOURCE_URL=('https://github.com/wmt-conference/wmt25-general-mt/raw/'
             +UPSTREAM_COMMIT+'/data/wmt25-genmt-humeval.jsonl')
+KNOWN_SEVERITIES={'minor','major','undecided'}
 
 
 def normalized_name(name):
@@ -41,7 +42,7 @@ def strict_outcome(annotations):
         if not isinstance(errors,list):
             raise ValueError('Every retained annotation needs an errors list')
         for error in errors:
-            if not isinstance(error,dict) or str(error.get('severity','')).strip().casefold() not in {'minor','major'}:
+            if not isinstance(error,dict) or str(error.get('severity','')).strip().casefold() not in KNOWN_SEVERITIES:
                 raise ValueError('Unknown or malformed retained error')
         perfect &= (score == 100 and len(errors) == 0)
     return int(perfect)

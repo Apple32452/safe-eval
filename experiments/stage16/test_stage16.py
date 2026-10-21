@@ -18,6 +18,7 @@ class ExternalValidationInvariants(unittest.TestCase):
         self.assertEqual(strict_outcome([{'score':100,'errors':[]}]),1)
         self.assertEqual(strict_outcome([{'score':100,'errors':[]},{'score':99,'errors':[]}]),0)
         self.assertEqual(strict_outcome([{'score':100,'errors':[{'severity':'minor'}]}]),0)
+        self.assertEqual(strict_outcome([{'score':100,'errors':[{'severity':'undecided'}]}]),0)
 
     def test_max_coverage_selection_does_not_use_outcomes(self):
         def a(value): return [{'score':100 if value else 0,'errors':[] if value else [{'severity':'major'}]}]

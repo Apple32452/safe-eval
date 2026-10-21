@@ -1,0 +1,16 @@
+{
+  "source_sha256": "a36ebce10c9ea26f71449933721de3a87e27f6a5b09d96b5daa026eaf1d197ab",
+  "first_parse_result": "failed before writing output",
+  "scope": "severity strings and key sets only; no score, system, pair, or method aggregation",
+  "severity_counts": {
+    "major": 100911,
+    "minor": 167980,
+    "undecided": 250
+  },
+  "error_key_sets": {
+    "end_i,severity,start_i": 269141
+  },
+  "annotation_key_sets": {
+    "annotator,errors,score,times": 108838
+  }
+}
