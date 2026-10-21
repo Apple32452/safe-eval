@@ -17,6 +17,8 @@ That broad framing is occupied by recent and classical work.
 | Adaptive allocation plus familywise best-system inference is new | Target-aware sequential-inference work already treats predictable allocation and familywise best-system identification. |
 | Pairing systems on common inputs is new | Ranking-and-selection and multiple-comparison work has long studied common random numbers. |
 | Without-replacement anytime inference is new | Waudby-Smith and Ramdas (NeurIPS 2020) develop confidence sequences for finite populations sampled without replacement. |
+| Adaptive finite-bank question selection with valid coverage is new | Wu, Nair, and Candès (arXiv 2601.20251) propose Factorized Active Querying with finite-population Proactive Active Inference for model accuracy under an adaptive question policy. Their target is fixed-budget accuracy intervals for a new model, not this project's graph-wide anytime sign decisions. |
+| Dynamic allocation of model evaluations on WMT is new | Zouhar et al. (arXiv 2608.03437) formulate model-item evaluation effort as a budgeted allocation problem and evaluate it on WMT. Their primary objective is top-model ranking quality, not this project's familywise valid exact finite-benchmark signs. |
 
 These sources do not automatically contain the Stage 22 result. They prevent
 us from claiming novelty from any one of its ingredients or from the broad
@@ -93,4 +95,8 @@ novelty requirement.
 - Nelson and Matejcik (1995), *Using Common Random Numbers for
   Indifference-Zone Selection and Multiple Comparisons in Simulation*:
   https://doi.org/10.1287/mnsc.41.12.1935
+- Wu, Nair, and Candès (2026), *Efficient Evaluation of LLM Performance with
+  Statistical Guarantees*: https://arxiv.org/abs/2601.20251
+- Zouhar et al. (2026), *Dynamically Allocating Evaluation Effort for Model
+  Ranking*: https://arxiv.org/abs/2608.03437
 
