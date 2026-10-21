@@ -49,6 +49,15 @@ jobs:
           python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v
+      - name: Audit the saved Stage 14 exploratory results
+        run: |
+          python experiments/stage14/summarize_pilot.py --input experiments/stage14/results_reference
+          git diff --exit-code -- experiments/stage14/results_reference/SUMMARY.json
+      - name: Run the Stage 14 shared-annotation software check
+        run: |
+          python experiments/stage14/shared_pilot.py --languages en-de --repeats 1 --output results/stage14_smoke
+          python experiments/stage14/summarize_pilot.py --input results/stage14_smoke
       - name: Run the Stage 13 paired software check
         run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 3 --output results/stage13_smoke
       - name: Independently audit the Stage 13 paired software check
