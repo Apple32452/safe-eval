@@ -25,6 +25,15 @@ It must permit genuine changes to evidence or safe allocation beyond the
 existing independent pair-prefix certificates; a new scheduling heuristic
 with those certificates is ruled out by the max-prefix identity.
 
+A separate confidence sequence for each system followed by a union bound
+over systems is a necessary baseline, not a contribution: it follows by
+applying existing finite-population inference repeatedly. The project's
+earlier [finite-pool adaptive prototype](../stage7/safe_eval_v1.py) also
+covers a one-target nonuniform without-replacement e-process. A joint
+construction must demonstrate
+something that these direct combinations cannot obtain at the same
+familywise error and unique-label cost.
+
 ## Non-negotiable proof and comparison gates
 
 1. Specify the exact acquisition filtration, randomization and exposure of
