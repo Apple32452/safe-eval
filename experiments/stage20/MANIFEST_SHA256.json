@@ -1,0 +1,16 @@
+{
+  "FINDINGS.md": "1cfc19e6787b80a299cb8587b968e1f676afedf4a2be0a30410b39400bd5423c",
+  "IMPLEMENTATION_LOCK.json": "78da4b5182b6083f993b36e2a342a4b8e3f0975e09d4bddc657ea6f38d848107",
+  "PROTOCOL.md": "aaa08effb9264584f7ffb4677dd25721d27af5210278b55d0a12a903fa55a8ca",
+  "README.md": "036dbfc2e8c4827b88677127244c036bb04f8a57cbd83c69e85afc709fa7734d",
+  "RELATED_WORK.md": "459526d26b92babb7dce5cba228398255d2ecc049ec4e1cdd86866112a000ef5",
+  "THEORY.md": "8862bb795ef0f6e7e33e571e49bcd152ec865a495a17ad5595659f84311c207c",
+  "audit_stage20.py": "7a61edd0eb1449a431b98564f8847b7ad7ab33407b95af00e3535cc7ea8b955c",
+  "results_reference/SUMMARY.json": "ed6e26727fccd71009468b3217bc610093e7a353fcba56d9180b34c94540f97c",
+  "results_reference/VERIFICATION.json": "e2200feefffc5bf355bf09b0a8650a8cce01cbd379e6336b01c89314c0fb9bdf",
+  "results_reference/metadata.json": "549ab2214d1d72cb3f700155a45096360c0368a1dc011d1f1c47874d2c85c0c9",
+  "results_reference/replicates.csv": "c0490335003c65f80dbb89bfa563af2f6a36ad1e6ef4c663b9967125d938491d",
+  "run_stage20.py": "107229ce7b6db2eba20befbcf64ab4b633b08ab8246e2d965db02965a3e80209",
+  "summarize_stage20.py": "4be3ae1d6659ee19be65fe9afc205adee6498c3640faf98135ccf6bc8b5223a7",
+  "test_stage20.py": "c931a99716848e5363e06e777a5a46fd7abc4901933ae3f6a1661d6f7811da96"
+}
