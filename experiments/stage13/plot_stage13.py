@@ -28,7 +28,8 @@ def main(directory):
     handles,labels=axes[0].get_legend_handles_labels()
     fig.legend(handles,labels,loc='lower center',ncol=3,frameon=False,bbox_to_anchor=(.5,.04),fontsize=10)
     fig.suptitle('How many full-benchmark pairwise conclusions can a smaller evaluation certify?',fontsize=13)
-    fig.text(.5,.01,'WMT23 development data; 50 query orders per pair; equal language weighting. Unresolved pairs remain in the denominator.',
+    fig.text(.5,.005,'WMT23 development data; 50 query orders per pair; equal language weighting; unresolved pairs remain in the denominator.\n'
+             'Family-wide reserve curves have a component-cap limitation (see CAP_LIMITATION.md). Error settings apply separately to each method.',
              ha='center',fontsize=8.2,color='#475569')
     fig.tight_layout(rect=(0,.14,1,.94))
     fig.savefig(directory/'paired_budget_comparison.png',dpi=180,bbox_inches='tight',facecolor='white')
