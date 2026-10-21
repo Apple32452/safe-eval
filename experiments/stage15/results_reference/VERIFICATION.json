@@ -1,0 +1,90 @@
+{
+  "status": "passed",
+  "locked_files": 11,
+  "result_rows": 2250,
+  "stage14_control_rows_reproduced": 324,
+  "primary_gain": {
+    "mean": 0.82,
+    "conditional_repeat_mcse": 0.663749399477,
+    "values": [
+      0,
+      0,
+      -8,
+      8,
+      -2,
+      -4,
+      6,
+      -2,
+      -5,
+      2,
+      7,
+      10,
+      6,
+      3,
+      1,
+      -3,
+      7,
+      9,
+      -1,
+      0,
+      -3,
+      4,
+      0,
+      1,
+      5,
+      1,
+      1,
+      -3,
+      -3,
+      4,
+      -4,
+      -3,
+      4,
+      2,
+      -1,
+      2,
+      0,
+      2,
+      -4,
+      -10,
+      10,
+      -5,
+      2,
+      2,
+      4,
+      3,
+      4,
+      3,
+      -11,
+      0
+    ]
+  },
+  "wrong_counts": {
+    "0.25": {
+      "focus_random": 0,
+      "focus_first": 0,
+      "evidence_first": 0,
+      "frontier_count": 0,
+      "frontier_evidence": 0
+    },
+    "0.5": {
+      "focus_random": 0,
+      "focus_first": 0,
+      "evidence_first": 0,
+      "frontier_count": 0,
+      "frontier_evidence": 0
+    },
+    "0.75": {
+      "focus_random": 0,
+      "focus_first": 0,
+      "evidence_first": 0,
+      "frontier_count": 0,
+      "frontier_evidence": 0
+    }
+  },
+  "files": {
+    "metadata.json": "177423ee0cd76205d7d97e7cb57889cd06e7590ebc3d21d43001c72df556331e",
+    "replicates.csv": "cb0caa480f7aaea2f33224a649f76eaea631d31c37d49b9029532d7d55892143",
+    "SUMMARY.json": "8ef5db972be417d38e6fc423d2d3634eb70f1a7477e12f2ba7365633b7c12170"
+  }
+}

@@ -22,12 +22,14 @@ python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 ```
 
-Expect **71 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
-six each for Stages 10, 11, 12 and 13, and four Stage 14 tests). Also run
+Expect **76 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
+tests). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage14 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -107,6 +109,11 @@ The one-repeat run is a software check. It does not reproduce the fixed
   fixed pair focus and 16.33 for random pair focus. Most pairs remain
   unresolved; the two concentration controls were added after the initial
   pilot. See the [Stage 14 findings and reproduction](experiments/stage14/README.md).
+- Stage 15 tests a locked annotation-level frontier utility over 50 matched
+  WMT23 order blocks. Its primary 50% gain over evidence-first is only 0.82
+  certified pairs (conditional MC SE 0.664); at 75% the gain is 10.80 pairs.
+  This is a development candidate, not an ICML contribution. See the
+  [Stage 15 findings](experiments/stage15/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
