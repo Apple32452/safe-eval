@@ -99,7 +99,8 @@ def summarize(directory, stage17_directory):
         if row["method"] != "frontier_evidence":
             continue
         key = (row["language"], int(row["repeat"]), float(row["fraction"]))
-        candidate[key] = record(row)
+        if key in expected:
+            candidate[key] = record(row)
     if set(candidate) != expected:
         raise ValueError("Stage 17 candidate grid does not match Stage 18")
     for key in expected:
