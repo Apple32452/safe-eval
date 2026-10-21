@@ -1,0 +1,19 @@
+{
+  "protocol_commit": "c198350d393e258c556c68b07e0b696141bdc996",
+  "source_access_state": "WMT25 was used in Stage 16; no continuous-score method comparison was prepared or summarized before this lock. WMT24 outcomes remain untouched.",
+  "sha256": {
+    "experiments/stage17/PROTOCOL.md": "f8f3e3c7e3749fe47d22eb86aa142b4ee55d0b8244bfdfa8b3562c94e906f610",
+    "experiments/stage17/THEORY.md": "bc3ed5263d0e6424e682a5097e978c494d2edb2ec5b5bd40cbee904cc61a6b4d",
+    "experiments/stage17/RELATED_WORK.md": "4f88b26142e24fb3b21969058481e272b144faaefc14ede0ade3c00cb1f9321d",
+    "experiments/stage17/prepare_scores.py": "20e467ee02f96a196721cdb98763a55f876f7cd806fdfac4a6194c860e1ea235",
+    "experiments/stage17/continuous_engine.py": "d088366c705fa03d7f6f1764cf7adfe67750773682a81e53ef2b278824403ddb",
+    "experiments/stage17/run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
+    "experiments/stage17/summarize_stage17.py": "76bbfb91a2ddd28fe79c95aa3d1b81543c4f2f084d8fafa4ec2dbefd7edce0f3",
+    "experiments/stage17/test_stage17.py": "ce7d8a80d482d7bf2b57a53a2045d00f14d3531d8422d7948ceff3368eadf51b",
+    "experiments/stage16/prepare_wmt25.py": "8f5e08b8c7e963221bc8b1cc5506b7d90cbfc1029c6010fb2651535c2bf59a46",
+    "experiments/stage15/frontier_experiment.py": "6d464cbc190a38f1a95fe12d01c96f40dbe1ff0fd4d4aeaeaa87164e7974f9e2",
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da",
+    "experiments/stage13/paired_engine.py": "ee4f3c2c851c7df80880c17fc3c133c32bf8635eaf1fa569e2c4e17a8d0b171b",
+    "experiments/stage7/prepare_wmt23.py": "1c166462044ab64f96b06b9c1215462503496c90d9cc1ad6a74bafd616591273"
+  }
+}
