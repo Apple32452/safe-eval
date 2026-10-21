@@ -1,0 +1,90 @@
+[
+  {
+    "key": [
+      "3x24_correlated_strong",
+      "complete",
+      "14",
+      "joint_adaptive",
+      "aligned"
+    ],
+    "exact_peak_as_float": 48.122968793733925,
+    "confirmed_threshold_crossing": true
+  },
+  {
+    "key": [
+      "3x24_correlated_weak",
+      "star",
+      "1",
+      "joint_diagonal",
+      "any"
+    ],
+    "exact_peak_as_float": 70.67640040962621,
+    "confirmed_threshold_crossing": true
+  },
+  {
+    "key": [
+      "3x24_correlated_weak",
+      "star",
+      "1",
+      "joint_covariance",
+      "any"
+    ],
+    "exact_peak_as_float": 70.67640040962621,
+    "confirmed_threshold_crossing": true
+  },
+  {
+    "key": [
+      "3x24_correlated_weak",
+      "star",
+      "4",
+      "joint_diagonal",
+      "any"
+    ],
+    "exact_peak_as_float": 20.851354783652592,
+    "confirmed_threshold_crossing": true
+  },
+  {
+    "key": [
+      "3x24_correlated_weak",
+      "star",
+      "1",
+      "joint_adaptive",
+      "uninformative"
+    ],
+    "exact_peak_as_float": 70.67640040962621,
+    "confirmed_threshold_crossing": true
+  },
+  {
+    "key": [
+      "3x24_antagonistic",
+      "star",
+      "18",
+      "joint_diagonal",
+      "any"
+    ],
+    "exact_peak_as_float": 28.431564444733677,
+    "confirmed_threshold_crossing": true
+  },
+  {
+    "key": [
+      "3x24_antagonistic",
+      "star",
+      "18",
+      "joint_covariance",
+      "any"
+    ],
+    "exact_peak_as_float": 28.431564444733677,
+    "confirmed_threshold_crossing": true
+  },
+  {
+    "key": [
+      "3x24_antagonistic",
+      "star",
+      "18",
+      "joint_adaptive",
+      "uninformative"
+    ],
+    "exact_peak_as_float": 28.431564444733677,
+    "confirmed_threshold_crossing": true
+  }
+]

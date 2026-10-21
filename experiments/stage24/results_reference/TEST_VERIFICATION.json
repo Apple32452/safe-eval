@@ -1,0 +1,12 @@
+{
+  "new_tests_passed": 6,
+  "exact_factor_expectation_probes": 7020,
+  "exhaustive_populations": 64,
+  "exhaustive_branch_executions": 768,
+  "stage22_tests_passed": 9,
+  "stage23_tests_passed": 8,
+  "source_lock_verified": true,
+  "previous_stage_files_verified": 247,
+  "full_fixture_run_status": "complete",
+  "wmt_experiments_run": false
+}
