@@ -1,0 +1,16 @@
+{
+  "protocol_commit": "381a92925e31c7dbca4320f2f3385d8916a1945e",
+  "sha256": {
+    "experiments/stage15/PROTOCOL.md": "c7870edeb75ee3c0fcee6d06ffceb8688a2104b56e55768a45d8d1655f26f2ab",
+    "experiments/stage15/frontier_experiment.py": "6d464cbc190a38f1a95fe12d01c96f40dbe1ff0fd4d4aeaeaa87164e7974f9e2",
+    "experiments/stage15/summarize_stage15.py": "70413b47491bcfcd1cc54c844e6bb621e54b6017c1823a0b4ee8e750a99af35e",
+    "experiments/stage15/test_stage15.py": "d440ca01af326607daf44b099384137863b2f6f0addb00bf5823b5a748e844b3",
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da",
+    "experiments/stage13/paired_engine.py": "ee4f3c2c851c7df80880c17fc3c133c32bf8635eaf1fa569e2c4e17a8d0b171b",
+    "experiments/stage7/prepare_wmt23.py": "1c166462044ab64f96b06b9c1215462503496c90d9cc1ad6a74bafd616591273",
+    "experiments/stage7/data/DATA_PROVENANCE.json": "fbb932173a57cd0ff7d9e0c5c0602520e9a958d331a0e0a01f03be2446d292a4",
+    "experiments/stage7/data/wmt23_en-de_error_free.npz": "a43ef51fae6af0d34985786af94117a79666c0cac18973beb74fdda8672e3d17",
+    "experiments/stage7/data/wmt23_he-en_error_free.npz": "491088911134b185b8c6ad2d01e28ac4c7f7fd9ba854b92bbd664743721b7771",
+    "experiments/stage7/data/wmt23_zh-en_error_free.npz": "fa8f133109b6c648a0bf73ebb222aac395892257174a238e48c019fd4e284f91"
+  }
+}
