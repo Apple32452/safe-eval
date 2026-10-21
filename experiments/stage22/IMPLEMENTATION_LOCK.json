@@ -1,0 +1,22 @@
+{
+  "protocol_commit": "7ae8a894c72b0c519086c60f4d3dd77d6920263a",
+  "source_access_state": "WMT25 was development data in Stages 16--21, but the all-reference sparse-graph Stage 22 comparison had not been run before this lock. WMT24 outcomes remain untouched.",
+  "sha256": {
+    "experiments/stage22/PROTOCOL.md": "7fac4960c437fef02f0a015384ea38c95a7141241ce3c07fe2b1923771af7c41",
+    "experiments/stage22/THEORY.md": "2b4a3a5c46510e6782426aabc90f8dbf860e96c66c3c7efaab8445867337e143",
+    "experiments/stage22/RELATED_WORK.md": "25762b92407041c893c540bfa3800ba13c6358d0f4963a8fdf8809c81c77ee90",
+    "experiments/stage22/README.md": "b068c0501816ee6f2c5be0d04aa5c7d96ba69774d11ea68e39efcd12522000ac",
+    "experiments/stage22/run_stage22.py": "0814f1e61495080e6ae67e328634a33074850baee6decd470d5b3495f444e748",
+    "experiments/stage22/summarize_stage22.py": "2ff94016c09f099c840c82fb23a35516595c295d9c6a0be0c19927adfd13133c",
+    "experiments/stage22/audit_stage22.py": "5e4e5e070b835403e4560816c1fed37581e042b61965d0c9316bfe1cdafc24b5",
+    "experiments/stage22/test_stage22.py": "cbf500c0ad05511a2dd73d9669c5065ff3ad4ec10845f5428c2b8fa1d118be35",
+    "experiments/stage18/IMPLEMENTATION_LOCK.json": "68316fc4c2a5f819bf2941c34d24248f2baac1bbcbe2e9d34507bec161b83d7a",
+    "experiments/stage18/run_stage18.py": "086259db7c9cb53391635b47f75e8f5a597cddc3bd8ecf18f8bc7cdff904c96a",
+    "experiments/stage17/IMPLEMENTATION_LOCK.json": "8e6cadd281e0d06d41c24b4cccfe020c801759af5c105ffc669e6fa5a7f4c9fc",
+    "experiments/stage17/continuous_engine.py": "d088366c705fa03d7f6f1764cf7adfe67750773682a81e53ef2b278824403ddb",
+    "experiments/stage17/prepare_scores.py": "20e467ee02f96a196721cdb98763a55f876f7cd806fdfac4a6194c860e1ea235",
+    "experiments/stage17/run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
+    "experiments/stage16/prepare_wmt25.py": "8f5e08b8c7e963221bc8b1cc5506b7d90cbfc1029c6010fb2651535c2bf59a46",
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da"
+  }
+}
