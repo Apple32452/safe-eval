@@ -27,12 +27,13 @@ python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage23 -p 'test_*.py' -v
 ```
 
-Expect **114 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+Expect **119 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
 six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
 tests, plus six Stage 16, five Stage 17, four each for Stages 18 and 19, and
-five each for Stages 20 and 21, plus nine Stage 22 tests). Also run
+five each for Stages 20 and 21, nine Stage 22 tests, and five Stage 23 tests). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
@@ -44,7 +45,8 @@ five each for Stages 20 and 21, plus nine Stage 22 tests). Also run
 `python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v`, then
 `python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage23 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -181,6 +183,15 @@ The one-repeat run is a software check. It does not reproduce the fixed
   graphs, matching the theorem's mechanism. This is strong development
   evidence, but closest-work novelty and untouched WMT24 confirmation remain
   open. See the [Stage 22 findings](experiments/stage22/FINDINGS.md).
+- Stage 23 freezes the paper-level contribution audit before any WMT24 access.
+  The current defensible theorem candidate is restricted: Stage 22 pruning is
+  itemwise label-minimal among synchronous common-prefix policies that advance
+  every unresolved requested edge. An independent enumerator verifies 98,664
+  small resolution schedules and 443,238 per-edge dominance cases. AnyRank and
+  classical common-random-number ranking block a broad graph-ranking novelty
+  claim, so the contribution audit remains open. See the
+  [Stage 23 protocol](experiments/stage23/PROTOCOL.md) and
+  [preliminary audit](experiments/stage23/PRELIMINARY_AUDIT.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
