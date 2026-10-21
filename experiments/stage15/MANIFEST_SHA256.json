@@ -1,0 +1,14 @@
+{
+  "FINDINGS.md": "40897fa2ed80fab426dae6a9a861fefc2a49a6f3d6c8ed474f0982d1e1390812",
+  "IMPLEMENTATION_LOCK.json": "7ccf638c6e8496ee0435c1b7350f0ad7cf5552abdebf6592e2ab4a80b77e6a31",
+  "PROTOCOL.md": "c7870edeb75ee3c0fcee6d06ffceb8688a2104b56e55768a45d8d1655f26f2ab",
+  "README.md": "7f1274aa86848822f5d5f82a7e0805102bdecbaef8e5129f10ae4394576969c5",
+  "audit_stage15.py": "91cefd62cabf2a590abcde0b25fc9b5febb8c7608189d6e1dcd14bc2631fd3d4",
+  "frontier_experiment.py": "6d464cbc190a38f1a95fe12d01c96f40dbe1ff0fd4d4aeaeaa87164e7974f9e2",
+  "results_reference/SUMMARY.json": "8ef5db972be417d38e6fc423d2d3634eb70f1a7477e12f2ba7365633b7c12170",
+  "results_reference/VERIFICATION.json": "497afa856eceabef29fb4670569c3456a5be4e2c57739ff905f775b651934a1d",
+  "results_reference/metadata.json": "177423ee0cd76205d7d97e7cb57889cd06e7590ebc3d21d43001c72df556331e",
+  "results_reference/replicates.csv": "cb0caa480f7aaea2f33224a649f76eaea631d31c37d49b9029532d7d55892143",
+  "summarize_stage15.py": "70413b47491bcfcd1cc54c844e6bb621e54b6017c1823a0b4ee8e750a99af35e",
+  "test_stage15.py": "d440ca01af326607daf44b099384137863b2f6f0addb00bf5823b5a748e844b3"
+}
