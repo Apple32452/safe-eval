@@ -25,12 +25,13 @@ python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v
 ```
 
-Expect **100 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+Expect **105 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
 six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
 tests, plus six Stage 16, five Stage 17, four each for Stages 18 and 19, and
-five Stage 20 tests). Also run
+five each for Stages 20 and 21). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
@@ -40,7 +41,8 @@ five Stage 20 tests). Also run
 `python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v`, then
 `python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -160,6 +162,12 @@ The one-repeat run is a software check. It does not reproduce the fixed
   means improve, so the frozen breadth gate fails and the 0.665% effect is not
   an ICML empirical contribution. See the
   [Stage 20 findings](experiments/stage20/FINDINGS.md).
+- Stage 21 uses a disjoint 25% pilot to select an adjacent comparison chain,
+  tests it with a conditionally valid finite-pool e-process, and applies
+  transitive closure. At 75% labels it produces only 37.04 correct conclusions
+  versus 1,275.70 for the all-pair common baseline, losing all 50 repeats and
+  every language mean. The gate fails and closes this WMT25 candidate. See the
+  [Stage 21 findings](experiments/stage21/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
