@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "comparison_rows": 14850,
+  "checkpoint_rows": 89100,
+  "replayed_comparison_rows": 297,
+  "replayed_checkpoint_rows": 1782,
+  "edge_dominance_violations": 0,
+  "comparison_sha256": "68999c80f3afeed730edfbcbaccb6ac127f38ec7e0894a1d007ddf6bf8151f94",
+  "checkpoints_sha256": "ce6d1692b081989049b21effacc680c83dacd6fbed3b36819834e13dfbd02732"
+}
