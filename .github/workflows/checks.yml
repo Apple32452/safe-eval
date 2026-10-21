@@ -48,6 +48,13 @@ jobs:
           python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v
+      - name: Run the Stage 13 paired software check
+        run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 1 --output results/stage13_smoke
+      - name: Independently audit the Stage 13 paired software check
+        run: python experiments/stage13/audit_stage13.py --input results/stage13_smoke
+      - name: Summarize the Stage 13 paired software check
+        run: python experiments/stage13/report_stage13.py --input results/stage13_smoke
       - name: Check the Stage 12 exact assignment audit
         run: python experiments/stage12/audit_stage12.py --output results/stage12_checks/VERIFICATION.json --check-reference experiments/stage12/results_reference/VERIFICATION.json
       - name: Verify the Stage 8 protocol

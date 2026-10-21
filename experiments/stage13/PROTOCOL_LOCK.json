@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "stage": 13,
+  "upstream_main": "50a64e42e580ef548bfe92e3596298a2d255605b",
+  "protocol_commit": "a6e01f55326ab7f6118ea591368e86465c88a180",
+  "reference_repeats": 50,
+  "master_seed": 20261021,
+  "pairs": 237,
+  "sha256": {
+    "experiments/stage13/audit_stage13.py": "b3c2b7f6e247d436b0cf61000e19fae581c08879bb810634cee731f613af0543",
+    "experiments/stage13/paired_engine.py": "ee4f3c2c851c7df80880c17fc3c133c32bf8635eaf1fa569e2c4e17a8d0b171b",
+    "experiments/stage13/paired_reference.py": "60325d98e3fa5b1d8c1f03480ce0474dafd49b572b2657791e396f7e818c522f",
+    "experiments/stage13/report_stage13.py": "f338de7a01fa4ec5a3d5a60940481f8861939be156539735c68baa1683cb4858",
+    "experiments/stage13/run_stage13.py": "7b41ce5c3ad6b2f061219f7a9b501b323dff6b8749f86955ff672c60ce8eec1f",
+    "experiments/stage13/stage13_common.py": "0e9700aaa75c185c8bd1e2faf1037d33f3ae27fdcf8117c6ad0833e296590d10",
+    "experiments/stage13/test_stage13.py": "6ca3d910410c362273bdd8378eaa9406f26e23fe888c8523e518018c39fd7384",
+    "experiments/stage13/PROTOCOL.md": "42cab0e222c97bcddeb712d847ad9320d2375de8134438a1b15ff0e1d78da9cb",
+    "experiments/stage13/THEORY.md": "4d4deabf5398d754ef9abce06a999466e1f6af4ef306f9d0fd1966b4de044d29",
+    "experiments/stage7/data/wmt23_he-en_error_free.npz": "491088911134b185b8c6ad2d01e28ac4c7f7fd9ba854b92bbd664743721b7771",
+    "experiments/stage7/data/wmt23_zh-en_error_free.npz": "fa8f133109b6c648a0bf73ebb222aac395892257174a238e48c019fd4e284f91",
+    "experiments/stage7/data/wmt23_en-de_error_free.npz": "a43ef51fae6af0d34985786af94117a79666c0cac18973beb74fdda8672e3d17",
+    "experiments/stage7/data/DATA_PROVENANCE.json": "fbb932173a57cd0ff7d9e0c5c0602520e9a958d331a0e0a01f03be2446d292a4",
+    "experiments/stage7/prepare_wmt23.py": "1c166462044ab64f96b06b9c1215462503496c90d9cc1ad6a74bafd616591273"
+  }
+}
