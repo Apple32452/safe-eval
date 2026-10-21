@@ -1,0 +1,25 @@
+{
+  "protocol_commit": "7dc693ebe623fe8f76eeb197f2c9b4f6daee1576",
+  "source_access_state": "WMT25 was used for Stages 16 and 17, but the common-random-test-set control had not been computed before this lock. WMT24 outcomes remain untouched.",
+  "sha256": {
+    "experiments/stage18/PROTOCOL.md": "61e3f5e2c217085dacce21f4706a123de611779f8a033b4cf7aa3cc603cda5f9",
+    "experiments/stage18/THEORY.md": "1d1470e6a9074528328519e53831f7c21fa856b16fc5408b2021866a731e3611",
+    "experiments/stage18/README.md": "f1f9df6e1624e10c53efd2d29428d49caa84e77a4728b7288ef1ba63a0ec32b7",
+    "experiments/stage18/run_stage18.py": "086259db7c9cb53391635b47f75e8f5a597cddc3bd8ecf18f8bc7cdff904c96a",
+    "experiments/stage18/summarize_stage18.py": "120eb00dd2c28538c69a8d404c9d4d135ef07a8ce28f64908397e917a6531e54",
+    "experiments/stage18/audit_stage18.py": "d325abb845dca72f0820c88c7dad8b3b48390af1727b5aed67a0b4eada30d063",
+    "experiments/stage18/test_stage18.py": "a65c0e135f28a6e006e2923dfd07f6714bc038044d35db275d994f976d85a26a",
+    "experiments/stage17/IMPLEMENTATION_LOCK.json": "8e6cadd281e0d06d41c24b4cccfe020c801759af5c105ffc669e6fa5a7f4c9fc",
+    "experiments/stage17/PROTOCOL.md": "f8f3e3c7e3749fe47d22eb86aa142b4ee55d0b8244bfdfa8b3562c94e906f610",
+    "experiments/stage17/continuous_engine.py": "d088366c705fa03d7f6f1764cf7adfe67750773682a81e53ef2b278824403ddb",
+    "experiments/stage17/prepare_scores.py": "20e467ee02f96a196721cdb98763a55f876f7cd806fdfac4a6194c860e1ea235",
+    "experiments/stage17/run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
+    "experiments/stage17/results_reference/replicates.csv": "f379dce07edb39e7ca3ff1cdf5677e789e24ecdcb2a9fd927918806f10d556be",
+    "experiments/stage17/results_reference/metadata.json": "5d1792c81c003e4c9b6499c0005daf52fde7fd5a4cc72610079f08d01430077f",
+    "experiments/stage17/results_reference/SUMMARY.json": "9a3d88b048d004acadbfbb3af76323a99bbed53c04c3c17db8f8ea1a02a82844",
+    "experiments/stage17/results_reference/VERIFICATION.json": "d02b93397e2d0232d683c40b161e630972c86eb6050b0e46c2a97b73db7d45f8",
+    "experiments/stage16/prepare_wmt25.py": "8f5e08b8c7e963221bc8b1cc5506b7d90cbfc1029c6010fb2651535c2bf59a46",
+    "experiments/stage15/frontier_experiment.py": "6d464cbc190a38f1a95fe12d01c96f40dbe1ff0fd4d4aeaeaa87164e7974f9e2",
+    "experiments/stage14/shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da"
+  }
+}
