@@ -1,0 +1,11 @@
+{
+  "FINDINGS.md": "008cb33bb86884b27d65b41c3825d846483acb425e11bd25acd7e6be7a1d7aad",
+  "PROTOCOL.md": "87156c568cd602e94d5c55a66861923179294d1324db6c86b8add951a86621dd",
+  "README.md": "a0721db9d2c9526019deb94a43f73ee8317c4cd050a05d47bd011c67535cc730",
+  "results_reference/SUMMARY.json": "54a509455d201693678308d124520c90286b15f6566cb56c94d8a78393d67639",
+  "results_reference/metadata.json": "725f8a536fe9a19867f5e292b5943d57bde3e787d867b68d55aa25cc1281ffa4",
+  "results_reference/replicates.csv": "8e10ceb316973840ff4c66f8a8704f18af40546625ea3aba31f6644352d094d8",
+  "shared_pilot.py": "8c66f6213f3f4c4bd68795fdd9af1c838a62cbfcdf261b0322784829cec855da",
+  "summarize_pilot.py": "683d02e7eb92bef434d2db90f26863c5368b803eeacf487726889a873d8b38dc",
+  "test_shared_pilot.py": "bcd9baaea088d1773720d926b81bf8af3ef57107e7b880d43eb74e3e58a9cf99"
+}
