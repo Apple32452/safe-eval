@@ -57,6 +57,7 @@ jobs:
           python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage20 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v
       - name: Audit the saved Stage 14 exploratory results
         run: |
           python experiments/stage14/summarize_pilot.py --input experiments/stage14/results_reference
@@ -98,6 +99,26 @@ jobs:
           python -m py_compile experiments/stage21/*.py
           python experiments/stage21/summarize_stage21.py --input experiments/stage21/results_reference
           git diff --exit-code -- experiments/stage21/results_reference/SUMMARY.json
+      - name: Verify the Stage 22 graph-pruning release
+        run: |
+          python -m py_compile experiments/stage22/*.py
+          python - <<'PY'
+          import hashlib
+          import json
+          from pathlib import Path
+
+          manifest = json.loads(Path('experiments/stage22/MANIFEST_SHA256.json').read_text())
+          for path, expected in manifest.items():
+              observed = hashlib.sha256(Path(path).read_bytes()).hexdigest()
+              if observed != expected:
+                  raise SystemExit(f'Stage 22 manifest mismatch: {path}')
+          summary = json.loads(Path('experiments/stage22/results_reference/SUMMARY.json').read_text())
+          verification = json.loads(Path('experiments/stage22/results_reference/VERIFICATION.json').read_text())
+          assert summary['development_gate_passed'] is True
+          assert verification['status'] == 'passed'
+          assert verification['edge_dominance_violations'] == 0
+          print(f"Verified {len(manifest)} Stage 22 files and the audited gate.")
+          PY
       - name: Run the Stage 13 paired software check
         run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 3 --output results/stage13_smoke
       - name: Independently audit the Stage 13 paired software check
