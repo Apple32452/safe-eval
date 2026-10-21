@@ -1,4 +1,5 @@
 # Preserve the exact released bytes, including line endings used in hashes.
 experiments/stage7/** -text
+experiments/stage13/results_reference/** -text
 *.npz binary
 *.png binary

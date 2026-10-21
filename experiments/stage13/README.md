@@ -26,6 +26,21 @@ the integer inference and first decisions, then creates compact `decisions.npz`.
 The report requires the successful audit and writes per-pair, budget, stratified,
 paired-control and family-error tables. No GPU or new annotations are required.
 
+For a faster audit, replace the serial audit command with
+`OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage13/audit_parallel_stage13.py --input results/stage13_local --workers 2`.
+This utility executes the unchanged frozen auditor on disjoint case batches,
+checks complete coverage, and restores the original case order. Its one-case
+software check produces the same compact decision archive as the serial audit.
+Use only one audit at a time for a given result directory.
+
+`plot_stage13.py --input results/stage13_local` draws the primary budget curves
+from those tables. It is a presentation addition outside the frozen inference.
+If an archive is damaged, `recover_stage13.py --input results/stage13_local`
+reruns only that exact case and accepts it only if its complete bytes reproduce
+the original recorded SHA256. It preserves the original run metadata and saves
+a recovery record. This does not permit replacing a scientific result with a
+different outcome or parameter setting.
+
 Small software check (not research evidence):
 
 ```bash
