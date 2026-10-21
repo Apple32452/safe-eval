@@ -22,10 +22,11 @@ python -m unittest discover -s experiments/stage9 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 ```
 
-Expect **61 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
-six each for Stages 10, 11 and 12). Also run
+Expect **67 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+six each for Stages 10, 11, 12 and 13). Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
+`python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -89,6 +90,11 @@ The one-repeat run is a software check. It does not reproduce the fixed
   broad novelty claims; the checked extension is not an established new
   method. A finite-pool label-cost guarantee remains an unresolved research
   target. See the [contribution audit](experiments/stage12/NOVELTY_AUDIT.md).
+- Stage 13 studies a separate MT-facing objective: recovering fixed-benchmark
+  pairwise system conclusions using fewer paired target judgments. All 237
+  system pairs are included, with both targets excluded from history and
+  separate per-pair and family-wide error settings. See the
+  [locked protocol and reproduction commands](experiments/stage13/README.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
