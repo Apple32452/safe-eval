@@ -235,22 +235,22 @@
       },
       "evidence_first": {
         "mean_correct_total": 9.166666666666666,
-        "conditional_repeat_mcse": 0.44095855184409843,
+        "conditional_repeat_mcse": 0.440958551844,
         "wrong_count": 0
       },
       "focus_first": {
         "mean_correct_total": 10.666666666666666,
-        "conditional_repeat_mcse": 0.14213381090374028,
+        "conditional_repeat_mcse": 0.142133810904,
         "wrong_count": 0
       },
       "focus_random": {
         "mean_correct_total": 6.25,
-        "conditional_repeat_mcse": 0.32856437033638547,
+        "conditional_repeat_mcse": 0.328564370336,
         "wrong_count": 0
       },
       "evidence_minus_focus_first": {
         "mean_correct_pair_gain": -1.5,
-        "conditional_repeat_mcse": 0.5294365215047317,
+        "conditional_repeat_mcse": 0.529436521505,
         "repeat_differences": [
           -3,
           -2,
@@ -268,7 +268,7 @@
       },
       "evidence_minus_focus_random": {
         "mean_correct_pair_gain": 2.9166666666666665,
-        "conditional_repeat_mcse": 0.4680445027619239,
+        "conditional_repeat_mcse": 0.468044502762,
         "repeat_differences": [
           4,
           1,
@@ -288,32 +288,32 @@
     "0.5": {
       "round_robin": {
         "mean_correct_total": 0.16666666666666666,
-        "conditional_repeat_mcse": 0.11236664374387367,
+        "conditional_repeat_mcse": 0.112366643744,
         "wrong_count": 0
       },
       "reuse_first": {
         "mean_correct_total": 0.3333333333333333,
-        "conditional_repeat_mcse": 0.1421338109037403,
+        "conditional_repeat_mcse": 0.142133810904,
         "wrong_count": 0
       },
       "evidence_first": {
         "mean_correct_total": 28.25,
-        "conditional_repeat_mcse": 1.2316839913490207,
+        "conditional_repeat_mcse": 1.231683991349,
         "wrong_count": 0
       },
       "focus_first": {
         "mean_correct_total": 23.083333333333332,
-        "conditional_repeat_mcse": 0.22890825651118374,
+        "conditional_repeat_mcse": 0.228908256511,
         "wrong_count": 0
       },
       "focus_random": {
         "mean_correct_total": 16.333333333333332,
-        "conditional_repeat_mcse": 0.5817076915288626,
+        "conditional_repeat_mcse": 0.581707691529,
         "wrong_count": 0
       },
       "evidence_minus_focus_first": {
         "mean_correct_pair_gain": 5.166666666666667,
-        "conditional_repeat_mcse": 1.1202903664008295,
+        "conditional_repeat_mcse": 1.120290366401,
         "repeat_differences": [
           0,
           9,
@@ -331,7 +331,7 @@
       },
       "evidence_minus_focus_random": {
         "mean_correct_pair_gain": 11.916666666666666,
-        "conditional_repeat_mcse": 1.2759923846389387,
+        "conditional_repeat_mcse": 1.275992384639,
         "repeat_differences": [
           7,
           14,
@@ -351,32 +351,32 @@
     "0.75": {
       "round_robin": {
         "mean_correct_total": 1.8333333333333333,
-        "conditional_repeat_mcse": 0.3217690997211409,
+        "conditional_repeat_mcse": 0.321769099721,
         "wrong_count": 0
       },
       "reuse_first": {
         "mean_correct_total": 3.1666666666666665,
-        "conditional_repeat_mcse": 0.7053188977155989,
+        "conditional_repeat_mcse": 0.705318897716,
         "wrong_count": 0
       },
       "evidence_first": {
         "mean_correct_total": 86.66666666666667,
-        "conditional_repeat_mcse": 1.9042748294987848,
+        "conditional_repeat_mcse": 1.904274829499,
         "wrong_count": 0
       },
       "focus_first": {
         "mean_correct_total": 42.0,
-        "conditional_repeat_mcse": 0.5773502691896257,
+        "conditional_repeat_mcse": 0.57735026919,
         "wrong_count": 0
       },
       "focus_random": {
         "mean_correct_total": 34.666666666666664,
-        "conditional_repeat_mcse": 1.2390938363794468,
+        "conditional_repeat_mcse": 1.239093836379,
         "wrong_count": 0
       },
       "evidence_minus_focus_first": {
         "mean_correct_pair_gain": 44.666666666666664,
-        "conditional_repeat_mcse": 1.8353982861185387,
+        "conditional_repeat_mcse": 1.835398286119,
         "repeat_differences": [
           38,
           43,
@@ -394,7 +394,7 @@
       },
       "evidence_minus_focus_random": {
         "mean_correct_pair_gain": 52.0,
-        "conditional_repeat_mcse": 1.9069251784911847,
+        "conditional_repeat_mcse": 1.906925178491,
         "repeat_differences": [
           40,
           56,

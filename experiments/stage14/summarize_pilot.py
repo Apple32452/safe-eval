@@ -67,7 +67,8 @@ def summarize(directory):
             mcse = (sum((x-mean)**2 for x in sums) /
                     (len(sums)-1) / len(sums))**.5 if len(sums) > 1 else None
             result['aggregate'][str(f)][m] = dict(
-                mean_correct_total=mean, conditional_repeat_mcse=mcse,
+                mean_correct_total=mean,
+                conditional_repeat_mcse=round(mcse, 12) if mcse is not None else None,
                 wrong_count=sum(indexed[l, r, f, m]['wrong']
                                 for l in meta['languages']
                                 for r in range(meta['repeats'])))
@@ -79,7 +80,8 @@ def summarize(directory):
             mcse = (sum((x-mean)**2 for x in diffs) /
                     (len(diffs)-1) / len(diffs))**.5 if len(diffs) > 1 else None
             result['aggregate'][str(f)]['evidence_minus_' + control] = dict(
-                mean_correct_pair_gain=mean, conditional_repeat_mcse=mcse,
+                mean_correct_pair_gain=mean,
+                conditional_repeat_mcse=round(mcse, 12) if mcse is not None else None,
                 repeat_differences=diffs)
     (directory / 'SUMMARY.json').write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps(result['aggregate'], indent=2))
