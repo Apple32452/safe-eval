@@ -23,11 +23,13 @@ python -m unittest discover -s experiments/stage10 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v
 python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v
+python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v
 ```
 
-Expect **91 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
+Expect **95 passing tests in total** (28 Stage 7, seven Stage 8, eight Stage 9,
 six each for Stages 10, 11, 12 and 13, four Stage 14 tests, and five Stage 15
-tests, plus six Stage 16, five Stage 17, and four Stage 18 tests). Also run
+tests, plus six Stage 16, five Stage 17, and four each for Stages 18 and 19).
+Also run
 `python -m unittest discover -s experiments/stage11 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage12 -p 'test_*.py' -v`, followed by
 `python -m unittest discover -s experiments/stage13 -p 'test_*.py' -v` and
@@ -35,7 +37,8 @@ tests, plus six Stage 16, five Stage 17, and four Stage 18 tests). Also run
 `python -m unittest discover -s experiments/stage15 -p 'test_*.py' -v` and
 `python -m unittest discover -s experiments/stage16 -p 'test_*.py' -v`, then
 `python -m unittest discover -s experiments/stage17 -p 'test_*.py' -v` and
-`python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v`.
+`python -m unittest discover -s experiments/stage18 -p 'test_*.py' -v`, then
+`python -m unittest discover -s experiments/stage19 -p 'test_*.py' -v`.
 The code uses NumPy and Matplotlib; no GPU is
 required. Python 3.9 syntax is supported. This repository preparation was
 tested locally with Python 3.12; the GitHub workflow is configured to check
@@ -142,6 +145,12 @@ The one-repeat run is a software check. It does not reproduce the fixed
   repeat blocks and zero observed wrong declarations for both methods. The
   frozen gate fails, rejecting the current scheduler as the ICML candidate.
   See the [Stage 18 findings](experiments/stage18/FINDINGS.md).
+- Stage 19 retains a 50% common core before adaptively scheduling separate pair
+  tails. It gains 7.92 conclusions at the 50% checkpoint but loses 104.76 at
+  75% (MCSE 1.57), with losses in all 50 repeats and zero observed wrong
+  declarations for both methods. The gate fails, ruling out further WMT25
+  tuning of common/pair-specific mixtures. See the
+  [Stage 19 findings](experiments/stage19/FINDINGS.md).
 
 See the complete [Stage 7 findings](experiments/stage7/FINDINGS.md),
 [Stage 6 findings](experiments/stage7/STAGE6_FINDINGS.md),
