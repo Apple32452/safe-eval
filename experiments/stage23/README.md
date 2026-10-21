@@ -5,9 +5,14 @@ audited Stage 22 result supports a technically distinct paper contribution
 after comparison with the closest 2026 sequential-ranking work and classical
 common-random-number ranking-and-selection literature.
 
-Read `PROTOCOL.md` for the frozen gate and `PRELIMINARY_AUDIT.md` for the
-current boundary. WMT24 remains untouched. The next code deliverable is an
-independent small-case enumerator for synchronous label minimality and the
-final partial-block accounting; no external validation is authorized until
-the contribution audit passes.
+Read `PROTOCOL.md` for the frozen gate, `PRELIMINARY_AUDIT.md` for the current
+boundary, and `THEORY.md` for the restricted minimality statement. WMT24
+remains untouched. The independent exhaustive audit is:
+
+```bash
+python -m unittest discover -s experiments/stage23 -p 'test_*.py' -v
+python experiments/stage23/audit_stage23.py
+```
+
+No external validation is authorized until the contribution audit passes.
 
