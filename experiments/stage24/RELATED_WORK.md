@@ -1,0 +1,25 @@
+# Source-level novelty audit
+
+Decision: the prototype below does not establish a new inference principle. Primary sources were read before synthetic results; this is a focused audit, not a proof that every stronger joint method already exists.
+
+| Primary source | Relevant statement | Consequence |
+|---|---|---|
+| [Ryu & Wornell, ICML 2024](https://proceedings.mlr.press/v235/ryu24a.html), [full text](https://arxiv.org/html/2402.03683v2), sections 2, 3.1.1, 3.2, 4 | Vector gambling CSs, finite-population categorical inference, and aggregation of coordinate wealth are already studied. Proposition 4 shows mixture-wealth aggregation refines a Bonferroni construction. | A vector CS, removal of explicit edgewise alpha splitting, or a mixture of coordinate evidence is not itself new. Our integer-direction heuristic is not their universal portfolio and inherits none of its optimality or tightness comparisons. |
+| [Shekhar et al., UAI 2023](https://proceedings.mlr.press/v216/shekhar23a.html), [paper](https://proceedings.mlr.press/v216/shekhar23a/shekhar23a.pdf), general importance-weighted martingale construction | Finite-population weighted without-replacement sampling, arbitrary adaptive design, and optional side information already have betting-CS constructions. | Our design-unbiased correction is an application of established importance weighting, not a first adaptive finite-pool theorem. Extending coordinates and projecting a joint region does not establish a new result by itself. |
+| [Waudby-Smith & Ramdas, NeurIPS 2020](https://proceedings.neurips.cc/paper_files/paper/2020/file/e96c7de8f6390b1e6c71556e4e0a4959-Paper.pdf), finite-population CSs and prior/posterior-ratio process | Exact finite-pool anytime coverage and terminal collapse are established. | The scalar binary PPR baseline is existing mathematics. Shared rows do not invalidate its marginal full-path coverage; union bounds need no cross-system independence. |
+| [Chugg, Wang & Ramdas](https://arxiv.org/html/2311.08168v3), sections 2.1 and 2.2 | Vector confidence spheres under martingale conditions, including covariance-sensitive bounds. | Covariance-aware joint geometry is not a new concept. Empirical covariance cannot simply replace a required predictable variance bound. We use it only to select safe bets. |
+| [AnyRank](https://arxiv.org/html/2610.14603v2), problem setup, multiple-testing discussion and limitations | Active policy allocation and graphical family-error control under i.i.d. environment evaluations. | Broad efficient joint ranking is occupied. Our fixed-pool estimand and system-item costs differ; this is a comparison boundary, not evidence of novelty or a head-to-head performance win. |
+| [Kossen et al., ICML 2021](https://proceedings.mlr.press/v139/kossen21a.html) | Adaptive test acquisition with bias correction. | Prediction-guided evaluation and selective labeling are established. Its objectives and guarantees differ from the fixed-pool anytime familywise sign target. |
+| [Wu, Nair & Candes, FAQ](https://arxiv.org/abs/2601.20251), [Zouhar et al., dynamic ranking allocation](https://arxiv.org/abs/2608.03437) | Current evaluation work covers selective question acquisition and dynamic effort for model ranking. | These are close application neighbors, not substitute matched finite-sample baselines. This study does not claim a complete algorithm/theorem equivalence audit of these two sources. |
+
+## Exact claim-to-prior-work mapping
+
+1. E[Z|past]=mu follows from inverse-probability linearity; its scalar finite-pool use is established by Shekhar et al.
+2. Products of predictable nonnegative linear bets and inversion via Ville are standard vector gambling; see Ryu & Wornell section 2.
+3. A simultaneous vector confidence event implies simultaneous coverage of all pair contrasts by deterministic projection. This is a direct logical consequence, not a separate new multiplicity theorem.
+4. Using covariance to choose a predictable bet does not create a new covariance confidence inequality. The sign-discretized inverse-covariance rule here is only a heuristic and comes with no regret or sample-complexity advantage.
+5. Cached shared-label accounting and fixed-certificate pruning were established internally in Stages 22–23. The new candidate changes the certificates, so their max-prefix bound does not rule out improvement; escaping that bound is not itself novelty.
+
+## Narrow unresolved question
+
+Can a computationally tractable joint certificate for arbitrary bounded fixed-matrix scores exploit partial, adaptively acquired system-item observations with a provable instance-dependent unique-label advantage over strong pairwise and per-system procedures? Nothing here answers that in general. A useful future contribution would need either a new efficiency/computation theorem with meaningful lower bounds, or broad matched empirical evidence explaining when joint sharing helps. Merely combining the above constructions does not meet that threshold. A formal reduction to every existing method has not been proved.
