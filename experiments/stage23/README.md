@@ -14,5 +14,16 @@ python -m unittest discover -s experiments/stage23 -p 'test_*.py' -v
 python experiments/stage23/audit_stage23.py
 ```
 
-No external validation is authorized until the contribution audit passes.
+A [follow-up boundary](ASYNC_PREFIX_BOUNDARY.md) proves that asynchronous
+reordering cannot lower completion cost when each edge retains its existing
+fixed-prefix certificate. The independent check is:
+
+```bash
+python experiments/stage23/audit_async_prefix.py
+```
+
+This strengthens the accounting scope, not the paper novelty claim. The
+[next method gate](NEXT_METHOD_GATE.md) specifies the proof and synthetic
+falsification tests for a possible joint finite-pool certificate. No external
+validation is authorized until the contribution audit passes.
 
