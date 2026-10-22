@@ -44,6 +44,45 @@ def ht_factor(events, n, q, pa, pb, rho):
     return 1 + rho * x / bound
 
 
+def separate_null(events, n, q, factors):
+    """Find a worst fixed binary null by dynamic programming in O(n^2).
+
+    The state is the running score difference. This is a constraint
+    separation oracle for the *empty-history, two-system* observation model.
+    """
+    if len(events) != len(factors):
+        raise ValueError("One factor is required per observable event")
+    index = {event: k for k, event in enumerate(events)}
+    offset = n
+    value = np.full(2 * n + 1, -np.inf)
+    value[offset] = 0
+    predecessor = np.full((n + 1, 2 * n + 1), -1, dtype=int)
+    assignment = np.full((n + 1, 2 * n + 1, 2), -1, dtype=int)
+    for i in range(n):
+        next_value = np.full_like(value, -np.inf)
+        for old in np.flatnonzero(np.isfinite(value)):
+            for a, b in itertools.product((0, 1), repeat=2):
+                new = old + a - b
+                local = q * factors[index[i, a, b]] / n
+                if q < 1:
+                    local += (1 - q) * factors[index[i, a, -1]] / n
+                score = value[old] + local
+                if score > next_value[new]:
+                    next_value[new] = score
+                    predecessor[i + 1, new] = old
+                    assignment[i + 1, new] = a, b
+        value = next_value
+    state = int(np.argmax(value[:offset + 1]))
+    optimum = float(value[state])
+    worst = np.empty((2, n), dtype=np.int8)
+    for i in range(n, 0, -1):
+        worst[:, i - 1] = assignment[i, state]
+        state = predecessor[i, state]
+    if state != offset or worst[0].sum() > worst[1].sum():
+        raise AssertionError("Invalid dynamic-programming null completion")
+    return optimum, worst
+
+
 def alternative_probs(events, n, q, pa, pb):
     return np.array([
         (q if b != -1 else 1 - q) / n * (pa if a else 1 - pa) *
@@ -68,6 +107,9 @@ def run(n=4, q=.25, pa=.85, pb=.15):
     )
     if not result.success or np.max(a_matrix @ result.x) > 1 + 1e-8:
         raise RuntimeError(f"Optimization or null audit failed: {result.message}")
+    dp_max, _ = separate_null(events, n, q, result.x)
+    if not np.isclose(dp_max, np.max(a_matrix @ result.x), atol=1e-10):
+        raise AssertionError("DP and exhaustive null audits disagree")
     ht_opt = minimize_scalar(
         lambda rho: -np.dot(alt, np.log(ht_factor(events, n, q, pa, pb, rho))),
         bounds=(0, .999999), method="bounded", options=dict(xatol=1e-12),
@@ -83,6 +125,7 @@ def run(n=4, q=.25, pa=.85, pb=.15):
                 ht_growth_per_score=float(np.dot(alt, np.log(ht)) / (1 + q)),
                 exact_reversed_growth=float(np.dot(reversed_alt, np.log(result.x))),
                 ht_rho=float(ht_opt.x), exact_max_null=float(np.max(a_matrix @ result.x)),
+                dp_max_null=dp_max,
                 ht_max_null=float(np.max(a_matrix @ ht)))
 
 
