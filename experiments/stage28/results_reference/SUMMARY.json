@@ -1,0 +1,636 @@
+{
+  "protocol": {
+    "seed": 20261022,
+    "alpha": 0.05,
+    "minimum_propensity": 0.25,
+    "fixed_propensity": 0.75,
+    "rounds": 1600,
+    "repeats": 100,
+    "item_count": 32,
+    "rater_count": 6,
+    "system_count": 3,
+    "estimand": "All three mean score differences under iid uniform item and independent iid uniform rater draws",
+    "cost": "One fresh blinded system-item-rater judgment, without caching"
+  },
+  "exact_audit": {
+    "enumerated_settings": 5392,
+    "null_mean_signals": {
+      "independent": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "coupled": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "same_sign_residual_variance": {
+      "independent": 0.1733333333333333,
+      "coupled": 0.013333333333333324
+    },
+    "opposite_sign_residual_variance": {
+      "independent": 0.1733333333333333,
+      "coupled": 0.33333333333333326
+    }
+  },
+  "summary": [
+    {
+      "scenario": "aligned",
+      "method": "paired_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 207.41,
+      "mean_rounds_stop_or_cap": 95.44,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 207.41,
+      "paired_adaptive_cost_on_jointly_completed": 233.52
+    },
+    {
+      "scenario": "aligned",
+      "method": "paired_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 233.52,
+      "mean_rounds_stop_or_cap": 107.71,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 233.52,
+      "paired_adaptive_cost_on_jointly_completed": 233.52
+    },
+    {
+      "scenario": "aligned",
+      "method": "independent_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 495.35,
+      "mean_rounds_stop_or_cap": 198.14,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 495.35,
+      "paired_adaptive_cost_on_jointly_completed": 233.52
+    },
+    {
+      "scenario": "aligned",
+      "method": "coupled_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 342.91,
+      "mean_rounds_stop_or_cap": 136.87,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 342.91,
+      "paired_adaptive_cost_on_jointly_completed": 233.52
+    },
+    {
+      "scenario": "aligned",
+      "method": "independent_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 510.31,
+      "mean_rounds_stop_or_cap": 204.17,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 510.31,
+      "paired_adaptive_cost_on_jointly_completed": 233.52
+    },
+    {
+      "scenario": "aligned",
+      "method": "coupled_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 353.9,
+      "mean_rounds_stop_or_cap": 141.4,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 353.9,
+      "paired_adaptive_cost_on_jointly_completed": 233.52
+    },
+    {
+      "scenario": "aligned",
+      "method": "coupled_allocation",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 403.25,
+      "mean_rounds_stop_or_cap": 160.37,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 403.25,
+      "paired_adaptive_cost_on_jointly_completed": 233.52
+    },
+    {
+      "scenario": "weak",
+      "method": "paired_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 597.98,
+      "mean_rounds_stop_or_cap": 226.92,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 597.98,
+      "paired_adaptive_cost_on_jointly_completed": 656.93
+    },
+    {
+      "scenario": "weak",
+      "method": "paired_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 656.93,
+      "mean_rounds_stop_or_cap": 247.09,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 656.93,
+      "paired_adaptive_cost_on_jointly_completed": 656.93
+    },
+    {
+      "scenario": "weak",
+      "method": "independent_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 913.3,
+      "mean_rounds_stop_or_cap": 381.92,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 913.3,
+      "paired_adaptive_cost_on_jointly_completed": 656.93
+    },
+    {
+      "scenario": "weak",
+      "method": "coupled_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 732.58,
+      "mean_rounds_stop_or_cap": 312.76,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 732.58,
+      "paired_adaptive_cost_on_jointly_completed": 656.93
+    },
+    {
+      "scenario": "weak",
+      "method": "independent_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 937.55,
+      "mean_rounds_stop_or_cap": 391.8,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 937.55,
+      "paired_adaptive_cost_on_jointly_completed": 656.93
+    },
+    {
+      "scenario": "weak",
+      "method": "coupled_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 758.51,
+      "mean_rounds_stop_or_cap": 323.95,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 758.51,
+      "paired_adaptive_cost_on_jointly_completed": 656.93
+    },
+    {
+      "scenario": "weak",
+      "method": "coupled_allocation",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 914.86,
+      "mean_rounds_stop_or_cap": 397.85,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 914.86,
+      "paired_adaptive_cost_on_jointly_completed": 656.93
+    },
+    {
+      "scenario": "reversed",
+      "method": "paired_fixed",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 246.7,
+      "mean_rounds_stop_or_cap": 104.88,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 246.7,
+      "paired_adaptive_cost_on_jointly_completed": 270.89
+    },
+    {
+      "scenario": "reversed",
+      "method": "paired_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 270.89,
+      "mean_rounds_stop_or_cap": 115.15,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 270.89,
+      "paired_adaptive_cost_on_jointly_completed": 270.89
+    },
+    {
+      "scenario": "reversed",
+      "method": "independent_fixed",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 527.92,
+      "mean_rounds_stop_or_cap": 210.53,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 527.92,
+      "paired_adaptive_cost_on_jointly_completed": 270.89
+    },
+    {
+      "scenario": "reversed",
+      "method": "coupled_fixed",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 371.33,
+      "mean_rounds_stop_or_cap": 148.1,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 371.33,
+      "paired_adaptive_cost_on_jointly_completed": 270.89
+    },
+    {
+      "scenario": "reversed",
+      "method": "independent_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 543.93,
+      "mean_rounds_stop_or_cap": 217.0,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 543.93,
+      "paired_adaptive_cost_on_jointly_completed": 270.89
+    },
+    {
+      "scenario": "reversed",
+      "method": "coupled_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 383.54,
+      "mean_rounds_stop_or_cap": 153.16,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 383.54,
+      "paired_adaptive_cost_on_jointly_completed": 270.89
+    },
+    {
+      "scenario": "reversed",
+      "method": "coupled_allocation",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 490.14,
+      "mean_rounds_stop_or_cap": 195.09,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 490.14,
+      "paired_adaptive_cost_on_jointly_completed": 270.89
+    },
+    {
+      "scenario": "anti_residual",
+      "method": "paired_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 752.28,
+      "mean_rounds_stop_or_cap": 361.26,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 752.28,
+      "paired_adaptive_cost_on_jointly_completed": 758.65
+    },
+    {
+      "scenario": "anti_residual",
+      "method": "paired_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 758.65,
+      "mean_rounds_stop_or_cap": 363.62,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 758.65,
+      "paired_adaptive_cost_on_jointly_completed": 758.65
+    },
+    {
+      "scenario": "anti_residual",
+      "method": "independent_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 1181.32,
+      "mean_rounds_stop_or_cap": 472.65,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 1181.32,
+      "paired_adaptive_cost_on_jointly_completed": 758.65
+    },
+    {
+      "scenario": "anti_residual",
+      "method": "coupled_fixed",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 1186.47,
+      "mean_rounds_stop_or_cap": 475.64,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 1186.47,
+      "paired_adaptive_cost_on_jointly_completed": 758.65
+    },
+    {
+      "scenario": "anti_residual",
+      "method": "independent_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 1185.7,
+      "mean_rounds_stop_or_cap": 474.36,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 1185.7,
+      "paired_adaptive_cost_on_jointly_completed": 758.65
+    },
+    {
+      "scenario": "anti_residual",
+      "method": "coupled_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 1193.16,
+      "mean_rounds_stop_or_cap": 478.33,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 1193.16,
+      "paired_adaptive_cost_on_jointly_completed": 758.65
+    },
+    {
+      "scenario": "anti_residual",
+      "method": "coupled_allocation",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1,
+        1
+      ],
+      "completed": 100,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 1198.17,
+      "mean_rounds_stop_or_cap": 480.02,
+      "jointly_completed_with_paired_adaptive": 100,
+      "mean_cost_on_jointly_completed": 1198.17,
+      "paired_adaptive_cost_on_jointly_completed": 758.65
+    },
+    {
+      "scenario": "tie",
+      "method": "paired_fixed",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0,
+        0
+      ],
+      "completed": 0,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 4800.0,
+      "mean_rounds_stop_or_cap": 1600.0,
+      "jointly_completed_with_paired_adaptive": 0,
+      "mean_cost_on_jointly_completed": null,
+      "paired_adaptive_cost_on_jointly_completed": null
+    },
+    {
+      "scenario": "tie",
+      "method": "paired_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0,
+        0
+      ],
+      "completed": 0,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 4800.0,
+      "mean_rounds_stop_or_cap": 1600.0,
+      "jointly_completed_with_paired_adaptive": 0,
+      "mean_cost_on_jointly_completed": null,
+      "paired_adaptive_cost_on_jointly_completed": null
+    },
+    {
+      "scenario": "tie",
+      "method": "independent_fixed",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0,
+        0
+      ],
+      "completed": 0,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 3998.28,
+      "mean_rounds_stop_or_cap": 1600.0,
+      "jointly_completed_with_paired_adaptive": 0,
+      "mean_cost_on_jointly_completed": null,
+      "paired_adaptive_cost_on_jointly_completed": null
+    },
+    {
+      "scenario": "tie",
+      "method": "coupled_fixed",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0,
+        0
+      ],
+      "completed": 0,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 4003.7,
+      "mean_rounds_stop_or_cap": 1600.0,
+      "jointly_completed_with_paired_adaptive": 0,
+      "mean_cost_on_jointly_completed": null,
+      "paired_adaptive_cost_on_jointly_completed": null
+    },
+    {
+      "scenario": "tie",
+      "method": "independent_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0,
+        0
+      ],
+      "completed": 0,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 3998.28,
+      "mean_rounds_stop_or_cap": 1600.0,
+      "jointly_completed_with_paired_adaptive": 0,
+      "mean_cost_on_jointly_completed": null,
+      "paired_adaptive_cost_on_jointly_completed": null
+    },
+    {
+      "scenario": "tie",
+      "method": "coupled_adaptive",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0,
+        0
+      ],
+      "completed": 0,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 4003.7,
+      "mean_rounds_stop_or_cap": 1600.0,
+      "jointly_completed_with_paired_adaptive": 0,
+      "mean_cost_on_jointly_completed": null,
+      "paired_adaptive_cost_on_jointly_completed": null
+    },
+    {
+      "scenario": "tie",
+      "method": "coupled_allocation",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0,
+        0
+      ],
+      "completed": 0,
+      "wrong_runs": 0,
+      "mean_cost_stop_or_cap": 4005.38,
+      "mean_rounds_stop_or_cap": 1600.0,
+      "jointly_completed_with_paired_adaptive": 0,
+      "mean_cost_on_jointly_completed": null,
+      "paired_adaptive_cost_on_jointly_completed": null
+    }
+  ],
+  "replicates_sha256": "bef7e2df8c0dad5257de02fdaf759518f156b573f67addca26c19cbde75d74a6"
+}
