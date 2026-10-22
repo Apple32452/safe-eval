@@ -19,7 +19,8 @@ from run_stage17 import close_free
 
 def exact_bounds(scores, seen, pairs):
     """Sharp contrast sum bounds for unknown scores in [0,1]."""
-    observed = np.where(seen, scores, 0.0)
+    observed = np.zeros_like(scores)
+    observed[seen] = scores[seen]
     total = observed.sum(axis=1)
     missing = (~seen).sum(axis=1)
     a, b = pairs.T
@@ -42,6 +43,7 @@ def run_dynamic(scores, pairs, permutation, events, priority, *, partial_bounds)
     decision = np.full(len(pairs), 2, dtype=np.int8)
     acquired = []
     deterministic = 0
+    bound_decisions = []
     for item in permutation[0]:
         if not np.any(decision == 2):
             break
@@ -60,29 +62,26 @@ def run_dynamic(scores, pairs, permutation, events, priority, *, partial_bounds)
                 lower, upper = exact_bounds(scores, seen, pairs)
                 for edge in np.flatnonzero(decision == 2):
                     if lower[edge] > 0:
-                        assert truth_for_edge(scores, pairs[edge]) == 1
                         decision[edge] = 1
                         deterministic += 1
+                        bound_decisions.append((edge, 1))
                     elif upper[edge] < 0:
-                        assert truth_for_edge(scores, pairs[edge]) == -1
                         decision[edge] = -1
                         deterministic += 1
+                        bound_decisions.append((edge, -1))
                     elif lower[edge] == upper[edge] == 0:
-                        assert truth_for_edge(scores, pairs[edge]) == 0
                         decision[edge] = 0
                         deterministic += 1
+                        bound_decisions.append((edge, 0))
         if np.any((decision == 2) & (cursor <= np.where(permutation[0] == item)[0][0])):
             raise AssertionError("An active edge missed the current paired item")
     truth = np.sign(scores[pairs[:, 0]].sum(axis=1) -
                     scores[pairs[:, 1]].sum(axis=1)).astype(np.int8)
+    assert all(truth[edge] == sign for edge, sign in bound_decisions)
     assert not np.any(decision == 2)
     assert len(acquired) == len(set(acquired)) == int(seen.sum())
     return dict(cost=len(acquired), deterministic=deterministic, decision=decision,
                 wrong=int(np.count_nonzero(decision != truth)))
-
-
-def truth_for_edge(scores, edge):
-    return int(np.sign(scores[edge[0]].sum() - scores[edge[1]].sum()))
 
 
 def run_static(scores, pairs, permutation, events, priority):
