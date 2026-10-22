@@ -70,8 +70,11 @@ jobs:
           python -m unittest discover -s experiments/stage32 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage33 -p 'test_*.py' -v
           python -m unittest discover -s experiments/arm_gate -p 'test_*.py' -v
+          python -m unittest discover -s experiments/block_gate -p 'test_*.py' -v
       - name: Run separate-arm diagnostic smoke check
         run: python experiments/arm_gate/arm_probe.py --repeats 2 --output results/arm_gate_smoke.json
+      - name: Run shared-item partial-block software check
+        run: python experiments/block_gate/block_probe.py --repeats 2 --output results/block_gate_smoke.json
       - name: Audit the saved Stage 30 synthetic star gate
         run: python experiments/stage30/analyze_star_gate.py --input experiments/stage30/results_reference
       - name: Audit the saved Stage 32 context diagnostic
