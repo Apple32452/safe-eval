@@ -14,6 +14,17 @@ The median `R/V` is `0.6105`. All 14 language directions have a lower
 median shared-reference cost proxy than the corresponding full paired
 proxy; the per-language detail is in
 [`results_reference/by_language.csv`](results_reference/by_language.csv).
+When one reference label is amortized over a hypothetical `k` simultaneously
+active candidates, the eligible counts among 4,394 ordered pairs are:
+
+| Active candidates `k` | 1 | 2 | 4 | 8 | 17 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Eligible pairs | 800 | 2,112 | 3,397 | 3,995 | 4,193 |
+
+The `k=17` column uses the same hypothetical degree for every language;
+the 4,197 total above instead uses each language's actual initial degree
+(17--19). This sensitivity matters because the active degree falls as
+claims finish.
 The test script independently enumerates a small randomized query design
 and confirms the exact variance identity. Stage 17's data loader verifies
 the source and matrix hashes before analysis.

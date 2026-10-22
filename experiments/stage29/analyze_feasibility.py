@@ -108,6 +108,7 @@ def summarize(data):
                 local_cost_ratio(v, r, Q, 1 / k) for v, r in records])),
         })
     total = len(all_records)
+    ratios = np.array([r / v for v, r, _ in all_records])
     result = {
         "interpretation": "Exploratory local variance-times-label-cost proxy; no sequential stopping or train-label cost",
         "q": Q,
@@ -117,7 +118,11 @@ def summarize(data):
         "single_threshold": threshold(Q, 1),
         "eligible_single": sum(x["eligible_single_reference"] for x in rows),
         "eligible_shared": sum(x["eligible_shared_reference"] for x in rows),
-        "median_R_over_V": float(np.median([r / v for v, r, _ in all_records])),
+        "median_R_over_V": float(np.median(ratios)),
+        "eligible_by_active_degree": {
+            str(k): int(np.sum(ratios < threshold(Q, 1 / k)))
+            for k in (1, 2, 4, 8, 17)
+        },
         "median_single_cost_ratio": float(np.median([
             local_cost_ratio(v, r, Q, 1) for v, r, _ in all_records])),
         "median_shared_cost_ratio": float(np.median([

@@ -155,6 +155,13 @@
       "systems": 18
     }
   ],
+  "eligible_by_active_degree": {
+    "1": 800,
+    "17": 4193,
+    "2": 2112,
+    "4": 3397,
+    "8": 3995
+  },
   "eligible_shared": 4197,
   "eligible_single": 800,
   "folds": 5,
