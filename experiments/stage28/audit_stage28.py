@@ -148,7 +148,8 @@ def write_results(payload, output):
                "d02", "d12", "complete", "wrong", "unresolved")
     replicate_path = path / "REPLICATES.csv"
     with replicate_path.open("w", newline="") as stream:
-        writer = csv.DictWriter(stream, fieldnames=columns)
+        # Keep the saved digest identical after Git checkout on each OS.
+        writer = csv.DictWriter(stream, fieldnames=columns, lineterminator="\n")
         writer.writeheader()
         for row in payload["replicates"]:
             for method in METHODS:
