@@ -20,6 +20,10 @@ class ArmGateInvariants(unittest.TestCase):
                     arm = Arm(n, alpha=.05, systems=1, order=np.arange(n))
                     for i in prefix:
                         arm.update(pop[i])
+                        # Each mean grid is nested: rejection of a harder
+                        # null implies rejection of every easier one.
+                        self.assertTrue(np.all(arm.plus[:-1] >= arm.plus[1:] - 1e-12))
+                        self.assertTrue(np.all(arm.minus[:-1] <= arm.minus[1:] + 1e-12))
                     rest = [i for i in range(n) if i not in prefix]
                     for grid_index in (0, 25, 50, 75, 100):
                         threshold = grid_index / 100
