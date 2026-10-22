@@ -1,0 +1,141 @@
+{
+  "overall_gate_passed": false,
+  "repeats": 100,
+  "scenarios": [
+    {
+      "cost_gate_passed": false,
+      "methods": {
+        "degree_switch": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 436.16,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "paired": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 458.57,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "partial": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 435.9,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        }
+      },
+      "scenario": "shared_easy"
+    },
+    {
+      "cost_gate_passed": false,
+      "methods": {
+        "degree_switch": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 627.05,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "paired": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 638.86,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "partial": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 628.51,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        }
+      },
+      "scenario": "shared_weak"
+    },
+    {
+      "cost_gate_passed": false,
+      "methods": {
+        "degree_switch": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 671.78,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "paired": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 726.49,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "partial": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 658.17,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        }
+      },
+      "scenario": "independent"
+    },
+    {
+      "cost_gate_passed": false,
+      "methods": {
+        "degree_switch": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 475.51,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "paired": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 498.63,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        },
+        "partial": {
+          "completed": 100,
+          "mean_correct": 17.0,
+          "mean_cost": 478.87,
+          "mean_unresolved": 0.0,
+          "wrong": 0
+        }
+      },
+      "scenario": "long_tail"
+    },
+    {
+      "cost_gate_passed": false,
+      "methods": {
+        "degree_switch": {
+          "completed": 0,
+          "mean_correct": 16.0,
+          "mean_cost": 4365.97,
+          "mean_unresolved": 1.0,
+          "wrong": 0
+        },
+        "paired": {
+          "completed": 0,
+          "mean_correct": 16.0,
+          "mean_cost": 4409.41,
+          "mean_unresolved": 1.0,
+          "wrong": 0
+        },
+        "partial": {
+          "completed": 0,
+          "mean_correct": 16.0,
+          "mean_cost": 3870.13,
+          "mean_unresolved": 1.0,
+          "wrong": 0
+        }
+      },
+      "scenario": "tie"
+    }
+  ]
+}
