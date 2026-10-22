@@ -1,0 +1,27 @@
+{
+  "rankings": 7842,
+  "complete_five_way": 7694,
+  "pair_item_groups": 54522,
+  "different_companion_panel_pair_items": 5854,
+  "different_panel_with_multiple_raters": 4454,
+  "opposite_nontied_signs_across_panels": 948,
+  "reference_presence_within_pair_item": {
+    "pair_items": 2389,
+    "source_items": 930,
+    "mean": -0.004325380214873725,
+    "cluster_bootstrap_95": [
+      -0.04047205921662916,
+      0.03272706072859804
+    ]
+  },
+  "reference_presence_disjoint_raters": {
+    "pair_items": 1611,
+    "source_items": 693,
+    "mean": -0.014794123732671216,
+    "cluster_bootstrap_95": [
+      -0.05970831033031425,
+      0.0342837509169105
+    ]
+  },
+  "analysis": "descriptive retrospective association; not a causal panel effect"
+}
