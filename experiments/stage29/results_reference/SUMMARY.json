@@ -1,0 +1,177 @@
+{
+  "by_language": [
+    {
+      "eligible_shared_reference": 370,
+      "eligible_single_reference": 66,
+      "items": 231,
+      "language": "cs-de_DE",
+      "median_R_over_V": 0.6522901673707383,
+      "median_shared_cost_ratio": 0.9282904175400626,
+      "median_single_cost_ratio": 1.0652512988164653,
+      "ordered_pairs": 380,
+      "systems": 20
+    },
+    {
+      "eligible_shared_reference": 303,
+      "eligible_single_reference": 66,
+      "items": 225,
+      "language": "cs-uk_UA",
+      "median_R_over_V": 0.6708536604990267,
+      "median_shared_cost_ratio": 0.9347081079974373,
+      "median_single_cost_ratio": 1.0706656509788828,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 189,
+      "eligible_single_reference": 89,
+      "items": 199,
+      "language": "en-ar_EG",
+      "median_R_over_V": 0.7475790059417322,
+      "median_shared_cost_ratio": 0.9542446542907188,
+      "median_single_cost_ratio": 1.093043876733005,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 293,
+      "eligible_single_reference": 97,
+      "items": 189,
+      "language": "en-bho_IN",
+      "median_R_over_V": 0.5542817658767498,
+      "median_shared_cost_ratio": 0.9050254496445427,
+      "median_single_cost_ratio": 1.0366655150473854,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 342,
+      "eligible_single_reference": 44,
+      "items": 212,
+      "language": "en-cs_CZ",
+      "median_R_over_V": 0.6112170571241416,
+      "median_shared_cost_ratio": 0.9186429355842114,
+      "median_single_cost_ratio": 1.0532716416612078,
+      "ordered_pairs": 342,
+      "systems": 19
+    },
+    {
+      "eligible_shared_reference": 306,
+      "eligible_single_reference": 21,
+      "items": 190,
+      "language": "en-et_EE",
+      "median_R_over_V": 0.5943975292682652,
+      "median_shared_cost_ratio": 0.9152401116192341,
+      "median_single_cost_ratio": 1.0483659460365773,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 298,
+      "eligible_single_reference": 26,
+      "items": 202,
+      "language": "en-is_IS",
+      "median_R_over_V": 0.6253230133647205,
+      "median_shared_cost_ratio": 0.9231146561808314,
+      "median_single_cost_ratio": 1.0573858788980433,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 304,
+      "eligible_single_reference": 23,
+      "items": 215,
+      "language": "en-it_IT",
+      "median_R_over_V": 0.6210039042876048,
+      "median_shared_cost_ratio": 0.9220148830361955,
+      "median_single_cost_ratio": 1.0561261387505514,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 304,
+      "eligible_single_reference": 63,
+      "items": 189,
+      "language": "en-ja_JP",
+      "median_R_over_V": 0.5460548610177165,
+      "median_shared_cost_ratio": 0.9029306359072888,
+      "median_single_cost_ratio": 1.0342660011301672,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 294,
+      "eligible_single_reference": 119,
+      "items": 185,
+      "language": "en-mas_KE",
+      "median_R_over_V": 0.5247420772829383,
+      "median_shared_cost_ratio": 0.8975037696785259,
+      "median_single_cost_ratio": 1.0280497725408568,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 302,
+      "eligible_single_reference": 9,
+      "items": 200,
+      "language": "en-ru_RU",
+      "median_R_over_V": 0.6497525264992221,
+      "median_shared_cost_ratio": 0.9293351340623018,
+      "median_single_cost_ratio": 1.064511153562273,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 286,
+      "eligible_single_reference": 113,
+      "items": 206,
+      "language": "en-sr_Cyrl_RS",
+      "median_R_over_V": 0.5969990824418423,
+      "median_shared_cost_ratio": 0.9159025441402839,
+      "median_single_cost_ratio": 1.0491247323788708,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 300,
+      "eligible_single_reference": 24,
+      "items": 199,
+      "language": "en-uk_UA",
+      "median_R_over_V": 0.650180940384695,
+      "median_shared_cost_ratio": 0.9294442209312879,
+      "median_single_cost_ratio": 1.0646361076122026,
+      "ordered_pairs": 306,
+      "systems": 18
+    },
+    {
+      "eligible_shared_reference": 306,
+      "eligible_single_reference": 40,
+      "items": 198,
+      "language": "en-zh_CN",
+      "median_R_over_V": 0.5781253606188603,
+      "median_shared_cost_ratio": 0.9110967353427653,
+      "median_single_cost_ratio": 1.0436198968471675,
+      "ordered_pairs": 306,
+      "systems": 18
+    }
+  ],
+  "eligible_by_active_degree": {
+    "1": 800,
+    "17": 4193,
+    "2": 2112,
+    "4": 3397,
+    "8": 3995
+  },
+  "eligible_shared": 4197,
+  "eligible_single": 800,
+  "folds": 5,
+  "interpretation": "Exploratory local variance-times-label-cost proxy; no sequential stopping or train-label cost",
+  "median_R_over_V": 0.6104729846018877,
+  "median_shared_cost_ratio": 0.9190512181762056,
+  "median_single_cost_ratio": 1.0530546205088838,
+  "ordered_pairs": 4394,
+  "q": 0.75,
+  "seed": 20261022,
+  "single_threshold": 0.42857142857142855,
+  "source_sha256": "a36ebce10c9ea26f71449933721de3a87e27f6a5b09d96b5daa026eaf1d197ab"
+}
