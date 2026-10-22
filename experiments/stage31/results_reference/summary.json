@@ -1,0 +1,28 @@
+{
+  "model": "Koehn 2012-style iid normal quality, 15 systems, 5 per panel, variance 10",
+  "seed": 20261022,
+  "repeats": 20,
+  "cap": 6000,
+  "target_certified_pairs": 74,
+  "alpha_familywise": 0.05,
+  "candidate_panels_per_round": 16,
+  "summary": {
+    "uniform_panel": {
+      "completed": 20,
+      "mean_capped_panels": 2349.95,
+      "mean_certified_pairs": 74.0,
+      "mean_rank_width": 5.133333333333335,
+      "wrong": 0,
+      "cycles": 0
+    },
+    "unresolved_panel": {
+      "completed": 20,
+      "mean_capped_panels": 1575.4,
+      "mean_certified_pairs": 74.0,
+      "mean_rank_width": 5.133333333333335,
+      "wrong": 0,
+      "cycles": 0
+    },
+    "paired_relative_saving": 0.32960275750547874
+  }
+}

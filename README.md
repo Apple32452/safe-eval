@@ -1,6 +1,6 @@
 # SAFE-EVAL
 
-**Latest research:** [Stage 29](experiments/stage29/FINDINGS.md) identifies a shared-reference cost opportunity; [Stage 30](experiments/stage30/FINDINGS.md) tests it with paid labels and misses its frozen ICML-method gate. No ICML novelty is established.
+**Latest research:** [Stage 31](experiments/stage31/FINDINGS.md) tests five-way judgment panels inspired by Koehn (2012): active allocation saves 32.96% of synthetic panel tasks against uniform sampling in 20 matched runs. This is a development result, with no ICML novelty established. [Stages 29–30](experiments/stage30/FINDINGS.md) studied a separate shared-reference design.
 
 SAFE-EVAL studies how to reach reliable conclusions about machine translation
 systems while paying for fewer system-item judgments on a fixed test set. It
