@@ -1,0 +1,8106 @@
+{
+  "protocol": {
+    "seed": 20261022,
+    "alpha": 0.05,
+    "epsilon": 0.25,
+    "rhos": [
+      0.05,
+      0.1,
+      0.2,
+      0.4,
+      0.8
+    ],
+    "max_rounds": 800,
+    "repeats": 100,
+    "item_count": 32,
+    "rater_count": 6,
+    "estimand": "Expected system score for an iid uniform item and independent iid uniform rater",
+    "unit_cost": "One system-item-rater judgment in each fresh draw"
+  },
+  "exact_audit": {
+    "enumerated_null_settings": 4401,
+    "tied_population_contrast": 0,
+    "expected_corrected_signal": 0.0,
+    "naively_selected_pair_mean": 0.6,
+    "prospective_rater_identification_counterexample": {
+      "observed_rater_probability": 0.1,
+      "observed_rater_difference": 1,
+      "world_A_new_rater_difference": 1,
+      "world_B_new_rater_difference": -1,
+      "world_A_population_difference": 1,
+      "world_B_population_difference": -0.8
+    }
+  },
+  "summary": [
+    {
+      "scenario": "aligned",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired_completed": 100,
+      "two_stage_completed": 100,
+      "completed_both": 100,
+      "paired_wrong_runs": 0,
+      "two_stage_wrong_runs": 0,
+      "paired_mean_cost_to_stop_or_cap": 51.24,
+      "two_stage_mean_cost_to_stop_or_cap": 145.86,
+      "paired_mean_cost_when_both_complete": 51.24,
+      "two_stage_mean_cost_when_both_complete": 145.86
+    },
+    {
+      "scenario": "weak",
+      "repeats": 100,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired_completed": 100,
+      "two_stage_completed": 87,
+      "completed_both": 87,
+      "paired_wrong_runs": 0,
+      "two_stage_wrong_runs": 0,
+      "paired_mean_cost_to_stop_or_cap": 532.23,
+      "two_stage_mean_cost_to_stop_or_cap": 1294.42,
+      "paired_mean_cost_when_both_complete": 528.0229885057471,
+      "two_stage_mean_cost_when_both_complete": 1254.1724137931035
+    },
+    {
+      "scenario": "reversed",
+      "repeats": 100,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired_completed": 100,
+      "two_stage_completed": 100,
+      "completed_both": 100,
+      "paired_wrong_runs": 0,
+      "two_stage_wrong_runs": 0,
+      "paired_mean_cost_to_stop_or_cap": 113.22,
+      "two_stage_mean_cost_to_stop_or_cap": 286.92,
+      "paired_mean_cost_when_both_complete": 113.22,
+      "two_stage_mean_cost_when_both_complete": 286.92
+    },
+    {
+      "scenario": "tie",
+      "repeats": 100,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired_completed": 0,
+      "two_stage_completed": 0,
+      "completed_both": 0,
+      "paired_wrong_runs": 0,
+      "two_stage_wrong_runs": 0,
+      "paired_mean_cost_to_stop_or_cap": 2400.0,
+      "two_stage_mean_cost_to_stop_or_cap": 1820.03,
+      "paired_mean_cost_when_both_complete": null,
+      "two_stage_mean_cost_when_both_complete": null
+    }
+  ],
+  "replicates": [
+    {
+      "scenario": "aligned",
+      "repeat": 0,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 62,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 150,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 1,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 55,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 132,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 2,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 54,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 139,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 3,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 38,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 138,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 4,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 54,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 5,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 41,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 145,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 6,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 7,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 47,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 133,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 8,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 38,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 158,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 9,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 54,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 166,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 10,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 45,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 146,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 11,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 44,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 133,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 12,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 45,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 135,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 13,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 38,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 134,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 14,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 61,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 165,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 15,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 43,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 145,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 16,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 57,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 139,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 17,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 41,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 168,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 18,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 52,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 149,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 19,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 54,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 126,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 20,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 70,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 151,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 21,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 53,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 154,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 22,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 42,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 133,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 23,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 49,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 131,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 24,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 43,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 155,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 25,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 52,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 155,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 26,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 58,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 141,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 27,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 42,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 131,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 28,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 38,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 148,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 29,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 137,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 30,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 62,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 169,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 31,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 45,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 139,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 32,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 49,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 130,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 33,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 50,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 144,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 34,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 52,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 157,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 35,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 60,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 146,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 36,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 47,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 189,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 37,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 80,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 185,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 38,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 50,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 153,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 39,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 50,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 40,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 53,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 144,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 41,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 53,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 150,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 42,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 40,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 116,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 43,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 62,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 148,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 44,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 41,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 125,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 45,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 63,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 180,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 46,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 58,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 142,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 47,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 66,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 48,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 43,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 135,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 49,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 56,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 157,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 50,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 51,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 149,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 51,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 44,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 126,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 52,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 45,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 136,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 53,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 52,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 140,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 54,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 59,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 55,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 60,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 183,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 56,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 66,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 158,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 57,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 58,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 156,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 58,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 51,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 149,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 59,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 54,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 60,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 53,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 61,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 41,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 136,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 62,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 154,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 63,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 42,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 144,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 64,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 52,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 136,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 65,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 47,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 129,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 66,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 54,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 145,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 67,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 56,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 68,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 64,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 174,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 69,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 132,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 70,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 51,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 135,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 71,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 62,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 155,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 72,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 51,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 133,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 73,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 65,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 151,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 74,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 39,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 133,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 75,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 33,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 131,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 76,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 138,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 77,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 51,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 139,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 78,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 42,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 142,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 79,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 60,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 163,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 80,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 51,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 148,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 81,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 40,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 154,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 82,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 62,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 158,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 83,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 52,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 148,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 84,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 57,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 151,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 85,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 134,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 86,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 141,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 87,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 41,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 150,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 88,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 45,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 141,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 89,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 57,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 143,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 90,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 58,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 143,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 91,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 58,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 153,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 92,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 57,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 142,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 93,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 59,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 161,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 94,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 50,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 135,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 95,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 47,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 153,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 96,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 52,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 130,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 97,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 48,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 149,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 98,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 42,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 127,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "aligned",
+      "repeat": 99,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 59,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 136,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 0,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 571,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1321,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 1,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 336,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 789,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 2,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 360,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1311,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 3,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 658,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1533,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 4,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 660,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1407,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 5,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 496,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1388,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 6,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 514,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1494,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 7,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 510,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1171,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 8,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 509,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1298,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 9,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 374,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1519,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 10,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 509,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1322,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 11,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 547,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1177,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 12,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 488,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1084,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 13,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 826,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1587,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 14,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 503,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1254,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 15,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 601,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1417,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 16,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 534,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1306,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 17,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 860,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1391,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 18,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 808,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1443,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 19,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 525,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1142,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 20,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 501,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1012,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 21,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 387,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1051,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 22,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 331,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1037,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 23,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 502,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1242,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 24,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 352,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1066,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 25,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 474,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1192,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 26,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 310,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 966,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 27,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 389,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1114,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 28,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 529,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1238,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 29,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 674,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1584,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 30,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 390,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1251,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 31,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 737,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1507,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 32,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 484,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1339,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 33,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 443,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1077,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 34,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 699,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1554,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 35,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 563,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1218,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 36,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 319,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1028,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 37,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 939,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1316,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 38,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 638,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1369,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 39,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 447,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1241,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 40,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 497,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1061,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 41,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 353,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1083,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 42,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 506,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1085,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 43,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 367,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1176,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 44,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 642,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1300,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 45,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 553,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1369,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 46,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 382,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1114,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 47,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 726,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1554,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 48,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 742,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1562,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 49,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 543,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1547,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 50,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 439,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1454,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 51,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 678,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1644,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 52,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 753,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1549,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 53,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 499,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1296,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 54,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 871,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1510,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 55,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 388,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 915,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 56,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 706,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1617,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 57,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 515,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1325,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 58,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 491,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1558,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 59,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 335,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 893,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 60,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 509,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1264,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 61,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 443,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1186,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 62,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 672,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1360,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 63,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 555,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1111,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 64,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 565,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1194,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 65,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 554,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1568,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 66,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 552,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1466,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 67,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 537,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1422,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 68,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 442,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1389,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 69,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 431,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 967,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 70,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 326,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1578,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 71,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 542,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1311,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 72,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 607,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1167,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 73,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 335,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1053,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 74,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 602,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1091,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 75,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 398,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1412,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 76,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 429,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1451,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 77,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 859,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1336,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 78,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 681,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1569,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 79,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 425,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1019,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 80,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 605,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1177,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 81,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 439,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1176,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 82,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 676,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1419,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 83,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 657,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1254,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 84,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 672,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1327,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 85,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 838,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1599,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 86,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 282,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1272,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 87,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 415,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1545,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 88,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 248,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 994,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 89,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 556,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1150,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 90,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 494,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1592,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 91,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 409,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1314,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 92,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 290,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 756,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 93,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 776,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1230,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 94,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 607,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1571,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 1
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 95,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 508,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1376,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 96,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 371,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1184,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 97,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 392,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1253,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 98,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 569,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1539,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "weak",
+      "repeat": 99,
+      "population_signs": [
+        1,
+        1
+      ],
+      "paired": {
+        "cost": 672,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 1432,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 0,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 96,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 217,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 1,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 162,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 329,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 2,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 159,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 247,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 3,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 91,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 391,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 4,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 94,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 189,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 5,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 130,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 375,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 6,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 85,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 306,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 7,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 116,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 297,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 8,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 112,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 270,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 9,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 112,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 336,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 10,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 109,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 316,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 11,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 90,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 258,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 12,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 178,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 345,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 13,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 112,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 271,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 14,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 148,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 357,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 15,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 90,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 239,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 16,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 78,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 174,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 17,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 80,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 279,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 18,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 93,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 284,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 19,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 98,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 120,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 20,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 113,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 241,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 21,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 120,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 225,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 22,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 147,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 293,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 23,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 154,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 301,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 24,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 97,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 177,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 25,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 117,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 223,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 26,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 112,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 336,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 27,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 121,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 311,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 28,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 117,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 197,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 29,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 180,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 270,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 30,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 81,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 219,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 31,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 105,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 292,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 32,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 124,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 341,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 33,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 135,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 432,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 34,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 103,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 278,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 35,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 139,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 311,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 36,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 119,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 300,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 37,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 88,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 319,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 38,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 134,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 218,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 39,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 107,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 367,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 40,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 119,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 316,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 41,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 113,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 299,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 42,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 102,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 257,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 43,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 134,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 364,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 44,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 130,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 340,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 45,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 90,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 321,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 46,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 111,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 387,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 47,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 74,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 232,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 48,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 109,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 270,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 49,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 131,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 360,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 50,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 58,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 237,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 51,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 78,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 172,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 52,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 107,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 325,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 53,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 86,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 302,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 54,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 82,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 151,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 55,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 122,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 284,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 56,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 119,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 242,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 57,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 96,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 203,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 58,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 110,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 273,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 59,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 85,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 281,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 60,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 96,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 291,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 61,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 105,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 294,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 62,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 149,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 368,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 63,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 123,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 406,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 64,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 112,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 285,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 65,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 154,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 290,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 66,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 108,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 231,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 67,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 94,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 209,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 68,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 123,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 254,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 69,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 79,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 267,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 70,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 71,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 329,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 71,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 105,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 187,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 72,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 99,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 273,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 73,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 60,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 204,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 74,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 105,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 280,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 75,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 124,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 284,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 76,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 122,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 334,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 77,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 88,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 277,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 78,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 170,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 388,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 79,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 95,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 347,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 80,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 114,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 265,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 81,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 114,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 400,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 82,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 105,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 326,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 83,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 97,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 262,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 84,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 100,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 420,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 85,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 182,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 324,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 86,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 145,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 304,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 87,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 104,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 219,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 88,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 143,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 318,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 89,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 96,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 154,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 90,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 114,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 206,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 91,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 117,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 183,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 92,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 162,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 320,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 93,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 131,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 503,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 94,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 127,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 343,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 95,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 118,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 358,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 96,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 128,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 313,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 97,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 120,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 212,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 98,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 80,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 329,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 99,
+      "population_signs": [
+        -1,
+        -1
+      ],
+      "paired": {
+        "cost": 141,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      },
+      "two_stage": {
+        "cost": 268,
+        "completed": true,
+        "wrong": 0,
+        "unresolved": 0
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 0,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1857,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 1,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1862,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 2,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1840,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 3,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1857,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 4,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1841,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 5,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1795,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 6,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1815,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 7,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1808,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 8,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1802,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 9,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1814,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 10,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1793,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 11,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1793,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 12,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1853,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 13,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1789,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 14,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1794,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 15,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1832,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 16,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1832,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 17,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1796,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 18,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1820,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 19,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1807,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 20,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1863,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 21,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1853,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 22,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1793,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 23,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1807,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 24,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1845,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 25,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1820,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 26,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1818,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 27,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1844,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 28,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1808,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 29,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1807,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 30,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1800,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 31,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1831,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 32,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1819,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 33,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1821,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 34,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1851,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 35,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1804,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 36,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1844,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 37,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1834,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 38,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1807,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 39,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1817,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 40,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1801,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 41,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1835,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 42,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1814,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 43,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1812,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 44,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1868,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 45,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1845,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 46,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1863,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 47,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1810,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 48,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1830,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 49,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1836,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 50,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1825,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 51,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1803,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 52,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1842,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 53,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1796,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 54,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1823,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 55,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1815,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 56,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1848,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 57,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1842,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 58,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1825,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 59,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1814,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 60,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1774,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 61,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1792,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 62,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1813,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 63,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1807,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 64,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1770,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 65,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1776,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 66,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1808,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 67,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1795,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 68,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1798,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 69,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1812,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 70,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1829,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 71,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1843,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 72,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1791,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 73,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1810,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 74,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1832,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 75,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1835,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 76,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1776,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 77,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1798,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 78,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1808,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 79,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1825,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 80,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1836,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 81,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1857,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 82,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1826,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 83,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1849,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 84,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1768,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 85,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1826,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 86,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1808,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 87,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1803,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 88,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1838,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 89,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1836,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 90,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1832,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 91,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1790,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 92,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1828,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 93,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1822,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 94,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1832,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 95,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1809,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 96,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1826,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 97,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1814,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 98,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1827,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    },
+    {
+      "scenario": "tie",
+      "repeat": 99,
+      "population_signs": [
+        0,
+        0
+      ],
+      "paired": {
+        "cost": 2400,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      },
+      "two_stage": {
+        "cost": 1851,
+        "completed": false,
+        "wrong": 0,
+        "unresolved": 2
+      }
+    }
+  ]
+}
