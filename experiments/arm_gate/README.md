@@ -21,15 +21,23 @@ the null `mu_v <= m`, the conditional expected next score is at most
 `c=(N*m-S)/(N-t)`. For `0<c<1` the factor
 `1+rho*(Y_next-c)/c` is nonnegative, has conditional expectation at most
 one, and is fixed before reading the next score. A symmetric factor
-`1+rho*(c-Y_next)/(1-c)` tests `mu_v >= m`. Impossible nulls are rejected
-by logical bounds. The implementation mixes fixed `rho` values
+`1+rho*(c-Y_next)/(1-c)` tests `mu_v >= m`. When `c>1` for the first
+direction or `c<0` for the second, the same factors remain valid and keep
+wealth monotone in `m`. At the boundaries `c=0` and `c=1` the continuous
+factor limits are used unless the newly seen value logically falsifies
+the null. Other impossible nulls are rejected by logical bounds.
+The implementation mixes fixed `rho` values
 `{.02,.05,.10,.20,.40,.80}` and tests candidate means on the fixed grid
 `{0,.01,...,1}`. A crossed lower (upper) null gives a lower (upper) mean
 bound. The sharp logical interval from observed scores is intersected with
 the betting interval. At full exposure the mean is exact.
 
 Each of the two directional processes for each of `S` systems is given
-threshold `2*S/alpha`. With a fixed score matrix and independent random item
+threshold `2*S/alpha`. The factors, products and fixed mixture for the
+`mu_v <= m` null are nonincreasing in `m`; their counterparts for
+`mu_v >= m` are nondecreasing. Thus a false grid-bound crossing implies
+that the nearest grid null containing the true mean crossed: there is no
+additional 101-test multiplicity cost. With a fixed score matrix and independent random item
 permutation for every system, conditioning on the past leaves that system's
 next item uniform among its remaining items. The arm schedule is based on
 observed history. Ville's inequality and a union bound therefore imply
