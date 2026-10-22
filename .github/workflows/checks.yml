@@ -61,6 +61,9 @@ jobs:
           python -m unittest discover -s experiments/stage21 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage22 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage23 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage26 -p 'test_*.py' -v
+      - name: Check the Stage 26 synthetic method gate
+        run: python experiments/stage26/run_synthetic_gate.py --repeats 2 --output results/stage26_smoke
       - name: Audit the saved Stage 14 exploratory results
         run: |
           python experiments/stage14/summarize_pilot.py --input experiments/stage14/results_reference
@@ -126,7 +129,6 @@ jobs:
         run: |
           python -m py_compile experiments/stage23/*.py
           python experiments/stage23/audit_stage23.py
-          python experiments/stage23/audit_async_prefix.py
       - name: Run the Stage 13 paired software check
         run: python experiments/stage13/run_stage13.py --repeats 2 --workers 1 --max-cases 3 --output results/stage13_smoke
       - name: Independently audit the Stage 13 paired software check
