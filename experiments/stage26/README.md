@@ -75,6 +75,18 @@ python experiments/stage26/audit_raters.py \
   --output results/stage26_raters
 ```
 
-Fetch both raw files from the official WMT25 repository at the pinned commit;
-verify the sizes and hashes above before running the audit. GitHub CI runs
-the synthetic tests and a small smoke experiment without the 146 MB raw data.
+For a new checkout, fetch the two raw files from the pinned official commit:
+
+```bash
+mkdir -p external/wmt25
+curl -fL --retry 3 -C - -o external/wmt25/wmt25-genmt-humeval.jsonl \
+  'https://github.com/wmt-conference/wmt25-general-mt/raw/2fc0874d85278d8c7e0807951e54d8422e7957e4/data/wmt25-genmt-humeval.jsonl'
+curl -fL --retry 3 -C - -o external/wmt25/wmt25-genmt-humeval_control.jsonl \
+  'https://github.com/wmt-conference/wmt25-general-mt/raw/2fc0874d85278d8c7e0807951e54d8422e7957e4/data/wmt25-genmt-humeval_control.jsonl'
+shasum -a 256 external/wmt25/wmt25-genmt-humeval*.jsonl
+```
+
+If a network proxy ends a download early, repeat the corresponding `curl`
+command to resume it. The audit refuses files that do not match the sizes and
+hashes above. GitHub CI runs the synthetic tests and a small smoke experiment
+without the 146 MB raw data.
