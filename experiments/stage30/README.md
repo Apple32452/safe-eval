@@ -56,4 +56,5 @@ Run from the repository root:
 python -m unittest discover -s experiments/stage30 -p 'test_*.py' -v
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python experiments/stage30/run_star_gate.py \
   --repeats 100 --rounds 2000 --output results/stage30_local
+python experiments/stage30/analyze_star_gate.py --input results/stage30_local
 ```
