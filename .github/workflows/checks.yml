@@ -67,8 +67,11 @@ jobs:
           python -m unittest discover -s experiments/stage29 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage30 -p 'test_*.py' -v
           python -m unittest discover -s experiments/stage31 -p 'test_*.py' -v
+          python -m unittest discover -s experiments/stage32 -p 'test_*.py' -v
       - name: Audit the saved Stage 30 synthetic star gate
         run: python experiments/stage30/analyze_star_gate.py --input experiments/stage30/results_reference
+      - name: Audit the saved Stage 32 context diagnostic
+        run: python experiments/stage32/audit_reference.py
       - name: Check the Stage 26 synthetic method gate
         run: python experiments/stage26/run_synthetic_gate.py --repeats 2 --output results/stage26_smoke
       - name: Audit the saved Stage 14 exploratory results

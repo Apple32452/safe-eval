@@ -1,0 +1,47 @@
+{
+  "seed": 20261022,
+  "repeats": 500,
+  "cap": 2000,
+  "alpha_familywise": 0.05,
+  "stakes": [
+    0.1,
+    0.25,
+    0.5,
+    0.8
+  ],
+  "target_pi": [
+    0.25,
+    0.75
+  ],
+  "conditional_a_win_prob": [
+    0.9,
+    0.1
+  ],
+  "target_mean_a_minus_b": -0.4000000000000001,
+  "summary": {
+    "target_random": {
+      "wrong": 0,
+      "correct": 500,
+      "abstained": 0,
+      "mean_capped_panel_tasks": 52.306,
+      "mean_panels_given_correct": 52.306,
+      "fraction_g_panels": 0.24926394677474858
+    },
+    "adaptive_naive": {
+      "wrong": 500,
+      "correct": 0,
+      "abstained": 0,
+      "mean_capped_panel_tasks": 23.296,
+      "mean_panels_given_correct": null,
+      "fraction_g_panels": 0.8800652472527473
+    },
+    "adaptive_ipw": {
+      "wrong": 0,
+      "correct": 500,
+      "abstained": 0,
+      "mean_capped_panel_tasks": 221.984,
+      "mean_panels_given_correct": 221.984,
+      "fraction_g_panels": 0.8805049012541445
+    }
+  }
+}
