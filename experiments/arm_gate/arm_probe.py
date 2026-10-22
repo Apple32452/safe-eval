@@ -39,8 +39,11 @@ class Arm:
         if remaining <= 0:
             raise AssertionError("Sampled arm after complete exposure")
         center = (self.n * GRID - self.total) / remaining
-        forward = (center > 0) & (center < 1)
-        backward = forward.copy()
+        # Continue betting even when c>1 (forward) or c<0 (backward).
+        # Each factor is then monotone in the tested mean m; this nesting
+        # avoids an additional multiplicity correction over the mean grid.
+        forward = center > 0
+        backward = center < 1
         self.plus[center < 0] = np.inf
         self.minus[center > 1] = np.inf
         if np.any(forward):
@@ -55,12 +58,16 @@ class Arm:
             if np.any(factor <= 0):
                 raise AssertionError("Nonpositive backward bet")
             self.minus[backward] += np.log(factor)
-        # At c=0, the null μ≤m requires all remaining scores to be zero.
-        # At c=1, the null μ≥m requires all remaining scores to be one.
+        # Use continuous boundary limits when the null remains possible.
+        # Otherwise the observed value logically falsifies that null.
         if value > 0:
             self.plus[center == 0] = np.inf
+        else:
+            self.plus[center == 0] += np.log1p(-RHOS)
         if value < 1:
             self.minus[center == 1] = np.inf
+        else:
+            self.minus[center == 1] += np.log1p(-RHOS)
         self.count += 1
         self.total += value
 
