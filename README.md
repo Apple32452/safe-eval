@@ -1,5 +1,7 @@
 # SAFE-EVAL
 
+**Latest research:** [Stage 29](experiments/stage29/FINDINGS.md) identifies a shared-reference cost opportunity; [Stage 30](experiments/stage30/FINDINGS.md) tests it with paid labels and misses its frozen ICML-method gate. No ICML novelty is established.
+
 SAFE-EVAL studies how to reach reliable conclusions about machine translation
 systems while paying for fewer system-item judgments on a fixed test set. It
 combines sequential confidence sequences with shared labels: one judged system

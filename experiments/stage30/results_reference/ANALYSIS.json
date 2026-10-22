@@ -1,0 +1,92 @@
+{
+  "checked_trajectories": 1500,
+  "method_comparisons": {
+    "independent": {
+      "degree_switch": {
+        "cheaper_ledgers": 89,
+        "descriptive_bootstrap_percent_interval": [
+          5.717623584443465,
+          8.998167560259855
+        ],
+        "percent_mean_saving": 7.530729948106652
+      },
+      "partial": {
+        "cheaper_ledgers": 89,
+        "descriptive_bootstrap_percent_interval": [
+          7.467918248849789,
+          11.062400893196859
+        ],
+        "percent_mean_saving": 9.404121185425819
+      }
+    },
+    "long_tail": {
+      "degree_switch": {
+        "cheaper_ledgers": 83,
+        "descriptive_bootstrap_percent_interval": [
+          3.753731170940453,
+          5.5151825997698065
+        ],
+        "percent_mean_saving": 4.636704570523231
+      },
+      "partial": {
+        "cheaper_ledgers": 77,
+        "descriptive_bootstrap_percent_interval": [
+          2.9376716509725695,
+          4.9576979322253765
+        ],
+        "percent_mean_saving": 3.962858231554456
+      }
+    },
+    "shared_easy": {
+      "degree_switch": {
+        "cheaper_ledgers": 81,
+        "descriptive_bootstrap_percent_interval": [
+          3.8619892258711106,
+          5.855774620222474
+        ],
+        "percent_mean_saving": 4.886931111934922
+      },
+      "partial": {
+        "cheaper_ledgers": 79,
+        "descriptive_bootstrap_percent_interval": [
+          3.9447837437385567,
+          5.911675524305606
+        ],
+        "percent_mean_saving": 4.943629107878844
+      }
+    },
+    "shared_weak": {
+      "degree_switch": {
+        "cheaper_ledgers": 63,
+        "descriptive_bootstrap_percent_interval": [
+          0.7249103120296058,
+          2.944572242001274
+        ],
+        "percent_mean_saving": 1.8486053282409376
+      },
+      "partial": {
+        "cheaper_ledgers": 67,
+        "descriptive_bootstrap_percent_interval": [
+          0.3936403808724795,
+          2.74490602537348
+        ],
+        "percent_mean_saving": 1.6200732554863428
+      }
+    },
+    "tie": {
+      "degree_switch": {
+        "cheaper_ledgers": 97,
+        "descriptive_bootstrap_percent_interval": null,
+        "percent_mean_saving": 0.9851658158347654
+      },
+      "partial": {
+        "cheaper_ledgers": 100,
+        "descriptive_bootstrap_percent_interval": null,
+        "percent_mean_saving": 12.230207669506798
+      }
+    }
+  },
+  "overall_gate_passed": false,
+  "replayed": 30,
+  "status": "passed"
+}
