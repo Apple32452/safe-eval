@@ -1,0 +1,21 @@
+{
+  "dataset": "WMT25 public General MT human evaluation text, development only",
+  "source_sha256": "a36ebce10c9ea26f71449933721de3a87e27f6a5b09d96b5daa026eaf1d197ab",
+  "language": "en-zh_CN",
+  "seed": 3303,
+  "eligible_documents": 51,
+  "selected_documents": 40,
+  "selected_item_ids_sha256": "08a5451563a6b292c5467e9dc2d4cf2fe52f691351c277d7766fec447fa7f06c",
+  "system_mapping": {
+    "A": "Qwen3-235B",
+    "B": "GPT-4.1",
+    "C": "Algharb",
+    "D": "Shy",
+    "E": "Claude-4",
+    "F": "IRB-MT",
+    "G": "RuZh",
+    "H": "Laniqo"
+  },
+  "selection": "seeded sample of documents; one eligible segment per document",
+  "disclosure": "systems selected using existing WMT25 mean scores before new human pilot"
+}

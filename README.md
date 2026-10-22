@@ -1,6 +1,6 @@
 # SAFE-EVAL
 
-**Latest research:** [Stage 32](experiments/stage32/FINDINGS.md) stress tests the five-way panel comparison target. In a deliberately synthetic context-shift example, naive adaptive selection confidently picks the wrong system in 500/500 runs; target-randomized and propensity-corrected methods pick the target winner in 500/500. This does not measure human behavior or establish ICML novelty. See the [protocol](experiments/stage32/PROTOCOL.md), [code](experiments/stage32/README.md), and [human validation plan](experiments/stage32/ANNOTATION_PROTOCOL.md). [Stage 31](experiments/stage31/FINDINGS.md) reports the earlier context-invariant panel pilot.
+**Latest research:** [Stage 33](experiments/stage33/FINDINGS.md) checks real WMT11 five-way judgments. The matched reference-presence contrast is small and its descriptive interval includes zero; 40 public WMT25 documents are prepared for a prospective English-to-Chinese human pilot, but no new judgments have been collected. See the [pilot protocol and commands](experiments/stage33/README.md). [Stage 32](experiments/stage32/FINDINGS.md) is a synthetic context-shift diagnostic. ICML novelty remains unestablished.
 
 SAFE-EVAL studies how to reach reliable conclusions about machine translation
 systems while paying for fewer system-item judgments on a fixed test set. It
