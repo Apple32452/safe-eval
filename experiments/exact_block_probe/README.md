@@ -24,8 +24,15 @@ principle applied to this finite observation design, not a new optimality
 theorem. It compares with the best stake, for that same predictive
 distribution, in the prediction-centered linear inverse-propensity factor
 `1 + rho * X / (-min X)`, where `X` is conditionally unbiased for the fixed
-pool total. It also computes full-block (`q=1`) cases. All optimization
-result is checked against each enumerated fixed null.
+pool total. It also computes full-block (`q=1`) cases. Each optimization
+result is checked against every enumerated fixed null.
+
+An additional dynamic program finds the most violated fixed-null constraint
+for **any proposed one-step factor** in `O(N^2)` time: its state is the
+running score difference, and it considers the four possible score pairs at
+each item. Tests compare it with exhaustive enumeration for `N <= 4` and
+exercise separation for `N=128`. This is a separation oracle, not yet a
+solver for the growth-optimal factor at large `N` or after observations.
 
 | Alternative `P(a=1), P(b=1)` | `q` | Exact log evidence / expected score | Linear log evidence / expected score |
 | --- | ---: | ---: | ---: |
@@ -48,9 +55,10 @@ although fixed-null validity remains intact.
 The factor is only computed for an **empty history** and one comparison.
 It assumes alternative probabilities supplied in advance, and it does not
 reuse an acquired score across a graph. Direct constraint enumeration grows
-exponentially. For a full method, one would need a tractable separation
-oracle for the finite-pool null constraints at *every* history, guarded
-prediction misspecification, simultaneous graph coverage, and an actual
+exponentially. For a full method, one would need to use the separation oracle
+within a stable optimizer at every history, extend it to cached cells and
+shared graph designs, guard against prediction misspecification, establish
+simultaneous coverage, and run an actual
 paired end-to-end label-cost comparison with Stage 22. WMT25 and WMT24 are
 untouched by this diagnostic.
 
