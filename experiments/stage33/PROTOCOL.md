@@ -18,6 +18,9 @@ draws, seed 3301), keeping their pair cells together. This is post hoc
 exploration, not a causal estimate: reference inclusion and the other
 companions can vary together, task assignment and rater mix were not
 controlled for this question, and rater noise can reverse preferences.
+The item-only bootstrap also does not account for the same rater
+appearing on multiple source items. Treat its interval as a descriptive
+screen, not a fully calibrated uncertainty statement.
 
 ## Prospectively randomized human feasibility pilot
 
@@ -48,6 +51,9 @@ interval; report ties, missingness, rater agreement and task time.
 The one-segment-per-document design makes document clustering
 coincide with item clustering here. The 40-document pilot is a
 feasibility screen, not paper-level evidence for a small effect.
+Raters may judge several documents, so a confirmatory analysis must
+account for both rater and document dependence or use a design-based
+randomization test based on the recorded assignments.
 Any promising result needs a larger independent replication, human
 time accounting and matched active-ranking baselines.
 

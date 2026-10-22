@@ -30,6 +30,8 @@ average shift** for this one contrast; smaller or heterogeneous effects
 remain possible. The intervals are descriptive, not randomization-based
 causal intervals, and reference presence is different from the
 high/low-companion treatment proposed for new judgments.
+Because raters can appear across inputs, item-only resampling also
+does not fully account for rater dependence.
 
 The WMT25 English to Chinese extractor was preflighted against the
 public JSONL: 51 documents had all eight distinct system outputs.
