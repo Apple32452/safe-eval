@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "seed": 20261022,
+    "systems": 5,
+    "items": 24,
+    "repeats": 100,
+    "alpha": 0.05,
+    "scenario": [
+      "tie",
+      "weak",
+      "strong",
+      "anticorrelated"
+    ],
+    "graphs": [
+      "star",
+      "ring",
+      "complete"
+    ],
+    "matrix_shas": {
+      "tie": "ee0f44817978b8168411fccfd677da8d6a8808bff8b8b88d7e18d2b092c55fc1",
+      "weak": "2b81d352404b3ac318e80e0cba8d44ac70bdc1503b4dc18d6c2d08726f19c1ad",
+      "strong": "4f89c080c4ae3d56b78d0139234f3eb614d04f475434367d452d6922d1cf2c36",
+      "anticorrelated": "82920638c3a31791b3ba28013f0dd883492ab1f504c65dd5e24ecf0d22e6b27c"
+    },
+    "decision": "Exploratory baseline gate, no new-method claim"
+  },
+  "rows": [
+    {
+      "scenario": "tie",
+      "graph": "star",
+      "baseline": 120.0,
+      "dynamic": 120.0,
+      "partial": 120.0,
+      "partial_relative_saving": 0.0,
+      "deterministic_per_repeat": 0.0,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "tie",
+      "graph": "ring",
+      "baseline": 120.0,
+      "dynamic": 120.0,
+      "partial": 120.0,
+      "partial_relative_saving": 0.0,
+      "deterministic_per_repeat": 0.0,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "tie",
+      "graph": "complete",
+      "baseline": 120.0,
+      "dynamic": 120.0,
+      "partial": 120.0,
+      "partial_relative_saving": 0.0,
+      "deterministic_per_repeat": 0.0,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "weak",
+      "graph": "star",
+      "baseline": 113.0,
+      "dynamic": 113.0,
+      "partial": 112.09,
+      "partial_relative_saving": 0.008053097345132744,
+      "deterministic_per_repeat": 1.55,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "weak",
+      "graph": "ring",
+      "baseline": 118.91,
+      "dynamic": 118.91,
+      "partial": 118.3,
+      "partial_relative_saving": 0.005129930199310403,
+      "deterministic_per_repeat": 1.89,
+      "baseline_family_error": 1,
+      "partial_family_error": 1
+    },
+    {
+      "scenario": "weak",
+      "graph": "complete",
+      "baseline": 119.31,
+      "dynamic": 119.31,
+      "partial": 118.71,
+      "partial_relative_saving": 0.005028916268544128,
+      "deterministic_per_repeat": 4.61,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "strong",
+      "graph": "star",
+      "baseline": 77.1,
+      "dynamic": 77.1,
+      "partial": 76.67,
+      "partial_relative_saving": 0.005577172503242542,
+      "deterministic_per_repeat": 0.43,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "strong",
+      "graph": "ring",
+      "baseline": 114.88,
+      "dynamic": 114.88,
+      "partial": 114.08,
+      "partial_relative_saving": 0.006963788300835654,
+      "deterministic_per_repeat": 0.9,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "strong",
+      "graph": "complete",
+      "baseline": 115.36,
+      "dynamic": 115.36,
+      "partial": 114.6,
+      "partial_relative_saving": 0.006588072122052704,
+      "deterministic_per_repeat": 1.55,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "anticorrelated",
+      "graph": "star",
+      "baseline": 116.7,
+      "dynamic": 116.7,
+      "partial": 115.64,
+      "partial_relative_saving": 0.00908311910882605,
+      "deterministic_per_repeat": 2.07,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "anticorrelated",
+      "graph": "ring",
+      "baseline": 118.08,
+      "dynamic": 118.08,
+      "partial": 117.08,
+      "partial_relative_saving": 0.008468834688346883,
+      "deterministic_per_repeat": 3.1,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    },
+    {
+      "scenario": "anticorrelated",
+      "graph": "complete",
+      "baseline": 120.0,
+      "dynamic": 120.0,
+      "partial": 120.0,
+      "partial_relative_saving": 0.0,
+      "deterministic_per_repeat": 4.08,
+      "baseline_family_error": 0,
+      "partial_family_error": 0
+    }
+  ]
+}
