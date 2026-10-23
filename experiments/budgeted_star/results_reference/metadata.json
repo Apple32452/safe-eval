@@ -1,0 +1,13 @@
+{
+  "master": 20261023,
+  "repeats": 40,
+  "scenarios": [
+    "independent_easy",
+    "shared_easy",
+    "independent_mixed",
+    "near_ties"
+  ],
+  "pilot": 8,
+  "alpha": 0.05,
+  "protocol_sha256": "a60fb09db978178119b1b488d15d83e18f2cebf90949ceb3541f1d74e405e982"
+}
