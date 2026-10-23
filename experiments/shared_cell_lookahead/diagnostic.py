@@ -7,7 +7,7 @@ synthetic population, never to justify a sign declaration.
 from __future__ import annotations
 
 import argparse
-import itertools
+import gzip
 import json
 from functools import lru_cache
 from pathlib import Path
@@ -241,5 +241,9 @@ if __name__ == "__main__":
     args = parser.parse_args()
     result = run()
     args.output.parent.mkdir(parents=True, exist_ok=True)
-    args.output.write_text(json.dumps(result, separators=(",", ":")) + "\n")
+    encoded = (json.dumps(result, separators=(",", ":")) + "\n").encode()
+    if args.output.suffix == ".gz":
+        args.output.write_bytes(gzip.compress(encoded, mtime=0))
+    else:
+        args.output.write_bytes(encoded)
     print("diagnostic_gate_pass", result["diagnostic_gate_pass"])

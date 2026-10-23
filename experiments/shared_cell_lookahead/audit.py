@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import argparse
+import gzip
 import itertools
 import json
 from collections import defaultdict
@@ -102,7 +103,9 @@ if __name__ == "__main__":
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    payload = json.loads(args.input.read_text())
+    content = args.input.read_bytes()
+    payload = json.loads(gzip.decompress(content) if args.input.suffix == ".gz"
+                         else content)
     report = audit(payload)
     args.output.write_text(json.dumps(report, indent=2) + "\n")
     print(f"Checked {report['counts']['checked_paths']} paths and "
