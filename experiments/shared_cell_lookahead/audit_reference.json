@@ -1,0 +1,57 @@
+{
+  "counts": {
+    "checked_paths": 16384,
+    "compatible_completions": 27448
+  },
+  "expected_cost": {
+    "easy_star": {
+      "lookahead": 6.4448,
+      "greedy": 6.4458,
+      "pruned_blocks": 7.97475,
+      "common_blocks": 8.50785
+    },
+    "easy_triangle": {
+      "lookahead": 8.000434,
+      "greedy": 8.362053,
+      "pruned_blocks": 8.66785,
+      "common_blocks": 9.0
+    },
+    "moderate_star": {
+      "lookahead": 7.71255,
+      "greedy": 7.71255,
+      "pruned_blocks": 8.642673,
+      "common_blocks": 8.879769
+    },
+    "moderate_triangle": {
+      "lookahead": 8.45128094,
+      "greedy": 8.62950281,
+      "pruned_blocks": 8.877969,
+      "common_blocks": 9.0
+    },
+    "heterogeneous_star": {
+      "lookahead": 7.256725,
+      "greedy": 7.25887,
+      "pruned_blocks": 8.4636615,
+      "common_blocks": 8.7657345
+    },
+    "heterogeneous_triangle": {
+      "lookahead": 8.26549451,
+      "greedy": 8.56175636,
+      "pruned_blocks": 8.8453845,
+      "common_blocks": 9.0
+    },
+    "shifted_star": {
+      "lookahead": 6.4448,
+      "greedy": 7.1738,
+      "pruned_blocks": 7.97475,
+      "common_blocks": 8.50785
+    },
+    "shifted_triangle": {
+      "lookahead": 8.000434,
+      "greedy": 8.099773,
+      "pruned_blocks": 8.66785,
+      "common_blocks": 9.0
+    }
+  },
+  "diagnostic_gate_pass": false
+}

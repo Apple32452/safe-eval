@@ -1,0 +1,38 @@
+name: Shared-cell lookahead diagnostic
+
+on:
+  push:
+    paths:
+      - 'experiments/shared_cell_lookahead/**'
+      - '.github/workflows/shared_cell_lookahead.yml'
+  pull_request:
+    paths:
+      - 'experiments/shared_cell_lookahead/**'
+      - '.github/workflows/shared_cell_lookahead.yml'
+
+jobs:
+  exact-diagnostic:
+    runs-on: ubuntu-24.04
+    strategy:
+      matrix:
+        python-version: ['3.9', '3.12']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Independent small-pool checks
+        run: python -m unittest discover -s experiments/shared_cell_lookahead -p 'test_*.py' -v
+      - name: Enumerate every fixed score matrix
+        run: python experiments/shared_cell_lookahead/diagnostic.py --output /tmp/shared_cell_results.json.gz
+      - name: Audit every purchased score and compatible completion
+        run: python experiments/shared_cell_lookahead/audit.py --input /tmp/shared_cell_results.json.gz --output /tmp/shared_cell_audit.json
+      - name: Check prespecified negative conclusion
+        run: |
+          python - <<'PY'
+          import json
+          with open('/tmp/shared_cell_audit.json') as stream:
+              report = json.load(stream)
+          assert report['counts']['checked_paths'] == 16384
+          assert report['diagnostic_gate_pass'] is False
+          PY
