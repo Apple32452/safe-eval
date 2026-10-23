@@ -1,0 +1,133 @@
+{
+  "gate_pass": false,
+  "matrices": 160,
+  "passed_scenarios": 1,
+  "repeats": 40,
+  "rows": 480,
+  "scenarios": {
+    "independent_easy": {
+      "evidence_first": {
+        "completion_cost": 386.65,
+        "labels": 368.875,
+        "strict": 6.425,
+        "ties": 0.0,
+        "unresolved": 0.575,
+        "wrong": 0.0
+      },
+      "footprint": {
+        "completion_cost": 386.65,
+        "labels": 368.875,
+        "strict": 6.375,
+        "ties": 0.0,
+        "unresolved": 0.625,
+        "wrong": 0.0
+      },
+      "paired_strict_gain": {
+        "evidence_first": -0.04999999999999982,
+        "pruned": 0.27500000000000036
+      },
+      "pass": false,
+      "pruned": {
+        "completion_cost": 386.65,
+        "labels": 368.875,
+        "strict": 6.1,
+        "ties": 0.0,
+        "unresolved": 0.9,
+        "wrong": 0.0
+      }
+    },
+    "independent_mixed": {
+      "evidence_first": {
+        "completion_cost": 526.075,
+        "labels": 384.0,
+        "strict": 4.225,
+        "ties": 0.025,
+        "unresolved": 2.75,
+        "wrong": 0.0
+      },
+      "footprint": {
+        "completion_cost": 526.075,
+        "labels": 384.0,
+        "strict": 4.325,
+        "ties": 0.075,
+        "unresolved": 2.6,
+        "wrong": 0.0
+      },
+      "paired_strict_gain": {
+        "evidence_first": 0.10000000000000053,
+        "pruned": 1.3250000000000002
+      },
+      "pass": false,
+      "pruned": {
+        "completion_cost": 526.075,
+        "labels": 384.0,
+        "strict": 3.0,
+        "ties": 0.0,
+        "unresolved": 4.0,
+        "wrong": 0.0
+      }
+    },
+    "near_ties": {
+      "evidence_first": {
+        "completion_cost": 710.7,
+        "labels": 384.0,
+        "strict": 1.4,
+        "ties": 0.025,
+        "unresolved": 5.575,
+        "wrong": 0.0
+      },
+      "footprint": {
+        "completion_cost": 710.7,
+        "labels": 384.0,
+        "strict": 2.1,
+        "ties": 0.175,
+        "unresolved": 4.725,
+        "wrong": 0.0
+      },
+      "paired_strict_gain": {
+        "evidence_first": 0.7000000000000002,
+        "pruned": 1.975
+      },
+      "pass": true,
+      "pruned": {
+        "completion_cost": 710.7,
+        "labels": 384.0,
+        "strict": 0.125,
+        "ties": 0.0,
+        "unresolved": 6.875,
+        "wrong": 0.0
+      }
+    },
+    "shared_easy": {
+      "evidence_first": {
+        "completion_cost": 297.425,
+        "labels": 297.425,
+        "strict": 7.0,
+        "ties": 0.0,
+        "unresolved": 0.0,
+        "wrong": 0.0
+      },
+      "footprint": {
+        "completion_cost": 297.425,
+        "labels": 297.425,
+        "strict": 7.0,
+        "ties": 0.0,
+        "unresolved": 0.0,
+        "wrong": 0.0
+      },
+      "paired_strict_gain": {
+        "evidence_first": 0.0,
+        "pruned": 0.0
+      },
+      "pass": false,
+      "pruned": {
+        "completion_cost": 297.425,
+        "labels": 297.425,
+        "strict": 7.0,
+        "ties": 0.0,
+        "unresolved": 0.0,
+        "wrong": 0.0
+      }
+    }
+  }
+}
