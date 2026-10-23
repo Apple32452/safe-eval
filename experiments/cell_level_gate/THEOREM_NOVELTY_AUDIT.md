@@ -91,6 +91,11 @@ comparisons does not automatically make the elementary proposition novel.
 
 ## Result of this audit and the actual open problem
 
+The [near-tie acquisition bound](NEAR_TIE_BOUND.md) explains why insisting
+on high power for every arbitrarily small difference makes the completion
+cost nearly full on tied matrices. It motivates a budgeted objective with
+explicit abstention on comparisons that cannot yet be certified.
+
 **No-go for the basic theorem as the paper contribution.** The proposition
 above is already in the repository, and its validity proof uses standard
 conditional means and family correction. The 2026 papers cover its major
