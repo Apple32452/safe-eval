@@ -4,6 +4,10 @@ Date: 2026-10-22. This is an **exploratory baseline**, not an established new
 method, a locked benchmark protocol, or an ICML contribution. It keeps WMT24
 untouched. The frozen Stage 22 source and results are not changed.
 
+The [2026-10-23 theorem and novelty audit](THEOREM_NOVELTY_AUDIT.md) compares
+this valid but elementary certificate with the closest published methods and
+explains why it is not yet a paper contribution.
+
 ## Exact question
 
 There are `S` systems, `N` fixed benchmark items, bounded scores
