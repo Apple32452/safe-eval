@@ -1,0 +1,105 @@
+{
+  "repeats": 12,
+  "summary": {
+    "aligned_strong": {
+      "mean_cost": {
+        "full": 12.0,
+        "fixed_half": 10.25,
+        "adaptive": 10.25,
+        "stage22": 18.666666666666668
+      },
+      "q_choices": {
+        "0.25": 0,
+        "0.5": 83,
+        "0.75": 0,
+        "1.0": 0
+      },
+      "optimizer_fallbacks": 0,
+      "adaptive_vs": {
+        "full": {
+          "mean": -1.75,
+          "descriptive_ci95": [
+            -3.0833333333333335,
+            -0.5
+          ],
+          "percent": -14.583333333333337
+        },
+        "fixed_half": {
+          "mean": 0.0,
+          "descriptive_ci95": [
+            0.0,
+            0.0
+          ],
+          "percent": 0.0
+        }
+      }
+    },
+    "aligned_moderate": {
+      "mean_cost": {
+        "full": 32.166666666666664,
+        "fixed_half": 27.666666666666668,
+        "adaptive": 33.833333333333336,
+        "stage22": 38.666666666666664
+      },
+      "q_choices": {
+        "0.25": 0,
+        "0.5": 4,
+        "0.75": 108,
+        "1.0": 106
+      },
+      "optimizer_fallbacks": 0,
+      "adaptive_vs": {
+        "full": {
+          "mean": 1.6666666666666667,
+          "descriptive_ci95": [
+            -0.6687499999999993,
+            4.0
+          ],
+          "percent": 5.181347150259086
+        },
+        "fixed_half": {
+          "mean": 6.166666666666667,
+          "descriptive_ci95": [
+            0.0,
+            13.083333333333334
+          ],
+          "percent": 22.289156626506035
+        }
+      }
+    },
+    "shifted_opposite": {
+      "mean_cost": {
+        "full": 30.833333333333332,
+        "fixed_half": 30.5,
+        "adaptive": 32.5,
+        "stage22": 33.0
+      },
+      "q_choices": {
+        "0.25": 0,
+        "0.5": 118,
+        "0.75": 112,
+        "1.0": 24
+      },
+      "optimizer_fallbacks": 0,
+      "adaptive_vs": {
+        "full": {
+          "mean": 1.6666666666666667,
+          "descriptive_ci95": [
+            -3.25,
+            6.75
+          ],
+          "percent": 5.405405405405417
+        },
+        "fixed_half": {
+          "mean": 2.0,
+          "descriptive_ci95": [
+            -1.75,
+            7.166666666666667
+          ],
+          "percent": 6.557377049180335
+        }
+      }
+    }
+  },
+  "gate_pass": false
+}
