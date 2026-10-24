@@ -1,0 +1,136 @@
+{
+  "unequal_variance": {
+    "target_random": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 44.0,
+      "mean_completed_duration": 44.0,
+      "mean_capped_tasks": 44.0
+    },
+    "adaptive_ipw": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 45.58,
+      "mean_completed_duration": 45.58,
+      "mean_capped_tasks": 45.58
+    },
+    "adaptive_augmented": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 39.31,
+      "mean_completed_duration": 39.31,
+      "mean_capped_tasks": 39.31
+    },
+    "gate_pass": true
+  },
+  "unequal_duration": {
+    "target_random": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 53.7,
+      "mean_completed_duration": 53.7,
+      "mean_capped_tasks": 26.72
+    },
+    "adaptive_ipw": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 54.86,
+      "mean_completed_duration": 54.86,
+      "mean_capped_tasks": 27.96
+    },
+    "adaptive_augmented": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 55.89,
+      "mean_completed_duration": 55.89,
+      "mean_capped_tasks": 28.47
+    },
+    "gate_pass": false
+  },
+  "mixed_variance": {
+    "target_random": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 36.09,
+      "mean_completed_duration": 36.09,
+      "mean_capped_tasks": 36.09
+    },
+    "adaptive_ipw": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 35.82,
+      "mean_completed_duration": 35.82,
+      "mean_capped_tasks": 35.82
+    },
+    "adaptive_augmented": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 32.23,
+      "mean_completed_duration": 32.23,
+      "mean_capped_tasks": 32.23
+    },
+    "gate_pass": true
+  },
+  "homogeneous": {
+    "target_random": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 27.71,
+      "mean_completed_duration": 27.71,
+      "mean_capped_tasks": 27.71
+    },
+    "adaptive_ipw": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 27.71,
+      "mean_completed_duration": 27.71,
+      "mean_capped_tasks": 27.71
+    },
+    "adaptive_augmented": {
+      "correct": 100,
+      "wrong": 0,
+      "abstained": 0,
+      "mean_capped_duration": 28.09,
+      "mean_completed_duration": 28.09,
+      "mean_capped_tasks": 28.09
+    }
+  },
+  "opposed_tie": {
+    "target_random": {
+      "correct": 0,
+      "wrong": 5,
+      "abstained": 95,
+      "mean_capped_duration": 1907.89,
+      "mean_completed_duration": null,
+      "mean_capped_tasks": 1907.89
+    },
+    "adaptive_ipw": {
+      "correct": 0,
+      "wrong": 6,
+      "abstained": 94,
+      "mean_capped_duration": 1888.41,
+      "mean_completed_duration": null,
+      "mean_capped_tasks": 1888.41
+    },
+    "adaptive_augmented": {
+      "correct": 0,
+      "wrong": 5,
+      "abstained": 95,
+      "mean_capped_duration": 1913.31,
+      "mean_completed_duration": null,
+      "mean_capped_tasks": 1913.31
+    }
+  },
+  "overall_gate_pass": true
+}
