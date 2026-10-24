@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "cases": 300,
+  "scenarios": {
+    "no_shift": {
+      "checked": 100,
+      "oracle_strictly_better_than_all_pair": 100,
+      "mean_headroom": 0.23826635818786068
+    },
+    "context_shift": {
+      "checked": 100,
+      "oracle_strictly_better_than_all_pair": 100,
+      "mean_headroom": 0.21262553256539518
+    },
+    "context_and_cost": {
+      "checked": 100,
+      "oracle_strictly_better_than_all_pair": 100,
+      "mean_headroom": 0.18802447421694787
+    }
+  },
+  "interpretation": "infeasible population-informed proxy; no stopping-cost result"
+}
