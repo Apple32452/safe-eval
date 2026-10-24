@@ -1,0 +1,10 @@
+{
+  "protocol_sha256": "e0f676419bf9358162313612db152d33c325f7c43a954ab19870fd681b91f02b",
+  "repeats": 100,
+  "alpha": 0.05,
+  "pilot": 48,
+  "required": 11,
+  "block": 24,
+  "gap_floor": 0.2,
+  "status": "synthetic simulated-duration screen, no human data"
+}
