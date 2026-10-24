@@ -80,6 +80,58 @@ The [pre-collection handoff amendment](AMENDMENT_ORDER.md) records a
 correction to the task presentation and blinding fields; the selected
 documents, panel composition, and statistical contrast did not change.
 
+## Offline rater packets
+
+The optional [collection kit builder](build_collection_kit.py) presents the
+same frozen assignment as four private, single-file browser pages. This is a
+pre-collection interface, not a change to the statistical protocol. It
+checks the selected WMT25 candidate CSV against its recorded SHA256 before
+producing the packets. Give volunteers only their own HTML file; the full
+ZIP contains the researcher-only panel key. Obtain appropriate consent and
+privately map R01 through R04 to four distinct English-Chinese bilingual
+volunteers before distributing any pages.
+
+```bash
+printf 'rater_id\nR01\nR02\nR03\nR04\n' > results/stage33_raters.csv
+python experiments/stage33/build_collection_kit.py \
+  --items results/stage33_candidates/candidate_items.csv \
+  --raters results/stage33_raters.csv \
+  --output results/stage33_collection_kit
+```
+
+Open `results/stage33_collection_kit/START_HERE.txt` and send each volunteer
+only `rater_packets/<their ID>.html`. The page works offline, displays
+one task at a time in assigned order, records active task time, pauses when
+the tab is hidden, permits tied ranks, and downloads `<ID>_responses.csv`
+after 40 responses. A given browser stores progress locally when permitted;
+ask volunteers to save and return the completed CSV privately. If storage
+is blocked, they must keep the page open until completion. Log deviations,
+interruptions, missingness, consent and recruitment outside the response
+file. Never silently regenerate packets after one has been sent.
+
+Once **real** completed CSVs are returned, put them in a private `responses/`
+folder and merge, validate, then analyze:
+
+```bash
+python experiments/stage33/combine_responses.py \
+  --template results/stage33_collection_kit/researcher_only/responses_template.csv \
+  --responses results/stage33_collection_kit/responses/*.csv \
+  --output results/stage33_collection_kit/researcher_only/responses.csv
+python experiments/stage33/analyze_human_pilot.py \
+  --key results/stage33_collection_kit/researcher_only/private_key.csv \
+  --responses results/stage33_collection_kit/researcher_only/responses.csv \
+  --output results/stage33_human_summary.json
+python experiments/stage34_panel_randomization/exact_test.py \
+  --key results/stage33_collection_kit/researcher_only/private_key.csv \
+  --responses results/stage33_collection_kit/researcher_only/responses.csv \
+  --output results/stage33_exact_result.json
+```
+
+Keep the source texts, assignment key, correspondence, and human response
+CSVs out of the public repository. This pilot measures the chosen contrast;
+it does not establish an ICML method contribution or measured gains from an
+adaptive algorithm.
+
 ```bash
 python -m unittest discover -s experiments/stage33 -p 'test_*.py' -v
 ```
