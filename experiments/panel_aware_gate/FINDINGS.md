@@ -1,12 +1,17 @@
 # Panel-aware correction: frozen synthetic screen
 
 Date: 2026-10-24. The protocol and implementation were recorded on `main`
-before the 100-repeat run. Run `python -m unittest -v
-experiments/panel_aware_gate/test_screen.py`, then `python
-experiments/panel_aware_gate/run_screen.py`, then `python
-experiments/panel_aware_gate/audit_screen.py`. The four algebraic and path
-tests passed. The independent scalar replayer verified all 1,500 saved
-trajectories and the saved summaries against the frozen protocol checksum.
+before the 100-repeat run. From the repository root, reproduce with:
+
+```bash
+python -m unittest -v experiments/panel_aware_gate/test_screen.py
+python experiments/panel_aware_gate/run_screen.py
+python experiments/panel_aware_gate/audit_screen.py
+```
+
+The four algebraic and path tests passed. The independent scalar replayer
+verified all 1,500 saved trajectories and the saved summaries against the
+frozen protocol checksum.
 
 ## Prespecified results
 
