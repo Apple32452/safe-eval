@@ -58,9 +58,13 @@ python experiments/stage33/prepare_human_pilot.py \
 ```
 
 Give each rater only their rows of `tasks.csv` and keep
-`private_key.csv` hidden. Enter five ranks (ties permitted) and task
-duration in `responses_template.csv`. The analyzer runs only after
-all tasks have responses:
+`private_key.csv` hidden. The visible task IDs do not encode companion
+contexts. Each rater's rows are sorted by the randomized `task_order`
+column; the annotation interface must present them in that order and
+record any deviations. The `task_order` is recorded in both the task
+file and the private key. Enter five ranks (ties permitted) and task
+duration in `responses_template.csv`. The analyzer runs only after all
+tasks have responses:
 
 ```bash
 python experiments/stage33/analyze_human_pilot.py \
@@ -72,6 +76,9 @@ python experiments/stage33/analyze_human_pilot.py \
 The CSVs are a task specification and audit trail; use an appropriate
 annotation interface and consent process before recruiting. No new
 human judgments have been collected.
+The [pre-collection handoff amendment](AMENDMENT_ORDER.md) records a
+correction to the task presentation and blinding fields; the selected
+documents, panel composition, and statistical contrast did not change.
 
 ```bash
 python -m unittest discover -s experiments/stage33 -p 'test_*.py' -v
