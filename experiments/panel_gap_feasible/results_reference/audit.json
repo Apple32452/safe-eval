@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "replayed_paths": 1200,
+  "protocol_sha256": "e0f676419bf9358162313612db152d33c325f7c43a954ab19870fd681b91f02b",
+  "screen_pass": false,
+  "scenarios": {
+    "no_shift": {
+      "uniform_raw": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 109.21,
+        "mean_capped_duration": 109.21,
+        "infeasible_updates": 0
+      },
+      "uniform_centered": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 113.72,
+        "mean_capped_duration": 113.72,
+        "infeasible_updates": 0
+      },
+      "adaptive_all": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 113.77,
+        "mean_capped_duration": 113.77,
+        "infeasible_updates": 0
+      },
+      "gap_pilot": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 126.92,
+        "mean_capped_duration": 126.92,
+        "infeasible_updates": 0
+      },
+      "comparison": {
+        "best_original_control": "uniform_raw",
+        "saving": -0.16216463693800942,
+        "bootstrap_95": [
+          -0.21928068063739758,
+          -0.10661165756049698
+        ]
+      }
+    },
+    "context_shift": {
+      "uniform_raw": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 122.96,
+        "mean_capped_duration": 122.96,
+        "infeasible_updates": 0
+      },
+      "uniform_centered": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 121.64,
+        "mean_capped_duration": 121.64,
+        "infeasible_updates": 0
+      },
+      "adaptive_all": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 119.55,
+        "mean_capped_duration": 119.55,
+        "infeasible_updates": 0
+      },
+      "gap_pilot": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 127.77,
+        "mean_capped_duration": 127.77,
+        "infeasible_updates": 0
+      },
+      "comparison": {
+        "best_original_control": "adaptive_all",
+        "saving": -0.06875784190715173,
+        "bootstrap_95": [
+          -0.11040787350616944,
+          -0.029116100629311165
+        ]
+      }
+    },
+    "context_and_cost": {
+      "uniform_raw": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 117.53,
+        "mean_capped_duration": 235.04,
+        "infeasible_updates": 0
+      },
+      "uniform_centered": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 115.52,
+        "mean_capped_duration": 230.74,
+        "infeasible_updates": 0
+      },
+      "adaptive_all": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 118.36,
+        "mean_capped_duration": 228.59,
+        "infeasible_updates": 0
+      },
+      "gap_pilot": {
+        "completed": 100,
+        "paths_with_wrong_sign": 0,
+        "mean_capped_tasks": 123.2,
+        "mean_capped_duration": 242.92,
+        "infeasible_updates": 0
+      },
+      "comparison": {
+        "best_original_control": "adaptive_all",
+        "saving": -0.06268865654665556,
+        "bootstrap_95": [
+          -0.11365937805364326,
+          -0.015144413516506649
+        ]
+      }
+    }
+  },
+  "interpretation": "synthetic cost and simulated stopping only; no human time"
+}
