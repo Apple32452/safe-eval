@@ -108,3 +108,16 @@ Before another WMT25 performance run, require all of the following:
 
 At this date the gap is an open research question. No theorem or matched
 efficiency result meeting this gate has been obtained.
+
+## Subsequent panel-allocation diagnostics (2026-10-24)
+
+The separate five-way-panel setting was screened on fresh synthetic
+matrices. A [full-population oracle proxy](../panel_oracle_gap/FINDINGS.md)
+found 21.26% and 18.80% mean paired variance-and-duration proxy headroom in
+the shifted scenarios. A [predictable pilot-based implementation](../panel_gap_feasible/FINDINGS.md)
+then used **6.88% and 6.27% more** mean simulated stopping duration than the
+strongest matched original controls in those scenarios. Both full-result
+audits passed. This rules out that particular feasible proposal as an
+efficiency claim. The proxy does not establish purchased-judgment savings,
+and these panel results do not resolve the fixed-score cell-level contribution
+gate above. No prospective human panel judgments have yet been collected.
