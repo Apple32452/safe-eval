@@ -1,0 +1,26 @@
+{
+  "assumptions": "independent 2-of-4 document assignments; bounded fixed potential outcomes; no interference; normal approximation",
+  "alpha": 0.05,
+  "power": 0.8,
+  "variance_bound": 1.3333333333333333,
+  "pilot_documents": 40,
+  "pilot_tasks": 160,
+  "approx_min_detectable_signed_effect": 0.5114971402445011,
+  "scenarios": [
+    {
+      "signed_effect": 0.2,
+      "approx_documents": 262,
+      "approx_tasks": 1048
+    },
+    {
+      "signed_effect": 0.4,
+      "approx_documents": 66,
+      "approx_tasks": 264
+    },
+    {
+      "signed_effect": 0.6,
+      "approx_documents": 30,
+      "approx_tasks": 120
+    }
+  ]
+}
