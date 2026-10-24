@@ -23,3 +23,12 @@ pseudonymous placeholders is a software check, not human data. Do not
 reuse task files generated before this amendment. If an earlier packet
 was already sent to a rater, preserve that fact and its presentation
 order in the study audit rather than silently replacing it.
+
+The full preflight re-extracted 40 WMT25 development items from the
+checksum-verified public JSONL and matched the previously recorded item
+manifest byte for byte. Four clearly marked placeholder rater IDs yielded
+160 distinct tasks: 40 per placeholder, each document allocated to four
+different placeholders with two in each context. Both the descriptive
+analyzer and the exact randomization-test CLI completed on artificial
+rankings stored only in ignored local dry-run files. Their numerical
+outputs are **not** research observations or evidence of a panel effect.
