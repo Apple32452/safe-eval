@@ -1,0 +1,82 @@
+{
+  "replayed_paths": 480,
+  "protocol_sha256": "1c68c6a686360a12bf3163e3d9350786cd22e7604262c2ce31ea9d93a13d8086",
+  "saved_summaries_checked": true,
+  "pair_item_with_context_disagreement": {
+    "no_shift": 0.0,
+    "context_shift": 0.31581597222222224,
+    "context_and_cost": 0.3201215277777778
+  },
+  "paired_bootstrap_descriptive": {
+    "no_shift": {
+      "uniform_raw": {
+        "relative_saving": -0.021346469622331554,
+        "paired_bootstrap_95_percentile": [
+          -0.07454475609608383,
+          0.02533621821327294
+        ]
+      },
+      "uniform_centered": {
+        "relative_saving": 0.014709210228558534,
+        "paired_bootstrap_95_percentile": [
+          -0.02943265046956765,
+          0.05490305886288209
+        ]
+      },
+      "adaptive_all": {
+        "relative_saving": 0.022232203009207363,
+        "paired_bootstrap_95_percentile": [
+          -0.02646129871179007,
+          0.06328454789535487
+        ]
+      }
+    },
+    "context_shift": {
+      "uniform_raw": {
+        "relative_saving": -0.034653465346534684,
+        "paired_bootstrap_95_percentile": [
+          -0.1008210354911788,
+          0.028000364434192935
+        ]
+      },
+      "uniform_centered": {
+        "relative_saving": -0.03935135135135126,
+        "paired_bootstrap_95_percentile": [
+          -0.12220403814851478,
+          0.03556405743646109
+        ]
+      },
+      "adaptive_all": {
+        "relative_saving": -0.05532381997804614,
+        "paired_bootstrap_95_percentile": [
+          -0.11941860173166033,
+          -0.0024771430760604307
+        ]
+      }
+    },
+    "context_and_cost": {
+      "uniform_raw": {
+        "relative_saving": 0.0008914642299977515,
+        "paired_bootstrap_95_percentile": [
+          -0.09616978344208552,
+          0.08678183023872683
+        ]
+      },
+      "uniform_centered": {
+        "relative_saving": 0.02638722988380926,
+        "paired_bootstrap_95_percentile": [
+          -0.04332055486720239,
+          0.09639095030046177
+        ]
+      },
+      "adaptive_all": {
+        "relative_saving": -0.016092475067996492,
+        "paired_bootstrap_95_percentile": [
+          -0.06945848033481879,
+          0.032709808280250934
+        ]
+      }
+    }
+  },
+  "note": "Simulated panel durations and deterministic rankings; no human time or independent validation."
+}
