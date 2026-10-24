@@ -1,0 +1,44 @@
+{
+  "repeats": 40,
+  "pool": 96,
+  "panels": 6,
+  "alpha": 0.05,
+  "pilot": 48,
+  "required": 11,
+  "scenarios": {
+    "no_shift": [
+      0.0,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "context_shift": [
+      0.75,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "context_and_cost": [
+      0.75,
+      [
+        1,
+        1,
+        2,
+        2,
+        3,
+        3
+      ]
+    ]
+  },
+  "protocol_sha256": "1c68c6a686360a12bf3163e3d9350786cd22e7604262c2ce31ea9d93a13d8086"
+}
