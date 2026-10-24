@@ -35,16 +35,21 @@ contrast is Stage 33's *preselected* high/low companion comparison.
 
 ## Prospective power planning
 
-Before collecting human data, compute an idealized scale calculation for
-signed outcomes without ties and conditionally independent judge responses.
-Each two-judge mean has variance at most 1/2, so the within-document
-P1-minus-P0 variance is at most 1. A normal approximation at two-sided
-`alpha=.05`, power `.8`, and mean effect delta requires approximately
-`n=(z_.975+z_.8)^2/delta^2` independent documents, each with four judgments.
+**Correction made before collecting human data:** the first protocol commit
+used variance bound 1 from independent groups. This design assigns two of
+four *fixed* selected judges to each panel without replacement; its correct
+worst-case within-document randomization variance bound is `4/3`. Under the
+sharp null it is exactly the four-judge finite-population sample variance,
+which is at most `4/3` for outcomes in `[-1,1]`; the same upper bound applies
+to the difference-in-means under fixed potential outcomes. Independently
+randomized documents, no between-document interference, and a normal
+approximation at two-sided `alpha=.05`, power `.8`, mean effect delta give
+`n ≈ (4/3)*(z_.975+z_.8)^2/delta^2` documents, each with four judgments.
 Report delta `.2`, `.4` and `.6`, and Stage 33's 40-document pilot. These
 numbers are planning approximations, **not measured power**, and repeated
-judge effects, ties, missed tasks, or heterogeneous treatment effects can
-change them. They cannot establish a panel context effect.
+judge carryover, ties, missed tasks, or heterogeneous treatment effects can
+change them. They cannot establish a panel context effect. The recorded
+[amendment](AMENDMENT.md) preserves the original mistake and correction.
 
 ## Falsification and decision
 
