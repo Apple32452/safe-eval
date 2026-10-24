@@ -28,12 +28,29 @@ class Stage33Invariants(unittest.TestCase):
             self.assertEqual({k["context"] for k in key if k["item_id"] == item},
                              {"P0", "P1"})
         for task, k in zip(tasks, key):
+            self.assertEqual(task["task_order"], k["task_order"])
+            self.assertNotIn("_p0_", task["task_id"])
+            self.assertNotIn("_p1_", task["task_id"])
             self.assertEqual(len({task[f"option_{i}"] for i in range(1, 6)}), 5)
             self.assertEqual({k[f"slot_{i}"] for i in range(1, 6)},
                              set(("A", "B", "C", "D", "E") if
                                  k["context"] == "P0" else ("A", "B", "F", "G", "H")))
         with self.assertRaises(ValueError):
             build(items, raters[:3], 2)
+
+    def test_rater_tasks_receive_permuted_recorded_orders(self):
+        tasks, key = build([example(f"item-{i}") for i in range(40)],
+                           [f"r{i}" for i in range(4)], 2)
+        self.assertEqual(len(tasks), 160)
+        self.assertEqual(len({t["task_id"] for t in tasks}), 160)
+        for rater in (f"r{i}" for i in range(4)):
+            own = [t for t in tasks if t["rater_id"] == rater]
+            self.assertEqual(sorted(t["task_order"] for t in own),
+                             list(range(1, 41)))
+            self.assertNotEqual([t["task_order"] for t in own],
+                                list(range(1, 41)))
+        self.assertEqual({t["task_id"]: t["task_order"] for t in tasks},
+                         {k["task_id"]: k["task_order"] for k in key})
 
     def test_paired_human_sign_and_validation(self):
         _, key = build([example("one"), example("two")], [f"r{k}" for k in range(4)], 2)
