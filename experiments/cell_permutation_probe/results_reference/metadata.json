@@ -1,0 +1,49 @@
+{
+  "protocol_sha256": "219e1bbea358baed9503add6b1e23253389d6390dd79f96439b416e478d2ec54",
+  "master": 20261024,
+  "repeats": 50,
+  "alpha": 0.05,
+  "items": 128,
+  "scenarios": {
+    "independent_easy": [
+      [
+        0.9,
+        0.1,
+        0.2,
+        0.4,
+        0.6
+      ],
+      false
+    ],
+    "independent_weak": [
+      [
+        0.6,
+        0.5,
+        0.48,
+        0.45,
+        0.42
+      ],
+      false
+    ],
+    "shared_easy": [
+      [
+        0.9,
+        0.1,
+        0.2,
+        0.4,
+        0.6
+      ],
+      true
+    ],
+    "independent_close": [
+      [
+        0.5,
+        0.52,
+        0.48,
+        0.53,
+        0.47
+      ],
+      false
+    ]
+  }
+}
