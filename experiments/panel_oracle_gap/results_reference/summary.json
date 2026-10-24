@@ -1,0 +1,45 @@
+{
+  "no_shift": {
+    "mean_uniform_proxy": 216.55586215362223,
+    "mean_all_pair_proxy": 215.7451279173197,
+    "mean_oracle_proxy": 157.5400210834847,
+    "mean_headroom_vs_all_pair": 0.23826635818786074,
+    "median_headroom_vs_all_pair": 0.27323839093860275,
+    "ratio_of_means_headroom": 0.2697864252866977,
+    "ratio_of_means_bootstrap_95": [
+      0.2632966254519258,
+      0.2748362053676297
+    ],
+    "oracle_solver_feasible_starts": 200,
+    "oracle_solver_reported_success_starts": 200
+  },
+  "context_shift": {
+    "mean_uniform_proxy": 401.4751039942474,
+    "mean_all_pair_proxy": 403.39787453379193,
+    "mean_oracle_proxy": 314.52513259014836,
+    "mean_headroom_vs_all_pair": 0.21262553256539518,
+    "median_headroom_vs_all_pair": 0.23875090457090226,
+    "ratio_of_means_headroom": 0.22031038722341822,
+    "ratio_of_means_bootstrap_95": [
+      0.20306966543991725,
+      0.23665998201417102
+    ],
+    "oracle_solver_feasible_starts": 200,
+    "oracle_solver_reported_success_starts": 200
+  },
+  "context_and_cost": {
+    "mean_uniform_proxy": 789.8959723399204,
+    "mean_all_pair_proxy": 774.4011843295458,
+    "mean_oracle_proxy": 628.3230538143421,
+    "mean_headroom_vs_all_pair": 0.18802447421694787,
+    "median_headroom_vs_all_pair": 0.18074683695891286,
+    "ratio_of_means_headroom": 0.18863366104182022,
+    "ratio_of_means_bootstrap_95": [
+      0.1659721362582973,
+      0.21268325937999064
+    ],
+    "oracle_solver_feasible_starts": 200,
+    "oracle_solver_reported_success_starts": 200
+  },
+  "priority_screen": true
+}
