@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SAFE-EVAL translation ranking — __RATER_ID__</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; background: #f4f6f9; color: #18233a; }
+    body { max-width: 930px; margin: 2rem auto; padding: 0 1rem; }
+    main { background: white; border: 1px solid #dce2e8; border-radius: 12px; padding: 1.5rem; }
+    h1 { font-size: 1.45rem; }
+    h2 { font-size: 1.05rem; margin-bottom: .4rem; }
+    .card { padding: 1rem; margin: 1rem 0; border: 1px solid #cbd5e1; border-radius: 8px; }
+    .translation { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1.1rem; line-height: 1.65; }
+    .source { white-space: pre-wrap; line-height: 1.55; }
+    label { display: block; font-weight: 600; }
+    select, button { font: inherit; padding: .45rem .7rem; margin: .3rem .3rem .3rem 0; }
+    button { cursor: pointer; border-radius: 6px; border: 1px solid #7d8eab; background: #eef3fb; }
+    button:disabled { opacity: .5; cursor: default; }
+    .notice { background: #fff5de; border: 1px solid #e2c071; padding: .8rem; }
+    .status { font-weight: 600; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Translation ranking</h1>
+  <p>Rater __RATER_ID__. You have 40 tasks. Please participate only after agreeing to the study with its organizer; participation is voluntary and you may stop at any time. Contact the organizer with questions.</p>
+  <p>For each English source, read the Chinese reference and rank the five anonymous Chinese translations for overall translation quality. Rank 1 is best and 5 is worst. Give equal ranks to translations you judge tied. Do not use outside systems or consult others. The options are randomly ordered. Work through tasks in the order shown.</p>
+  <p class="notice">This file works offline. It does not upload anything. At the end, download your response CSV and return it privately to the organizer. Keep this page open until your CSV is saved. Progress is stored in this browser where available; reopening on another browser or computer does not transfer progress.</p>
+  <p id="storage" role="status"></p>
+  <p id="progress" class="status"></p>
+  <section class="card"><h2>English source</h2><div id="source" class="source"></div></section>
+  <section class="card"><h2>Chinese reference</h2><div id="reference" class="translation" lang="zh"></div></section>
+  <h2>Rank the five translations</h2>
+  <div id="options"></div>
+  <p>Time on this task: <span id="clock">0</span> seconds. The timer pauses when this tab is hidden; use Pause for a break.</p>
+  <button id="pause" type="button">Pause</button>
+  <button id="previous" type="button">Previous task</button>
+  <button id="next" type="button">Save and next</button>
+  <button id="download" type="button" hidden>Download completed CSV</button>
+  <p id="message" role="alert"></p>
+</main>
+<script id="tasks" type="application/json">__TASKS_JSON__</script>
+<script>
+(() => {
+  'use strict';
+  const tasks = JSON.parse(document.getElementById('tasks').textContent);
+  const rater = '__RATER_ID__';
+  const storageKey = 'safe_eval_stage33_' + rater + '___PACKET_VERSION__';
+  const $ = (id) => document.getElementById(id);
+  let stored = {};
+  let storageOK = true;
+  try { stored = JSON.parse(localStorage.getItem(storageKey) || '{}'); }
+  catch (error) { storageOK = false; }
+  if (!stored || typeof stored !== 'object' || Array.isArray(stored)) stored = {};
+  if (!storageOK) $('storage').textContent = 'Browser storage is unavailable: keep this page open until the final CSV is downloaded.';
+  const state = tasks.map(t => {
+    const s = stored[t.task_id] || {};
+    const ranks = Array.isArray(s.ranks) && s.ranks.length === 5 ? s.ranks : ['', '', '', '', ''];
+    return { ranks, ms: Number.isFinite(s.ms) && s.ms >= 0 ? s.ms : 0 };
+  });
+  const complete = (s) => s.ranks.length === 5 && s.ranks.every(x => /^[1-5]$/.test(String(x))) && s.ms > 0 && s.ms < 3600000;
+  let index = Math.max(0, state.findIndex(s => !complete(s)));
+  let running = false;
+  let resumedAfterHide = false;
+  let startedAt = 0;
+
+  function persist() {
+    if (!storageOK) return;
+    const obj = Object.fromEntries(tasks.map((t, i) => [t.task_id, state[i]]));
+    try { localStorage.setItem(storageKey, JSON.stringify(obj)); }
+    catch (error) { storageOK = false; $('storage').textContent = 'Progress cannot be stored in this browser. Finish and save the CSV without closing this page.'; }
+  }
+  function stopTimer() {
+    if (!running) return;
+    state[index].ms += Math.max(0, performance.now() - startedAt);
+    running = false;
+    persist();
+    updateClock();
+  }
+  function startTimer() {
+    if (running || document.hidden) return;
+    running = true;
+    startedAt = performance.now();
+    $('pause').textContent = 'Pause';
+  }
+  function updateClock() {
+    const current = state[index].ms + (running ? Math.max(0, performance.now() - startedAt) : 0);
+    $('clock').textContent = (current / 1000).toFixed(1);
+  }
+  function readRanks() {
+    state[index].ranks = Array.from(document.querySelectorAll('#options select'), el => el.value);
+    persist();
+  }
+  function render() {
+    const t = tasks[index];
+    $('progress').textContent = 'Task ' + (index + 1) + ' of ' + tasks.length + ' · ' +
+      state.filter(complete).length + ' completed';
+    $('source').textContent = t.source;
+    $('reference').textContent = t.reference;
+    $('options').replaceChildren();
+    for (let i = 1; i <= 5; i++) {
+      const card = document.createElement('div');
+      card.className = 'card';
+      const label = document.createElement('label');
+      const select = document.createElement('select');
+      select.setAttribute('aria-label', 'Rank translation ' + i);
+      for (const value of ['', '1', '2', '3', '4', '5']) {
+        const option = new Option(value ? 'Rank ' + value : 'Choose rank', value);
+        select.add(option);
+      }
+      select.value = String(state[index].ranks[i - 1] || '');
+      select.addEventListener('change', readRanks);
+      const text = document.createElement('div');
+      text.className = 'translation';
+      text.lang = 'zh';
+      text.textContent = t['option_' + i];
+      label.append('Translation ' + i + ' — ', select);
+      card.append(label, text);
+      $('options').append(card);
+    }
+    $('previous').disabled = index === 0;
+    $('next').textContent = index === tasks.length - 1 ? 'Finish and check' : 'Save and next';
+    $('download').hidden = !state.every(complete);
+    $('message').textContent = '';
+    updateClock();
+    startTimer();
+  }
+  $('pause').addEventListener('click', () => {
+    if (running) { stopTimer(); $('pause').textContent = 'Resume'; }
+    else { startTimer(); }
+    updateClock();
+  });
+  $('previous').addEventListener('click', () => {
+    if (index === 0) return;
+    readRanks(); stopTimer(); index--; render();
+  });
+  $('next').addEventListener('click', () => {
+    readRanks(); stopTimer();
+    if (!complete(state[index])) {
+      $('message').textContent = 'Please choose all five ranks and spend time reviewing the task. Ranks may tie.';
+      startTimer(); return;
+    }
+    if (index < tasks.length - 1) { index++; render(); }
+    else {
+      $('download').hidden = !state.every(complete);
+      $('message').textContent = state.every(complete) ?
+        'All tasks complete. Download the response CSV now.' :
+        'Some earlier tasks are incomplete. Go back and complete them before downloading.';
+      renderProgress();
+    }
+  });
+  function renderProgress() {
+    $('progress').textContent = 'Task ' + (index + 1) + ' of ' + tasks.length + ' · ' +
+      state.filter(complete).length + ' completed';
+  }
+  $('download').addEventListener('click', () => {
+    readRanks(); stopTimer();
+    if (!state.every(complete)) { $('message').textContent = 'Complete all tasks before exporting.'; return; }
+    const rows = [['task_id', 'rater_id', 'task_order', 'rank_1', 'rank_2', 'rank_3', 'rank_4', 'rank_5', 'seconds']];
+    tasks.forEach((t, i) => rows.push([t.task_id, rater, t.task_order,
+      ...state[i].ranks, (state[i].ms / 1000).toFixed(3)]));
+    const csv = rows.map(row => row.join(',')).join('\r\n') + '\r\n';
+    const url = URL.createObjectURL(new Blob([csv], {type: 'text/csv;charset=utf-8'}));
+    const a = document.createElement('a');
+    a.href = url; a.download = rater + '_responses.csv';
+    document.body.append(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+    $('message').textContent = 'CSV downloaded. Send that CSV privately to the organizer.';
+  });
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) { resumedAfterHide = running; stopTimer(); }
+    else if (resumedAfterHide) { resumedAfterHide = false; startTimer(); }
+  });
+  window.addEventListener('pagehide', stopTimer);
+  setInterval(updateClock, 500);
+  render();
+})();
+</script>
+</body>
+</html>
