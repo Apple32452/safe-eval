@@ -1,6 +1,6 @@
 # SAFE-EVAL
 
-**Latest research (24 October 2026):** The [fixed-pool shared-panel screen](experiments/shared_panel_gate/FINDINGS.md) tested 15 comparisons from five-way judgments and found that its active-pair selector cost more than the matched adaptive-all-pairs control under simulated companion effects. The preceding [one-pair screen](experiments/panel_aware_gate/FINDINGS.md) passed a narrow synthetic internal gate, but that gain did not transfer. The [prospective human panel pilot](experiments/stage33/README.md) is prepared; no new human judgments or measured annotation times exist yet. ICML novelty remains unestablished.
+**Latest research (24 October 2026):** A [population-informed panel oracle](experiments/panel_oracle_gap/FINDINGS.md) found 21.26% and 18.80% variance-and-duration *proxy* headroom in the two shifted synthetic scenarios. The [feasible follow-up](experiments/panel_gap_feasible/FINDINGS.md) used 6.88% and 6.27% **more** mean simulated stopping duration than its strongest matched controls, so its frozen efficiency screen failed. Both 100-repeat experiments and their audits are on `main`; the [novelty boundary](experiments/novelty_boundary/README.md) records what remains open. The [prospective human panel pilot](experiments/stage33/README.md) is prepared, with no new judgments or measured annotation times yet. ICML novelty remains unestablished.
 
 SAFE-EVAL studies how to reach reliable conclusions about machine translation
 systems while paying for fewer system-item judgments on a fixed test set. It
