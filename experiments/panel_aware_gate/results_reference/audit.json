@@ -1,0 +1,56 @@
+{
+  "replayed_paths": 1500,
+  "protocol_sha256": "22e922683d1e403ab8af3516c24402f87181328a6100def47f088a81709b1883",
+  "all_1500_rows_and_summary_verified": true,
+  "paired_bootstrap_descriptive": {
+    "unequal_variance": {
+      "target_random": {
+        "saving_fraction": 0.10659090909090907,
+        "paired_bootstrap_95_percentile": [
+          0.03814070389420869,
+          0.17073816894448432
+        ]
+      },
+      "adaptive_ipw": {
+        "saving_fraction": 0.1375603334795963,
+        "paired_bootstrap_95_percentile": [
+          0.07252482907089515,
+          0.20108123480457643
+        ]
+      }
+    },
+    "unequal_duration": {
+      "target_random": {
+        "saving_fraction": -0.04078212290502781,
+        "paired_bootstrap_95_percentile": [
+          -0.06910633686059563,
+          -0.014965247457486664
+        ]
+      },
+      "adaptive_ipw": {
+        "saving_fraction": -0.018775063798760483,
+        "paired_bootstrap_95_percentile": [
+          -0.0399264361855516,
+          -0.001321388104266831
+        ]
+      }
+    },
+    "mixed_variance": {
+      "target_random": {
+        "saving_fraction": 0.10695483513438642,
+        "paired_bootstrap_95_percentile": [
+          0.060100266804257875,
+          0.1519648547045688
+        ]
+      },
+      "adaptive_ipw": {
+        "saving_fraction": 0.10022333891680635,
+        "paired_bootstrap_95_percentile": [
+          0.05618857421360902,
+          0.14270397327328496
+        ]
+      }
+    }
+  },
+  "note": "Bootstrap intervals describe simulation variability, not human minutes or novel inference."
+}
