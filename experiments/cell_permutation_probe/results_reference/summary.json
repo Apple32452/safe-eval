@@ -1,0 +1,27 @@
+{
+  "independent_easy": {
+    "stage22": 143.44,
+    "cells": 244.22,
+    "saving_percent": -70.25934188510875,
+    "passed": false
+  },
+  "independent_weak": {
+    "stage22": 476.18,
+    "cells": 533.04,
+    "saving_percent": -11.940862698979368,
+    "passed": false
+  },
+  "shared_easy": {
+    "stage22": 114.72,
+    "cells": 233.6,
+    "saving_percent": -103.62622036262204,
+    "passed": false
+  },
+  "independent_close": {
+    "stage22": 604.38,
+    "cells": 622.14,
+    "saving_percent": -2.9385485952546397,
+    "passed": false
+  },
+  "gate_pass": false
+}
