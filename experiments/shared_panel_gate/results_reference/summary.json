@@ -1,0 +1,117 @@
+{
+  "no_shift": {
+    "uniform_raw": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 106.575,
+      "mean_capped_duration": 106.575,
+      "mean_completed_tasks": 106.575,
+      "mean_completed_duration": 106.575,
+      "full_ledger_paths": 0
+    },
+    "uniform_centered": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 110.475,
+      "mean_capped_duration": 110.475,
+      "mean_completed_tasks": 110.475,
+      "mean_completed_duration": 110.475,
+      "full_ledger_paths": 0
+    },
+    "adaptive_all": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 111.325,
+      "mean_capped_duration": 111.325,
+      "mean_completed_tasks": 111.325,
+      "mean_completed_duration": 111.325,
+      "full_ledger_paths": 0
+    },
+    "adaptive_active": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 108.85,
+      "mean_capped_duration": 108.85,
+      "mean_completed_tasks": 108.85,
+      "mean_completed_duration": 108.85,
+      "full_ledger_paths": 0
+    }
+  },
+  "context_shift": {
+    "uniform_raw": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 116.15,
+      "mean_capped_duration": 116.15,
+      "mean_completed_tasks": 116.15,
+      "mean_completed_duration": 116.15,
+      "full_ledger_paths": 0
+    },
+    "uniform_centered": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 115.625,
+      "mean_capped_duration": 115.625,
+      "mean_completed_tasks": 115.625,
+      "mean_completed_duration": 115.625,
+      "full_ledger_paths": 0
+    },
+    "adaptive_all": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 113.875,
+      "mean_capped_duration": 113.875,
+      "mean_completed_tasks": 113.875,
+      "mean_completed_duration": 113.875,
+      "full_ledger_paths": 0
+    },
+    "adaptive_active": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 120.175,
+      "mean_capped_duration": 120.175,
+      "mean_completed_tasks": 120.175,
+      "mean_completed_duration": 120.175,
+      "full_ledger_paths": 0
+    }
+  },
+  "context_and_cost": {
+    "uniform_raw": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 113.225,
+      "mean_capped_duration": 224.35,
+      "mean_completed_tasks": 113.225,
+      "mean_completed_duration": 224.35,
+      "full_ledger_paths": 0
+    },
+    "uniform_centered": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 116.375,
+      "mean_capped_duration": 230.225,
+      "mean_completed_tasks": 116.375,
+      "mean_completed_duration": 230.225,
+      "full_ledger_paths": 0
+    },
+    "adaptive_all": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 114.875,
+      "mean_capped_duration": 220.6,
+      "mean_completed_tasks": 114.875,
+      "mean_completed_duration": 220.6,
+      "full_ledger_paths": 0
+    },
+    "adaptive_active": {
+      "completed": 40,
+      "paths_with_wrong_sign": 0,
+      "mean_capped_tasks": 116.375,
+      "mean_capped_duration": 224.15,
+      "mean_completed_tasks": 116.375,
+      "mean_completed_duration": 224.15,
+      "full_ledger_paths": 0
+    }
+  },
+  "screen_pass": false
+}
