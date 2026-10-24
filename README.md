@@ -1,6 +1,6 @@
 # SAFE-EVAL
 
-**Latest research:** [Stage 33](experiments/stage33/FINDINGS.md) checks real WMT11 five-way judgments. The matched reference-presence contrast is small and its descriptive interval includes zero; 40 public WMT25 documents are prepared for a prospective English-to-Chinese human pilot, but no new judgments have been collected. See the [pilot protocol and commands](experiments/stage33/README.md). [Stage 32](experiments/stage32/FINDINGS.md) is a synthetic context-shift diagnostic. ICML novelty remains unestablished.
+**Latest research (24 October 2026):** The [fixed-pool shared-panel screen](experiments/shared_panel_gate/FINDINGS.md) tested 15 comparisons from five-way judgments and found that its active-pair selector cost more than the matched adaptive-all-pairs control under simulated companion effects. The preceding [one-pair screen](experiments/panel_aware_gate/FINDINGS.md) passed a narrow synthetic internal gate, but that gain did not transfer. The [prospective human panel pilot](experiments/stage33/README.md) is prepared; no new human judgments or measured annotation times exist yet. ICML novelty remains unestablished.
 
 SAFE-EVAL studies how to reach reliable conclusions about machine translation
 systems while paying for fewer system-item judgments on a fixed test set. It
