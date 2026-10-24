@@ -3,7 +3,9 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
+from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
@@ -63,7 +65,9 @@ def build(items: list[dict], raters: list[str], repeats: int,
             for repeat in range(repeats):
                 rater_id = str(selected[context_idx * repeats + repeat])
                 ordered = [str(x) for x in rng.permutation(systems)]
-                task_id = f"{item['item_id']}_p{context_idx}_r{repeat}"
+                # Rater-visible IDs must not encode the companion context.
+                identifier = f"{seed}|{item['item_id']}|{context_idx}|{repeat}"
+                task_id = "t_" + hashlib.sha256(identifier.encode()).hexdigest()[:24]
                 tasks.append({"task_id": task_id, "rater_id": rater_id,
                               "item_id": item["item_id"],
                               "source": item["source"],
@@ -74,6 +78,17 @@ def build(items: list[dict], raters: list[str], repeats: int,
                             "rater_id": rater_id, "context": context,
                             **{f"slot_{k}": s for k, s in
                                enumerate(ordered, 1)}})
+    if len({t["task_id"] for t in tasks}) != len(tasks):
+        raise ValueError("Opaque task IDs collided")
+    by_rater = defaultdict(list)
+    for index, task in enumerate(tasks):
+        by_rater[task["rater_id"]].append(index)
+    # Independent, pre-judgment order per rater; the presentation CSV is
+    # sorted on these recorded orders at export time.
+    for indices in by_rater.values():
+        for order, at in enumerate(rng.permutation(indices), 1):
+            tasks[int(at)]["task_order"] = order
+            key[int(at)]["task_order"] = order
     return tasks, key
 
 
@@ -94,17 +109,20 @@ def main() -> None:
     items, raters = read_items(args.items), read_raters(args.raters)
     tasks, key = build(items, raters, args.repeats)
     args.output.mkdir(parents=True, exist_ok=True)
-    write_csv(args.output / "tasks.csv", tasks,
-              ["task_id", "rater_id", "item_id", "source", "reference",
+    ordered_tasks = sorted(tasks, key=lambda t: (t["rater_id"], t["task_order"]))
+    write_csv(args.output / "tasks.csv", ordered_tasks,
+              ["task_id", "rater_id", "task_order", "item_id", "source", "reference",
                *[f"option_{k}" for k in range(1, 6)]])
     write_csv(args.output / "private_key.csv", key,
-              ["task_id", "item_id", "rater_id", "context",
+              ["task_id", "item_id", "rater_id", "task_order", "context",
                *[f"slot_{k}" for k in range(1, 6)]])
     write_csv(args.output / "responses_template.csv",
               [{"task_id": t["task_id"], "rater_id": t["rater_id"],
+                "task_order": t["task_order"],
                 **{f"rank_{k}": "" for k in range(1, 6)}, "seconds": ""}
-               for t in tasks],
-              ["task_id", "rater_id", *[f"rank_{k}" for k in range(1, 6)],
+               for t in ordered_tasks],
+              ["task_id", "rater_id", "task_order",
+               *[f"rank_{k}" for k in range(1, 6)],
                "seconds"])
     (args.output / "manifest.json").write_text(json.dumps({
         "seed": SEED, "items": len(items), "rater_count": len(raters),
