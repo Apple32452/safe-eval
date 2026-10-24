@@ -60,7 +60,7 @@ def analyze(key: list[dict], responses: list[dict], draws: int = 2000) -> dict:
             "items": len(grouped), "judgments": len(key),
             "effect": result, "mean_task_seconds": {
                 c: sum(t) / len(t) for c, t in time_by_context.items()},
-            "status": "human observations; interpret with design and recruitment checks"}
+            "status": "complete response file; verify human provenance and recruitment separately"}
 
 
 if __name__ == "__main__":
