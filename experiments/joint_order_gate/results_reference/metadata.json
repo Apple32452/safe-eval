@@ -1,0 +1,10 @@
+{
+  "repeats": 20,
+  "items": 16,
+  "systems": 3,
+  "alpha": 0.05,
+  "protocol_sha256": "e58477489c1273b64d843bbe5a9eb6488cf2f30ff531768248d2c795780551ee",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "status": "synthetic mechanism screen; no new theorem or human evidence"
+}
