@@ -1,0 +1,399 @@
+{
+  "status": "passed",
+  "integer_state_audit": {
+    "states": 216,
+    "null_polytopes": 4104,
+    "conditional_expectations": 7561,
+    "largest_conditional_expectation": 1.0000000000000002
+  },
+  "exhaustive_tree_audit": {
+    "total_triples": 27,
+    "covered_binary_matrices": 64,
+    "decision_tree_leaves": 5760,
+    "max_familywise_error": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cases": [
+      {
+        "totals": [
+          0,
+          0,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 90
+      },
+      {
+        "totals": [
+          0,
+          0,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 0.9999999999999999,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          0,
+          0,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 90
+      },
+      {
+        "totals": [
+          0,
+          1,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          0,
+          1,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000004,
+        "leaves": 360
+      },
+      {
+        "totals": [
+          0,
+          1,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          0,
+          2,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0,
+        "leaves": 90
+      },
+      {
+        "totals": [
+          0,
+          2,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          0,
+          2,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000007,
+        "leaves": 90
+      },
+      {
+        "totals": [
+          1,
+          0,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          1,
+          0,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 0.9999999999999994,
+        "leaves": 360
+      },
+      {
+        "totals": [
+          1,
+          0,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 0.9999999999999998,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          1,
+          1,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 360
+      },
+      {
+        "totals": [
+          1,
+          1,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0,
+        "leaves": 720
+      },
+      {
+        "totals": [
+          1,
+          1,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 360
+      },
+      {
+        "totals": [
+          1,
+          2,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          1,
+          2,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000002,
+        "leaves": 360
+      },
+      {
+        "totals": [
+          1,
+          2,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000007,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          2,
+          0,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0,
+        "leaves": 90
+      },
+      {
+        "totals": [
+          2,
+          0,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          2,
+          0,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000004,
+        "leaves": 90
+      },
+      {
+        "totals": [
+          2,
+          1,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000013,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          2,
+          1,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0,
+        "leaves": 360
+      },
+      {
+        "totals": [
+          2,
+          1,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000004,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          2,
+          2,
+          0
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0000000000000004,
+        "leaves": 90
+      },
+      {
+        "totals": [
+          2,
+          2,
+          1
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 0.9999999999999998,
+        "leaves": 180
+      },
+      {
+        "totals": [
+          2,
+          2,
+          2
+        ],
+        "error_probability": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "path_probability_sum": 1.0,
+        "leaves": 90
+      }
+    ]
+  }
+}
