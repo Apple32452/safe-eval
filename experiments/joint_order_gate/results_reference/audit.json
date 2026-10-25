@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": 100,
+  "graph_method_results": 800,
+  "integer_null_expectations_checked_with_replays": 150768808,
+  "largest_null_expectation": 1.0000000000000018,
+  "protocol_sha256": "e58477489c1273b64d843bbe5a9eb6488cf2f30ff531768248d2c795780551ee",
+  "expansion_gate": false,
+  "note": "Conditional checks enumerate integer null completions; no human data."
+}
