@@ -1,6 +1,10 @@
 # SAFE-EVAL
 
-**Latest research (24 October 2026):** A [population-informed panel oracle](experiments/panel_oracle_gap/FINDINGS.md) found 21.26% and 18.80% variance-and-duration *proxy* headroom in the two shifted synthetic scenarios. The [feasible follow-up](experiments/panel_gap_feasible/FINDINGS.md) used 6.88% and 6.27% **more** mean simulated stopping duration than its strongest matched controls, so its frozen efficiency screen failed. Both 100-repeat experiments and their audits are on `main`; the [novelty boundary](experiments/novelty_boundary/README.md) records what remains open. The [prospective human panel pilot](experiments/stage33/README.md) is prepared, with no new judgments or measured annotation times yet. ICML novelty remains unestablished.
+**Latest research (25 October 2026):** The [joint finite-pool ordering study](experiments/joint_order_gate/FINDINGS.md) is complete: 100 synthetic matrices, each with three systems and 16 binary items. In the independent strong-gap scenario, the candidate used **8.20% fewer unique labels** for reference comparisons and **6.16% fewer** for all-pair comparisons than the requested-edge exact-pair control on the same adaptive query stream. That sharper control was added after the frozen run and is explicitly labeled a post-result audit.
+
+**The frozen expansion gate failed.** The moderate-gap reference-comparison gain over Stage 22 had a confidence interval crossing zero; reversed predictions increased reference-comparison cost by 9.38% versus Stage 22. Five tests, the exhaustive small-pool audit and the 100-case result replay passed. [Full ledgers and audits](experiments/joint_order_gate/results_reference), [validity argument](experiments/joint_order_gate/THEORY.md) and reproduction commands are published. These are restricted simulated label savings, not human-time savings or an established ICML contribution.
+
+The earlier [feasible panel-allocation study](experiments/panel_gap_feasible/FINDINGS.md) failed its efficiency screen despite [oracle proxy headroom](experiments/panel_oracle_gap/FINDINGS.md). The [human panel pilot](experiments/stage33/README.md) is prepared; no new human judgments have been collected. The [novelty boundary](experiments/novelty_boundary/README.md) records the remaining contribution requirements.
 
 SAFE-EVAL studies how to reach reliable conclusions about machine translation
 systems while paying for fewer system-item judgments on a fixed test set. It
@@ -10,7 +14,7 @@ output can support several requested pairwise comparisons.
 The [released Stage 7 snapshot](experiments/stage7/README.md) remains intact.
 Subsequent experiments and audits are recorded in separate stage directories.
 
-## Latest result and research boundary
+## WMT25 result and research boundary
 
 [Stage 22](experiments/stage22/FINDINGS.md) evaluates a sparse reference-star
 task on WMT25: compare each system with a designated reference, over all 255
