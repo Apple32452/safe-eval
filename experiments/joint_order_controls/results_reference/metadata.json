@@ -1,0 +1,10 @@
+{
+  "status": "post-result diagnostic; original expansion gate remains failed",
+  "cases": 100,
+  "source_sha256": "60c44a56f1869e8dc40080e8358e1391f94f81b899c7889259969bf54a98b27d",
+  "protocol_sha256": "dc1f9dcf42d33e1fb7f179b95a7bbe5ef6c77ac9657d86ac3e7b53258564e102",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "new_matrices": 0,
+  "human_judgments": 0
+}

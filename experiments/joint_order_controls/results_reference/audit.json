@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "matrices": 100,
+  "graph_method_results": 600,
+  "cell_null_expectations": 17622080,
+  "paired_null_expectations": 958105,
+  "largest_null_expectation": 1.0000000000000004,
+  "small_exact_audit": {
+    "status": "passed",
+    "binary_matrices": 64,
+    "matrix_permutation_graph_method_paths": 512,
+    "largest_fixed_matrix_familywise_error": {
+      "star": {
+        "paired_exact_closure": 0.0,
+        "paired_exact_bonferroni": 0.0
+      },
+      "triangle": {
+        "paired_exact_closure": 0.0,
+        "paired_exact_bonferroni": 0.0
+      }
+    }
+  },
+  "original_expansion_gate": false
+}

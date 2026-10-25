@@ -1,5 +1,12 @@
 # Joint finite-pool ordering tests: a local gain, failed expansion gate
 
+**Subsequent qualification (2026-10-25):** The [stronger control audit](../joint_order_controls/FINDINGS.md)
+matches these completion costs in 197 of 200 tasks by rebalancing existing
+pair factors each step. Both independent strong-gap savings become 0%
+against that control. The original measurements below are preserved, but
+their interpretation as a distinct joint-calibration efficiency mechanism
+is superseded by that audit.
+
 Date: 2026-10-25. **Status: promising restricted mechanism; no ICML novelty
 claim.** The protocol (`3098b2fe`) and validity note were published on `main`
 before generating this study's matrices. The implementation and five tests

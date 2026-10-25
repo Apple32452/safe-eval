@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "binary_matrices": 64,
+  "matrix_permutation_graph_method_paths": 512,
+  "largest_fixed_matrix_familywise_error": {
+    "star": {
+      "paired_exact_closure": 0.0,
+      "paired_exact_bonferroni": 0.0
+    },
+    "triangle": {
+      "paired_exact_closure": 0.0,
+      "paired_exact_bonferroni": 0.0
+    }
+  }
+}

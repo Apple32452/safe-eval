@@ -145,3 +145,27 @@ This supplies a restricted matched mechanism, not a result satisfying the
 full contribution gate above. A distinct cost characterization, scalability
 beyond three systems, and a strong prediction-aware complete-item comparator
 remain open. No WMT24 outcomes or prospective human judgments were used.
+
+
+## Stronger controls close the present joint-efficiency claim (2026-10-25)
+
+The [additional control audit](../joint_order_controls/FINDINGS.md) reuses
+all 100 fixed synthetic matrices under a protocol published before its new
+outcomes. Allowing a pairwise control to rebalance its factors each step
+matches the joint candidate's completion cost in **197 of 200 graph tasks**.
+The candidate wins one task by one label and loses two by four and one
+labels. Both earlier independent strong-gap savings become 0% against this
+control. Prediction-aware exact common-item controls are also competitive.
+
+All 600 new graph-method outcomes and their purchase ledgers replay, with
+18,580,185 conditional-expectation checks against compatible null completions
+and no observed incorrect decisions. This supersedes the earlier restricted
+joint-mechanism efficiency interpretation, while preserving the original
+measurements and failed expansion gate.
+
+The [conditional KL calculation](../joint_order_controls/MECHANISM.md)
+shows equality of joint and pair log growth for neighboring alternative
+orders in the stated examples. A strict gain for another ordering does not
+establish cheaper complete certification. Retain rebalanced pair evidence
+and prediction-aware common-item retirement as required controls. A distinct
+attainable-cost separation remains open; no ICML contribution is established.

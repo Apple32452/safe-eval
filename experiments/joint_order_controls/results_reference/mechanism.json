@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "units": "predicted log evidence per purchased cell",
+  "stopping_cost_theorem": false,
+  "examples": [
+    {
+      "prior": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "weak_order": [
+        1,
+        0,
+        2
+      ],
+      "projected_marginals": [
+        0.35,
+        0.35,
+        0.8
+      ],
+      "joint_expected_log_factor": 0.033781223623098065,
+      "analytic_kl": 0.033781224657043925,
+      "largest_implied_pair_log_factor": 0.033781223623098086,
+      "rebalanced_pair_log_factor": 0.03378122362309809,
+      "pair_log_factors": {
+        "(0, 2)": 0.0,
+        "(1, 0)": 0.033781223623098086,
+        "(1, 2)": 0.0
+      }
+    },
+    {
+      "prior": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "weak_order": [
+        0,
+        2,
+        1
+      ],
+      "projected_marginals": [
+        0.2,
+        0.65,
+        0.65
+      ],
+      "joint_expected_log_factor": 0.03378122362309815,
+      "analytic_kl": 0.03378122465704391,
+      "largest_implied_pair_log_factor": 0.03378122362309821,
+      "rebalanced_pair_log_factor": 0.033781223623098204,
+      "pair_log_factors": {
+        "(0, 1)": 0.0,
+        "(0, 2)": 0.0,
+        "(2, 1)": 0.03378122362309821
+      }
+    },
+    {
+      "prior": [
+        0.1,
+        0.2,
+        0.9
+      ],
+      "weak_order": [
+        2,
+        1,
+        0
+      ],
+      "projected_marginals": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "joint_expected_log_factor": 0.2894888758684035,
+      "analytic_kl": 0.28948887690222835,
+      "largest_implied_pair_log_factor": 0.2453761370648553,
+      "rebalanced_pair_log_factor": 0.2633334670881484,
+      "pair_log_factors": {
+        "(1, 0)": 0.0066442585221778,
+        "(2, 0)": 0.2453761370648553,
+        "(2, 1)": 0.1835974091502482
+      }
+    }
+  ]
+}
