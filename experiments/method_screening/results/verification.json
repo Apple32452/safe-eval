@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "all_84_timings": true,
+    "no_errors_timeouts": true,
+    "no_wrong_new_paths": true,
+    "all_repeat_outputs_equal": true,
+    "sixty_archived_timing_replays": true,
+    "all_locked_sources_unchanged": true,
+    "no_previous_files_changed": true,
+    "local_main_unchanged": true,
+    "six_original_dp_replays": true,
+    "all_uniform_paths_match_archived_prefixes": true,
+    "two_system_exhaustive_paths": true,
+    "no_wrong_two_system_baseline": true,
+    "fixed_law_exhaustive_paths": true,
+    "fixed_law_thirty_full_cost_matches": true
+  },
+  "passed": true
+}

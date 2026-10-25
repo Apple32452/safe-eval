@@ -1,0 +1,325 @@
+{
+  "rows": [
+    {
+      "scenario": "aligned_strong",
+      "repeat": 0,
+      "cost": 14,
+      "full": 14,
+      "partial": 12,
+      "wall_s": 0.03172869997797534
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 1,
+      "cost": 12,
+      "full": 12,
+      "partial": 16,
+      "wall_s": 0.032180999987758696
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 2,
+      "cost": 12,
+      "full": 12,
+      "partial": 9,
+      "wall_s": 0.027682699961587787
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 3,
+      "cost": 12,
+      "full": 12,
+      "partial": 13,
+      "wall_s": 0.016436300007626414
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 4,
+      "cost": 12,
+      "full": 12,
+      "partial": 13,
+      "wall_s": 0.016779500001575798
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 5,
+      "cost": 12,
+      "full": 12,
+      "partial": 9,
+      "wall_s": 0.016594399989116937
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 6,
+      "cost": 12,
+      "full": 12,
+      "partial": 10,
+      "wall_s": 0.017025399953126907
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 7,
+      "cost": 10,
+      "full": 10,
+      "partial": 10,
+      "wall_s": 0.017359099991153926
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 8,
+      "cost": 12,
+      "full": 12,
+      "partial": 9,
+      "wall_s": 0.030204799957573414
+    },
+    {
+      "scenario": "aligned_strong",
+      "repeat": 9,
+      "cost": 10,
+      "full": 10,
+      "partial": 9,
+      "wall_s": 0.01709009998012334
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 0,
+      "cost": 36,
+      "full": 36,
+      "partial": 21,
+      "wall_s": 0.041085800039581954
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 1,
+      "cost": 26,
+      "full": 26,
+      "partial": 40,
+      "wall_s": 0.03195229999255389
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 2,
+      "cost": 18,
+      "full": 18,
+      "partial": 34,
+      "wall_s": 0.028608599968720227
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 3,
+      "cost": 46,
+      "full": 46,
+      "partial": 42,
+      "wall_s": 0.050936899962835014
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 4,
+      "cost": 24,
+      "full": 24,
+      "partial": 21,
+      "wall_s": 0.02925419999519363
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 5,
+      "cost": 26,
+      "full": 26,
+      "partial": 18,
+      "wall_s": 0.03779620002023876
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 6,
+      "cost": 38,
+      "full": 38,
+      "partial": 27,
+      "wall_s": 0.04952880000928417
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 7,
+      "cost": 16,
+      "full": 16,
+      "partial": 15,
+      "wall_s": 0.01798369997413829
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 8,
+      "cost": 36,
+      "full": 36,
+      "partial": 33,
+      "wall_s": 0.04379140003584325
+    },
+    {
+      "scenario": "aligned_moderate",
+      "repeat": 9,
+      "cost": 30,
+      "full": 30,
+      "partial": 25,
+      "wall_s": 0.0401168999960646
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 0,
+      "cost": 20,
+      "full": 20,
+      "partial": 49,
+      "wall_s": 0.029973600001540035
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 1,
+      "cost": 24,
+      "full": 24,
+      "partial": 16,
+      "wall_s": 0.030924800026696175
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 2,
+      "cost": 48,
+      "full": 48,
+      "partial": 21,
+      "wall_s": 0.07313660002546385
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 3,
+      "cost": 16,
+      "full": 16,
+      "partial": 15,
+      "wall_s": 0.03402100002858788
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 4,
+      "cost": 38,
+      "full": 38,
+      "partial": 51,
+      "wall_s": 0.05779910000273958
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 5,
+      "cost": 20,
+      "full": 20,
+      "partial": 9,
+      "wall_s": 0.030507299990858883
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 6,
+      "cost": 16,
+      "full": 16,
+      "partial": 16,
+      "wall_s": 0.027904900023713708
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 7,
+      "cost": 10,
+      "full": 10,
+      "partial": 10,
+      "wall_s": 0.020771500014234334
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 8,
+      "cost": 16,
+      "full": 16,
+      "partial": 13,
+      "wall_s": 0.02935359999537468
+    },
+    {
+      "scenario": "shifted_opposite",
+      "repeat": 9,
+      "cost": 34,
+      "full": 34,
+      "partial": 27,
+      "wall_s": 0.05042620003223419
+    }
+  ],
+  "summary": {
+    "aligned_strong": {
+      "mean_cost": 11.8,
+      "mean_wall_s": 0.022308199980761854,
+      "comparisons": {
+        "full": {
+          "saving": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 10,
+          "losses": 0
+        },
+        "partial": {
+          "saving": 0.06779661016949157,
+          "ci95": [
+            -0.0535714285714286,
+            0.17213114754098358
+          ],
+          "wins": 6,
+          "ties": 1,
+          "losses": 3
+        }
+      }
+    },
+    "aligned_moderate": {
+      "mean_cost": 29.6,
+      "mean_wall_s": 0.03710547999944538,
+      "comparisons": {
+        "full": {
+          "saving": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 10,
+          "losses": 0
+        },
+        "partial": {
+          "saving": 0.06756756756756754,
+          "ci95": [
+            -0.16001119402985065,
+            0.23202906162464987
+          ],
+          "wins": 8,
+          "ties": 0,
+          "losses": 2
+        }
+      }
+    },
+    "shifted_opposite": {
+      "mean_cost": 24.2,
+      "mean_wall_s": 0.03848186001414433,
+      "comparisons": {
+        "full": {
+          "saving": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "wins": 0,
+          "ties": 10,
+          "losses": 0
+        },
+        "partial": {
+          "saving": 0.06198347107438018,
+          "ci95": [
+            -0.32937271062271056,
+            0.36179562657695535
+          ],
+          "wins": 6,
+          "ties": 2,
+          "losses": 2
+        }
+      }
+    }
+  },
+  "exhaustive_paths": 384
+}
