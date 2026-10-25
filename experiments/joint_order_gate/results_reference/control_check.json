@@ -1,0 +1,5539 @@
+{
+  "status": "post-result control audit",
+  "summary": {
+    "independent_strong": {
+      "star": {
+        "requested_closure": {
+          "mean_paid": 32.3,
+          "mean_charged": 32.3,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.08204334365325072,
+          "paired_bootstrap_95": [
+            0.03869026299631609,
+            0.1474371961102106
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 32.45,
+          "mean_charged": 32.45,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.08628659476117118,
+          "paired_bootstrap_95": [
+            0.0434782608695653,
+            0.15048716784884517
+          ]
+        }
+      },
+      "triangle": {
+        "requested_closure": {
+          "mean_paid": 37.35,
+          "mean_charged": 37.35,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.061579651941097824,
+          "paired_bootstrap_95": [
+            0.022669312295043164,
+            0.11096075778078485
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 37.75,
+          "mean_charged": 37.75,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.07152317880794712,
+          "paired_bootstrap_95": [
+            0.02748637991777306,
+            0.12796912928759901
+          ]
+        }
+      }
+    },
+    "independent_moderate": {
+      "star": {
+        "requested_closure": {
+          "mean_paid": 40.8,
+          "mean_charged": 40.8,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.03676470588235292,
+          "paired_bootstrap_95": [
+            0.012269938650306789,
+            0.06823884489086346
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 40.85,
+          "mean_charged": 40.85,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.0379436964504285,
+          "paired_bootstrap_95": [
+            0.013317191283292895,
+            0.06970924148511519
+          ]
+        }
+      },
+      "triangle": {
+        "requested_closure": {
+          "mean_paid": 43.1,
+          "mean_charged": 43.1,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.03480278422273786,
+          "paired_bootstrap_95": [
+            0.01162756934878321,
+            0.06329151023194385
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 43.1,
+          "mean_charged": 43.1,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.03480278422273786,
+          "paired_bootstrap_95": [
+            0.01162756934878321,
+            0.06329151023194385
+          ]
+        }
+      }
+    },
+    "correlated_strong": {
+      "star": {
+        "requested_closure": {
+          "mean_paid": 31.55,
+          "mean_charged": 31.55,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.09984152139461178,
+          "paired_bootstrap_95": [
+            0.042521994134897434,
+            0.18638573743922204
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 32.25,
+          "mean_charged": 32.25,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.11937984496124032,
+          "paired_bootstrap_95": [
+            0.05200449624669539,
+            0.21613494819517526
+          ]
+        }
+      },
+      "triangle": {
+        "requested_closure": {
+          "mean_paid": 36.25,
+          "mean_charged": 36.25,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.03724137931034488,
+          "paired_bootstrap_95": [
+            0.02147651006711404,
+            0.05525038203832133
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 37.0,
+          "mean_charged": 37.0,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.05675675675675684,
+          "paired_bootstrap_95": [
+            0.03488294157989905,
+            0.0824179536679537
+          ]
+        }
+      }
+    },
+    "reversed": {
+      "star": {
+        "requested_closure": {
+          "mean_paid": 36.65,
+          "mean_charged": 36.65,
+          "wrong_paths": 0,
+          "candidate_relative_saving": -0.034106412005457054,
+          "paired_bootstrap_95": [
+            -0.06527863449443637,
+            -0.012836148645872314
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 37.2,
+          "mean_charged": 37.2,
+          "wrong_paths": 0,
+          "candidate_relative_saving": -0.018817204301075252,
+          "paired_bootstrap_95": [
+            -0.034482758620689724,
+            -0.006684046345810974
+          ]
+        }
+      },
+      "triangle": {
+        "requested_closure": {
+          "mean_paid": 41.25,
+          "mean_charged": 41.25,
+          "wrong_paths": 0,
+          "candidate_relative_saving": -0.0036363636363636598,
+          "paired_bootstrap_95": [
+            -0.007623888182973326,
+            0.0
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 41.3,
+          "mean_charged": 41.3,
+          "wrong_paths": 0,
+          "candidate_relative_saving": -0.002421307506053294,
+          "paired_bootstrap_95": [
+            -0.006218905472636926,
+            0.0
+          ]
+        }
+      }
+    },
+    "near_ties": {
+      "star": {
+        "requested_closure": {
+          "mean_paid": 45.1,
+          "mean_charged": 45.1,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.004434589800443534,
+          "paired_bootstrap_95": [
+            0.0,
+            0.011286681715575675
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 45.1,
+          "mean_charged": 45.1,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.004434589800443534,
+          "paired_bootstrap_95": [
+            0.0,
+            0.011286681715575675
+          ]
+        }
+      },
+      "triangle": {
+        "requested_closure": {
+          "mean_paid": 45.85,
+          "mean_charged": 45.85,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.0010905125408943173,
+          "paired_bootstrap_95": [
+            0.0,
+            0.0033821871476887866
+          ]
+        },
+        "requested_bonferroni": {
+          "mean_paid": 45.85,
+          "mean_charged": 45.85,
+          "wrong_paths": 0,
+          "candidate_relative_saving": 0.0010905125408943173,
+          "paired_bootstrap_95": [
+            0.0,
+            0.0033821871476887866
+          ]
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "scenario": "independent_strong",
+      "repeat": 0,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 1,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 2,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 3,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 4,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 26,
+            "charged": 26,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 26,
+            "charged": 26,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 5,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 6,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 26,
+            "charged": 26,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 26,
+            "charged": 26,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 7,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 8,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 9,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 10,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 27,
+            "charged": 27,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 27,
+            "charged": 27,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 11,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 12,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 20,
+            "charged": 20,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 20,
+            "charged": 20,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 24,
+            "charged": 24,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 29,
+            "charged": 29,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 13,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 14,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              0
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              0
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 15,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 16,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 17,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 18,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_strong",
+      "repeat": 19,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 25,
+            "charged": 25,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 0,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 1,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 2,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 3,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 4,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 5,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 6,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 7,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 8,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 9,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 10,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 11,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 12,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 24,
+            "charged": 24,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 24,
+            "charged": 24,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 13,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 14,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 15,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 16,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 17,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 18,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "independent_moderate",
+      "repeat": 19,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 0,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 1,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 2,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 3,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 4,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 5,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 24,
+            "charged": 24,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 24,
+            "charged": 24,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 6,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 7,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 8,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 9,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 13,
+            "charged": 13,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 14,
+            "charged": 14,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 10,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 3
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 11,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 21,
+            "charged": 21,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 22,
+            "charged": 22,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 12,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 13,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 14,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 18,
+            "charged": 18,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 19,
+            "charged": 19,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 15,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 16,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 33,
+            "charged": 33,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 17,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 18,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 26,
+            "charged": 26,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 29,
+            "charged": 29,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 27,
+            "charged": 27,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 29,
+            "charged": 29,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "correlated_strong",
+      "repeat": 19,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 31,
+            "charged": 31,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 38,
+            "charged": 38,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 0,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              0
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              0
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 1,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 2,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 3,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 4,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 5,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 31,
+            "charged": 31,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 31,
+            "charged": 31,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 6,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 7,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 8,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 9,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 10,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 28,
+            "charged": 28,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 29,
+            "charged": 29,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 11,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 12,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 13,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 29,
+            "charged": 29,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 30,
+            "charged": 30,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 14,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 32,
+            "charged": 32,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 15,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 34,
+            "charged": 34,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 39,
+            "charged": 39,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 16,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 17,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 29,
+            "charged": 29,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 29,
+            "charged": 29,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 35,
+            "charged": 35,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 18,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "reversed",
+      "repeat": 19,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 31,
+            "charged": 31,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 40,
+            "charged": 40,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 0,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 1,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 45,
+            "charged": 45,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 2,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 3,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 46,
+            "charged": 46,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 4,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              0
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              0
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 5,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 6,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 7,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              0,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 8,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 9,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 42,
+            "charged": 42,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 10,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 11,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 36,
+            "charged": 36,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 12,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              0
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              0
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              0,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              0,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 13,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 14,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              0
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              1,
+              0
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 15,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 43,
+            "charged": 43,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 16,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 41,
+            "charged": 41,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 17,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 48,
+            "charged": 48,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 18,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 37,
+            "charged": 37,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 44,
+            "charged": 44,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              -1
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    },
+    {
+      "scenario": "near_ties",
+      "repeat": 19,
+      "stops": {
+        "star": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1
+            ]
+          }
+        },
+        "triangle": {
+          "requested_closure": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              0
+            ]
+          },
+          "requested_bonferroni": {
+            "paid": 47,
+            "charged": 47,
+            "wrong": 0,
+            "correct_completion": 1,
+            "decisions": [
+              -1,
+              -1,
+              0
+            ]
+          }
+        }
+      },
+      "extra_prefix_cells": 0
+    }
+  ],
+  "extra_cells_replayed": 3,
+  "frozen_expansion_gate_changed": false
+}
