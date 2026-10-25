@@ -1,0 +1,507 @@
+{
+  "independent_strong": {
+    "star": {
+      "joint_order": {
+        "mean_paid": 29.65,
+        "mean_charged": 29.65,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 32.45,
+        "mean_charged": 32.45,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 35.25,
+        "mean_charged": 35.25,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 33.5,
+        "mean_charged": 33.5,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.08628659476117118,
+          "paired_bootstrap_95": [
+            0.042552353828111865,
+            0.15052409724986332
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.15886524822695036,
+          "paired_bootstrap_95": [
+            0.09340659340659341,
+            0.23432952425373135
+          ]
+        },
+        "stage22": {
+          "relative_saving": 0.11492537313432838,
+          "paired_bootstrap_95": [
+            0.014753494674143365,
+            0.21461467350197497
+          ]
+        }
+      }
+    },
+    "triangle": {
+      "joint_order": {
+        "mean_paid": 35.05,
+        "mean_charged": 35.05,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 37.35,
+        "mean_charged": 37.35,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 38.45,
+        "mean_charged": 38.45,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 38.65,
+        "mean_charged": 38.65,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.061579651941097824,
+          "paired_bootstrap_95": [
+            0.02291079401658403,
+            0.1109696837829997
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.08842652795838768,
+          "paired_bootstrap_95": [
+            0.03624931274256156,
+            0.14953455000367943
+          ]
+        },
+        "stage22": {
+          "relative_saving": 0.09314359637774905,
+          "paired_bootstrap_95": [
+            0.030963766615594888,
+            0.15953307392996108
+          ]
+        }
+      }
+    }
+  },
+  "independent_moderate": {
+    "star": {
+      "joint_order": {
+        "mean_paid": 39.3,
+        "mean_charged": 39.3,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 40.85,
+        "mean_charged": 40.85,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 41.05,
+        "mean_charged": 41.05,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 41.1,
+        "mean_charged": 41.1,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.0379436964504285,
+          "paired_bootstrap_95": [
+            0.013126491646777927,
+            0.06926001227097191
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.042630937880633324,
+          "paired_bootstrap_95": [
+            0.017857142857142905,
+            0.0725518739467927
+          ]
+        },
+        "stage22": {
+          "relative_saving": 0.04379562043795626,
+          "paired_bootstrap_95": [
+            -0.006082910283880305,
+            0.10075830103389195
+          ]
+        }
+      }
+    },
+    "triangle": {
+      "joint_order": {
+        "mean_paid": 41.6,
+        "mean_charged": 41.6,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 43.1,
+        "mean_charged": 43.1,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 42.75,
+        "mean_charged": 42.75,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 43.55,
+        "mean_charged": 43.55,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.03480278422273786,
+          "paired_bootstrap_95": [
+            0.011467889908256867,
+            0.062133977122949234
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.026900584795321647,
+          "paired_bootstrap_95": [
+            0.008111239860950192,
+            0.049397944720056666
+          ]
+        },
+        "stage22": {
+          "relative_saving": 0.04477611940298498,
+          "paired_bootstrap_95": [
+            0.011299116195431771,
+            0.08452458125301972
+          ]
+        }
+      }
+    }
+  },
+  "correlated_strong": {
+    "star": {
+      "joint_order": {
+        "mean_paid": 28.4,
+        "mean_charged": 28.4,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 31.9,
+        "mean_charged": 31.9,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 35.75,
+        "mean_charged": 35.75,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 34.25,
+        "mean_charged": 34.25,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.10971786833855801,
+          "paired_bootstrap_95": [
+            0.04907931196274759,
+            0.19655459770114933
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.20559440559440567,
+          "paired_bootstrap_95": [
+            0.11885177504432147,
+            0.30827253778009384
+          ]
+        },
+        "stage22": {
+          "relative_saving": 0.1708029197080292,
+          "paired_bootstrap_95": [
+            0.07295949649019647,
+            0.27846536144578315
+          ]
+        }
+      }
+    },
+    "triangle": {
+      "joint_order": {
+        "mean_paid": 34.9,
+        "mean_charged": 34.9,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 36.25,
+        "mean_charged": 36.25,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 37.75,
+        "mean_charged": 37.75,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 38.7,
+        "mean_charged": 38.7,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.03724137931034488,
+          "paired_bootstrap_95": [
+            0.02159171513689873,
+            0.0554785020804438
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.07549668874172188,
+          "paired_bootstrap_95": [
+            0.046272493573264684,
+            0.10921052631578942
+          ]
+        },
+        "stage22": {
+          "relative_saving": 0.09819121447028434,
+          "paired_bootstrap_95": [
+            0.053314263759647464,
+            0.14637305699481862
+          ]
+        }
+      }
+    }
+  },
+  "reversed": {
+    "star": {
+      "joint_order": {
+        "mean_paid": 37.9,
+        "mean_charged": 37.9,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 37.2,
+        "mean_charged": 37.2,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 38.1,
+        "mean_charged": 38.1,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 34.65,
+        "mean_charged": 34.65,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": -0.018817204301075252,
+          "paired_bootstrap_95": [
+            -0.03434065934065944,
+            -0.0074439381220771685
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.005249343832021025,
+          "paired_bootstrap_95": [
+            -0.016282778302165207,
+            0.029256293027736077
+          ]
+        },
+        "stage22": {
+          "relative_saving": -0.09379509379509376,
+          "paired_bootstrap_95": [
+            -0.14265340272572674,
+            -0.04545298236838791
+          ]
+        }
+      }
+    },
+    "triangle": {
+      "joint_order": {
+        "mean_paid": 41.4,
+        "mean_charged": 41.4,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 41.25,
+        "mean_charged": 41.25,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 41.3,
+        "mean_charged": 41.3,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 39.7,
+        "mean_charged": 39.7,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": -0.0036363636363636598,
+          "paired_bootstrap_95": [
+            -0.008443908323281013,
+            0.0
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": -0.002421307506053294,
+          "paired_bootstrap_95": [
+            -0.009888751545117369,
+            0.004950495049504844
+          ]
+        },
+        "stage22": {
+          "relative_saving": -0.04282115869017611,
+          "paired_bootstrap_95": [
+            -0.07664443594003778,
+            -0.00881612090680095
+          ]
+        }
+      }
+    }
+  },
+  "near_ties": {
+    "star": {
+      "joint_order": {
+        "mean_paid": 44.9,
+        "mean_charged": 44.9,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 45.1,
+        "mean_charged": 45.1,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 45.45,
+        "mean_charged": 45.45,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 44.0,
+        "mean_charged": 44.0,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.004434589800443534,
+          "paired_bootstrap_95": [
+            0.0,
+            0.011273957158962844
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.012101210121012174,
+          "paired_bootstrap_95": [
+            0.0,
+            0.027429355998692413
+          ]
+        },
+        "stage22": {
+          "relative_saving": -0.020454545454545503,
+          "paired_bootstrap_95": [
+            -0.05178411293917622,
+            0.006688963210702448
+          ]
+        }
+      }
+    },
+    "triangle": {
+      "joint_order": {
+        "mean_paid": 45.8,
+        "mean_charged": 45.8,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "exact_pair_closure": {
+        "mean_paid": 45.85,
+        "mean_charged": 45.85,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "centered_pair_closure": {
+        "mean_paid": 46.0,
+        "mean_charged": 46.0,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "stage22": {
+        "mean_paid": 45.75,
+        "mean_charged": 45.75,
+        "correct_completions": 20,
+        "wrong_paths": 0
+      },
+      "comparisons": {
+        "exact_pair_closure": {
+          "relative_saving": 0.0010905125408943173,
+          "paired_bootstrap_95": [
+            0.0,
+            0.0033821871476887866
+          ]
+        },
+        "centered_pair_closure": {
+          "relative_saving": 0.004347826086956608,
+          "paired_bootstrap_95": [
+            0.0,
+            0.013392857142856984
+          ]
+        },
+        "stage22": {
+          "relative_saving": -0.0010928961748633004,
+          "paired_bootstrap_95": [
+            -0.023230731632023004,
+            0.02611534276387384
+          ]
+        }
+      }
+    }
+  },
+  "expansion_gate": false,
+  "numerical": {
+    "unit_fallbacks": 0,
+    "solver_failed_status": 0
+  }
+}
