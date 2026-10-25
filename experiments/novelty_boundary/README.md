@@ -121,3 +121,27 @@ audits passed. This rules out that particular feasible proposal as an
 efficiency claim. The proxy does not establish purchased-judgment savings,
 and these panel results do not resolve the fixed-score cell-level contribution
 gate above. No prospective human panel judgments have yet been collected.
+
+
+## Joint ordering prototype (2026-10-25)
+
+The [joint finite-pool ordering study](../joint_order_gate/FINDINGS.md)
+implements a restricted next step: three binary-score systems, adaptive
+system selection and uniform sampling among unseen items within the chosen
+system. It calibrates evidence against complete ordering nulls and shares
+each purchased cell across comparisons. The conditional validity argument
+uses existing e-variable and order-elimination principles; it is not a
+distinct theorem claim.
+
+Across 100 small synthetic matrices, a local efficiency signal survived
+the explicitly post-result requested-edge exact-pair control: 8.20% fewer
+labels for independent strong-gap stars and 6.16% fewer for triangles.
+The frozen broader expansion gate nevertheless failed because the moderate-gap
+star comparison against Stage 22 remained uncertain. Reversed predictions
+cost 9.38% more than Stage 22 for stars. Full ledgers, five tests, small exact
+enumeration and independent full-result audits are published.
+
+This supplies a restricted matched mechanism, not a result satisfying the
+full contribution gate above. A distinct cost characterization, scalability
+beyond three systems, and a strong prediction-aware complete-item comparator
+remain open. No WMT24 outcomes or prospective human judgments were used.
