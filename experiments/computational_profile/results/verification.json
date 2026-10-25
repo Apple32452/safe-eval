@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "expected_rows": true,
+    "no_errors_or_timeouts": true,
+    "all_plain_instrumented_outputs_equal": true,
+    "selection_count_equals_steps": true,
+    "inference_count_equals_steps": true,
+    "nonnegative_disjoint_other": true,
+    "source_hashes_unchanged": true,
+    "deterministic_repeats": true,
+    "hotspot_output_equal": true,
+    "preprocessing_supplement_complete": true,
+    "preprocessing_reproducible": true,
+    "no_existing_tracked_files_changed": true,
+    "local_main_preserved": true
+  },
+  "passed": true,
+  "measurements": 120,
+  "capped_runs": 27,
+  "existing_tracked_changes": []
+}

@@ -1,0 +1,362 @@
+[
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 5,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.08774769998854026,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 17.806734537817636,
+    "output_digest": "e29e9c9b1b383ab84786de023e58061feec7dc9ca7bca37fff780db5f3076ed1"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 5,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.05285919999005273,
+    "cpu_s": 0.0,
+    "cpu_core_percent": 0.0,
+    "output_digest": "e29e9c9b1b383ab84786de023e58061feec7dc9ca7bca37fff780db5f3076ed1"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 5,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.05766069999663159,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 27.09817952420414,
+    "output_digest": "e29e9c9b1b383ab84786de023e58061feec7dc9ca7bca37fff780db5f3076ed1"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 128,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.019829099997878075,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 78.79833175319123,
+    "output_digest": "90fc16952cd35c305ab81fe8ec68afee7b6e4b453007677cd22613d44383e2dd"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 128,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.016825400001835078,
+    "cpu_s": 0.0,
+    "cpu_core_percent": 0.0,
+    "output_digest": "90fc16952cd35c305ab81fe8ec68afee7b6e4b453007677cd22613d44383e2dd"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 128,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.014249400002881885,
+    "cpu_s": 0.0,
+    "cpu_core_percent": 0.0,
+    "output_digest": "90fc16952cd35c305ab81fe8ec68afee7b6e4b453007677cd22613d44383e2dd"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.0660111999604851,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 23.670225672845312,
+    "output_digest": "6a85dd7586248ae5eb05d6b2ccddb2c3593b33a4ebdbbf9591607655102e1aa2"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.056719399988651276,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 27.547893671523912,
+    "output_digest": "6a85dd7586248ae5eb05d6b2ccddb2c3593b33a4ebdbbf9591607655102e1aa2"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.06783430004725233,
+    "cpu_s": 0.0,
+    "cpu_core_percent": 0.0,
+    "output_digest": "6a85dd7586248ae5eb05d6b2ccddb2c3593b33a4ebdbbf9591607655102e1aa2"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 2048,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.2552989000105299,
+    "cpu_s": 0.046875,
+    "cpu_core_percent": 18.360831166161162,
+    "output_digest": "d1688febbaca14bfed1ae306c031ea5e43fd75650eb0a0108228ceaf645512fa"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 2048,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.25003129994729534,
+    "cpu_s": 0.0625,
+    "cpu_core_percent": 24.99687039709609,
+    "output_digest": "d1688febbaca14bfed1ae306c031ea5e43fd75650eb0a0108228ceaf645512fa"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 2048,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.2588335999753326,
+    "cpu_s": 0.0625,
+    "cpu_core_percent": 24.14678774546905,
+    "output_digest": "d1688febbaca14bfed1ae306c031ea5e43fd75650eb0a0108228ceaf645512fa"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.06924600002821535,
+    "cpu_s": 0.03125,
+    "cpu_core_percent": 45.12896049918653,
+    "output_digest": "06903d1e27aea15d141daff817e9294d708cdf535cb05dc4dc4271d82e267d97"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.07168940000701696,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 21.795411871867564,
+    "output_digest": "06903d1e27aea15d141daff817e9294d708cdf535cb05dc4dc4271d82e267d97"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.06828399997903034,
+    "cpu_s": 0.046875,
+    "cpu_core_percent": 68.64712086930331,
+    "output_digest": "06903d1e27aea15d141daff817e9294d708cdf535cb05dc4dc4271d82e267d97"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.10238489997573197,
+    "cpu_s": 0.03125,
+    "cpu_core_percent": 30.52207894660942,
+    "output_digest": "e22170626ca05fa0ca02632fba58389597070b90d4dc8428b7e353bdd16e6246"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.10223179997410625,
+    "cpu_s": 0.0,
+    "cpu_core_percent": 0.0,
+    "output_digest": "e22170626ca05fa0ca02632fba58389597070b90d4dc8428b7e353bdd16e6246"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.09671499999240041,
+    "cpu_s": 0.03125,
+    "cpu_core_percent": 32.311430494189665,
+    "output_digest": "e22170626ca05fa0ca02632fba58389597070b90d4dc8428b7e353bdd16e6246"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.2379942000261508,
+    "cpu_s": 0.046875,
+    "cpu_core_percent": 19.695858132193717,
+    "output_digest": "8081807094e7255bf379147664bab3ed72c7c2b701f2c722c02e5b40244289af"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.2168258000165224,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 7.20624575064838,
+    "output_digest": "8081807094e7255bf379147664bab3ed72c7c2b701f2c722c02e5b40244289af"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.2014369999524206,
+    "cpu_s": 0.0,
+    "cpu_core_percent": 0.0,
+    "output_digest": "8081807094e7255bf379147664bab3ed72c7c2b701f2c722c02e5b40244289af"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "tie",
+      "method": "star_pruned"
+    },
+    "repeat": 0,
+    "wall_s": 0.09802149998722598,
+    "cpu_s": 0.0,
+    "cpu_core_percent": 0.0,
+    "output_digest": "9f5714354e58227787fdca56d558a7ce7e8990c160631fdc979f7fbbc4100349"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "tie",
+      "method": "star_pruned"
+    },
+    "repeat": 1,
+    "wall_s": 0.09596940001938492,
+    "cpu_s": 0.03125,
+    "cpu_core_percent": 32.5624626117156,
+    "output_digest": "9f5714354e58227787fdca56d558a7ce7e8990c160631fdc979f7fbbc4100349"
+  },
+  {
+    "config": {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "tie",
+      "method": "star_pruned"
+    },
+    "repeat": 2,
+    "wall_s": 0.09604159998707473,
+    "cpu_s": 0.015625,
+    "cpu_core_percent": 16.26899177242238,
+    "output_digest": "9f5714354e58227787fdca56d558a7ce7e8990c160631fdc979f7fbbc4100349"
+  }
+]

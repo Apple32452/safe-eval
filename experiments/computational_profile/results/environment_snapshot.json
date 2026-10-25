@@ -1,0 +1,26 @@
+{
+  "system_cpu_percent_1s": 6.6,
+  "available_memory_bytes": 14598082560,
+  "processor": "Intel64 Family 6 Model 186 Stepping 3, GenuineIntel",
+  "python_processes": [
+    {
+      "pid": 17280,
+      "cpu_seconds": 2.296875,
+      "rss": 20602880,
+      "command": [
+        "C:\\Users\\janet\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-"
+      ]
+    },
+    {
+      "pid": 33884,
+      "cpu_seconds": 0.40625,
+      "rss": 34758656,
+      "command": [
+        "C:\\Users\\janet\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+        "-u",
+        "experiments/computational_profile/benchmark.py"
+      ]
+    }
+  ]
+}

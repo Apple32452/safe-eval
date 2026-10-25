@@ -1,0 +1,328 @@
+{
+  "platform": "Windows-11-10.0.22621-SP0",
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "logical_cpus": 12,
+  "physical_cpus": 10,
+  "total_memory": 34000248832,
+  "numpy": "2.2.4",
+  "scipy": "1.16.3",
+  "source_hashes": {
+    "experiments/stage22/run_stage22.py": "0814f1e61495080e6ae67e328634a33074850baee6decd470d5b3495f444e748",
+    "experiments/stage17/continuous_engine.py": "d088366c705fa03d7f6f1764cf7adfe67750773682a81e53ef2b278824403ddb",
+    "experiments/stage17/run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
+    "experiments/stage31/run_koehn_panels.py": "71906a6de0b30b3382be3fbe9363c0b9d481143a44135e2d50c6e3810559c784",
+    "experiments/exact_sequential_probe/sequential_probe.py": "f3c9c8effe906478b2846b85eda5dd95a6565662b408dd2840dea91836af5818",
+    "experiments/computational_profile/benchmark.py": "1c9107cde375bc6321ab8c9acf992636e4d6647a5e2b18366c2b670e553b3476",
+    "experiments/computational_profile/PROTOCOL.md": "98b9c47e4468cbac747d4946d2f5d505b783e5d69a156d8ae0a4f76528150ecd"
+  },
+  "matrix": [
+    {
+      "kind": "stage22",
+      "s": 5,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 128,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 2048,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "tie",
+      "method": "star_common"
+    },
+    {
+      "kind": "stage22",
+      "s": 5,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 128,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 2048,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "star",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage22",
+      "s": 30,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "strong",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage22",
+      "s": 15,
+      "n": 512,
+      "graph": "complete",
+      "scenario": "tie",
+      "method": "star_pruned"
+    },
+    {
+      "kind": "stage31",
+      "s": 5,
+      "n": 1024,
+      "candidates": 16,
+      "method": "uniform_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 256,
+      "candidates": 16,
+      "method": "uniform_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 1024,
+      "candidates": 16,
+      "method": "uniform_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 6000,
+      "candidates": 16,
+      "method": "uniform_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 30,
+      "n": 1024,
+      "candidates": 16,
+      "method": "uniform_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 1024,
+      "candidates": 256,
+      "method": "uniform_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 1024,
+      "candidates": 1024,
+      "method": "uniform_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 5,
+      "n": 1024,
+      "candidates": 16,
+      "method": "unresolved_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 256,
+      "candidates": 16,
+      "method": "unresolved_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 1024,
+      "candidates": 16,
+      "method": "unresolved_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 6000,
+      "candidates": 16,
+      "method": "unresolved_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 30,
+      "n": 1024,
+      "candidates": 16,
+      "method": "unresolved_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 1024,
+      "candidates": 256,
+      "method": "unresolved_panel"
+    },
+    {
+      "kind": "stage31",
+      "s": 15,
+      "n": 1024,
+      "candidates": 1024,
+      "method": "unresolved_panel"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 8,
+      "q": 1.0,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 8,
+      "q": 0.5,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 16,
+      "q": 1.0,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 16,
+      "q": 0.5,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 32,
+      "q": 1.0,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 32,
+      "q": 0.5,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 64,
+      "q": 1.0,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 64,
+      "q": 0.5,
+      "scenario": "strong",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 32,
+      "q": 0.5,
+      "scenario": "moderate",
+      "method": "exact"
+    },
+    {
+      "kind": "exact",
+      "s": 2,
+      "n": 32,
+      "q": 0.5,
+      "scenario": "adverse",
+      "method": "exact"
+    }
+  ],
+  "repeats": 3,
+  "started": "2026-10-25T16:13:23-0400"
+}

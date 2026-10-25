@@ -1,0 +1,1462 @@
+{
+  "output_digest": "8dcb8fcbcca7105af6cf7c2a345d0715e0a431b1af4def76d8eed1da3d099227",
+  "total_profile_s": 2.7318175999999985,
+  "functions": [
+    {
+      "file": "sequential_probe.py",
+      "line": 163,
+      "name": "certificate",
+      "calls": 1,
+      "exclusive_s": 0.0021197,
+      "cumulative_s": 2.7317883000000003
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 125,
+      "name": "factor",
+      "calls": 26,
+      "exclusive_s": 0.005612600000000001,
+      "cumulative_s": 2.7047014000000003
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 83,
+      "name": "worst_null",
+      "calls": 193,
+      "exclusive_s": 1.9043378000000002,
+      "cumulative_s": 2.0083496000000003
+    },
+    {
+      "file": "_minimize.py",
+      "line": 54,
+      "name": "minimize",
+      "calls": 141,
+      "exclusive_s": 0.0056078000000000005,
+      "cumulative_s": 0.6634396
+    },
+    {
+      "file": "_slsqp_py.py",
+      "line": 215,
+      "name": "_minimize_slsqp",
+      "calls": 141,
+      "exclusive_s": 0.0419239,
+      "cumulative_s": 0.6219839
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 382,
+      "name": "fun",
+      "calls": 6755,
+      "exclusive_s": 0.013786900000000001,
+      "cumulative_s": 0.1873228
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method scipy.optimize._slsqplib.slsqp>",
+      "calls": 12483,
+      "exclusive_s": 0.13447340000000002,
+      "cumulative_s": 0.13447340000000002
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 388,
+      "name": "grad",
+      "calls": 5869,
+      "exclusive_s": 0.009207100000000001,
+      "cumulative_s": 0.1042528
+    },
+    {
+      "file": "numeric.py",
+      "line": 2475,
+      "name": "array_equal",
+      "calls": 12624,
+      "exclusive_s": 0.0340108,
+      "cumulative_s": 0.0840608
+    },
+    {
+      "file": "_slsqp_py.py",
+      "line": 560,
+      "name": "_eval_constraint",
+      "calls": 6755,
+      "exclusive_s": 0.026851200000000002,
+      "cumulative_s": 0.0712151
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 351,
+      "name": "_update_fun",
+      "calls": 6896,
+      "exclusive_s": 0.0084221,
+      "cumulative_s": 0.067237
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 328,
+      "name": "_update_x",
+      "calls": 6614,
+      "exclusive_s": 0.015031200000000002,
+      "cumulative_s": 0.06317
+    },
+    {
+      "file": "_util.py",
+      "line": 587,
+      "name": "__call__",
+      "calls": 6755,
+      "exclusive_s": 0.0161391,
+      "cumulative_s": 0.0588149
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 362,
+      "name": "_update_grad",
+      "calls": 6010,
+      "exclusive_s": 0.008764800000000001,
+      "cumulative_s": 0.056478900000000005
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 35,
+      "name": "__call__",
+      "calls": 5869,
+      "exclusive_s": 0.0189605,
+      "cumulative_s": 0.0477141
+    },
+    {
+      "file": "numeric.py",
+      "line": 646,
+      "name": "flatnonzero",
+      "calls": 6202,
+      "exclusive_s": 0.012932,
+      "cumulative_s": 0.0462399
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'all' of 'numpy.ndarray' objects>",
+      "calls": 12792,
+      "exclusive_s": 0.008891000000000001,
+      "cumulative_s": 0.0433129
+    },
+    {
+      "file": "_slsqp_py.py",
+      "line": 585,
+      "name": "_eval_con_normals",
+      "calls": 5869,
+      "exclusive_s": 0.020647600000000002,
+      "cumulative_s": 0.040526900000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'reduce' of 'numpy.ufunc' objects>",
+      "calls": 15135,
+      "exclusive_s": 0.0388548,
+      "cumulative_s": 0.0388548
+    },
+    {
+      "file": "_methods.py",
+      "line": 67,
+      "name": "_all",
+      "calls": 12792,
+      "exclusive_s": 0.0064466,
+      "cumulative_s": 0.034421900000000005
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 140,
+      "name": "<lambda>",
+      "calls": 6896,
+      "exclusive_s": 0.0308965,
+      "cumulative_s": 0.0308965
+    },
+    {
+      "file": "_aliases.py",
+      "line": 89,
+      "name": "asarray",
+      "calls": 6896,
+      "exclusive_s": 0.0101023,
+      "cumulative_s": 0.030699100000000003
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 137,
+      "name": "<lambda>",
+      "calls": 6755,
+      "exclusive_s": 0.028362300000000003,
+      "cumulative_s": 0.028362300000000003
+    },
+    {
+      "file": "numeric.py",
+      "line": 2337,
+      "name": "isclose",
+      "calls": 540,
+      "exclusive_s": 0.0140239,
+      "cumulative_s": 0.026102100000000003
+    },
+    {
+      "file": "_minimize.py",
+      "line": 1121,
+      "name": "standardize_bounds",
+      "calls": 282,
+      "exclusive_s": 0.0010636,
+      "cumulative_s": 0.025635500000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.array>",
+      "calls": 21495,
+      "exclusive_s": 0.02014,
+      "cumulative_s": 0.0252432
+    },
+    {
+      "file": "numeric.py",
+      "line": 367,
+      "name": "full_like",
+      "calls": 6176,
+      "exclusive_s": 0.021789700000000002,
+      "cumulative_s": 0.023992100000000002
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 28,
+      "name": "__init__",
+      "calls": 26,
+      "exclusive_s": 0.007019,
+      "cumulative_s": 0.0230162
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.any>",
+      "calls": 820,
+      "exclusive_s": 0.0010161,
+      "cumulative_s": 0.0200766
+    },
+    {
+      "file": "shape_base.py",
+      "line": 21,
+      "name": "atleast_1d",
+      "calls": 13329,
+      "exclusive_s": 0.0109225,
+      "cumulative_s": 0.019101
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 156,
+      "name": "<genexpr>",
+      "calls": 436,
+      "exclusive_s": 0.0007581,
+      "cumulative_s": 0.0187364
+    },
+    {
+      "file": "_aliases.py",
+      "line": 116,
+      "name": "astype",
+      "calls": 6896,
+      "exclusive_s": 0.0064029,
+      "cumulative_s": 0.018285600000000003
+    },
+    {
+      "file": "numeric.py",
+      "line": 2243,
+      "name": "allclose",
+      "calls": 321,
+      "exclusive_s": 0.0013387000000000002,
+      "cumulative_s": 0.0178969
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2018,
+      "name": "nonzero",
+      "calls": 6202,
+      "exclusive_s": 0.004051900000000001,
+      "cumulative_s": 0.017063500000000002
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 51,
+      "name": "_wrapfunc",
+      "calls": 6677,
+      "exclusive_s": 0.0059601,
+      "cumulative_s": 0.0160427
+    },
+    {
+      "file": "shape_base.py",
+      "line": 80,
+      "name": "atleast_2d",
+      "calls": 6151,
+      "exclusive_s": 0.010746700000000001,
+      "cumulative_s": 0.0156355
+    },
+    {
+      "file": "_optimize.py",
+      "line": 204,
+      "name": "_prepare_scalar_function",
+      "calls": 141,
+      "exclusive_s": 0.0008475000000000001,
+      "cumulative_s": 0.015044900000000002
+    },
+    {
+      "file": "_function_base_impl.py",
+      "line": 898,
+      "name": "copy",
+      "calls": 12765,
+      "exclusive_s": 0.005721400000000001,
+      "cumulative_s": 0.014638000000000002
+    },
+    {
+      "file": "_constraints.py",
+      "line": 261,
+      "name": "__init__",
+      "calls": 141,
+      "exclusive_s": 0.001216,
+      "cumulative_s": 0.014589500000000002
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 209,
+      "name": "__init__",
+      "calls": 141,
+      "exclusive_s": 0.0029091,
+      "cumulative_s": 0.0141569
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 1904,
+      "name": "ravel",
+      "calls": 6202,
+      "exclusive_s": 0.007333,
+      "cumulative_s": 0.0140379
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 44,
+      "name": "add",
+      "calls": 5716,
+      "exclusive_s": 0.0107954,
+      "cumulative_s": 0.013030400000000001
+    },
+    {
+      "file": "_helpers.py",
+      "line": 660,
+      "name": "_check_device",
+      "calls": 13792,
+      "exclusive_s": 0.007871900000000001,
+      "cumulative_s": 0.011925600000000001
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 138,
+      "name": "<lambda>",
+      "calls": 5869,
+      "exclusive_s": 0.0111943,
+      "cumulative_s": 0.0111943
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 340,
+      "name": "_broadcast_to",
+      "calls": 705,
+      "exclusive_s": 0.0077245000000000005,
+      "cumulative_s": 0.010970500000000001
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 80,
+      "name": "row",
+      "calls": 334,
+      "exclusive_s": 0.0065788,
+      "cumulative_s": 0.0105047
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.isinstance>",
+      "calls": 31120,
+      "exclusive_s": 0.0086625,
+      "cumulative_s": 0.0100151
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.asanyarray>",
+      "calls": 39783,
+      "exclusive_s": 0.0092852,
+      "cumulative_s": 0.0092852
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'sum' of 'numpy.ndarray' objects>",
+      "calls": 853,
+      "exclusive_s": 0.0013284,
+      "cumulative_s": 0.0083364
+    },
+    {
+      "file": "_constraints.py",
+      "line": 253,
+      "name": "_input_validation",
+      "calls": 141,
+      "exclusive_s": 0.0008032,
+      "cumulative_s": 0.0080958
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.len>",
+      "calls": 39580,
+      "exclusive_s": 0.0079045,
+      "cumulative_s": 0.0079045
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 481,
+      "name": "broadcast_arrays",
+      "calls": 141,
+      "exclusive_s": 0.0012209,
+      "cumulative_s": 0.0072632
+    },
+    {
+      "file": "_constraints.py",
+      "line": 428,
+      "name": "old_bound_to_new",
+      "calls": 282,
+      "exclusive_s": 0.0037024000000000002,
+      "cumulative_s": 0.0071435000000000005
+    },
+    {
+      "file": "_methods.py",
+      "line": 50,
+      "name": "_sum",
+      "calls": 853,
+      "exclusive_s": 0.0006627,
+      "cumulative_s": 0.007008
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 367,
+      "name": "broadcast_to",
+      "calls": 564,
+      "exclusive_s": 0.00044730000000000003,
+      "cumulative_s": 0.0067971
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'astype' of 'numpy.ndarray' objects>",
+      "calls": 7037,
+      "exclusive_s": 0.0067387,
+      "cumulative_s": 0.0067387
+    },
+    {
+      "file": "_minimize.py",
+      "line": 1105,
+      "name": "_validate_bounds",
+      "calls": 141,
+      "exclusive_s": 0.0016604,
+      "cumulative_s": 0.0066806
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'ravel' of 'numpy.ndarray' objects>",
+      "calls": 12959,
+      "exclusive_s": 0.0066045,
+      "cumulative_s": 0.0066045
+    },
+    {
+      "file": "_ufunc_config.py",
+      "line": 440,
+      "name": "__enter__",
+      "calls": 681,
+      "exclusive_s": 0.0051982,
+      "cumulative_s": 0.0065469000000000005
+    },
+    {
+      "file": "_optimize.py",
+      "line": 323,
+      "name": "eval",
+      "calls": 282,
+      "exclusive_s": 0.0004642,
+      "cumulative_s": 0.0063173000000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'nonzero' of 'numpy.ndarray' objects>",
+      "calls": 6202,
+      "exclusive_s": 0.0062024,
+      "cumulative_s": 0.0062024
+    },
+    {
+      "file": "_constraints.py",
+      "line": 410,
+      "name": "new_bounds_to_old",
+      "calls": 141,
+      "exclusive_s": 0.0024860000000000004,
+      "cumulative_s": 0.0060003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.asarray>",
+      "calls": 25805,
+      "exclusive_s": 0.0055834000000000005,
+      "cumulative_s": 0.0055834000000000005
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 141,
+      "name": "<lambda>",
+      "calls": 5869,
+      "exclusive_s": 0.0054930000000000005,
+      "cumulative_s": 0.0054930000000000005
+    },
+    {
+      "file": "numeric.py",
+      "line": 1927,
+      "name": "isscalar",
+      "calls": 6755,
+      "exclusive_s": 0.0036345,
+      "cumulative_s": 0.0053371
+    },
+    {
+      "file": "enum.py",
+      "line": 202,
+      "name": "__get__",
+      "calls": 6896,
+      "exclusive_s": 0.0037909000000000003,
+      "cumulative_s": 0.0051032000000000004
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 89,
+      "name": "_wrapreduction_any_all",
+      "calls": 629,
+      "exclusive_s": 0.001953,
+      "cumulative_s": 0.0044922
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'get' of 'dict' objects>",
+      "calls": 14356,
+      "exclusive_s": 0.004355400000000001,
+      "cumulative_s": 0.004355400000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.abs>",
+      "calls": 13563,
+      "exclusive_s": 0.004177800000000001,
+      "cumulative_s": 0.004177800000000001
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2589,
+      "name": "all",
+      "calls": 488,
+      "exclusive_s": 0.0009338,
+      "cumulative_s": 0.0041470000000000005
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'any' of 'numpy.ndarray' objects>",
+      "calls": 846,
+      "exclusive_s": 0.0008366000000000001,
+      "cumulative_s": 0.0035839
+    },
+    {
+      "file": "_constraints.py",
+      "line": 15,
+      "name": "_arr_to_scalar",
+      "calls": 6684,
+      "exclusive_s": 0.0023881,
+      "cumulative_s": 0.0034759
+    },
+    {
+      "file": "shape_base.py",
+      "line": 220,
+      "name": "vstack",
+      "calls": 141,
+      "exclusive_s": 0.0017208000000000002,
+      "cumulative_s": 0.0033436000000000004
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 57,
+      "name": "__init__",
+      "calls": 141,
+      "exclusive_s": 0.0012542,
+      "cumulative_s": 0.0032335000000000003
+    },
+    {
+      "file": "numerictypes.py",
+      "line": 381,
+      "name": "isdtype",
+      "calls": 282,
+      "exclusive_s": 0.001247,
+      "cumulative_s": 0.0032198
+    },
+    {
+      "file": "numeric.py",
+      "line": 290,
+      "name": "full",
+      "calls": 412,
+      "exclusive_s": 0.00198,
+      "cumulative_s": 0.003117
+    },
+    {
+      "file": "_optimize.py",
+      "line": 330,
+      "name": "_check_clip_x",
+      "calls": 282,
+      "exclusive_s": 0.0009436000000000001,
+      "cumulative_s": 0.0029333000000000002
+    },
+    {
+      "file": "numeric.py",
+      "line": 2456,
+      "name": "_array_equal_dispatcher",
+      "calls": 12624,
+      "exclusive_s": 0.0028561000000000003,
+      "cumulative_s": 0.0028561000000000003
+    },
+    {
+      "file": "_methods.py",
+      "line": 58,
+      "name": "_any",
+      "calls": 846,
+      "exclusive_s": 0.0006239,
+      "cumulative_s": 0.0027473000000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'reshape' of 'numpy.ndarray' objects>",
+      "calls": 424,
+      "exclusive_s": 0.0026643,
+      "cumulative_s": 0.0026643
+    },
+    {
+      "file": "_function_base_impl.py",
+      "line": 894,
+      "name": "_copy_dispatcher",
+      "calls": 12765,
+      "exclusive_s": 0.002458,
+      "cumulative_s": 0.002458
+    },
+    {
+      "file": "numeric.py",
+      "line": 2429,
+      "name": "<genexpr>",
+      "calls": 2700,
+      "exclusive_s": 0.0015611000000000002,
+      "cumulative_s": 0.0024331
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.getattr>",
+      "calls": 7371,
+      "exclusive_s": 0.0023225000000000003,
+      "cumulative_s": 0.0023225000000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'append' of 'list' objects>",
+      "calls": 6626,
+      "exclusive_s": 0.0022829,
+      "cumulative_s": 0.0022829
+    },
+    {
+      "file": "shape_base.py",
+      "line": 17,
+      "name": "_atleast_1d_dispatcher",
+      "calls": 13329,
+      "exclusive_s": 0.002241,
+      "cumulative_s": 0.002241
+    },
+    {
+      "file": "_sparse.py",
+      "line": 10,
+      "name": "issparse",
+      "calls": 564,
+      "exclusive_s": 0.00031600000000000004,
+      "cumulative_s": 0.0022103
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.arange>",
+      "calls": 527,
+      "exclusive_s": 0.0021831000000000003,
+      "cumulative_s": 0.0021831000000000003
+    },
+    {
+      "file": "_funcs.py",
+      "line": 178,
+      "name": "atleast_nd",
+      "calls": 6896,
+      "exclusive_s": 0.0020961,
+      "cumulative_s": 0.0020961
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 1251,
+      "name": "argmax",
+      "calls": 193,
+      "exclusive_s": 0.0008409,
+      "cumulative_s": 0.0019964
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.zeros>",
+      "calls": 955,
+      "exclusive_s": 0.0018605000000000002,
+      "cumulative_s": 0.0018605000000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.callable>",
+      "calls": 7138,
+      "exclusive_s": 0.001775,
+      "cumulative_s": 0.001775
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2241,
+      "name": "clip",
+      "calls": 141,
+      "exclusive_s": 0.0003373,
+      "cumulative_s": 0.0017037
+    },
+    {
+      "file": "_internal.py",
+      "line": 32,
+      "name": "wrapped_f",
+      "calls": 141,
+      "exclusive_s": 0.00033860000000000004,
+      "cumulative_s": 0.0016378
+    },
+    {
+      "file": "numerictypes.py",
+      "line": 368,
+      "name": "_preprocess_dtype",
+      "calls": 282,
+      "exclusive_s": 0.0010426,
+      "cumulative_s": 0.0015592000000000002
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2477,
+      "name": "any",
+      "calls": 141,
+      "exclusive_s": 0.0002775,
+      "cumulative_s": 0.0015565000000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'setdefault' of 'dict' objects>",
+      "calls": 5716,
+      "exclusive_s": 0.0014888000000000002,
+      "cumulative_s": 0.0014888000000000002
+    },
+    {
+      "file": "numeric.py",
+      "line": 360,
+      "name": "_full_like_dispatcher",
+      "calls": 6176,
+      "exclusive_s": 0.0014887000000000001,
+      "cumulative_s": 0.0014887000000000001
+    },
+    {
+      "file": "_ufunc_config.py",
+      "line": 456,
+      "name": "__exit__",
+      "calls": 681,
+      "exclusive_s": 0.0005537000000000001,
+      "cumulative_s": 0.0014281
+    },
+    {
+      "file": "<frozen abc>",
+      "line": 117,
+      "name": "__instancecheck__",
+      "calls": 565,
+      "exclusive_s": 0.00046750000000000003,
+      "cumulative_s": 0.0013604
+    },
+    {
+      "file": "_function_base_impl.py",
+      "line": 339,
+      "name": "iterable",
+      "calls": 705,
+      "exclusive_s": 0.0007588,
+      "cumulative_s": 0.0013179
+    },
+    {
+      "file": "enum.py",
+      "line": 1292,
+      "name": "value",
+      "calls": 6896,
+      "exclusive_s": 0.0013123000000000002,
+      "cumulative_s": 0.0013123000000000002
+    },
+    {
+      "file": "_aliases.py",
+      "line": 447,
+      "name": "reshape",
+      "calls": 141,
+      "exclusive_s": 0.0005089000000000001,
+      "cumulative_s": 0.0012992000000000001
+    },
+    {
+      "file": "multiarray.py",
+      "line": 1098,
+      "name": "copyto",
+      "calls": 6615,
+      "exclusive_s": 0.001293,
+      "cumulative_s": 0.001293
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy.empty>",
+      "calls": 631,
+      "exclusive_s": 0.0012594000000000001,
+      "cumulative_s": 0.0012594000000000001
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 413,
+      "name": "_broadcast_shape",
+      "calls": 141,
+      "exclusive_s": 0.0012229,
+      "cumulative_s": 0.0012504
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2014,
+      "name": "_nonzero_dispatcher",
+      "calls": 6202,
+      "exclusive_s": 0.0011533000000000001,
+      "cumulative_s": 0.0011533000000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'clip' of 'numpy.ndarray' objects>",
+      "calls": 141,
+      "exclusive_s": 0.0002462,
+      "cumulative_s": 0.0011495000000000001
+    },
+    {
+      "file": "shape_base.py",
+      "line": 76,
+      "name": "_atleast_2d_dispatcher",
+      "calls": 6151,
+      "exclusive_s": 0.0010597,
+      "cumulative_s": 0.0010597
+    },
+    {
+      "file": "numeric.py",
+      "line": 642,
+      "name": "_flatnonzero_dispatcher",
+      "calls": 6202,
+      "exclusive_s": 0.0010571,
+      "cumulative_s": 0.0010571
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 1900,
+      "name": "_ravel_dispatcher",
+      "calls": 6202,
+      "exclusive_s": 0.0010532,
+      "cumulative_s": 0.0010532
+    },
+    {
+      "file": "multiarray.py",
+      "line": 107,
+      "name": "empty_like",
+      "calls": 6178,
+      "exclusive_s": 0.0010271,
+      "cumulative_s": 0.0010271
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 21,
+      "name": "bernoulli",
+      "calls": 5716,
+      "exclusive_s": 0.0010043,
+      "cumulative_s": 0.0010043
+    },
+    {
+      "file": "_methods.py",
+      "line": 99,
+      "name": "_clip",
+      "calls": 141,
+      "exclusive_s": 0.0009033000000000001,
+      "cumulative_s": 0.0009033000000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method _abc._abc_instancecheck>",
+      "calls": 565,
+      "exclusive_s": 0.0006453,
+      "cumulative_s": 0.0008929000000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'reset' of '_contextvars.ContextVar' objects>",
+      "calls": 682,
+      "exclusive_s": 0.0008774000000000001,
+      "cumulative_s": 0.0008774000000000001
+    },
+    {
+      "file": "_minimize.py",
+      "line": 1134,
+      "name": "standardize_constraints",
+      "calls": 141,
+      "exclusive_s": 0.0007254000000000001,
+      "cumulative_s": 0.0008622
+    },
+    {
+      "file": "_arraysetops_impl.py",
+      "line": 1015,
+      "name": "isin",
+      "calls": 1,
+      "exclusive_s": 3.68e-05,
+      "cumulative_s": 0.0007694
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 211,
+      "name": "reshape",
+      "calls": 141,
+      "exclusive_s": 0.0002459,
+      "cumulative_s": 0.0007551000000000001
+    },
+    {
+      "file": "_arraysetops_impl.py",
+      "line": 862,
+      "name": "_in1d",
+      "calls": 1,
+      "exclusive_s": 0.00046060000000000003,
+      "cumulative_s": 0.0007260000000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy._core._multiarray_umath._make_extobj>",
+      "calls": 682,
+      "exclusive_s": 0.0006941,
+      "cumulative_s": 0.0006941
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'set' of '_contextvars.ContextVar' objects>",
+      "calls": 682,
+      "exclusive_s": 0.0006638000000000001,
+      "cumulative_s": 0.0006638000000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'argmax' of 'numpy.ndarray' objects>",
+      "calls": 193,
+      "exclusive_s": 0.0006493,
+      "cumulative_s": 0.0006493
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.iter>",
+      "calls": 705,
+      "exclusive_s": 0.0005591,
+      "cumulative_s": 0.0005591
+    },
+    {
+      "file": "shape_base.py",
+      "line": 216,
+      "name": "_vhstack_dispatcher",
+      "calls": 141,
+      "exclusive_s": 0.0001929,
+      "cumulative_s": 0.0005372
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.max>",
+      "calls": 731,
+      "exclusive_s": 0.00044790000000000005,
+      "cumulative_s": 0.00044790000000000005
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 69,
+      "name": "_wrapreduction",
+      "calls": 15,
+      "exclusive_s": 0.0001532,
+      "cumulative_s": 0.0003998
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 24,
+      "name": "_maybe_view_as_subclass",
+      "calls": 705,
+      "exclusive_s": 0.00038060000000000004,
+      "cumulative_s": 0.00038060000000000004
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'copy' of 'numpy.ndarray' objects>",
+      "calls": 334,
+      "exclusive_s": 0.0003663,
+      "cumulative_s": 0.0003663
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method '__exit__' of 'numpy.nditer' objects>",
+      "calls": 705,
+      "exclusive_s": 0.00035370000000000003,
+      "cumulative_s": 0.00035370000000000003
+    },
+    {
+      "file": "shape_base.py",
+      "line": 208,
+      "name": "_arrays_for_stack_dispatcher",
+      "calls": 141,
+      "exclusive_s": 0.0002495,
+      "cumulative_s": 0.0003443
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'update' of 'set' objects>",
+      "calls": 282,
+      "exclusive_s": 0.00032930000000000004,
+      "cumulative_s": 0.00032930000000000004
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 3328,
+      "name": "prod",
+      "calls": 13,
+      "exclusive_s": 5.9300000000000005e-05,
+      "cumulative_s": 0.0003286
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 345,
+      "name": "<genexpr>",
+      "calls": 1410,
+      "exclusive_s": 0.0003241,
+      "cumulative_s": 0.0003241
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'items' of 'dict' objects>",
+      "calls": 644,
+      "exclusive_s": 0.00031120000000000003,
+      "cumulative_s": 0.00031120000000000003
+    },
+    {
+      "file": "_ufunc_config.py",
+      "line": 430,
+      "name": "__init__",
+      "calls": 681,
+      "exclusive_s": 0.0002994,
+      "cumulative_s": 0.0002994
+    },
+    {
+      "file": "_array_api.py",
+      "line": 131,
+      "name": "array_namespace",
+      "calls": 282,
+      "exclusive_s": 0.0002551,
+      "cumulative_s": 0.0002551
+    },
+    {
+      "file": "<frozen abc>",
+      "line": 121,
+      "name": "__subclasscheck__",
+      "calls": 75,
+      "exclusive_s": 2.5600000000000002e-05,
+      "cumulative_s": 0.0002476
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method _abc._abc_subclasscheck>",
+      "calls": 75,
+      "exclusive_s": 0.000222,
+      "cumulative_s": 0.00024450000000000003
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.sum>",
+      "calls": 282,
+      "exclusive_s": 0.00023840000000000002,
+      "cumulative_s": 0.00023840000000000002
+    },
+    {
+      "file": "_util.py",
+      "line": 1071,
+      "name": "__getattr__",
+      "calls": 423,
+      "exclusive_s": 0.0002099,
+      "cumulative_s": 0.0002099
+    },
+    {
+      "file": "_optimize.py",
+      "line": 317,
+      "name": "_clip_x_for_func",
+      "calls": 282,
+      "exclusive_s": 0.0002007,
+      "cumulative_s": 0.0002007
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2584,
+      "name": "_all_dispatcher",
+      "calls": 488,
+      "exclusive_s": 0.0001874,
+      "cumulative_s": 0.0001874
+    },
+    {
+      "file": "numeric.py",
+      "line": 137,
+      "name": "ones",
+      "calls": 26,
+      "exclusive_s": 0.00014140000000000002,
+      "cumulative_s": 0.00018350000000000002
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'lower' of 'str' objects>",
+      "calls": 282,
+      "exclusive_s": 0.0001728,
+      "cumulative_s": 0.0001728
+    },
+    {
+      "file": "numeric.py",
+      "line": 2333,
+      "name": "_isclose_dispatcher",
+      "calls": 540,
+      "exclusive_s": 0.0001689,
+      "cumulative_s": 0.0001689
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'values' of 'dict' objects>",
+      "calls": 282,
+      "exclusive_s": 0.0001316,
+      "cumulative_s": 0.0001316
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 363,
+      "name": "_broadcast_to_dispatcher",
+      "calls": 564,
+      "exclusive_s": 0.0001251,
+      "cumulative_s": 0.0001251
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 3190,
+      "name": "min",
+      "calls": 1,
+      "exclusive_s": 1.4700000000000002e-05,
+      "cumulative_s": 0.0001206
+    },
+    {
+      "file": "multiarray.py",
+      "line": 690,
+      "name": "result_type",
+      "calls": 514,
+      "exclusive_s": 0.00011130000000000001,
+      "cumulative_s": 0.00011130000000000001
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.hasattr>",
+      "calls": 141,
+      "exclusive_s": 9.48e-05,
+      "cumulative_s": 9.48e-05
+    },
+    {
+      "file": "numeric.py",
+      "line": 2239,
+      "name": "_allclose_dispatcher",
+      "calls": 321,
+      "exclusive_s": 8.14e-05,
+      "cumulative_s": 8.14e-05
+    },
+    {
+      "file": "_ufunc_config.py",
+      "line": 464,
+      "name": "inner",
+      "calls": 1,
+      "exclusive_s": 6.58e-05,
+      "cumulative_s": 7.8e-05
+    },
+    {
+      "file": "_util.py",
+      "line": 582,
+      "name": "__init__",
+      "calls": 141,
+      "exclusive_s": 7.460000000000001e-05,
+      "cumulative_s": 7.460000000000001e-05
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 20,
+      "name": "__init__",
+      "calls": 141,
+      "exclusive_s": 7.41e-05,
+      "cumulative_s": 7.41e-05
+    },
+    {
+      "file": "_optimize.py",
+      "line": 176,
+      "name": "_check_unknown_options",
+      "calls": 141,
+      "exclusive_s": 7.350000000000001e-05,
+      "cumulative_s": 7.350000000000001e-05
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2236,
+      "name": "_clip_dispatcher",
+      "calls": 141,
+      "exclusive_s": 6.3e-05,
+      "cumulative_s": 6.3e-05
+    },
+    {
+      "file": "multiarray.py",
+      "line": 383,
+      "name": "where",
+      "calls": 193,
+      "exclusive_s": 6.14e-05,
+      "cumulative_s": 6.14e-05
+    },
+    {
+      "file": "numeric.py",
+      "line": 450,
+      "name": "count_nonzero",
+      "calls": 52,
+      "exclusive_s": 3.27e-05,
+      "cumulative_s": 5.81e-05
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 2472,
+      "name": "_any_dispatcher",
+      "calls": 141,
+      "exclusive_s": 5.58e-05,
+      "cumulative_s": 5.58e-05
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 316,
+      "name": "nfev",
+      "calls": 141,
+      "exclusive_s": 5.39e-05,
+      "cumulative_s": 5.39e-05
+    },
+    {
+      "file": "sequential_probe.py",
+      "line": 121,
+      "name": "event",
+      "calls": 26,
+      "exclusive_s": 5.0100000000000005e-05,
+      "cumulative_s": 5.0100000000000005e-05
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 1247,
+      "name": "_argmax_dispatcher",
+      "calls": 193,
+      "exclusive_s": 4.88e-05,
+      "cumulative_s": 4.88e-05
+    },
+    {
+      "file": "_optimize.py",
+      "line": 88,
+      "name": "_wrap_callback",
+      "calls": 141,
+      "exclusive_s": 4.41e-05,
+      "cumulative_s": 4.41e-05
+    },
+    {
+      "file": "numeric.py",
+      "line": 64,
+      "name": "zeros_like",
+      "calls": 1,
+      "exclusive_s": 3.09e-05,
+      "cumulative_s": 3.7500000000000003e-05
+    },
+    {
+      "file": "multiarray.py",
+      "line": 180,
+      "name": "concatenate",
+      "calls": 142,
+      "exclusive_s": 3.62e-05,
+      "cumulative_s": 3.62e-05
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 206,
+      "name": "_reshape_dispatcher",
+      "calls": 141,
+      "exclusive_s": 3.52e-05,
+      "cumulative_s": 3.52e-05
+    },
+    {
+      "file": "_differentiable_functions.py",
+      "line": 320,
+      "name": "ngev",
+      "calls": 141,
+      "exclusive_s": 3.2500000000000004e-05,
+      "cumulative_s": 3.2500000000000004e-05
+    },
+    {
+      "file": "_optimize.py",
+      "line": 299,
+      "name": "hess",
+      "calls": 141,
+      "exclusive_s": 3.0200000000000002e-05,
+      "cumulative_s": 3.0200000000000002e-05
+    },
+    {
+      "file": "_stride_tricks_impl.py",
+      "line": 477,
+      "name": "_broadcast_arrays_dispatcher",
+      "calls": 141,
+      "exclusive_s": 2.9400000000000003e-05,
+      "cumulative_s": 2.9400000000000003e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<method 'disable' of '_lsprof.Profiler' objects>",
+      "calls": 1,
+      "exclusive_s": 2.93e-05,
+      "cumulative_s": 2.93e-05
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 3052,
+      "name": "max",
+      "calls": 1,
+      "exclusive_s": 3.9e-06,
+      "cumulative_s": 2.85e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method numpy._core._multiarray_umath.count_nonzero>",
+      "calls": 52,
+      "exclusive_s": 2.54e-05,
+      "cumulative_s": 2.54e-05
+    },
+    {
+      "file": "~",
+      "line": 0,
+      "name": "<built-in method builtins.all>",
+      "calls": 1,
+      "exclusive_s": 7.4e-06,
+      "cumulative_s": 1.97e-05
+    },
+    {
+      "file": "getlimits.py",
+      "line": 697,
+      "name": "__init__",
+      "calls": 1,
+      "exclusive_s": 1.48e-05,
+      "cumulative_s": 1.48e-05
+    },
+    {
+      "file": "_arraysetops_impl.py",
+      "line": 876,
+      "name": "<genexpr>",
+      "calls": 3,
+      "exclusive_s": 1.23e-05,
+      "cumulative_s": 1.23e-05
+    },
+    {
+      "file": "numeric.py",
+      "line": 446,
+      "name": "_count_nonzero_dispatcher",
+      "calls": 52,
+      "exclusive_s": 1.0700000000000001e-05,
+      "cumulative_s": 1.0700000000000001e-05
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 3323,
+      "name": "_prod_dispatcher",
+      "calls": 13,
+      "exclusive_s": 4.1000000000000006e-06,
+      "cumulative_s": 4.1000000000000006e-06
+    },
+    {
+      "file": "getlimits.py",
+      "line": 721,
+      "name": "max",
+      "calls": 1,
+      "exclusive_s": 2.4000000000000003e-06,
+      "cumulative_s": 2.4000000000000003e-06
+    },
+    {
+      "file": "_arraysetops_impl.py",
+      "line": 1010,
+      "name": "_isin_dispatcher",
+      "calls": 1,
+      "exclusive_s": 8.000000000000001e-07,
+      "cumulative_s": 8.000000000000001e-07
+    },
+    {
+      "file": "numeric.py",
+      "line": 58,
+      "name": "_zeros_like_dispatcher",
+      "calls": 1,
+      "exclusive_s": 7.000000000000001e-07,
+      "cumulative_s": 7.000000000000001e-07
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 3185,
+      "name": "_min_dispatcher",
+      "calls": 1,
+      "exclusive_s": 7.000000000000001e-07,
+      "cumulative_s": 7.000000000000001e-07
+    },
+    {
+      "file": "fromnumeric.py",
+      "line": 3047,
+      "name": "_max_dispatcher",
+      "calls": 1,
+      "exclusive_s": 4.0000000000000003e-07,
+      "cumulative_s": 4.0000000000000003e-07
+    }
+  ]
+}
