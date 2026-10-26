@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-26",
+  "systems": 3,
+  "items": 2,
+  "fixed_matrices": 64,
+  "problems": 48,
+  "status": "exact tiny acquisition-class diagnostic; no ICML originality claim",
+  "protocol_sha256": "91be8ae5b1b3d0300b55dfd007dd50d1805dfbd6e1cd348a2c7c545ffdc342a8",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "human_judgments": 0,
+  "WMT_data_used": false
+}

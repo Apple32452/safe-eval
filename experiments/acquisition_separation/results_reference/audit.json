@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "optimization_problems": 48,
+  "exact_fixed_matrix_policy_checks": 3072,
+  "legal_action_world_transitions": 48768,
+  "exact_action_bounds_checked": 159408,
+  "maximum_fixed_matrix_error": "1/20",
+  "largest_cost_certificate_gap": "9999917659/1599880768557088958400000",
+  "strict_separations": [
+    [
+      "monotone",
+      "star",
+      "0"
+    ],
+    [
+      "monotone",
+      "star",
+      "1/20"
+    ],
+    [
+      "opposed",
+      "star",
+      "0"
+    ],
+    [
+      "opposed",
+      "star",
+      "1/20"
+    ],
+    [
+      "one_hot",
+      "star",
+      "0"
+    ],
+    [
+      "one_hot",
+      "star",
+      "1/20"
+    ]
+  ],
+  "protocol_sha256": "91be8ae5b1b3d0300b55dfd007dd50d1805dfbd6e1cd348a2c7c545ffdc342a8"
+}

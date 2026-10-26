@@ -189,5 +189,6 @@ if __name__=='__main__':
     parser.add_argument('--input',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args(); report=audit(args.input)
+    args.output.parent.mkdir(parents=True,exist_ok=True)
     args.output.write_text(json.dumps(report,indent=2)+'\n')
     print(json.dumps(report,indent=2))

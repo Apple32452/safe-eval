@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "problems": 16,
+  "literal_edge_choice_checks": 5096,
+  "exact_fixed_matrix_policy_checks": 1024,
+  "comparison_status": "post-result prior-work check; original gate unchanged",
+  "protocol_sha256": "603ab06e36c994b97464551a3aec94e3a5e349622ed267fab79842bc763453b1"
+}

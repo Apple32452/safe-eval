@@ -1,0 +1,154 @@
+{
+  "independent": {
+    "star": {
+      "0": {
+        "optimal_cell_cost": 5.14,
+        "ec2_acquisition_cost": 5.48,
+        "certified_minimum_cell_saving": 0.06204379562043796,
+        "cell_strictly_better": true,
+        "ec2_lower": "137/25",
+        "ec2_upper": "137/25"
+      },
+      "1/20": {
+        "optimal_cell_cost": 4.807733333333333,
+        "ec2_acquisition_cost": 5.17175,
+        "certified_minimum_cell_saving": 0.07038558837273005,
+        "cell_strictly_better": true,
+        "ec2_lower": "20687/4000",
+        "ec2_upper": "20687/4000"
+      }
+    },
+    "triangle": {
+      "0": {
+        "optimal_cell_cost": 5.7144,
+        "ec2_acquisition_cost": 5.744,
+        "certified_minimum_cell_saving": 0.0051532033426183845,
+        "cell_strictly_better": true,
+        "ec2_lower": "718/125",
+        "ec2_upper": "718/125"
+      },
+      "1/20": {
+        "optimal_cell_cost": 5.38388,
+        "ec2_acquisition_cost": 5.4296,
+        "certified_minimum_cell_saving": 0.00842050979814351,
+        "cell_strictly_better": true,
+        "ec2_lower": "6787/1250",
+        "ec2_upper": "6787/1250"
+      }
+    }
+  },
+  "monotone": {
+    "star": {
+      "0": {
+        "optimal_cell_cost": 5.2732,
+        "ec2_acquisition_cost": 5.4108875,
+        "certified_minimum_cell_saving": 0.025446380099382958,
+        "cell_strictly_better": true,
+        "ec2_lower": "432871/80000",
+        "ec2_upper": "432871/80000"
+      },
+      "1/20": {
+        "optimal_cell_cost": 4.9336165625,
+        "ec2_acquisition_cost": 5.106525078125,
+        "certified_minimum_cell_saving": 0.033860308718681176,
+        "cell_strictly_better": true,
+        "ec2_lower": "65363521/12800000",
+        "ec2_upper": "65363521/12800000"
+      }
+    },
+    "triangle": {
+      "0": {
+        "optimal_cell_cost": 5.721375,
+        "ec2_acquisition_cost": 5.994875,
+        "certified_minimum_cell_saving": 0.045622302383285726,
+        "cell_strictly_better": true,
+        "ec2_lower": "47959/8000",
+        "ec2_upper": "47959/8000"
+      },
+      "1/20": {
+        "optimal_cell_cost": 5.382505,
+        "ec2_acquisition_cost": 5.670152604166667,
+        "certified_minimum_cell_saving": 0.05073013448620256,
+        "cell_strictly_better": true,
+        "ec2_lower": "10886693/1920000",
+        "ec2_upper": "10886693/1920000"
+      }
+    }
+  },
+  "opposed": {
+    "star": {
+      "0": {
+        "optimal_cell_cost": 4.74715,
+        "ec2_acquisition_cost": 4.74715,
+        "certified_minimum_cell_saving": 0.0,
+        "cell_strictly_better": false,
+        "ec2_lower": "94943/20000",
+        "ec2_upper": "94943/20000"
+      },
+      "1/20": {
+        "optimal_cell_cost": 4.38569125,
+        "ec2_acquisition_cost": 4.477819375,
+        "certified_minimum_cell_saving": 0.02057432810138752,
+        "cell_strictly_better": true,
+        "ec2_lower": "7164511/1600000",
+        "ec2_upper": "7164511/1600000"
+      }
+    },
+    "triangle": {
+      "0": {
+        "optimal_cell_cost": 5.413575,
+        "ec2_acquisition_cost": 5.999375,
+        "certified_minimum_cell_saving": 0.09764350453172206,
+        "cell_strictly_better": true,
+        "ec2_lower": "9599/1600",
+        "ec2_upper": "9599/1600"
+      },
+      "1/20": {
+        "optimal_cell_cost": 5.0782678125,
+        "ec2_acquisition_cost": 5.6686284375,
+        "certified_minimum_cell_saving": 0.10414523222135248,
+        "cell_strictly_better": true,
+        "ec2_lower": "18139611/3200000",
+        "ec2_upper": "18139611/3200000"
+      }
+    }
+  },
+  "one_hot": {
+    "star": {
+      "0": {
+        "optimal_cell_cost": 5.07115,
+        "ec2_acquisition_cost": 5.57315,
+        "certified_minimum_cell_saving": 0.0900747333195769,
+        "cell_strictly_better": true,
+        "ec2_lower": "111463/20000",
+        "ec2_upper": "111463/20000"
+      },
+      "1/20": {
+        "optimal_cell_cost": 4.76066875,
+        "ec2_acquisition_cost": 5.244136875,
+        "certified_minimum_cell_saving": 0.09219212551541191,
+        "cell_strictly_better": true,
+        "ec2_lower": "8390619/1600000",
+        "ec2_upper": "8390619/1600000"
+      }
+    },
+    "triangle": {
+      "0": {
+        "optimal_cell_cost": 5.591775,
+        "ec2_acquisition_cost": 5.9045625,
+        "certified_minimum_cell_saving": 0.052973865548886986,
+        "cell_strictly_better": true,
+        "ec2_lower": "94473/16000",
+        "ec2_upper": "94473/16000"
+      },
+      "1/20": {
+        "optimal_cell_cost": 5.2570675,
+        "ec2_acquisition_cost": 5.5754696875,
+        "certified_minimum_cell_saving": 0.057107688741245624,
+        "cell_strictly_better": true,
+        "ec2_lower": "17841503/3200000",
+        "ec2_upper": "17841503/3200000"
+      }
+    }
+  }
+}

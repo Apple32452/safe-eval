@@ -169,3 +169,32 @@ orders in the stated examples. A strict gain for another ordering does not
 establish cheaper complete certification. Retain rebalanced pair evidence
 and prediction-aware common-item retirement as required controls. A distinct
 attainable-cost separation remains open; no ICML contribution is established.
+
+
+## Exact acquisition-class separation and known ECD overlap (2026-10-26)
+
+The [frozen six-cell calculation](../acquisition_separation/FINDINGS.md)
+allows unrestricted inference within each acquisition class. Exact rational
+primal and dual certificates establish strict expected-cost separation from
+all row-uniform and all common-item retirement policies in three prespecified
+dependent reference-star designs, at both zero and 5% per-matrix error.
+The largest primary gain is 2.965% against row-uniform and 15.859% against
+common-item retirement. Independent rows and all-pairs designs have no
+cell-versus-row-uniform advantage here. This resolves a tiny attainable-cost
+question; it does not pass the broader contribution gate.
+
+A general row-permutation symmetry argument explains when arbitrary cell
+selection cannot improve prior-weighted cost over row-uniform selection.
+The proof uses standard symmetrization and is not asserted original.
+The zero-error formulation maps directly to Golovin, Krause and Ray's
+[2010 equivalence-class determination problem](https://papers.nips.cc/paper_files/paper/2010/file/1e6e0a04d20f50967c64dac2d639a577-Paper.pdf).
+A declared post-result check finds the exhaustive cell optimum cheaper than
+their specified EC2 acquisition in 15 of 16 tiny problems, with equal error
+constraints and optimized stopping. This gap to greedy acquisition does not
+make exhaustive decision-process optimization a new scalable method.
+
+The open contribution is now more concrete: exploit partial peer-system
+scores with a tractable acquisition policy and a distinct general cost
+result or matched empirical advantage beyond existing active-test methods.
+Preserve the per-fixed-matrix error constraint and full label accounting.
+No human judgments or WMT data were used in this diagnostic.

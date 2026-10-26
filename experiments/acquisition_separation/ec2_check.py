@@ -76,6 +76,8 @@ def run(source, output):
             summary[prior][graph]={}
             for alpha in (F(0),F(1,20)):
                 record=solve(model,prior,alpha)
+                if F(record['full_evaluation_mixture'])!=0:
+                    raise AssertionError('EC2 certificate uses an external repair policy')
                 report=audit_record(model,record)
                 checked_worlds+=report['fixed_worlds']
                 records.append(record)
@@ -98,8 +100,50 @@ def run(source, output):
     return summary
 
 
+def audit_saved(source, folder):
+    """Replay published certificates and EC2 edge choices without an LP solve."""
+    original=json.loads((source/'certificates.json').read_text())
+    records=json.loads((folder/'certificates.json').read_text())
+    expected={(p,g,a) for p in PRIORS for g in GRAPHS for a in ('0','1/20')}
+    if len(records)!=16 or {(r['prior'],r['graph'],r['alpha']) for r in records}!=expected:
+        raise AssertionError('Incomplete EC2 comparison grid')
+    summary=json.loads((folder/'summary.json').read_text())
+    checked_edges=checked_worlds=0
+    for prior in PRIORS:
+        for graph in GRAPHS:
+            model=ec2_model(prior,graph)
+            checked_edges+=audit_edge_choices(model,prior)
+            for record in records:
+                if (record['prior'],record['graph'])!=(prior,graph): continue
+                # A full-evaluation mixture could leave the fixed EC2 class.
+                if F(record['full_evaluation_mixture'])!=0:
+                    raise AssertionError('EC2 certificate uses an external repair policy')
+                checked_worlds+=audit_record(model,record)['fixed_worlds']
+                cell=next(r for r in original if (r['prior'],r['graph'],r['alpha'],r['kind'])
+                          ==(prior,graph,record['alpha'],'cell'))
+                upper,lower=F(cell['upper']),F(record['lower'])
+                row=summary[prior][graph][record['alpha']]
+                expected_row={
+                    'optimal_cell_cost':float(upper),
+                    'ec2_acquisition_cost':float(F(record['upper'])),
+                    'certified_minimum_cell_saving':float(1-upper/lower),
+                    'cell_strictly_better':upper<lower,
+                    'ec2_lower':record['lower'],'ec2_upper':record['upper']}
+                if row!=expected_row: raise AssertionError('EC2 summary differs from certificates')
+    report={'status':'passed','problems':16,
+        'literal_edge_choice_checks':checked_edges,'exact_fixed_matrix_policy_checks':checked_worlds,
+        'comparison_status':'post-result prior-work check; original gate unchanged',
+        'protocol_sha256':hashlib.sha256((Path(__file__).parent/'PRIOR_WORK_CHECK.md').read_bytes()).hexdigest()}
+    if report!=json.loads((folder/'audit.json').read_text()):
+        raise AssertionError('EC2 saved audit differs from replay')
+    return report
+
+
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
-    args=parser.parse_args(); run(args.source,args.output)
+    parser.add_argument('--audit-only',action='store_true',help='Check existing output without optimizing')
+    args=parser.parse_args()
+    if args.audit_only: print(json.dumps(audit_saved(args.source,args.output),indent=2))
+    else: run(args.source,args.output)

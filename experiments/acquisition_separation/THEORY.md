@@ -133,6 +133,22 @@ not guarantee a strict improvement in any of them.
 
 ## Novelty and practical limits
 
+- The zero-error problem is an instance of **equivalence-class determination**
+  in [Golovin, Krause and Ray (NeurIPS 2010), Section 3](https://papers.nips.cc/paper_files/paper/2010/file/1e6e0a04d20f50967c64dac2d639a577-Paper.pdf).
+  In our mapping, hypotheses are complete score matrices, tests reveal cells,
+  and equivalence classes collect matrices with the same requested sign vector.
+  Their EC2 algorithm greedily cuts prior-weighted edges between classes and
+  already has a logarithmic expected-cost approximation guarantee. Our
+  exhaustive optimum beating that greedy rule is not a new algorithmic idea.
+  The [post-result comparison](PRIOR_WORK_CHECK.md) evaluates EC2 directly;
+  at positive error it fixes EC2 acquisition and optimizes valid stopping.
+- [Naghshvar and Javidi (2013)](https://arxiv.org/abs/1203.4626) already study
+  adaptive test selection, stopping, error costs, and dynamic-programming
+  lower bounds. [Chen, Hassani and Krause (2017)](https://proceedings.mlr.press/v54/chen17b.html)
+  give an algorithm and guarantees for correlated, noisy tests. Thus neither
+  adaptive decisions nor exploiting test dependence is a sufficient novelty
+  claim. These are relevant boundaries, not assertions that their exact
+  guarantees equal our per-fixed-matrix constraint.
 - This is a six-cell problem with all 64 matrices enumerated. Its state and
   error-constraint counts grow exponentially. It is not a deployable method
   for the WMT evaluation pools.

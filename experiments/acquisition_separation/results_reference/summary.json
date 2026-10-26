@@ -1,0 +1,427 @@
+{
+  "independent": {
+    "star": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "257/50",
+            "upper": "257/50",
+            "mean_cost": 5.14,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "257/50",
+            "upper": "257/50",
+            "mean_cost": 5.14,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.14333333333333334
+          }
+        },
+        "strict_separation": false
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "18029/3750",
+            "upper": "18029/3750",
+            "mean_cost": 4.807733333333333,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "2466596955905685400721704215925947911417702136118283144634469141687015489159253932027/513047788820585077520753790675001848025256085187756575349212097011275072111161800000",
+            "upper": "18029/3750",
+            "mean_cost": 4.807733333333333,
+            "certificate_gap": 4.215287779422788e-15,
+            "certified_minimum_cell_saving": -8.767723763289959e-16
+          },
+          "common_retirement": {
+            "lower": "24047/4250",
+            "upper": "24047/4250",
+            "mean_cost": 5.658117647058823,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.1502945620382307
+          }
+        },
+        "strict_separation": false
+      }
+    },
+    "triangle": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "7143/1250",
+            "upper": "7143/1250",
+            "mean_cost": 5.7144,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "7143/1250",
+            "upper": "7143/1250",
+            "mean_cost": 5.7144,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0476
+          }
+        },
+        "strict_separation": false
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "134597/25000",
+            "upper": "134597/25000",
+            "mean_cost": 5.38388,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "134597/25000",
+            "upper": "134597/25000",
+            "mean_cost": 5.38388,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0
+          },
+          "common_retirement": {
+            "lower": "5673/1000",
+            "upper": "5673/1000",
+            "mean_cost": 5.673,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.05096421646395206
+          }
+        },
+        "strict_separation": false
+      }
+    }
+  },
+  "monotone": {
+    "star": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "13183/2500",
+            "upper": "13183/2500",
+            "mean_cost": 5.2732,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "426039/80000",
+            "upper": "426039/80000",
+            "mean_cost": 5.3254875,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.009818349963266275
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.12113333333333333
+          }
+        },
+        "strict_separation": true
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "2490876848037337327947239/504878483457810844800000",
+            "upper": "15787573/3200000",
+            "mean_cost": 4.9336165625,
+            "certificate_gap": 1.0417361310346869e-15
+          },
+          "row_uniform": {
+            "lower": "15924711/3200000",
+            "upper": "15924711/3200000",
+            "mean_cost": 4.9764721875,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.008611647646227301
+          },
+          "common_retirement": {
+            "lower": "4775357/844000",
+            "upper": "4775357/844000",
+            "mean_cost": 5.658005924170616,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.128029092118139
+          }
+        },
+        "strict_separation": true
+      }
+    },
+    "triangle": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "45771/8000",
+            "upper": "45771/8000",
+            "mean_cost": 5.721375,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "45771/8000",
+            "upper": "45771/8000",
+            "mean_cost": 5.721375,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0464375
+          }
+        },
+        "strict_separation": false
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "1076501/200000",
+            "upper": "1076501/200000",
+            "mean_cost": 5.382505,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "1076501/200000",
+            "upper": "1076501/200000",
+            "mean_cost": 5.382505,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0
+          },
+          "common_retirement": {
+            "lower": "374377/66000",
+            "upper": "374377/66000",
+            "mean_cost": 5.672378787878788,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0511026852611138
+          }
+        },
+        "strict_separation": false
+      }
+    }
+  },
+  "opposed": {
+    "star": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "94943/20000",
+            "upper": "94943/20000",
+            "mean_cost": 4.74715,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "2974/625",
+            "upper": "2974/625",
+            "mean_cost": 4.7584,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0023642400806993947
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.20880833333333335
+          }
+        },
+        "strict_separation": true
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "3508553/800000",
+            "upper": "3508553/800000",
+            "mean_cost": 4.38569125,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "1406484381462561070219399/319976153711417791680000",
+            "upper": "3516473/800000",
+            "mean_cost": 4.39559125,
+            "certificate_gap": 6.250414315573524e-15,
+            "certified_minimum_cell_saving": 0.0022522567356538814
+          },
+          "common_retirement": {
+            "lower": "67511/12000",
+            "upper": "67511/12000",
+            "mean_cost": 5.625916666666667,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.22044859356253055
+          }
+        },
+        "strict_separation": true
+      }
+    },
+    "triangle": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "216543/40000",
+            "upper": "216543/40000",
+            "mean_cost": 5.413575,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "216543/40000",
+            "upper": "216543/40000",
+            "mean_cost": 5.413575,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0977375
+          }
+        },
+        "strict_separation": false
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "16250457/3200000",
+            "upper": "16250457/3200000",
+            "mean_cost": 5.0782678125,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "1796326254305123601460096937172112547878173841206824488439788151173770511813866613654366456107907/353728145231632365221627565459663712317538682901374434503437323578971883333335083930701382400000",
+            "upper": "16250457/3200000",
+            "mean_cost": 5.0782678125,
+            "certificate_gap": 1.1185938808976081e-15,
+            "certified_minimum_cell_saving": -2.202707541623197e-16
+          },
+          "common_retirement": {
+            "lower": "113111/20000",
+            "upper": "113111/20000",
+            "mean_cost": 5.65555,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.10207357153592489
+          }
+        },
+        "strict_separation": false
+      }
+    }
+  },
+  "one_hot": {
+    "star": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "101423/20000",
+            "upper": "101423/20000",
+            "mean_cost": 5.07115,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "26141/5000",
+            "upper": "26141/5000",
+            "mean_cost": 5.2282,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.030039019165295895
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.15480833333333333
+          }
+        },
+        "strict_separation": true
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "761707/160000",
+            "upper": "761707/160000",
+            "mean_cost": 4.76066875,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "539401321150911994581080263971406096840156589501745251101632691557314136514997731498650242526360482478464996695115957487815934642935119292545911330430831591/109944241987807526562509596695011547710314027457423789583557613187226981760023369161397910097703270066910457074897217284332710862716454737672564664268000000",
+            "upper": "19624541/4000000",
+            "mean_cost": 4.90613525,
+            "certificate_gap": 5.290886988527751e-15,
+            "certified_minimum_cell_saving": 0.029649916398043628
+          },
+          "common_retirement": {
+            "lower": "90527/16000",
+            "upper": "90527/16000",
+            "mean_cost": 5.6579375,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.15858583626984216
+          }
+        },
+        "strict_separation": true
+      }
+    },
+    "triangle": {
+      "0": {
+        "costs": {
+          "cell": {
+            "lower": "223671/40000",
+            "upper": "223671/40000",
+            "mean_cost": 5.591775,
+            "certificate_gap": 0.0
+          },
+          "row_uniform": {
+            "lower": "223671/40000",
+            "upper": "223671/40000",
+            "mean_cost": 5.591775,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0
+          },
+          "common_retirement": {
+            "lower": "6",
+            "upper": "6",
+            "mean_cost": 6.0,
+            "certificate_gap": 0.0,
+            "certified_minimum_cell_saving": 0.0680375
+          }
+        },
+        "strict_separation": false
+      },
+      "1/20": {
+        "costs": {
+          "cell": {
+            "lower": "12696796062571623/2415186044800000",
+            "upper": "2102827/400000",
+            "mean_cost": 5.2570675,
+            "certificate_gap": 4.140467779503129e-16
+          },
+          "row_uniform": {
+            "lower": "6727754402904057/1279754236160000",
+            "upper": "2102827/400000",
+            "mean_cost": 5.2570675,
+            "certificate_gap": 2.9693201183706874e-15,
+            "certified_minimum_cell_saving": -5.648244231923385e-16
+          },
+          "common_retirement": {
+            "lower": "42142270498435433/7437286877520000",
+            "upper": "113327/20000",
+            "mean_cost": 5.66635,
+            "certificate_gap": 2.554695053841414e-15,
+            "certified_minimum_cell_saving": 0.07223035993187812
+          }
+        },
+        "strict_separation": false
+      }
+    }
+  },
+  "dependent_separation_exists": true
+}
