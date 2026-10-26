@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": 120,
+  "trajectories": 600,
+  "candidate_paid_cells": 15877,
+  "actual_null_factor_checks": 24340,
+  "largest_true_null_expectation": 1.0000000000000004,
+  "wrong_trajectories": 0,
+  "primary_gate": false
+}
