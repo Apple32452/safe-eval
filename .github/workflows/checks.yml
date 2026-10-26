@@ -75,6 +75,7 @@ jobs:
           python -m unittest discover -s experiments/joint_order_gate -p 'test_*.py' -v
           python -m unittest discover -s experiments/joint_order_controls -p 'test_*.py' -v
           python -m unittest discover -s experiments/acquisition_separation -p 'test_*.py' -v
+          python -m unittest discover -s experiments/peer_cell_scale -p 'test_*.py' -v
       - name: Check joint-order mechanism and tiny common-item audit
         run: |
           python experiments/joint_order_controls/mechanism_check.py --output results/joint_order_mechanism_ci.json
@@ -84,6 +85,11 @@ jobs:
         run: |
           python experiments/acquisition_separation/audit_exact.py --input experiments/acquisition_separation/results_reference --output results/acquisition_ci_audit.json
           python experiments/acquisition_separation/ec2_check.py --source experiments/acquisition_separation/results_reference --output experiments/acquisition_separation/ec2_reference --audit-only
+      - name: Check peer-informed cell acquisition and ledger audit
+        if: matrix.os == 'ubuntu-24.04' && matrix.python == '3.12'
+        run: |
+          python experiments/peer_cell_scale/study.py --smoke --workers 1 --output results/peer_cell_ci
+          python experiments/peer_cell_scale/audit.py --input results/peer_cell_ci --workers 1
       - name: Run separate-arm diagnostic smoke check
         run: python experiments/arm_gate/arm_probe.py --repeats 2 --output results/arm_gate_smoke.json
       - name: Run shared-item partial-block software check
