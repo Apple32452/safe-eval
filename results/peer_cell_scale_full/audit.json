@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "cases": 190,
+  "trajectories": 1460,
+  "paid_cells_checked": 199796,
+  "actual_null_factor_checks": 305931,
+  "largest_actual_null_expectation": 1.0000000000000007,
+  "wrong_trajectories": 0,
+  "protocol_sha256": "0c50de2211726543975d2b0de9cb37f49c3c96af58c26e6f12e610424a968344",
+  "scope": "full ledger/decision replay; actual fixed-null expectations; support formula tested separately by exhaustive small completions"
+}

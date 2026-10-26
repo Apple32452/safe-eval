@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-26",
+  "smoke": false,
+  "cases": 190,
+  "alpha": 0.05,
+  "seconds": 241.8753010299988,
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "protocol_sha256": "0c50de2211726543975d2b0de9cb37f49c3c96af58c26e6f12e610424a968344",
+  "source_sha256": {
+    "study.py": "c72afdeb6ca38498bbd0155a86c7a85a6c29e64589850b2709ca853759c2a563",
+    "test_engine.py": "2a3e8c0d857d4a2858569495fa5ddd148d288fdfdab8d29a20de2c1f57ac369c",
+    "engine.py": "1d8f4420ccba6610fddedec287a2bcb8b9de7cce38720a7858d9b2ba21804ffd",
+    "audit.py": "a11869ec4dd5e00525ac8b79e741d6ee19d89453133955ad43e2f472e28865c6"
+  },
+  "human_judgments": 0,
+  "WMT_data_used": false
+}
