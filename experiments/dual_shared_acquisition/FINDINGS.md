@@ -13,9 +13,11 @@ full run had 100 independent synthetic matrices (60 primary and two
 
 ## Primary: 60 aligned stratified matrices, 3 systems × 128 items
 
-All methods see the same known high/low item strata and historical bank.
-Lower charged unique-label cost is better. Wrong output would have cost
-384; none was observed.
+All methods use the same target matrix. The dual, row-peer, peer-cell and
+approximate EC² methods share the stratum-conditioned predictor and inference.
+Paired closure instead uses global historical marginals, and Stage 22 does
+not use the historical bank or strata. Lower charged unique-label cost is
+better. Wrong output would have cost 384; none was observed.
 
 | Method | Mean charged labels | Candidate saving | Adjusted paired bootstrap interval |
 | --- | ---: | ---: | ---: |
@@ -30,8 +32,8 @@ The two closest same-inference controls determine the result. The row
 comparison interval includes zero, and the previous cell policy has a
 lower point cost. The EC² comparison is against our explicitly **approximate
 particle acquisition**, not exact published EC² with its own stopping rule.
-The Stage 22 contrast changes more than the acquisition objective and
-cannot isolate the new rule's contribution. The intervals are approximate
+The paired-closure and Stage 22 contrasts change more than the acquisition
+objective and cannot isolate the new rule's contribution. The intervals are approximate
 case-sampling summaries, not the statistical validity guarantee.
 
 ## All diagnostics (20 matrices per row)
