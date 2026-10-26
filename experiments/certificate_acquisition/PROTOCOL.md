@@ -37,9 +37,12 @@ unobserved target outcome to set its own score or selection probability.
 
 Primary: 60 new one-hot reference-star matrices with K=3,N=128 using a
 distinct SHA256 seed prefix `20261026|certificate_acquisition|` and repeats
-0..59. Historical bank and target sampled independently from the one-hot
+1000..1059. Historical bank and target sampled independently from the one-hot
 distribution defined in peer_cell_scale/study.py. Diagnostics: 20 independent,
-20 opposed, 20 reversed-history cases at K=3,N=128; these are all reported.
+20 opposed, 20 reversed-history cases at K=3,N=128, using repeats
+1000..1019; these are all reported. Repeat 0 of the one-hot distribution was
+used for a one-path implementation smoke check before full-run freeze and is
+excluded from every reported case and comparison.
 
 Run `certificate` versus `row_peer`, original `peer_cell`,
 `paired_exact_closure`, and `stage22` on each identical case. Original methods
