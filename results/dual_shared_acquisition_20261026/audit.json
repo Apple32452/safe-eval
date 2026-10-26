@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": 100,
+  "trajectories": 600,
+  "paid_cells_checked": 22352,
+  "actual_null_factor_checks": 37712,
+  "largest_true_null_expectation": 1.0000000000000004,
+  "wrong_trajectories": 0,
+  "primary_gate": false
+}

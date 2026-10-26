@@ -1,0 +1,186 @@
+{
+  "aligned": {
+    "cases": 60,
+    "means": {
+      "dual": 227.2,
+      "row_peer": 234.53333333333333,
+      "peer_cell": 222.21666666666667,
+      "ec2_weighted": 241.18333333333334,
+      "paired_exact_closure": 267.8333333333333,
+      "stage22": 286.85
+    },
+    "wrong": {
+      "dual": 0,
+      "row_peer": 0,
+      "peer_cell": 0,
+      "ec2_weighted": 0,
+      "paired_exact_closure": 0,
+      "stage22": 0
+    },
+    "comparisons": {
+      "row_peer": {
+        "relative_saving": 0.03126776577600909,
+        "labels_saved": 7.333333333333333,
+        "interval": [
+          -0.0347780094219051,
+          0.0922808091413474
+        ]
+      },
+      "peer_cell": {
+        "relative_saving": -0.022425560639016018,
+        "labels_saved": -4.983333333333333,
+        "interval": [
+          -0.08056849085774871,
+          0.03370952051828836
+        ]
+      },
+      "ec2_weighted": {
+        "relative_saving": 0.057978025015548385,
+        "labels_saved": 13.983333333333333,
+        "interval": [
+          0.009167663538284571,
+          0.10527846392786157
+        ]
+      },
+      "paired_exact_closure": {
+        "relative_saving": 0.15171126322339756,
+        "labels_saved": 40.63333333333333,
+        "interval": [
+          0.07795662278534746,
+          0.21463813205220783
+        ]
+      },
+      "stage22": {
+        "relative_saving": 0.2079484050897683,
+        "labels_saved": 59.65,
+        "interval": [
+          0.15455336099977288,
+          0.2579274247654025
+        ]
+      }
+    }
+  },
+  "homogeneous": {
+    "cases": 20,
+    "means": {
+      "dual": 127.1,
+      "row_peer": 118.75,
+      "peer_cell": 121.35,
+      "ec2_weighted": 125.65,
+      "paired_exact_closure": 145.15,
+      "stage22": 158.55
+    },
+    "wrong": {
+      "dual": 0,
+      "row_peer": 0,
+      "peer_cell": 0,
+      "ec2_weighted": 0,
+      "paired_exact_closure": 0,
+      "stage22": 0
+    },
+    "comparisons": {
+      "row_peer": {
+        "relative_saving": -0.07031578947368411,
+        "labels_saved": -8.35,
+        "interval": [
+          -0.32075767418562057,
+          0.12537425747516584
+        ]
+      },
+      "peer_cell": {
+        "relative_saving": -0.04738360115368767,
+        "labels_saved": -5.75,
+        "interval": [
+          -0.22461641136735808,
+          0.10151655034577929
+        ]
+      },
+      "ec2_weighted": {
+        "relative_saving": -0.011539992041384783,
+        "labels_saved": -1.45,
+        "interval": [
+          -0.19266699165005818,
+          0.14182856473365665
+        ]
+      },
+      "paired_exact_closure": {
+        "relative_saving": 0.12435411643127803,
+        "labels_saved": 18.05,
+        "interval": [
+          -0.01539805315874152,
+          0.2688811909219446
+        ]
+      },
+      "stage22": {
+        "relative_saving": 0.1983601387574898,
+        "labels_saved": 31.45,
+        "interval": [
+          0.07890446142068508,
+          0.3253195271958482
+        ]
+      }
+    }
+  },
+  "reversed": {
+    "cases": 20,
+    "means": {
+      "dual": 308.9,
+      "row_peer": 320.9,
+      "peer_cell": 322.4,
+      "ec2_weighted": 343.35,
+      "paired_exact_closure": 280.1,
+      "stage22": 298.6
+    },
+    "wrong": {
+      "dual": 0,
+      "row_peer": 0,
+      "peer_cell": 0,
+      "ec2_weighted": 0,
+      "paired_exact_closure": 0,
+      "stage22": 0
+    },
+    "comparisons": {
+      "row_peer": {
+        "relative_saving": 0.03739482704892494,
+        "labels_saved": 12.0,
+        "interval": [
+          -0.05089156623628525,
+          0.14657678874749216
+        ]
+      },
+      "peer_cell": {
+        "relative_saving": 0.041873449131513696,
+        "labels_saved": 13.5,
+        "interval": [
+          -0.031393890527316684,
+          0.13183621086117236
+        ]
+      },
+      "ec2_weighted": {
+        "relative_saving": 0.10033493519732062,
+        "labels_saved": 34.45,
+        "interval": [
+          0.024069934111921615,
+          0.1865344494030988
+        ]
+      },
+      "paired_exact_closure": {
+        "relative_saving": -0.10282042127811475,
+        "labels_saved": -28.8,
+        "interval": [
+          -0.21392447483625732,
+          -0.016088216566473735
+        ]
+      },
+      "stage22": {
+        "relative_saving": -0.034494306764902616,
+        "labels_saved": -10.3,
+        "interval": [
+          -0.11037928699339501,
+          0.03705044065649378
+        ]
+      }
+    }
+  },
+  "primary_gate": false
+}

@@ -1,5 +1,7 @@
 # SAFE-EVAL
 
+**Latest experiment (26 October 2026):** The [shared dual allocation screen](experiments/dual_shared_acquisition/FINDINGS.md) passed its 100-case audit but failed the prespecified matched-efficiency gate. On 60 stratified synthetic cases, it used 227.20 labels versus 234.53 for matched row-uniform (adjusted interval crosses zero) and 222.22 for the earlier peer-cell policy. The [one-step objective](experiments/dual_shared_acquisition/THEORY.md) is not an end-to-end cost guarantee; ICML novelty remains unestablished.
+
 **Theory diagnostic (26 October 2026):** A [within-row variance calculation](experiments/variance_boundary/THEORY.md) shows exactly when item-specific acquisition can improve a one-query proxy at fixed row budget. Replaying the last two one-hot studies gives mean optimum-to-row-uniform proxy ratios of 0.962 and 0.967. This is an optimistic local variance result, **not** a stopping-cost guarantee or a new ICML contribution. See the [reproducible audit](results/variance_boundary/proxy.json).
 
 **New follow-up (26 October 2026):** The [certificate-guided acquisition screen](experiments/certificate_acquisition/FINDINGS.md) has 120 new synthetic cases and a passed audit. In the 60-case primary setting, it used 124.25 judgments versus 118.98 for the matched row-uniform peer control and 112.67 for the previous peer-cell method. Its prespecified matched-efficiency gate failed. No comparative cost guarantee or ICML novelty is established.
