@@ -1,0 +1,42 @@
+{
+  "config": {
+    "s": 100,
+    "n": 1024,
+    "graph": "complete",
+    "scenario": "separated"
+  },
+  "repeat": 0,
+  "pairs": 4950,
+  "evidence_wall_s": 4.551618999976199,
+  "evidence_cpu_s": 1.40625,
+  "peak_plain_mib": 172.859375,
+  "instrumented_evidence_s": 5.488777799997479,
+  "parity": true,
+  "phases": {
+    "cs_update": {
+      "total_s": 4.671657198981848,
+      "calls": 1024,
+      "p50_s": 0.004394150018924847,
+      "p95_s": 0.006777860005968249
+    },
+    "stop_check": {
+      "total_s": 0.2568536007311195,
+      "calls": 1024,
+      "p50_s": 0.00023070001043379307,
+      "p95_s": 0.000494949994026683
+    }
+  },
+  "peak_attribution_mib": 217.0546875,
+  "phase": "complete",
+  "replay_instrumented_s": 27.83067450003,
+  "replay_labels": 87899,
+  "global_stop_s": 2.97376788436668,
+  "global_stop_calls": 175799,
+  "availability_s": 21.18976959621068,
+  "availability_calls": 87900,
+  "replay_decisions_sha256": "8554cc5b5695f037c4a06bd31627b3e3025a4b80c1b15bc91d02dc90db164b73",
+  "peak_process_mib": 217.0546875,
+  "diagnostic_only": true,
+  "excluded_from_main_medians": true,
+  "exit_code": 0
+}

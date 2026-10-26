@@ -1,0 +1,12 @@
+test_active_set_is_committed_before_current_item_outcomes (test_stage22.GraphPruningInvariants.test_active_set_is_committed_before_current_item_outcomes) ... ok
+test_circulant_graphs_are_name_ordered_and_unique (test_stage22.GraphPruningInvariants.test_circulant_graphs_are_name_ordered_and_unique) ... ok
+test_final_decisions_are_exact_and_labels_unique (test_stage22.GraphPruningInvariants.test_final_decisions_are_exact_and_labels_unique) ... ok
+test_noncommon_paths_and_duplicate_edges_are_rejected (test_stage22.GraphPruningInvariants.test_noncommon_paths_and_duplicate_edges_are_rejected) ... ok
+test_per_edge_pathwise_dominance_for_all_small_crossings (test_stage22.GraphPruningInvariants.test_per_edge_pathwise_dominance_for_all_small_crossings) ... ok
+test_star_suite_uses_every_reference_without_duplicate_edges (test_stage22.GraphPruningInvariants.test_star_suite_uses_every_reference_without_duplicate_edges) ... ok
+test_unrevealed_event_suffix_cannot_change_acquired_prefix (test_stage22.GraphPruningInvariants.test_unrevealed_event_suffix_cannot_change_acquired_prefix) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.341s
+
+OK

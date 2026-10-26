@@ -1,0 +1,146 @@
+{
+  "matrix": [
+    {
+      "s": 32,
+      "n": 64,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 32,
+      "n": 64,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 100,
+      "n": 64,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 100,
+      "n": 64,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 200,
+      "n": 64,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 200,
+      "n": 64,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 400,
+      "n": 64,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 400,
+      "n": 64,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 100,
+      "n": 256,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 100,
+      "n": 256,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 200,
+      "n": 256,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 200,
+      "n": 256,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 400,
+      "n": 256,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 400,
+      "n": 256,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 100,
+      "n": 1024,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 100,
+      "n": 1024,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 200,
+      "n": 1024,
+      "graph": "star",
+      "scenario": "separated"
+    },
+    {
+      "s": 200,
+      "n": 1024,
+      "graph": "complete",
+      "scenario": "separated"
+    },
+    {
+      "s": 100,
+      "n": 256,
+      "graph": "ring",
+      "scenario": "separated"
+    },
+    {
+      "s": 200,
+      "n": 256,
+      "graph": "complete",
+      "scenario": "tie"
+    }
+  ],
+  "repeats": 3,
+  "base": "5d991e7",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "python": "3.12.4 (tags/v3.12.4:8e8a4ba, Jun  6 2024, 19:30:16) [MSC v.1940 64 bit (AMD64)]",
+  "cpus": 12,
+  "memory_bytes": 34000248832,
+  "numpy": "2.2.4",
+  "hashes": {
+    "experiments/scalability_audit/audit.py": "03eaf4e63865128e739d43bc640b7abd39fc39fd3a4574b945b59ee3977fd107",
+    "experiments/scalability_audit/PROTOCOL.md": "5dc1a2dfe3a65505b9b628f27c95d303ec99ea54975f21ff6c21a7ee2009a359",
+    "experiments/computational_profile/benchmark.py": "1c9107cde375bc6321ab8c9acf992636e4d6647a5e2b18366c2b670e553b3476",
+    "experiments/stage17/continuous_engine.py": "d088366c705fa03d7f6f1764cf7adfe67750773682a81e53ef2b278824403ddb",
+    "experiments/stage17/run_stage17.py": "b016a91e65f89adfcada72a5e4ae2471e1137dccb132826a6561824e5977982d",
+    "experiments/stage22/run_stage22.py": "0814f1e61495080e6ae67e328634a33074850baee6decd470d5b3495f444e748"
+  },
+  "exclusion": {
+    "s": 400,
+    "n": 1024,
+    "graph": "complete",
+    "estimated_bytes": 3922329600,
+    "limit_bytes": 1610612736.0
+  }
+}

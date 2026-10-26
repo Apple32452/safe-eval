@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "expected_60_rows": true,
+    "no_worker_errors": true,
+    "all_completed_evidence_parity": true,
+    "phase_counts": true,
+    "source_hashes_preserved": true,
+    "smallest_replay_parity": true,
+    "timeouts_follow_protocol": true,
+    "previous_files_preserved": true,
+    "main_preserved": true,
+    "diagnostic_completed": true
+  },
+  "passed": true,
+  "replay_timeouts": 4,
+  "worker_timeouts": 1,
+  "evidence_attempts": 60,
+  "completed_evidence": 59,
+  "completed_replays": 15
+}
